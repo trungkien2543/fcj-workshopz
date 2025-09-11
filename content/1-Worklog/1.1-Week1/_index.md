@@ -7,45 +7,33 @@ weight = 1
 ### Week 1 Objectives:
 
 * Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand basic AWS services, how to use the console management.
+* Discuss topic and technology for first project.
 
 ### Tasks to be carried out this week:
 | Day |Task| Start Date | Completion Date | Reference Material|
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-|2| - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations| 08/11/2025 | 08/11/2025 |
-|3| - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br> | 08/12/2025 | 08/12/2025 | <https://cloudjourney.awsstudygroup.com/> |
-|4 | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025 | <https://cloudjourney.awsstudygroup.com/> |
-|5| - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP <br>| 08/14/2025 | 08/15/2025 | <https://cloudjourney.awsstudygroup.com/> |
-|6 | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume | 08/15/2025 | 08/15/2025 | <https://cloudjourney.awsstudygroup.com/> |
+|2| - Get to know FCJ members <br> - Read and note the rules and regulations at the internship unit <br> - Watch the video lecture on module 1 <br> - Learn about the terms: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations) | 8/9/2025 | 8/9/2025 | <https://policies.fcjuni.com/>
+|3| - **Practice:** <br>+ lab01: Create first account, use IAM, create MFA <br> + lab07: Create budgets | 9/9/2025 | 9/9/2025 | <https://000001.awsstudygroup.com/vi/> <https://000007.awsstudygroup.com/vi/> |
+|4 | - Learn how to do personal workshops using hugo.io <br> - Translate AWS blogs |  10/9/2025 | 10/9/2025|  <https://mcshelby.github.io/hugo-theme-relearn/index.html> <https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/> <https://gohugo.io/getting-started/quick-start/>|
+|5| - Write logs and configuration for the workshop | 11/09/2025 | 11/9/2025 |  |
+
 
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understand what AWS is and have a basic understanding of AWS's global infrastructure.
 
 * Successfully created and configured an AWS Free Tier account.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Get familiar with the AWS Management Console and know how to find, access, and use services from the web interface.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Manage budgets by creating budgets and setting alerts.
 
-* Used AWS CLI to perform basic operations such as:
+* Configure a hugo project to write a workshop.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Install and configure AWS CLI on your computer including:
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+* Access Key
+* Default Region
 * ...

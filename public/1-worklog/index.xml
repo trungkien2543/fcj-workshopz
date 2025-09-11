@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 Worklog</title>
-    <link>http://localhost:56261/1-worklog/index.html</link>
+    <link>http://localhost:1313/1-worklog/index.html</link>
     <description>Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:&#xA;Week 1: Getting familiar with AWS and basic AWS services</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:56261/1-worklog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/1-worklog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.1 Week1</title>
-      <link>http://localhost:56261/1-worklog/1.1-week1/index.html</link>
+      <link>http://localhost:1313/1-worklog/1.1-week1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56261/1-worklog/1.1-week1/index.html</guid>
-      <description>Week 1 Objectives: Connect and get acquainted with members of First Cloud Journey. Understand basic AWS services, how to use the console &amp; CLI. Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Get acquainted with FCJ members - Read and take note of internship unit rules and regulations 08/11/2025 08/11/2025 3 - Learn about AWS and its types of services + Compute + Storage + Networking + Database + … 08/12/2025 08/12/2025 https://cloudjourney.awsstudygroup.com/ 4 - Create AWS Free Tier account - Learn about AWS Console &amp; AWS CLI - Practice: + Create AWS account + Install &amp; configure AWS CLI + How to use AWS CLI 08/13/2025 08/13/2025 https://cloudjourney.awsstudygroup.com/ 5 - Learn basic EC2: + Instance types + AMI + EBS + … - SSH connection methods to EC2 - Learn about Elastic IP 08/14/2025 08/15/2025 https://cloudjourney.awsstudygroup.com/ 6 - Practice: + Launch an EC2 instance + Connect via SSH + Attach an EBS volume 08/15/2025 08/15/2025 https://cloudjourney.awsstudygroup.com/ Week 1 Achievements: Understood what AWS is and mastered the basic service groups:</description>
+      <guid>http://localhost:1313/1-worklog/1.1-week1/index.html</guid>
+      <description>Week 1 Objectives: Connect and get acquainted with members of First Cloud Journey. Understand basic AWS services, how to use the console management. Discuss topic and technology for first project. Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Get to know FCJ members - Read and note the rules and regulations at the internship unit - Watch the video lecture on module 1 - Learn about the terms: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations) 8/9/2025 8/9/2025 https://policies.fcjuni.com/ 3 - Practice: + lab01: Create first account, use IAM, create MFA + lab07: Create budgets 9/9/2025 9/9/2025 https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 - Learn how to do personal workshops using hugo.io - Translate AWS blogs 10/9/2025 10/9/2025 https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 - Write logs and configuration for the workshop 11/09/2025 11/9/2025 Week 1 Achievements: Understand what AWS is and have a basic understanding of AWS’s global infrastructure.</description>
     </item>
   </channel>
 </rss>

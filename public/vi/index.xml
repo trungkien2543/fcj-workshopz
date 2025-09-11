@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Báo cáo thực tập</title>
-    <link>http://localhost:56261/vi/index.html</link>
+    <link>http://localhost:1313/vi/index.html</link>
     <description>Thông tin sinh viên: Họ và tên: Nguyễn Văn A&#xA;Số điện thoại: 0989888999&#xA;Email: Anguyenvan@gmail.com&#xA;Trường: Đại học Sư phạm Kỹ thuật TP.HCM&#xA;Ngành: Công nghệ thông tin&#xA;Lớp: AWS082025&#xA;Công ty thực tập: Công ty TNHH Amazon Web Services Vietnam&#xA;Vị trí thực tập: FCJ Cloud Intern&#xA;Thời gian thực tập: Từ ngày 12/08/2025 đến ngày 12/11/2025</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:56261/vi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/vi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. Worklog</title>
-      <link>http://localhost:56261/vi/1-worklog/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56261/vi/1-worklog/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/index.html</guid>
       <description>Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS</description>
     </item>
     <item>
       <title>3. Các bài blog đã dịch</title>
-      <link>http://localhost:56261/vi/3-blogstranslated/index.html</link>
+      <link>http://localhost:1313/vi/3-blogstranslated/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56261/vi/3-blogstranslated/index.html</guid>
+      <guid>http://localhost:1313/vi/3-blogstranslated/index.html</guid>
       <description>Blog 1 - Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau Điều gì sẽ xảy ra nếu trí tuệ nhân tạo (AI) có thể tăng cường khả năng lắng nghe và kết nối thực sự với người khác của chúng ta? Điều gì sẽ xảy ra nếu công nghệ có thể khai thác những trải nghiệm sống chung của chúng ta và giúp chúng ta trở nên nhân văn hơn với nhau? Đây là những câu hỏi mà Tiến sĩ Grin Lord, nhà tâm lý học lâm sàng và nhà sáng lập công ty phân tích hội thoại mpathic, đã dành 15 năm theo đuổi.</description>
     </item>
   </channel>

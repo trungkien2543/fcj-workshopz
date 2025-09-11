@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3 BlogsTranslated</title>
-    <link>http://localhost:56261/3-blogstranslated/index.html</link>
+    <link>http://localhost:1313/3-blogstranslated/index.html</link>
     <description>Blog 1 - Technology that teaches empathy? How mpathic uses AI to help us listen to each other What if artificial intelligence (AI) could augment our ability to really listen and truly relate to others? What if technology could draw upon our collective lived experiences and help us be more human to each other? These are the questions Dr. Grin Lord, clinical psychologist and founder of conversation analytics company mpathic, has spent the last 15 years chasing.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:56261/3-blogstranslated/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/3-blogstranslated/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog 1</title>
-      <link>http://localhost:56261/3-blogstranslated/3.1-blog1/index.html</link>
+      <link>http://localhost:1313/3-blogstranslated/3.1-blog1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56261/3-blogstranslated/3.1-blog1/index.html</guid>
+      <guid>http://localhost:1313/3-blogstranslated/3.1-blog1/index.html</guid>
       <description>Technology that teaches empathy? How mpathic uses AI to help us listen to each other by Bonnie McClure and Chalaire Miller | on 30 APR 2024 | Startup, Startup Spotlight&#xA;On a basic human level, we want to be heard. We want to connect with others, and we want to be understood. Unfortunately, we’re often faced with many things competing for our attention, which makes us bad listeners.Danielle Schlosser, Chief Innovation Officer</description>
     </item>
   </channel>
