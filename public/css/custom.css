@@ -1,5 +1,4 @@
 
-/* Tăng font size cho toàn bộ content */
 
 /* Tăng font size cho các đoạn văn */
 p, li, div {
@@ -29,4 +28,12 @@ h3 { font-size: 1.4rem; }
 
 #R-header-wrapper, #R-homelinks{
     background-color: #A7A187;
+}
+
+/* Nới rộng flex-block-wrapper toàn màn hình */
+.flex-block-wrapper {
+max-width: 100% !important;  /* bỏ giới hạn width */
+  width: 100% !important;      /* full chiều ngang */
+  margin: 0 auto;              /* căn giữa, nếu muốn full thì dùng margin: 0 */
+  padding: 0 20px;             /* chỉnh padding theo ý (giảm hoặc bỏ hẳn) */
 }
