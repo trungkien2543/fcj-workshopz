@@ -1,0 +1,32 @@
+
+/* Tăng font size cho toàn bộ content */
+
+/* Tăng font size cho các đoạn văn */
+p, li, div {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Tăng font size cho tiêu đề */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+
+/* Thêm logo vào R-logo div */
+#R-logo::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url('/images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+#R-header-wrapper, #R-homelinks{
+    background-color: #A7A187;
+}

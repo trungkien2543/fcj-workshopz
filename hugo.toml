@@ -1,0 +1,32 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = ''
+
+theme = 'hugo-theme-relearn'
+
+[params]
+  custom_css = ["css/custom.css"]
+
+  # Logo cho header
+  [params.logo]
+    path = "/images/logo.png"
+    alt = "Logo"
+    width = "40px"
+    height = "40px"
+  
+  # Hoặc cách đơn giản hơn
+  logoUrl = "/images/logo.png"
+
+    
+[languages]
+  [languages.vi]
+    languageName = 'Tiếng Việt'
+    weight = 1
+    [languages.vi.params]
+      landingPageName = "Trang chủ"
+    
+  [languages.en]
+    languageName = 'English'
+    weight = 2
+    [languages.en.params]
+      landingPageName = "Home"
