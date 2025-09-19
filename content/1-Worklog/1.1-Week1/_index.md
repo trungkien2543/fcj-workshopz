@@ -31,9 +31,3 @@ weight = 1
 * Manage budgets by creating budgets and setting alerts.
 
 * Configure a hugo project to write a workshop.
-
-* Install and configure AWS CLI on your computer including:
-
-* Access Key
-* Default Region
-* ...

@@ -17,23 +17,17 @@ weight = 1
 | 3   | - **Thực hành:** <br>+ lab01: Tạo account đầu tiên, sử dụng IAM, tạo MFA <br> + lab07: Tạo các budget| 9/9/2025 | 9/9/2025 | <https://000001.awsstudygroup.com/vi/> <https://000007.awsstudygroup.com/vi/> |
 | 4   | - Tìm hiểu cách làm workshop cá nhân bằng hugo.io <br> - Dịch bài blogs của AWS  | 10/9/2025 | 10/9/2025|  <https://mcshelby.github.io/hugo-theme-relearn/index.html> <https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/> <https://gohugo.io/getting-started/quick-start/>|
 | 5   | - Viết log và cấu hình cho bài workshop | 11/09/2025 | 11/9/2025 |  |
-
+| 6   | - Xem các video bài giảng và nghiên cứu thêm các thuật ngữ xuất hiện trong module 2 | 12/09/2025 | 12/9/2025 |  |
 
 
 ### Kết quả đạt được tuần 1:
 
-* Understand what AWS is and have a basic understanding of AWS's global infrastructure.
+* Hiểu AWS là gì và có hiểu biết cơ bản về cơ sở hạ tầng toàn cầu của AWS.
 
-* Successfully created and configured an AWS Free Tier account.
+* Đã tạo và cấu hình thành công tài khoản AWS Free Tier.
 
-* Get familiar with the AWS Management Console and know how to find, access, and use services from the web interface.
+* Làm quen với AWS Management Console và biết cách tìm, truy cập và sử dụng các dịch vụ từ giao diện web.
 
-* Manage budgets by creating budgets and setting alerts.
+* Quản lý ngân sách bằng cách tạo ngân sách và thiết lập cảnh báo.
 
-* Configure a hugo project to write a workshop.
-
-* Install and configure AWS CLI on your computer including:
-
-* Access Key
-* Default Region
-* ...
+* Cấu hình dự án hugo để viết bài hội thảo.

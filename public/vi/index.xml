@@ -12,7 +12,7 @@
       <link>http://localhost:1313/vi/1-worklog/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/vi/1-worklog/index.html</guid>
-      <description>Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS</description>
+      <description>Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS&#xA;Tuần 2: Xây dựng VPC và Hyrid DNS với Route53</description>
     </item>
     <item>
       <title>3. Các bài blog đã dịch</title>

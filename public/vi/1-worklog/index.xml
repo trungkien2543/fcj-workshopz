@@ -3,7 +3,7 @@
   <channel>
     <title>1. Worklog</title>
     <link>http://localhost:1313/vi/1-worklog/index.html</link>
-    <description>Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS</description>
+    <description>Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS&#xA;Tuần 2: Xây dựng VPC và Hyrid DNS với Route53</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <atom:link href="http://localhost:1313/vi/1-worklog/index.xml" rel="self" type="application/rss+xml" />
@@ -12,7 +12,14 @@
       <link>http://localhost:1313/vi/1-worklog/1.1-week1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/vi/1-worklog/1.1-week1/index.html</guid>
-      <description>Mục tiêu tuần 1: Kết nối, làm quen với các thành viên trong First Cloud Journey. Hiểu dịch vụ AWS cơ bản, cách dùng console management. Thảo luận về chủ đề và công nghệ cho project đầu tiên Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Làm quen với các thành viên FCJ - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập 11/08/2025 11/08/2025 https://policies.fcjuni.com/ 3 - Tìm hiểu AWS và các loại dịch vụ + Compute + Storage + Networking + Database + … 12/08/2025 12/08/2025 https://cloudjourney.awsstudygroup.com/ 4 - Tạo AWS Free Tier account - Tìm hiểu AWS Console &amp; AWS CLI - Thực hành: + Tạo AWS account + Cài AWS CLI &amp; cấu hình + Cách sử dụng AWS CLI 13/08/2025 13/08/2025 https://cloudjourney.awsstudygroup.com/ 5 - Tìm hiểu EC2 cơ bản: + Instance types + AMI + EBS + … - Các cách remote SSH vào EC2 - Tìm hiểu Elastic IP 14/08/2025 15/08/2025 https://cloudjourney.awsstudygroup.com/ 6 - Thực hành: + Tạo EC2 instance + Kết nối SSH + Gắn EBS volume 15/08/2025 15/08/2025 https://cloudjourney.awsstudygroup.com/ Kết quả đạt được tuần 1: Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản:</description>
+      <description>Mục tiêu tuần 1: Kết nối, làm quen với các thành viên trong First Cloud Journey. Hiểu dịch vụ AWS cơ bản, cách dùng console management. Thảo luận về chủ đề và công nghệ cho project đầu tiên. Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Làm quen với các thành viên FCJ - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập - Xem video bài giảng về module 1 - Tìm hiểu về các thuật ngữ: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations) 8/9/2025 8/9/2025 https://policies.fcjuni.com/ 3 - Thực hành: + lab01: Tạo account đầu tiên, sử dụng IAM, tạo MFA + lab07: Tạo các budget 9/9/2025 9/9/2025 https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 - Tìm hiểu cách làm workshop cá nhân bằng hugo.io - Dịch bài blogs của AWS 10/9/2025 10/9/2025 https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 - Viết log và cấu hình cho bài workshop 11/09/2025 11/9/2025 6 - Xem các video bài giảng và nghiên cứu thêm các thuật ngữ xuất hiện trong module 2 12/09/2025 12/9/2025 Kết quả đạt được tuần 1: Hiểu AWS là gì và có hiểu biết cơ bản về cơ sở hạ tầng toàn cầu của AWS.</description>
+    </item>
+    <item>
+      <title>1.2 Week2</title>
+      <link>http://localhost:1313/vi/1-worklog/1.2-week2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vi/1-worklog/1.2-week2/index.html</guid>
+      <description>Mục tiêu tuần 2: Tìm hiểu kiến trúc VPC cơ bản và các thành phần quan trọng có liên quan Thực hiện các bài lab trong module 2 Đọc tìm hiểu cuốn Aws advanced network Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Tìm hiểu thêm các thuật ngữ có liên quan tới bài thực hành VPC 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Thực hành: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Tìm hiểu cách làm bài tập thiết lập DNS với route 53 Thực hành: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Tham gia cloud day vietnam tại thành phố Hồ Chí Minh 18/09/2025 18/9/2025 6 - Dịch blogs - Viết worklog và báo cáo event 1 19/09/2025 19/9/2025 Kết quả đạt được tuần 2: Hiểu được về dịch vụ VPC và cách để tạo ra 1 mạng riêng ảo trên AWS</description>
     </item>
   </channel>
 </rss>

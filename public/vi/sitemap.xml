@@ -13,6 +13,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/1-worklog/1.1-week1/index.html" />
   </url>
   <url>
+    <loc>http://localhost:1313/vi/1-worklog/1.2-week2/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/vi/1-worklog/1.2-week2/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="http://localhost:1313/vi/1-worklog/1.2-week2/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:1313/1-worklog/1.2-week2/index.html" />
+  </url>
+  <url>
     <loc>http://localhost:1313/vi/3-blogstranslated/index.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/vi/3-blogstranslated/index.html" />
     <xhtml:link rel="alternate" hreflang="vi" href="http://localhost:1313/vi/3-blogstranslated/index.html" />
