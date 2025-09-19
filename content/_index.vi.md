@@ -4,23 +4,23 @@ type = "home"
 +++
 
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+&emsp; **Họ và tên:** Lê Trung Kiên
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0931261009
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** trungkien1862@gmail.com
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+&emsp; **Trường:** Đại học Sài Gòn
 
 &emsp; **Ngành:** Công nghệ thông tin
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Lớp:** DCT1213
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
 &emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ ngày 08/09/2025 đến ngày 11/11/2025
 
 ![Ảnh đại diện của bạn](/images/avatar.png)
 

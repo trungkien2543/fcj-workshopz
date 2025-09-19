@@ -17,7 +17,7 @@ weight = 1
 | 3   | - **Practice:** <br>+ lab03: Amazon VPC and AWS Site-to-Site VPN Workshop | 16/9/2025 | 16/9/2025 | <http://000003.awsstudygroup.com/> |
 | 4   | - Learn how to do DNS setup exercises with route 53 <br> **Practice:** + lab10: Set up Hybrid DNS with Route 53 Resolver| 17/9/2025 | 17/9/2025| <https://000010.awsstudygroup.com/> |
 | 5   | - Join Cloud Day Vietnam in Ho Chi Minh City | 18/09/2025 | 18/9/2025 |  |
-| 6   | - Translate blogs <br> - Write worklogs and event reports 1 | 19/09/2025 | 19/9/2025 |  |
+| 6   | - Translate blogs <br> - Write worklogs and event reports 1 | 19/09/2025 | 19/9/2025 | <https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/> |
 
 
 

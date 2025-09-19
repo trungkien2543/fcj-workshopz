@@ -17,8 +17,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Intership Report \u003e 1 Worklog",
-    "content": "Week 2 Objectives: Learn the basic VPC architecture and its important components Do the labs in module 2 Read the book Aws advanced network Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Learn more terms related to VPC practice 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Practice: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Learn how to do DNS setup exercises with route 53 Practice: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Join Cloud Day Vietnam in Ho Chi Minh City 18/09/2025 18/9/2025 6 - Translate blogs - Write worklogs and event reports 1 19/09/2025 19/9/2025 Week 2 Achievements: Understand VPC service and how to create a virtual private network on AWS\nKnow how to configure security group, subnet, route table\nCreate the first EC2\nBuild a hybrid DNS system based on ROUTE53\nParticipate in event cloud day vietnam and learn more about migration, modernization\nKnow how to clean up unused resources",
-    "description": "Week 2 Objectives: Learn the basic VPC architecture and its important components Do the labs in module 2 Read the book Aws advanced network Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Learn more terms related to VPC practice 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Practice: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Learn how to do DNS setup exercises with route 53 Practice: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Join Cloud Day Vietnam in Ho Chi Minh City 18/09/2025 18/9/2025 6 - Translate blogs - Write worklogs and event reports 1 19/09/2025 19/9/2025 Week 2 Achievements: Understand VPC service and how to create a virtual private network on AWS",
+    "content": "Week 2 Objectives: Learn the basic VPC architecture and its important components Do the labs in module 2 Read the book Aws advanced network Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Learn more terms related to VPC practice 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Practice: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Learn how to do DNS setup exercises with route 53 Practice: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Join Cloud Day Vietnam in Ho Chi Minh City 18/09/2025 18/9/2025 6 - Translate blogs - Write worklogs and event reports 1 19/09/2025 19/9/2025 https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/ Week 2 Achievements: Understand VPC service and how to create a virtual private network on AWS\nKnow how to configure security group, subnet, route table\nCreate the first EC2\nBuild a hybrid DNS system based on ROUTE53\nParticipate in event cloud day vietnam and learn more about migration, modernization\nKnow how to clean up unused resources",
+    "description": "Week 2 Objectives: Learn the basic VPC architecture and its important components Do the labs in module 2 Read the book Aws advanced network Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Learn more terms related to VPC practice 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Practice: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Learn how to do DNS setup exercises with route 53 Practice: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Join Cloud Day Vietnam in Ho Chi Minh City 18/09/2025 18/9/2025 6 - Translate blogs - Write worklogs and event reports 1 19/09/2025 19/9/2025 https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/ Week 2 Achievements: Understand VPC service and how to create a virtual private network on AWS",
     "tags": [],
     "title": "1.2 Week2",
     "uri": "/1-worklog/1.2-week2/index.html"
@@ -30,6 +30,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "3 BlogsTranslated",
     "uri": "/3-blogstranslated/index.html"
+  },
+  {
+    "breadcrumb": "Intership Report \u003e 3 BlogsTranslated",
+    "content": "This is a new chapter.",
+    "description": "This is a new chapter.",
+    "tags": [],
+    "title": "3.2 Blog2",
+    "uri": "/3-blogstranslated/3.2-blog2/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e 3 BlogsTranslated",

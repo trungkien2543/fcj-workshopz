@@ -5,6 +5,7 @@ title = ''
 theme = 'hugo-theme-relearn'
 
 [params]
+
   custom_css = ["css/custom.css"]
 
   # Logo cho header
