@@ -1,7 +1,8 @@
 +++
-title = "1.2 Week2"
+title = "Tuần 2"
 type = ""
 weight = 1
+pre = " <b> 1.2. </b> "
 +++
 
 ### Week 2 Objectives:
@@ -18,6 +19,7 @@ weight = 1
 | 4   | - Learn how to do DNS setup exercises with route 53 <br> **Practice:** + lab10: Set up Hybrid DNS with Route 53 Resolver| 17/9/2025 | 17/9/2025| <https://000010.awsstudygroup.com/> |
 | 5   | - Join Cloud Day Vietnam in Ho Chi Minh City | 18/09/2025 | 18/9/2025 |  |
 | 6   | - Translate blogs <br> - Write worklogs and event reports 1 | 19/09/2025 | 19/9/2025 | <https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/> |
+| 7   | - **Practice:** <br>+ lab20: Set up AWS Transit Gatewayy <br>+ lab19: Setting up VPC Peering | 20/09/2025 | 20/9/2025 | <https://000020.awsstudygroup.com/vi/> <https://000019.awsstudygroup.com/vi/> |
 
 
 

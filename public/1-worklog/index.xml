@@ -8,18 +8,18 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/1-worklog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1.1 Week1</title>
-      <link>http://localhost:1313/1-worklog/1.1-week1/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/1-worklog/1.1-week1/index.html</guid>
-      <description>Week 1 Objectives: Connect and get acquainted with members of First Cloud Journey. Understand basic AWS services, how to use the console management. Discuss topic and technology for first project. Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Get to know FCJ members - Read and note the rules and regulations at the internship unit - Watch the video lecture on module 1 - Learn about the terms: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations) 8/9/2025 8/9/2025 https://policies.fcjuni.com/ 3 - Practice: + lab01: Create first account, use IAM, create MFA + lab07: Create budgets 9/9/2025 9/9/2025 https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 - Learn how to do personal workshops using hugo.io - Translate AWS blogs 10/9/2025 10/9/2025 https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 - Write logs and configuration for the workshop 11/09/2025 11/9/2025 Week 1 Achievements: Understand what AWS is and have a basic understanding of AWS’s global infrastructure.</description>
-    </item>
-    <item>
-      <title>1.2 Week2</title>
+      <title>Tuần 2</title>
       <link>http://localhost:1313/1-worklog/1.2-week2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/1-worklog/1.2-week2/index.html</guid>
       <description>Week 2 Objectives: Learn the basic VPC architecture and its important components Do the labs in module 2 Read the book Aws advanced network Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Learn more terms related to VPC practice 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Practice: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Learn how to do DNS setup exercises with route 53 Practice: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Join Cloud Day Vietnam in Ho Chi Minh City 18/09/2025 18/9/2025 6 - Translate blogs - Write worklogs and event reports 1 19/09/2025 19/9/2025 https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/ Week 2 Achievements: Understand VPC service and how to create a virtual private network on AWS</description>
+    </item>
+    <item>
+      <title>Week1</title>
+      <link>http://localhost:1313/1-worklog/1.1-week1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/1-worklog/1.1-week1/index.html</guid>
+      <description>Week 1 Objectives: Connect and get acquainted with members of First Cloud Journey. Understand basic AWS services, how to use the console management. Discuss topic and technology for first project. Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Get to know FCJ members - Read and note the rules and regulations at the internship unit - Watch the video lecture on module 1 - Learn about the terms: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations) 8/9/2025 8/9/2025 https://policies.fcjuni.com/ 3 - Practice: + lab01: Create first account, use IAM, create MFA + lab07: Create budgets 9/9/2025 9/9/2025 https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 - Learn how to do personal workshops using hugo.io - Translate AWS blogs 10/9/2025 10/9/2025 https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 - Write logs and configuration for the workshop 11/09/2025 11/9/2025 Week 1 Achievements: Understand what AWS is and have a basic understanding of AWS’s global infrastructure.</description>
     </item>
   </channel>
 </rss>

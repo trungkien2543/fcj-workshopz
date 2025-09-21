@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1.1 Week1</title>
+    <title>Week1</title>
     <link>http://localhost:1313/1-worklog/1.1-week1/index.html</link>
     <description>Week 1 Objectives: Connect and get acquainted with members of First Cloud Journey. Understand basic AWS services, how to use the console management. Discuss topic and technology for first project. Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Get to know FCJ members - Read and note the rules and regulations at the internship unit - Watch the video lecture on module 1 - Learn about the terms: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations) 8/9/2025 8/9/2025 https://policies.fcjuni.com/ 3 - Practice: + lab01: Create first account, use IAM, create MFA + lab07: Create budgets 9/9/2025 9/9/2025 https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 - Learn how to do personal workshops using hugo.io - Translate AWS blogs 10/9/2025 10/9/2025 https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 - Write logs and configuration for the workshop 11/09/2025 11/9/2025 Week 1 Achievements: Understand what AWS is and have a basic understanding of AWS’s global infrastructure.</description>
     <generator>Hugo</generator>

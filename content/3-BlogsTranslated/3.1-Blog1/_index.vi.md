@@ -2,6 +2,7 @@
 title = "Blog 1"
 type = ""
 weight = 1
+pre = " <b> 3.1. </b> "
 +++
 
 # **Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau**

@@ -2,6 +2,7 @@
 title = "Blog 1"
 type = ""
 weight = 1
+pre = " <b> 3.1. </b> "
 +++
 
 # **Technology that teaches empathy? How mpathic uses AI to help us listen to each other**

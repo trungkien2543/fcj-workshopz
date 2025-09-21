@@ -2,6 +2,7 @@
 title = "Blog 2"
 type = ""
 weight = 1
+pre = " <b> 3.2. </b> "
 +++
 
 # **Tech-savvy savings: innovative ways to cut costs in your small businessn**

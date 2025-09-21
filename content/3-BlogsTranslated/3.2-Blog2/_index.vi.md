@@ -2,6 +2,7 @@
 title = "Blog 2"
 type = ""
 weight = 1
+pre = " <b> 3.2. </b> "
 +++
 
 # **Tiết kiệm nhờ công nghệ: Những cách sáng tạo để cắt giảm chi phí cho doanh nghiệp nhỏ của bạn**
