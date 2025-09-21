@@ -32,7 +32,7 @@ h3 { font-size: 1.4rem; }
 
 /* Nới rộng flex-block-wrapper toàn màn hình */
 .flex-block-wrapper {
-max-width: 100% !important;  /* bỏ giới hạn width */
+  max-width: 80% !important;  /* bỏ giới hạn width */
   width: 100% !important;      /* full chiều ngang */
   margin: 0 auto;              /* căn giữa, nếu muốn full thì dùng margin: 0 */
   padding: 0 20px;             /* chỉnh padding theo ý (giảm hoặc bỏ hẳn) */

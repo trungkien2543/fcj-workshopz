@@ -8,18 +8,18 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/3-blogstranslated/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>3.2 Blog2</title>
-      <link>http://localhost:1313/3-blogstranslated/3.2-blog2/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/3-blogstranslated/3.2-blog2/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
       <title>Blog 1</title>
       <link>http://localhost:1313/3-blogstranslated/3.1-blog1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/3-blogstranslated/3.1-blog1/index.html</guid>
       <description>Technology that teaches empathy? How mpathic uses AI to help us listen to each other by Bonnie McClure and Chalaire Miller | on 30 APR 2024 | Startup, Startup Spotlight&#xA;On a basic human level, we want to be heard. We want to connect with others, and we want to be understood. Unfortunately, we’re often faced with many things competing for our attention, which makes us bad listeners.Danielle Schlosser, Chief Innovation Officer</description>
+    </item>
+    <item>
+      <title>Blog 2</title>
+      <link>http://localhost:1313/3-blogstranslated/3.2-blog2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/3-blogstranslated/3.2-blog2/index.html</guid>
+      <description>Tech-savvy savings: innovative ways to cut costs in your small businessn Henrique Trevisan, Jonathan Woods, and Vince Anderson | 23/4/2024 | in Best Practices, Permalink&#xA;Running a small business means making the most of every dollar while maintaining high-quality services. As your business grows and your cloud usage expands, you must find ways to efficiently manage technology resources to protect your bottom line. In today’s challenging economic environment, cost optimization has become a top priority for business owners who want to reduce expenses without sacrificing performance, security, or customer experience.</description>
     </item>
   </channel>
 </rss>

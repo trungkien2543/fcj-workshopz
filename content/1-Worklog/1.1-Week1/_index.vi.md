@@ -1,7 +1,8 @@
 +++
-title = "1.1 Week1"
+title = "Tuần 1"
 type = "chapter"
 weight = 1
+pre = " <b> 1.1. </b> "
 +++
 
 ### Mục tiêu tuần 1:
