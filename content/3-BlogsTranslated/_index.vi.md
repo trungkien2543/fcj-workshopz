@@ -1,7 +1,8 @@
 +++
-title = "3. Các bài blog đã dịch"
+title = "Các bài blog đã dịch"
 type = ""
-weight = 1
+weight = 3
+pre = " <b> 3. </b> "
 +++
 
 ## [Blog 1 - Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau](3-blogstranslated/3.1-blog1/)

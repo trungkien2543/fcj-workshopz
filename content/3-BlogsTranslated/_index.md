@@ -1,7 +1,8 @@
 +++
-title = "3 BlogsTranslated"
+title = "BlogsTranslated"
 type = ""
-weight = 1
+weight = 3
+pre = " <b> 3. </b> "
 +++
 
 ## [Blog 1 - Technology that teaches empathy? How mpathic uses AI to help us listen to each other](3-blogstranslated/3.1-blog1/)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1. Worklog</title>
+    <title>Worklog</title>
     <link>http://localhost:1313/vi/1-worklog/index.html</link>
     <description>Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS&#xA;Tuần 2: Xây dựng VPC và Hyrid DNS với Route53</description>
     <generator>Hugo</generator>

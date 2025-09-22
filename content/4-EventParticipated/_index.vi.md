@@ -1,7 +1,8 @@
 +++
-title = "4. Các sự kiện đã tham gia"
+title = "Các sự kiện đã tham gia"
 type = ""
-weight = 1
+weight = 4
+pre = " <b> 4. </b> "
 +++
 
 Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.

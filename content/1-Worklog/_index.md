@@ -1,7 +1,8 @@
 +++
-title = "1 Worklog"
-type = "chapter"
+title = "Worklog"
+type = ""
 weight = 1
+pre = " <b> 1. </b> "
 +++
 
 Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:

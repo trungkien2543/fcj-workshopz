@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3. Các bài blog đã dịch</title>
+    <title>Các bài blog đã dịch</title>
     <link>http://localhost:1313/vi/3-blogstranslated/index.html</link>
     <description>Blog 1 - Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau Điều gì sẽ xảy ra nếu trí tuệ nhân tạo (AI) có thể tăng cường khả năng lắng nghe và kết nối thực sự với người khác của chúng ta? Điều gì sẽ xảy ra nếu công nghệ có thể khai thác những trải nghiệm sống chung của chúng ta và giúp chúng ta trở nên nhân văn hơn với nhau? Đây là những câu hỏi mà Tiến sĩ Grin Lord, nhà tâm lý học lâm sàng và nhà sáng lập công ty phân tích hội thoại mpathic, đã dành 15 năm theo đuổi.</description>
     <generator>Hugo</generator>
@@ -20,6 +20,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/vi/3-blogstranslated/3.2-blog2/index.html</guid>
       <description>Tiết kiệm nhờ công nghệ: Những cách sáng tạo để cắt giảm chi phí cho doanh nghiệp nhỏ của bạn Henrique Trevisan, Jonathan Woods, and Vince Anderson | 23/4/2024 | in Best Practices, Permalink&#xA;Việc vận hành một doanh nghiệp nhỏ có nghĩa là tận dụng tối đa từng đô la trong khi vẫn duy trì dịch vụ chất lượng cao. Khi doanh nghiệp và nền tảng đám mây của bạn sử dụng mở rộng, bạn phải tìm cách để quản lý nguồn lực công nghệ một cách hiệu quả để bảo vệ lợi nhuận của bạn. Trong môi trường kinh tế thách thức ngày nay, tối ưu chi phí đã trở thành là ưu tiên hàng đầu của chủ doanh nghiệp những người muốn cắt giảm chi phí mà không cần hy sinh hiệu năng, bảo mật và trải nghiệm người dùng.</description>
+    </item>
+    <item>
+      <title>Blog 3</title>
+      <link>http://localhost:1313/vi/3-blogstranslated/3.3-blog3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vi/3-blogstranslated/3.3-blog3/index.html</guid>
+      <description>Đẩy nhanh làn sóng khởi nghiệp AI thế hệ tiếp theo Swami Sivasubramanian | 13/06/2024 | in AWS for Startups, Featured, Startup, Startup Spotlight | Permalink&#xA;Từ ngày đầu tiên, AWS đã giúp các công ty khởi nghiệp hiện thực hóa ý tưởng của họ bằng cách dân chủ hóa quyền truy cập tới chủ hóa quyền truy cập vào công nghệ đang hỗ trợ một số doanh nghiệp lớn nhất trên thế giới, bao gồm cả Amazon. Mỗi năm kể từ 2020, chúng tôi đã cung cấp cho các công ty khởi nghiệp gần 1 tỷ đô la tín dụng khuyến mãi AWS. Không có gì ngẫu nhiên khi 80% kỳ lân của thế giới sử dụng AWS. Tôi rất may mắn khi chứng kiến sự phát triển của các công ty khởi nghiệp trong suốt thời gian làm việc tại AWS - các công ty như Netflix, Wiz và Airtasker. Và tôi rát hào hứng với tốc độ nhanh chóng mà các công ty khởi nghiệp ứng dụng công nghệ trí tuệ nhân tạo (AI) và cách mà công nghệ này đang tạo ra một thế hệ khởi nghiệp hoàn toàn mới.</description>
     </item>
   </channel>
 </rss>

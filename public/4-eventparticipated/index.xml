@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>4. EventParticipated</title>
+    <title>EventParticipated</title>
     <link>http://localhost:1313/4-eventparticipated/index.html</link>
     <description>During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.&#xA;Event 1 Event Name: GenAI-powered App-DB Modernization workshop&#xA;Date &amp; Time: 09:00, August 13, 2025&#xA;Location: 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City&#xA;Role: Attendee</description>
     <generator>Hugo</generator>

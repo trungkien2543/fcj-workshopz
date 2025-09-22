@@ -1,7 +1,8 @@
 +++
-title = "1. Worklog"
+title = "Worklog"
 type = ""
 weight = 1
+pre = " <b> 1. </b> "
 +++
 
 Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:

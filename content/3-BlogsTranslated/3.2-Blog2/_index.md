@@ -1,7 +1,7 @@
 +++
 title = "Blog 2"
 type = ""
-weight = 1
+weight = 2
 pre = " <b> 3.2. </b> "
 +++
 
