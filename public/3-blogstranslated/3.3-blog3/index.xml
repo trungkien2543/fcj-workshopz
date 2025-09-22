@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog 3</title>
+    <link>http://localhost:1313/3-blogstranslated/3.3-blog3/index.html</link>
+    <description>Accelerating the next wave of generative AI startups Swami Sivasubramanian | 13/06/2024 | in AWS for Startups, Featured, Startup, Startup Spotlight | Permalink&#xA;Since day one, AWS has helped startups bring their ideas to life by democratizing access to the technology powering some of the largest enterprises around the world including Amazon. Each year since 2020, we have provided startups nearly $1 billion in AWS Promotional Credits. It’s no coincidence then that 80% of the world’s unicorns use AWS. I am lucky to have had a front row seat to the development of so many of these startups over my time at AWS—companies like Netflix, Wiz, and Airtasker. And I’m enthusiastic about the rapid pace at which startups are adopting generative artificial intelligence (AI) and how this technology is creating an entirely new generation of startups.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/3-blogstranslated/3.3-blog3/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

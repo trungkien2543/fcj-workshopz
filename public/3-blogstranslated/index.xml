@@ -21,5 +21,12 @@
       <guid>http://localhost:1313/3-blogstranslated/3.2-blog2/index.html</guid>
       <description>Tech-savvy savings: innovative ways to cut costs in your small businessn Henrique Trevisan, Jonathan Woods, and Vince Anderson | 23/4/2024 | in Best Practices, Permalink&#xA;Running a small business means making the most of every dollar while maintaining high-quality services. As your business grows and your cloud usage expands, you must find ways to efficiently manage technology resources to protect your bottom line. In today’s challenging economic environment, cost optimization has become a top priority for business owners who want to reduce expenses without sacrificing performance, security, or customer experience.</description>
     </item>
+    <item>
+      <title>Blog 3</title>
+      <link>http://localhost:1313/3-blogstranslated/3.3-blog3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/3-blogstranslated/3.3-blog3/index.html</guid>
+      <description>Đẩy nhanh làn sóng khởi nghiệp AI thế hệ tiếp theo Swami Sivasubramanian | 13/06/2024 | in AWS for Startups, Featured, Startup, Startup Spotlight | Permalink&#xA;Từ ngày đầu tiên, AWS đã giúp các công ty khởi nghiệp hiện thực hóa ý tưởng của họ bằng cách dân chủ hóa quyền truy cập tới chủ hóa quyền truy cập vào công nghệ đang hỗ trợ một số doanh nghiệp lớn nhất trên thế giới, bao gồm cả Amazon. Mỗi năm kể từ 2020, chúng tôi đã cung cấp cho các công ty khởi nghiệp gần 1 tỷ đô la tín dụng khuyến mãi AWS. Không có gì ngẫu nhiên khi 80% kỳ lân của thế giới sử dụng AWS. Tôi rất may mắn khi chứng kiến sự phát triển của các công ty khởi nghiệp trong suốt thời gian làm việc tại AWS - các công ty như Netflix, Wiz và Airtasker. Và tôi rát hào hứng với tốc độ nhanh chóng mà các công ty khởi nghiệp ứng dụng công nghệ trí tuệ nhân tạo (AI) và cách mà công nghệ này đang tạo ra một thế hệ khởi nghiệp hoàn toàn mới.</description>
+    </item>
   </channel>
 </rss>
