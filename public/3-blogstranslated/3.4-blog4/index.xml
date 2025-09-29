@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Blog 4</title>
+    <link>http://localhost:1313/3-blogstranslated/3.4-blog4/index.html</link>
+    <description>Scaling Cloudera’s development environment: Leveraging Amazon EKS, Karpenter, Bottlerocket, and Cilium for hybrid cloud Harpreet Virk and Padma Iyer | 26/09/2025 | in Advanced (300), Amazon Elastic Kubernetes Service, Best Practices, Containers, Graviton, Migration, Migration Acceleration Program (MAP) | Permalink |&#xA;This post is co-written with Shreelola Hegde,Sriharsha Devineni and Lee Watterworth from Cloudera.&#xA;Cloudera is a global leader in enterprise data management, analytics, and AI. The Cloudera platform enables organizations to manage, process, and analyze massive datasets, helping businesses across industries like finance, healthcare, manufacturing, and telecommunications accelerate AI/ML adoption and unlock real-time insights.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/3-blogstranslated/3.4-blog4/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

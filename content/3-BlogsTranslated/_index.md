@@ -13,3 +13,6 @@ Discover practical strategies to reduce your small business costs through smart 
 
 ## [Blog 3 - Tech-savvy savings: innovative ways to cut costs in your small business](3-blogstranslated/3.3-blog3/)
 Since day one, AWS has helped startups bring their ideas to life by democratizing access to the technology powering some of the largest enterprises around the world including Amazon. These startups have the ability to transform industries and shape the future, which is why today we announced a commitment of $230 million to accelerate the creation of generative AI applications by startups around the world. Read to learn how to apply to become a member of this global program.
+
+## [Blog 4 - Scaling Cloudera’s development environment: Leveraging Amazon EKS, Karpenter, Bottlerocket, and Cilium for hybrid cloud](3-blogstranslated/3.4-blog4/)
+This post is co-written with Shreelola Hegde,Sriharsha Devineni and Lee Watterworth from Cloudera. Cloudera is a global leader in enterprise data management, analytics, and AI. The Cloudera platform enables organizations to manage, process, and analyze massive datasets, helping businesses across industries like finance, healthcare, manufacturing, and telecommunications accelerate AI/ML adoption and unlock real-time insights. A […]

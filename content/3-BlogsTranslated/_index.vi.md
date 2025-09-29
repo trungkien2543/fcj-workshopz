@@ -13,3 +13,6 @@ Khám phá các chiến lược thiết thực để giảm chi phí cho doanh n
 
 ## [Blog 3 - Đẩy nhanh làn sóng khởi nghiệp AI thế hệ tiếp theo](3-blogstranslated/3.3-blog3/)
 Ngay từ những ngày đầu, AWS đã giúp các startup hiện thực hóa ý tưởng của mình bằng cách dân chủ hóa quyền truy cập vào công nghệ đang hỗ trợ một số doanh nghiệp lớn nhất thế giới, bao gồm cả Amazon. Các startup này có khả năng chuyển đổi ngành công nghiệp và định hình tương lai, đó là lý do tại sao hôm nay chúng tôi công bố cam kết tài trợ 230 triệu đô la để thúc đẩy việc tạo ra các ứng dụng AI tạo sinh bởi các startup trên toàn thế giới. Đọc để tìm hiểu cách đăng ký trở thành thành viên của chương trình toàn cầu này.
+
+## [Blog 4 - Mở rộng môi trường phát triển của Cloudera: Tận dụng Amazon EKS, Karpenter, Bottlerocket và Cilium cho mô hình Hybrid Cloud](3-blogstranslated/3.4-blog4/)
+Bài viết này được đồng sáng tác bởi Shreelola Hegde, Sriharsha Devineni và Lee Watterworth từ Cloudera. Cloudera là công ty hàng đầu thế giới về quản lý dữ liệu doanh nghiệp, phân tích và AI. Nền tảng Cloudera cho phép các tổ chức quản lý, xử lý và phân tích các tập dữ liệu khổng lồ, giúp các doanh nghiệp trong nhiều ngành như tài chính, chăm sóc sức khỏe, sản xuất, và viễn thông đẩy nhanh việc áp dụng AI/ML và mở khóa thông tin chi tiết theo thời gian thực.
