@@ -45,4 +45,40 @@ Chúng tôi tổng hợp các tính năng này trong Hình 1. Chúng tôi sử d
 
 ![Figure 1. Multi-Region security, identity, and compliance services](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png)
 
-*Figure 1. Multi-Region security, identity, and compliance services*
+*Hình 1. Multi-Region security, identity, and compliance services*
+
+## Xây dựng một mạng toàn cầu
+
+Với các tài nguyên cần đưa vào mạng ảo trong các vùng khác nhau, [Amazon Virtual Cloud (Amazon VPC)](http://aws.amazon.com/vpc) cho phép [định tuyến riêng biệt giữa các vùng và tài khoản với VPC Peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html). Những tài nguyên này có thể giao tiếp bằng cách dùng địa chỉ IP private và không yêu cầu một internet gateway, VPN, hoặc các thiết bị mạng riêng biệt. Tính năng này hoạt động tốt trong các mạng nhỏ vì chỉ yêu cầu một vài kết nối peering. Tuy nhiên, định tuyến chuyển tiếp không cho phép điều đó, và vì số lượng đám mây riêng ảo peering (VPCs) tăng lên, mạng kết nối lưới trở lên khó để quản lý và sửa lỗi.
+
+[AWS Transit Gateway](https://aws.amazon.com/transit-gateway/) làm giảm các khó khăn bằng cách tạo một hub định tuyến chuyển tiếp để kết nối VPCs và mạng on-premises của bạn. Khả năng định tuyến của Transit Gateway có thể mở rộng sang các Regions khác với [Transit Gateway inter-Region peering](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-peering.html) dể tạo ra mạng lưới riêng tư, phân tán cho các tài nguyên của bạn.
+
+Việc xây dựng một cách đáng tin cậy, tiết kiệm chi phí để định tuyến các người dùng đến các ứng dụng Internet phân tán yêu cầu Domain Name System (DNS) có khả năng sẵn sàng cao và có thể mở rộng. [Amazon Route 53]() là dịch vụ có thể đáp ứng yêu cầu này.
+
+Route 53 bao gồm nhiều chính sách cho việc định tuyến. Ví dụ, bạn có thể định tuyến một yêu cầu tới một bản ghi có độ trễ mạng thấp nhất, hoặc gửi người dùng ở một vị trí địa lý cụ thể đến điểm cuối ứng dụng gần nhất. Đối với khôi phục sau thảm họa (Disaster Recovery – DR), Route 53 Application Recovery Controller (Route 53 ARC) cung cấp giải pháp chuyển đổi dự phòng toàn diện với ít phụ thuộc nhất. Các chính sách định tuyến, kiểm tra an toàn, và kiểm tra mức sẵn sàng của Route 53 ARC giúp bạn chuyển đổi dự phòng giữa các Region, AZs và on-premises một cách đáng tin cậy.
+
+[Amazon CloundFront](http://aws.amazon.com/cloudfront), mạng phân phối nội dung toàn cầu (CDN), được xây dựng trên hơn 300 point of presence (PoP) trải rộng trên khắp thế giới. Các ứng dụng có nhiều nguồn gốc dữ liệu, như là giữa các Region, có thể sử dụng [CloudFront origin failover](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html) để có thể chuyển đổi dự phòng tự động tới origin dự phòng khi cái chính không còn khả dụng. Khả năng của CloudFront không chỉ dừng ở việc phân phối nội dung mà còn có khả năng chạy xử lý ở edge. [CloudFront Functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html), bạn có thể dễ dàng chạy mã JavaScript nhẹ, và [AWS Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html), bạn có thể chạy các hàm Node.js và Python gần hơn với người dùng của ứng dụng, giúp cải thiện hiệu năng và giảm độ trễ. Bằng cách đặt xử lý tại edge, bạn giảm tải cho origin và mang lại phản hồi nhanh hơn cho người dùng toàn cầu.
+
+Dựa trên mạng lưới toàn cầu của AWS, [AWS Global Accelerator](http://aws.amazon.com/global-accelerator) cung cấp hai địa chỉ IP anycast tĩnh để làm điểm vào duy nhất cho các ứng dụng Internet-facing. Bạn có thể thêm hoặc gỡ bỏ origin mà không làm gián đoạn, trong khi hệ thống tự động định tuyến đến endpoint Regional khỏe mạnh gần nhất. Nếu phát hiện sự cố, Global Accelerator sẽ tự động chuyển hướng lưu lượng đến endpoint khả dụng trong vài giây mà không cần thay đổi IP tĩnh.
+
+Hình 2 sử dụng một chính sách định tuyến dựa trên độ trễ của Route53 để định tuyến các người dụng đển endpoint nhanh nhất, CloudFront được sử dụng để phục vụ các nội dung tĩnh như video, hình ảnh và Transit Gateways tạo một mạng riêng toàn cầu để các thiết bị của bạn có thể giao tiếp an toàn giữa các vùng.
+
+![figure2](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png)
+
+*Hình 2. AWS VPC connectivity and content delivery*
+
+## Xây dựng và quản lý lớp tính toán (compute layer)
+
+Mặc dù các instance [Amazon Elastic Compute Cloud (Amazon EC2)](http://aws.amazon.com/ec2) và các volume [Amazon Elastic Block Store (Amazon EBS)](http://aws.amazon.com/ebs) liên quan chỉ nằm trong một Availability Zone (AZ), [Amazon Data Lifecycle Manager](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html) có thể tự động hóa quá trình tạo và sao chép snapshot của EBS qua nhiều Region. Điều này giúp nâng cao chiến lược khôi phục sau thảm họa (DR) bằng cách cung cấp một tùy chọn sao lưu “cold” dễ dàng cho các EBS volume. Nếu bạn cần sao lưu nhiều hơn chỉ EBS volume, [AWS Backup](https://aws.amazon.com/backup/) cung cấp một nơi tập trung để thực hiện việc này trên nhiều dịch vụ, và sẽ được trình bày chi tiết trong [phần 2](https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-2-data-and-replication/).
+
+Một instance Amazon EC2 được tạo dựa trên một [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html). Một AMI xác định cấu hình của instance, chẳng hạn như: lưu trữ, quyền khởi chạy, và ánh xạ thiết bị. Khi cần tạo và phát hành một hình ảnh chuẩn mới, [EC2 Image Builder](https://aws.amazon.com/image-builder/) giúp đơn giản hóa việc xây dựng, kiểm thử và triển khai các AMI mới. Nó cũng hỗ trợ sao chép AMI sang các Region khác, không cần phải sao chép thủ công từ Region nguồn sang Region đích.
+
+Các ứng dụng dựa trên microservices sử dụng container được hưởng lợi từ thời gian khởi động nhanh hơn. [Amazon Elastic Container Registry (Amazon ECR)](http://aws.amazon.com/ecr/) giúp đảm bảo điều này xảy ra nhất quán giữa các Region thông qua [sao chép image private](https://aws.amazon.com/blogs/containers/cross-region-replication-in-amazon-ecr-has-landed/) ở cấp registry. Một registry private ECR có thể được cấu hình để sao chép giữa các Region hoặc giữa các tài khoản, đảm bảo các image sẵn sàng ở Region phụ khi cần.
+
+Khi kiến trúc mở rộng ra nhiều Region, việc theo dõi nơi các tài nguyên được cung cấp có thể trở nên khó khăn. [Amazon EC2 Global View](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#global-view) giúp giảm bớt khó khăn này bằng cách cung cấp một bảng điều khiển tập trung, hiển thị các tài nguyên EC2 như instances, VPC, subnet, security group, và volumes trong tất cả các Region đang hoạt động.
+
+Chúng tôi tổng hợp các tính năng của compute layer trong Hình 3 bằng cách sử dụng EC2 Image Builder để sao chép golden AMI mới nhất của chúng tôi sang các Region khác để triển khai. Chúng tôi cũng sao lưu mỗi EBS volume trong 3 ngày và sao chép chúng qua các Region bằng Data Lifecycle Manager.
+
+![Figure 3](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png)
+
+*Hình 3. AMI and EBS snapshot copy across Regions*
