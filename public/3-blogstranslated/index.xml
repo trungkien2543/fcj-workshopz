@@ -8,13 +8,6 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/3-blogstranslated/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>3.5 Blog5</title>
-      <link>http://localhost:1313/3-blogstranslated/3.5-blog5/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/3-blogstranslated/3.5-blog5/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
       <title>Blog 1</title>
       <link>http://localhost:1313/3-blogstranslated/3.1-blog1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -41,6 +34,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/3-blogstranslated/3.4-blog4/index.html</guid>
       <description>Scaling Cloudera’s development environment: Leveraging Amazon EKS, Karpenter, Bottlerocket, and Cilium for hybrid cloud Harpreet Virk and Padma Iyer | 26/09/2025 | in Advanced (300), Amazon Elastic Kubernetes Service, Best Practices, Containers, Graviton, Migration, Migration Acceleration Program (MAP) | Permalink |&#xA;This post is co-written with Shreelola Hegde,Sriharsha Devineni and Lee Watterworth from Cloudera.&#xA;Cloudera is a global leader in enterprise data management, analytics, and AI. The Cloudera platform enables organizations to manage, process, and analyze massive datasets, helping businesses across industries like finance, healthcare, manufacturing, and telecommunications accelerate AI/ML adoption and unlock real-time insights.</description>
+    </item>
+    <item>
+      <title> Blog5</title>
+      <link>http://localhost:1313/3-blogstranslated/3.5-blog5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/3-blogstranslated/3.5-blog5/index.html</guid>
+      <description>This is a new chapter.</description>
     </item>
   </channel>
 </rss>
