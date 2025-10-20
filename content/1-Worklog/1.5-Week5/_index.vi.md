@@ -6,7 +6,8 @@ pre = "<b> 1.5. </b>"
 
 ### Mục tiêu tuần 5:
 
-Thực xong các lab còn lại của module 5
+* Nghiên cứu thêm về Dịch vụ bảo mật trên AWS
+* Thực xong các lab còn lại của module 5
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc| Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |

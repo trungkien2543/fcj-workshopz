@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog 2</title>
-    <link>http://localhost:1313/3-blogstranslated/3.2-blog2/index.html</link>
+    <link>http://localhost:54211/3-blogstranslated/3.2-blog2/index.html</link>
     <description>Tech-savvy savings: innovative ways to cut costs in your small businessn Henrique Trevisan, Jonathan Woods, and Vince Anderson | 23/4/2024 | in Best Practices, Permalink&#xA;Running a small business means making the most of every dollar while maintaining high-quality services. As your business grows and your cloud usage expands, you must find ways to efficiently manage technology resources to protect your bottom line. In today’s challenging economic environment, cost optimization has become a top priority for business owners who want to reduce expenses without sacrificing performance, security, or customer experience.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/3-blogstranslated/3.2-blog2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54211/3-blogstranslated/3.2-blog2/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
