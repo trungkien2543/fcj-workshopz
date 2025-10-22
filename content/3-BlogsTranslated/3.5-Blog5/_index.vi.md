@@ -82,3 +82,45 @@ Chúng tôi tổng hợp các tính năng của compute layer trong Hình 3 bằ
 ![Figure 3](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png)
 
 *Hình 3. AMI and EBS snapshot copy across Regions*
+
+## Đưa tất cả lại với nhau
+
+Ở cuối mỗi phần của loạt bài blog này, chúng tôi sẽ xây dựng một ứng dụng mẫu dựa trên các dịch vụ đã đề cập. Điều này cho thấy cách bạn có thể kết hợp các dịch vụ để xây dựng một ứng dụng đa Vùng (multi-Region) với AWS. Chúng tôi không sử dụng tất cả dịch vụ được nhắc đến, chỉ chọn những dịch vụ phù hợp với trường hợp sử dụng.
+
+Chúng tôi xây dựng ví dụ này để mở rộng đến phạm vi toàn cầu. Ứng dụng yêu cầu tính sẵn sàng cao giữa các Vùng, và ưu tiên hiệu năng hơn là tính nhất quán tuyệt đối. Chúng tôi đã chọn các dịch vụ sau (trong bài viết này) để đạt được mục tiêu:
+
+- Route 53 với chính sách định tuyến theo độ trễ (latency routing) để đưa người dùng đến vùng triển khai có độ trễ thấp nhất.
+
+- CloudFront được thiết lập để phân phối nội dung tĩnh. Region 1 là nguồn gốc chính, nhưng chúng tôi đã cấu hình dự phòng nguồn gốc (origin failover) sang Region 2 trong trường hợp có sự cố.
+
+- Ứng dụng phụ thuộc vào một số API của bên thứ ba, vì vậy Secrets Manager với khả năng sao chép đa Vùng đã được thiết lập để lưu trữ thông tin khóa API nhạy cảm.
+
+- CloudTrail logs được tập trung tại Region 1 để dễ dàng phân tích và kiểm toán.
+
+- Security Hub tại Region 1 được chọn làm nơi tập hợp các phát hiện từ tất cả các Vùng.
+
+- Đây là ứng dụng dựa trên container, chúng tôi dựa vào Amazon ECR replication tại mỗi vị trí để nhanh chóng tải về các image mới nhất tại chỗ.
+
+- Để liên lạc qua IP riêng giữa các Vùng, một Transit Gateway được thiết lập tại mỗi Vùng với kết nối liên Vùng. VPC peering cũng có thể hoạt động, nhưng vì dự kiến mở rộng ra nhiều Vùng hơn trong tương lai nên chúng tôi chọn Transit Gateway như giải pháp lâu dài.
+
+- IAM được dùng để cấp quyền quản lý tài nguyên AWS.
+
+![Figure 4](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png)
+
+*Hình 4. Xây dựng ứng dụng với các dịch vụ AWS đa Vùng, sử dụng những dịch vụ đã đề cập trong Phần 1*
+
+### Tóm tắt
+
+Khi thiết kế một ứng dụng đa Vùng (multi-Region), việc xây dựng một nền tảng vững chắc là vô cùng quan trọng. Nền tảng này sẽ giúp bạn phát triển ứng dụng nhanh chóng theo cách an toàn, đáng tin cậy và linh hoạt. Nhiều dịch vụ AWS đã tích hợp sẵn các tính năng hỗ trợ bạn xây dựng kiến trúc đa Vùng.
+
+Tùy vào lý do mở rộng ra ngoài một Vùng duy nhất mà kiến trúc của bạn sẽ khác nhau. Trong bài viết này, chúng tôi đã đề cập đến các tính năng cụ thể của những dịch vụ AWS về bảo mật, mạng và tính toán (compute) — với khả năng tích hợp sẵn để giảm bớt khối lượng công việc nặng nề và lặp lại.
+
+Trong các bài viết tiếp theo, chúng tôi sẽ tiếp tục đề cập đến các dịch vụ về dữ liệu, ứng dụng và quản lý.
+
+**Sẵn sàng để bắt đầu?**
+Chúng tôi đã chọn một số [AWS Solutions](https://aws.amazon.com/solutions/) và [AWS Blogs](https://aws.amazon.com/blogs/?awsf.blog-master-category=*all&awsf.blog-master-learning-levels=*all&awsf.blog-master-industry=*all&awsf.blog-master-analytics-products=*all&awsf.blog-master-artificial-intelligence=*all&awsf.blog-master-aws-cloud-financial-management=*all&awsf.blog-master-business-applications=*all&awsf.blog-master-compute=*all&awsf.blog-master-customer-enablement=*all&awsf.blog-master-customer-engagement=*all&awsf.blog-master-database=*all&awsf.blog-master-developer-tools=*all&awsf.blog-master-devops=*all&awsf.blog-master-end-user-computing=*all&awsf.blog-master-mobile=*all&awsf.blog-master-iot=*all&awsf.blog-master-management-governance=*all&awsf.blog-master-media-services=*all&awsf.blog-master-migration-transfer=*all&awsf.blog-master-migration-solutions=*all&awsf.blog-master-networking-content-delivery=*all&awsf.blog-master-programming-language=*all&awsf.blog-master-sector=*all&awsf.blog-master-security=*all&awsf.blog-master-storage=*all&filtered-posts.q=multi-region&filtered-posts.q_operator=AND) để hỗ trợ bạn!
+
+**Bạn đang tìm thêm nội dung về kiến trúc?**
+ [AWS Architecture Center](https://aws.amazon.com/architecture/) cung cấp sơ đồ kiến trúc tham chiếu, các giải pháp kiến trúc đã được kiểm chứng, những thực tiễn tốt nhất theo Well-Architected, các mẫu (patterns), biểu tượng và nhiều hơn nữa!
+
+ Link bài viết gốc: (https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/)

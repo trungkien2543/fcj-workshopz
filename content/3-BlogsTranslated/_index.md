@@ -16,3 +16,9 @@ Since day one, AWS has helped startups bring their ideas to life by democratizin
 
 ## [Blog 4 - Scaling Cloudera’s development environment: Leveraging Amazon EKS, Karpenter, Bottlerocket, and Cilium for hybrid cloud](3-blogstranslated/3.4-blog4/)
 This post is co-written with Shreelola Hegde,Sriharsha Devineni and Lee Watterworth from Cloudera. Cloudera is a global leader in enterprise data management, analytics, and AI. The Cloudera platform enables organizations to manage, process, and analyze massive datasets, helping businesses across industries like finance, healthcare, manufacturing, and telecommunications accelerate AI/ML adoption and unlock real-time insights. A […]
+
+## [Blog 5 - ](3-blogstranslated/3.5-blog5/)
+
+
+## [Blog 6 - GitOps continuous delivery with ArgoCD and EKS using natural language](3-blogstranslated/3.6-blog6/)
+ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.

@@ -42,5 +42,26 @@
       <guid>http://localhost:1313/vi/3-blogstranslated/3.5-blog5/index.html</guid>
       <description>Tạo ứng dụng đa vùng với dịch cụ AWS - Phần 1, Tính toán, Mạng và Bảo mật Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink&#xA;Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và quản lý một kiến trúc đa vùng nhưng việc xác định những khả năng đó trên hơn 200 dịch vụ có thể rất khó khăn.</description>
     </item>
+    <item>
+      <title> Blog 6</title>
+      <link>http://localhost:1313/vi/3-blogstranslated/3.6-blog6/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vi/3-blogstranslated/3.6-blog6/index.html</guid>
+      <description>Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên Jagdish Komakula, Aditya Ambati, và Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink&#xA;Giới thiệu ArgoCD là một bộ công cụ GitOps hàng đầu giúp các nhóm quản lý việc triển khai Kubernets một cách khai báo, sử dụng Git là nguồn thông tin đáng tin cậy duy nhất. Bộ tính năng mạnh mẽ của nó bao gồm hệ thống đồng bộ tự động, hỗ trợ khôi phục, phát hiện sai lệch, chiến lược triển khai nâng cao, TÍch hợp RBAC, và hỗ trợ đa cụm (multi-cluster), khiến nó trẻ thành giải pháp được ưa chuộng cho việc triển khai ứng dụng trên Kubernetes. Tuy nhiên, khi các tổ chức mở rộng quy mô, một vài điểm khó khăn và thách thử vận hành bắt đầu xuất hiện.</description>
+    </item>
+    <item>
+      <title> Blog 7</title>
+      <link>http://localhost:1313/vi/3-blogstranslated/3.7-blog7/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vi/3-blogstranslated/3.7-blog7/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
+    <item>
+      <title> Blog 8</title>
+      <link>http://localhost:1313/vi/3-blogstranslated/3.8-blog8/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vi/3-blogstranslated/3.8-blog8/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
   </channel>
 </rss>

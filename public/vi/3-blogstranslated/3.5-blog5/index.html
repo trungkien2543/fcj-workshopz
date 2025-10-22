@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54211&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.150.0">
@@ -12,7 +12,7 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
     <meta name="twitter:title" content=" Blog 5">
     <meta name="twitter:description" content="Tạo ứng dụng đa vùng với dịch cụ AWS - Phần 1, Tính toán, Mạng và Bảo mật Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink
 Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và quản lý một kiến trúc đa vùng nhưng việc xác định những khả năng đó trên hơn 200 dịch vụ có thể rất khó khăn.">
-    <meta property="og:url" content="http://localhost:54211/vi/3-blogstranslated/3.5-blog5/index.html">
+    <meta property="og:url" content="http://localhost:1313/vi/3-blogstranslated/3.5-blog5/index.html">
     <meta property="og:title" content=" Blog 5">
     <meta property="og:description" content="Tạo ứng dụng đa vùng với dịch cụ AWS - Phần 1, Tính toán, Mạng và Bảo mật Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink
 Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và quản lý một kiến trúc đa vùng nhưng việc xác định những khả năng đó trên hơn 200 dịch vụ có thể rất khó khăn.">
@@ -21,33 +21,33 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
     <meta itemprop="name" content=" Blog 5">
     <meta itemprop="description" content="Tạo ứng dụng đa vùng với dịch cụ AWS - Phần 1, Tính toán, Mạng và Bảo mật Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink
 Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và quản lý một kiến trúc đa vùng nhưng việc xác định những khả năng đó trên hơn 200 dịch vụ có thể rất khó khăn.">
-    <meta itemprop="wordCount" content="2451">
+    <meta itemprop="wordCount" content="3065">
     <title> Blog 5</title>
-    <link href="http://localhost:54211/vi/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="x-default">
-    <link href="http://localhost:54211/vi/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="vi">
-    <link href="http://localhost:54211/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="en">
+    <link href="http://localhost:1313/vi/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="x-default">
+    <link href="http://localhost:1313/vi/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="vi">
+    <link href="http://localhost:1313/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="en">
     <link href="/vi/3-blogstranslated/3.5-blog5/index.xml" rel="alternate" type="application/rss+xml" title=" Blog 5">
-    <link href="/images/logo.png?1760932927" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1760932927" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1760932927" defer></script>
-    <script src="/js/search-lunr.js?1760932927" defer></script>
-    <script src="/js/search.js?1760932927" defer></script>
+    <link href="/images/logo.png?1761119601" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1761119601" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1761119601" defer></script>
+    <script src="/js/search-lunr.js?1761119601" defer></script>
+    <script src="/js/search.js?1761119601" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.vi.js?1760932927";
+      window.relearn.index_js_url="/searchindex.vi.js?1761119601";
     </script>
-    <script src="/js/lunr/lunr.min.js?1760932927" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1760932927" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1760932927" defer></script>
-    <script src="/js/lunr/lunr.vi.min.js?1760932927" defer></script>
+    <script src="/js/lunr/lunr.min.js?1761119601" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1761119601" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1761119601" defer></script>
+    <script src="/js/lunr/lunr.vi.min.js?1761119601" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['vi'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760932927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760932927" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1760932927" rel="stylesheet">
-    <link href="/css/theme.css?1760932927" rel="stylesheet">
-    <link href="/css/format-html.css?1760932927" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761119601" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761119601" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761119601" rel="stylesheet">
+    <link href="/css/theme.css?1761119601" rel="stylesheet">
+    <link href="/css/format-html.css?1761119601" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -55,7 +55,7 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
       window.relearn.path='\/vi\/3-blogstranslated\/3.5-blog5\/index.html';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:54211';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -101,7 +101,7 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/css/custom.css?1760932927" rel="stylesheet">
+    <link href="/css/custom.css?1761119601" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/vi/3-blogstranslated/3.5-blog5/index.html">
     <div id="R-body" class="default-animation">
@@ -123,6 +123,11 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
     <li><a href="#kiểm-toán-và-khả-năng-quan-sát-trên-khắp-các-khu-vực">Kiểm toán và khả năng quan sát trên khắp các khu vực</a></li>
     <li><a href="#xây-dựng-một-mạng-toàn-cầu">Xây dựng một mạng toàn cầu</a></li>
     <li><a href="#xây-dựng-và-quản-lý-lớp-tính-toán-compute-layer">Xây dựng và quản lý lớp tính toán (compute layer)</a></li>
+    <li><a href="#đưa-tất-cả-lại-với-nhau">Đưa tất cả lại với nhau</a>
+      <ul>
+        <li><a href="#tóm-tắt">Tóm tắt</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </div>
@@ -134,7 +139,7 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/vi/3-blogstranslated/3.4-blog4/index.html" title="Blog 4 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/vi/4-eventparticipated/index.html" title="Các sự kiện đã tham gia (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/vi/3-blogstranslated/3.6-blog6/index.html" title="Blog 6 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -178,8 +183,8 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
 <p>Một phương pháp tốt nhất là cấu hình <a href="http://aws.amazon.com/cloudtrail" rel="external" target="_blank">AWS CloudTrail</a> để ghi lại tất cả các hoạt động API liên quan trên tài khoản của bạn phục vụ mục đích kiểm toán. Khi sử dụng nhiều vùng hoặc nhiều tài khoản, các log của CloudTrail nên được tập trung vào một Amazon S3 bucket duy nhất để dễ dàng phân tích. Để tránh việc sử dụng sai mục đích, các log tập trung này nên được xử lý nghiêm ngặt hơn, chỉ cấp quyền truy cập hạn chế cho các hệ thống và nhân sự quan trọng.</p>
 <p>Để quản lý hiệu quả các kết quả từ <a href="https://aws.amazon.com/security-hub" rel="external" target="_blank">AWS Security Hub</a>, bạn có thể <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation-enable.html" rel="external" target="_blank">tập hợp và liên kết các kết quả từ nhiều vị trí về một vùng (Region) duy nhất.</a> Đây là cách đơn giản để tạo góc nhìn tập trung về các kết quả của Security Hub trên nhiều tài khoản và vùng. Khi thiết lập xong, các kết quả sẽ được đồng bộ liên tục giữa các vùng, giúp bạn cập nhật thông tin toàn cầu ngay trên một bảng điều khiển duy nhất.</p>
 <p>Chúng tôi tổng hợp các tính năng này trong Hình 1. Chúng tôi sử dụng IAM để cấp quyền truy cập chi tiết đến các dịch vụ và tài nguyên AWS, Directory Service for Microsoft AD để xác thực người dùng trên các ứng dụng Microsoft, và Secrets Manager để lưu trữ thông tin nhạy cảm như mật khẩu cơ sở dữ liệu. Dữ liệu của chúng tôi, di chuyển tự do giữa các vùng (Regions), được mã hóa bằng KMS multi-Region keys, và tất cả các truy cập API của AWS đều được ghi lại bởi CloudTrail và tập trung vào một S3 bucket trung tâm, chỉ nhóm bảo mật của chúng tôi mới có quyền truy cập.</p>
-<p><a href="#R-image-137fcb3a93a394400ae0849b8e6047ab" class="lightbox-link"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-137fcb3a93a394400ae0849b8e6047ab"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png"></a></p>
+<p><a href="#R-image-04e4adb819555333a6ef7514628d81d2" class="lightbox-link"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-04e4adb819555333a6ef7514628d81d2"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png"></a></p>
 <p><em>Hình 1. Multi-Region security, identity, and compliance services</em></p>
 <h2 id="xây-dựng-một-mạng-toàn-cầu">Xây dựng một mạng toàn cầu</h2>
 <p>Với các tài nguyên cần đưa vào mạng ảo trong các vùng khác nhau, <a href="http://aws.amazon.com/vpc" rel="external" target="_blank">Amazon Virtual Cloud (Amazon VPC)</a> cho phép <a href="https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html" rel="external" target="_blank">định tuyến riêng biệt giữa các vùng và tài khoản với VPC Peering</a>. Những tài nguyên này có thể giao tiếp bằng cách dùng địa chỉ IP private và không yêu cầu một internet gateway, VPN, hoặc các thiết bị mạng riêng biệt. Tính năng này hoạt động tốt trong các mạng nhỏ vì chỉ yêu cầu một vài kết nối peering. Tuy nhiên, định tuyến chuyển tiếp không cho phép điều đó, và vì số lượng đám mây riêng ảo peering (VPCs) tăng lên, mạng kết nối lưới trở lên khó để quản lý và sửa lỗi.</p>
@@ -189,8 +194,8 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
 <p><a href="http://aws.amazon.com/cloudfront" rel="external" target="_blank">Amazon CloundFront</a>, mạng phân phối nội dung toàn cầu (CDN), được xây dựng trên hơn 300 point of presence (PoP) trải rộng trên khắp thế giới. Các ứng dụng có nhiều nguồn gốc dữ liệu, như là giữa các Region, có thể sử dụng <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html" rel="external" target="_blank">CloudFront origin failover</a> để có thể chuyển đổi dự phòng tự động tới origin dự phòng khi cái chính không còn khả dụng. Khả năng của CloudFront không chỉ dừng ở việc phân phối nội dung mà còn có khả năng chạy xử lý ở edge. <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html" rel="external" target="_blank">CloudFront Functions</a>, bạn có thể dễ dàng chạy mã JavaScript nhẹ, và <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html" rel="external" target="_blank">AWS Lambda@Edge</a>, bạn có thể chạy các hàm Node.js và Python gần hơn với người dùng của ứng dụng, giúp cải thiện hiệu năng và giảm độ trễ. Bằng cách đặt xử lý tại edge, bạn giảm tải cho origin và mang lại phản hồi nhanh hơn cho người dùng toàn cầu.</p>
 <p>Dựa trên mạng lưới toàn cầu của AWS, <a href="http://aws.amazon.com/global-accelerator" rel="external" target="_blank">AWS Global Accelerator</a> cung cấp hai địa chỉ IP anycast tĩnh để làm điểm vào duy nhất cho các ứng dụng Internet-facing. Bạn có thể thêm hoặc gỡ bỏ origin mà không làm gián đoạn, trong khi hệ thống tự động định tuyến đến endpoint Regional khỏe mạnh gần nhất. Nếu phát hiện sự cố, Global Accelerator sẽ tự động chuyển hướng lưu lượng đến endpoint khả dụng trong vài giây mà không cần thay đổi IP tĩnh.</p>
 <p>Hình 2 sử dụng một chính sách định tuyến dựa trên độ trễ của Route53 để định tuyến các người dụng đển endpoint nhanh nhất, CloudFront được sử dụng để phục vụ các nội dung tĩnh như video, hình ảnh và Transit Gateways tạo một mạng riêng toàn cầu để các thiết bị của bạn có thể giao tiếp an toàn giữa các vùng.</p>
-<p><a href="#R-image-d1d457b47fb5588e92880e250c654907" class="lightbox-link"><img alt="figure2" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d1d457b47fb5588e92880e250c654907"><img alt="figure2" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png"></a></p>
+<p><a href="#R-image-dba84f2efa79734c76b4aa7c7a84c065" class="lightbox-link"><img alt="figure2" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dba84f2efa79734c76b4aa7c7a84c065"><img alt="figure2" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png"></a></p>
 <p><em>Hình 2. AWS VPC connectivity and content delivery</em></p>
 <h2 id="xây-dựng-và-quản-lý-lớp-tính-toán-compute-layer">Xây dựng và quản lý lớp tính toán (compute layer)</h2>
 <p>Mặc dù các instance <a href="http://aws.amazon.com/ec2" rel="external" target="_blank">Amazon Elastic Compute Cloud (Amazon EC2)</a> và các volume <a href="http://aws.amazon.com/ebs" rel="external" target="_blank">Amazon Elastic Block Store (Amazon EBS)</a> liên quan chỉ nằm trong một Availability Zone (AZ), <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html" rel="external" target="_blank">Amazon Data Lifecycle Manager</a> có thể tự động hóa quá trình tạo và sao chép snapshot của EBS qua nhiều Region. Điều này giúp nâng cao chiến lược khôi phục sau thảm họa (DR) bằng cách cung cấp một tùy chọn sao lưu “cold” dễ dàng cho các EBS volume. Nếu bạn cần sao lưu nhiều hơn chỉ EBS volume, <a href="https://aws.amazon.com/backup/" rel="external" target="_blank">AWS Backup</a> cung cấp một nơi tập trung để thực hiện việc này trên nhiều dịch vụ, và sẽ được trình bày chi tiết trong <a href="https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-2-data-and-replication/" rel="external" target="_blank">phần 2</a>.</p>
@@ -198,9 +203,50 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
 <p>Các ứng dụng dựa trên microservices sử dụng container được hưởng lợi từ thời gian khởi động nhanh hơn. <a href="http://aws.amazon.com/ecr/" rel="external" target="_blank">Amazon Elastic Container Registry (Amazon ECR)</a> giúp đảm bảo điều này xảy ra nhất quán giữa các Region thông qua <a href="https://aws.amazon.com/blogs/containers/cross-region-replication-in-amazon-ecr-has-landed/" rel="external" target="_blank">sao chép image private</a> ở cấp registry. Một registry private ECR có thể được cấu hình để sao chép giữa các Region hoặc giữa các tài khoản, đảm bảo các image sẵn sàng ở Region phụ khi cần.</p>
 <p>Khi kiến trúc mở rộng ra nhiều Region, việc theo dõi nơi các tài nguyên được cung cấp có thể trở nên khó khăn. <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#global-view" rel="external" target="_blank">Amazon EC2 Global View</a> giúp giảm bớt khó khăn này bằng cách cung cấp một bảng điều khiển tập trung, hiển thị các tài nguyên EC2 như instances, VPC, subnet, security group, và volumes trong tất cả các Region đang hoạt động.</p>
 <p>Chúng tôi tổng hợp các tính năng của compute layer trong Hình 3 bằng cách sử dụng EC2 Image Builder để sao chép golden AMI mới nhất của chúng tôi sang các Region khác để triển khai. Chúng tôi cũng sao lưu mỗi EBS volume trong 3 ngày và sao chép chúng qua các Region bằng Data Lifecycle Manager.</p>
-<p><a href="#R-image-4081b70443b0ed5878938dc3d7be20f4" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4081b70443b0ed5878938dc3d7be20f4"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png"></a></p>
+<p><a href="#R-image-6ea8748f81789de838b3545c5fe8884d" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6ea8748f81789de838b3545c5fe8884d"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png"></a></p>
 <p><em>Hình 3. AMI and EBS snapshot copy across Regions</em></p>
+<h2 id="đưa-tất-cả-lại-với-nhau">Đưa tất cả lại với nhau</h2>
+<p>Ở cuối mỗi phần của loạt bài blog này, chúng tôi sẽ xây dựng một ứng dụng mẫu dựa trên các dịch vụ đã đề cập. Điều này cho thấy cách bạn có thể kết hợp các dịch vụ để xây dựng một ứng dụng đa Vùng (multi-Region) với AWS. Chúng tôi không sử dụng tất cả dịch vụ được nhắc đến, chỉ chọn những dịch vụ phù hợp với trường hợp sử dụng.</p>
+<p>Chúng tôi xây dựng ví dụ này để mở rộng đến phạm vi toàn cầu. Ứng dụng yêu cầu tính sẵn sàng cao giữa các Vùng, và ưu tiên hiệu năng hơn là tính nhất quán tuyệt đối. Chúng tôi đã chọn các dịch vụ sau (trong bài viết này) để đạt được mục tiêu:</p>
+<ul>
+<li>
+<p>Route 53 với chính sách định tuyến theo độ trễ (latency routing) để đưa người dùng đến vùng triển khai có độ trễ thấp nhất.</p>
+</li>
+<li>
+<p>CloudFront được thiết lập để phân phối nội dung tĩnh. Region 1 là nguồn gốc chính, nhưng chúng tôi đã cấu hình dự phòng nguồn gốc (origin failover) sang Region 2 trong trường hợp có sự cố.</p>
+</li>
+<li>
+<p>Ứng dụng phụ thuộc vào một số API của bên thứ ba, vì vậy Secrets Manager với khả năng sao chép đa Vùng đã được thiết lập để lưu trữ thông tin khóa API nhạy cảm.</p>
+</li>
+<li>
+<p>CloudTrail logs được tập trung tại Region 1 để dễ dàng phân tích và kiểm toán.</p>
+</li>
+<li>
+<p>Security Hub tại Region 1 được chọn làm nơi tập hợp các phát hiện từ tất cả các Vùng.</p>
+</li>
+<li>
+<p>Đây là ứng dụng dựa trên container, chúng tôi dựa vào Amazon ECR replication tại mỗi vị trí để nhanh chóng tải về các image mới nhất tại chỗ.</p>
+</li>
+<li>
+<p>Để liên lạc qua IP riêng giữa các Vùng, một Transit Gateway được thiết lập tại mỗi Vùng với kết nối liên Vùng. VPC peering cũng có thể hoạt động, nhưng vì dự kiến mở rộng ra nhiều Vùng hơn trong tương lai nên chúng tôi chọn Transit Gateway như giải pháp lâu dài.</p>
+</li>
+<li>
+<p>IAM được dùng để cấp quyền quản lý tài nguyên AWS.</p>
+</li>
+</ul>
+<p><a href="#R-image-57f1fddad89b6b4d574372fa85f4e6cf" class="lightbox-link"><img alt="Figure 4" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-57f1fddad89b6b4d574372fa85f4e6cf"><img alt="Figure 4" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png"></a></p>
+<p><em>Hình 4. Xây dựng ứng dụng với các dịch vụ AWS đa Vùng, sử dụng những dịch vụ đã đề cập trong Phần 1</em></p>
+<h3 id="tóm-tắt">Tóm tắt</h3>
+<p>Khi thiết kế một ứng dụng đa Vùng (multi-Region), việc xây dựng một nền tảng vững chắc là vô cùng quan trọng. Nền tảng này sẽ giúp bạn phát triển ứng dụng nhanh chóng theo cách an toàn, đáng tin cậy và linh hoạt. Nhiều dịch vụ AWS đã tích hợp sẵn các tính năng hỗ trợ bạn xây dựng kiến trúc đa Vùng.</p>
+<p>Tùy vào lý do mở rộng ra ngoài một Vùng duy nhất mà kiến trúc của bạn sẽ khác nhau. Trong bài viết này, chúng tôi đã đề cập đến các tính năng cụ thể của những dịch vụ AWS về bảo mật, mạng và tính toán (compute) — với khả năng tích hợp sẵn để giảm bớt khối lượng công việc nặng nề và lặp lại.</p>
+<p>Trong các bài viết tiếp theo, chúng tôi sẽ tiếp tục đề cập đến các dịch vụ về dữ liệu, ứng dụng và quản lý.</p>
+<p><strong>Sẵn sàng để bắt đầu?</strong>
+Chúng tôi đã chọn một số <a href="https://aws.amazon.com/solutions/" rel="external" target="_blank">AWS Solutions</a> và <a href="https://aws.amazon.com/blogs/?awsf.blog-master-category=*all&awsf.blog-master-learning-levels=*all&awsf.blog-master-industry=*all&awsf.blog-master-analytics-products=*all&awsf.blog-master-artificial-intelligence=*all&awsf.blog-master-aws-cloud-financial-management=*all&awsf.blog-master-business-applications=*all&awsf.blog-master-compute=*all&awsf.blog-master-customer-enablement=*all&awsf.blog-master-customer-engagement=*all&awsf.blog-master-database=*all&awsf.blog-master-developer-tools=*all&awsf.blog-master-devops=*all&awsf.blog-master-end-user-computing=*all&awsf.blog-master-mobile=*all&awsf.blog-master-iot=*all&awsf.blog-master-management-governance=*all&awsf.blog-master-media-services=*all&awsf.blog-master-migration-transfer=*all&awsf.blog-master-migration-solutions=*all&awsf.blog-master-networking-content-delivery=*all&awsf.blog-master-programming-language=*all&awsf.blog-master-sector=*all&awsf.blog-master-security=*all&awsf.blog-master-storage=*all&filtered-posts.q=multi-region&filtered-posts.q_operator=AND" rel="external" target="_blank">AWS Blogs</a> để hỗ trợ bạn!</p>
+<p><strong>Bạn đang tìm thêm nội dung về kiến trúc?</strong>
+<a href="https://aws.amazon.com/architecture/" rel="external" target="_blank">AWS Architecture Center</a> cung cấp sơ đồ kiến trúc tham chiếu, các giải pháp kiến trúc đã được kiểm chứng, những thực tiễn tốt nhất theo Well-Architected, các mẫu (patterns), biểu tượng và nhiều hơn nữa!</p>
+<p>Link bài viết gốc: (<a href="https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/" rel="external" target="_blank">https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/</a>)</p>
 
   <footer class="footline">
   </footer>
@@ -254,7 +300,10 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
             <li class="" data-nav-id="/vi/3-blogstranslated/3.2-blog2/index.html"><a class="padding" href="/vi/3-blogstranslated/3.2-blog2/index.html"> <b> 3.2. </b> Blog 2</a></li>
             <li class="" data-nav-id="/vi/3-blogstranslated/3.3-blog3/index.html"><a class="padding" href="/vi/3-blogstranslated/3.3-blog3/index.html"> <b> 3.3. </b>Blog 3</a></li>
             <li class="" data-nav-id="/vi/3-blogstranslated/3.4-blog4/index.html"><a class="padding" href="/vi/3-blogstranslated/3.4-blog4/index.html"><b> 3.4. </b> Blog 4</a></li>
-            <li class="active " data-nav-id="/vi/3-blogstranslated/3.5-blog5/index.html"><a class="padding" href="/vi/3-blogstranslated/3.5-blog5/index.html"><b> 3.5. </b> Blog 5</a></li></ul></li>
+            <li class="active " data-nav-id="/vi/3-blogstranslated/3.5-blog5/index.html"><a class="padding" href="/vi/3-blogstranslated/3.5-blog5/index.html"><b> 3.5. </b> Blog 5</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.6-blog6/index.html"><a class="padding" href="/vi/3-blogstranslated/3.6-blog6/index.html"><b> 3.6. </b> Blog 6</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.7-blog7/index.html"><a class="padding" href="/vi/3-blogstranslated/3.7-blog7/index.html"><b> 3.7. </b> Blog 7</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.8-blog8/index.html"><a class="padding" href="/vi/3-blogstranslated/3.8-blog8/index.html"><b> 3.8. </b> Blog 8</a></li></ul></li>
             <li class="" data-nav-id="/vi/4-eventparticipated/index.html"><a class="padding" href="/vi/4-eventparticipated/index.html"> <b> 4. </b> Các sự kiện đã tham gia</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
           </ul>
         </div>
@@ -287,8 +336,8 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1760932927" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1760932927" defer></script>
-    <script src="/js/theme.js?1760932927" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1761119601" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761119601" defer></script>
+    <script src="/js/theme.js?1761119601" defer></script>
   </body>
 </html>
