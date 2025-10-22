@@ -51,8 +51,8 @@ ArgoCD là một bộ công cụ GitOps hàng đầu giúp các nhóm quản lý
 | Khả năng truy cập cho người không phải kỹ sư | Hạn chế                                                | Mở rộng, dân chủ hóa                            |
 | Quản lý đa cụm                               | Phức tạp, thủ công                                     | Đơn giản hóa, được trừu tượng hóa               |
 | Tác vụ Tiền/Hậu Triển khai                   | Cần công cụ bên ngoài/script                           | Vẫn dùng công cụ bên ngoài, nhưng dễ gọi hơn    |
-| Chuyển đổi Ứng dụng                          | Thủ công hoặc dùng script                              | Ngôn ngữ tự nhiên, điều phối dễ dàng hơn        |
-| Khắc phục Sự cố                              | Mang tính kỹ thuật, dễ xảy ra lỗi                      | Được hướng dẫn, có hỗ trợ AI, phản hồi chi tiết |
+| Chuyển đổi ứng dụng                          | Thủ công hoặc dùng script                              | Ngôn ngữ tự nhiên, điều phối dễ dàng hơn        |
+| Khắc phục sự cố                              | Mang tính kỹ thuật, dễ xảy ra lỗi                      | Được hướng dẫn, có hỗ trợ AI, phản hồi chi tiết |
 | Tự động hóa                                  | Yêu cầu viết script                                    | Do AI/agent điều khiển, chủ động                |
 
 Bạn có thể thực hiện các [thao tác](https://github.com/akuity/argocd-mcp?tab=readme-ov-file#available-tools) sau bằng ngôn ngữ tự nhiên nhờ tích hợp Amazon Q CLI với ArgoCD MCP server:

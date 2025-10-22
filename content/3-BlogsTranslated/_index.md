@@ -17,7 +17,8 @@ Since day one, AWS has helped startups bring their ideas to life by democratizin
 ## [Blog 4 - Scaling Cloudera’s development environment: Leveraging Amazon EKS, Karpenter, Bottlerocket, and Cilium for hybrid cloud](3-blogstranslated/3.4-blog4/)
 This post is co-written with Shreelola Hegde,Sriharsha Devineni and Lee Watterworth from Cloudera. Cloudera is a global leader in enterprise data management, analytics, and AI. The Cloudera platform enables organizations to manage, process, and analyze massive datasets, helping businesses across industries like finance, healthcare, manufacturing, and telecommunications accelerate AI/ML adoption and unlock real-time insights. A […]
 
-## [Blog 5 - ](3-blogstranslated/3.5-blog5/)
+## [Blog 5 - Creating a Multi-Region Application with AWS Services – Part 1, Compute, Networking, and Security](3-blogstranslated/3.5-blog5/)
+Many AWS services have features to help you build and manage a multi-Region architecture, but identifying those capabilities across 200+ services can be overwhelming. In this 3-part blog series, we filter through those 200+ services and focus on those that have specific features to assist you in building multi-Region applications. In Part 1, we’ll build a foundation with AWS security, networking, and compute services.
 
 
 ## [Blog 6 - GitOps continuous delivery with ArgoCD and EKS using natural language](3-blogstranslated/3.6-blog6/)

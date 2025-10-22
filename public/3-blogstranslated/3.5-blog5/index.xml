@@ -3,7 +3,7 @@
   <channel>
     <title> Blog 5</title>
     <link>http://localhost:1313/3-blogstranslated/3.5-blog5/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Creating a Multi-Region Application with AWS Services – Part 1, Compute, Networking, and Security Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink&#xA;Many AWS services have features to help you build and manage a multi-Region architecture, but identifying those capabilities across 200+ services can be overwhelming.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="http://localhost:1313/3-blogstranslated/3.5-blog5/index.xml" rel="self" type="application/rss+xml" />
