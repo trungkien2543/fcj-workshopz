@@ -113,22 +113,22 @@ Sau đây là các điều kiện tiên quyết cho việc thiết lập môi tr
 
 ### Tích hợp với Amazon Q CLI
 
-``` JSON
-{ 
+```JSON
+{
   "mcpServers": {
-    "argocd-mcp-stdio": { 
-      "type": "stdio", 
-      "command": "npx", 
-      "args": [ 
-         "argocd-mcp@latest", 
-         "stdio" 
-      ], 
-      "env": { 
+    "argocd-mcp-stdio": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+         "argocd-mcp@latest",
+         "stdio"
+      ],
+      "env": {
         "ARGOCD_BASE_URL": "<ARGOCD_BASE_URL>",
-        "ARGOCD_API_TOKEN": "<ARGOCD_API_TOKEN>", 
-        "NODE_TLS_REJECT_UNAUTHORIZED": "0" 
-      } 
-    } 
+        "ARGOCD_API_TOKEN": "<ARGOCD_API_TOKEN>",
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+      }
+    }
   }
 }
 ```
@@ -143,7 +143,7 @@ Dưới đây là một số câu lệnh (prompts) để tương tác với các
 
 **Câu lệnh**: `List all ArgoCD applications in my cluster`
 
-![example](../../../images/Blog6/17632-image-1.png) 
+![example](../../../images/Blog6/17632-image-1.png)
 
 <p style="text-align: center;"><i>Amazon Q sẽ sử dụng máy chủ ArgoCD MCP để truy xuất và hiển thị tất cả các ứng dụng</i></p>
 
@@ -151,7 +151,7 @@ Dưới đây là một số câu lệnh (prompts) để tương tác với các
 
 **Câu lệnh**: `Create new argocd application using App name: game-2048   Repo: https://github.com/aws-ia/terraform-aws-eks-blueprints  Path: patterns/gitops/getting-started-argocd/k8s. Branch: main  Namespace: argocd`
 
-![example](../../../images/Blog6/17632-image-2.png) 
+![example](../../../images/Blog6/17632-image-2.png)
 
 <p style="text-align: center;"><i>Amazon Q sẽ tạo một ứng dụng mới từ thông tin GitRepo cung cấp</i></p>
 
@@ -159,7 +159,7 @@ Dưới đây là một số câu lệnh (prompts) để tương tác với các
 
 **Câu lệnh**: `Show me the resource tree for team-carmen app`
 
-![example](../../../images/Blog6/17632-image-8.png) 
+![example](../../../images/Blog6/17632-image-8.png)
 
 <p style="text-align: center;"><i>Amazon Q sẽ hiển thị cấu trúc phân cấp của các tài nguyên Kubernetes do ứng dụng quản lý.</i></p>
 
@@ -212,4 +212,3 @@ Amazon Q sẽ:
 ## Tổng kết
 
 Việc tích hợp Amazon Q CLI với ArgoCD thông qua MCP server đánh dấu một bước tiến mang tính chuyển đổi trong việc quản lý Kubernets, kết hợp khả năng GitOps của ArgoCD với công nghệ xử lý ngôn ngữ tự nhiên của Amazon Q. Bằng cách biến việc Kubernets phức tạp thành các tương tác hội thoại đơn giản, giải pháp này cho phép các nhóm có thể tập trung vào điều thực sự quan trọng - tạo ra giá trị cho doanh nghiệp. Hơn là dành thời gian ghi nhớ các lệnh hoặc vật lộn với những kỹ thuật phức tạp, giờ đây các nhóm có thể quản lý hạ tầng cloud của họ thông qua đối thoại tự nhiên, giúp hành trình cloud-native trở nên dễ tiếp cận và hiệu quả hơn cho mọi người. Sẵn sàng cho việc chuyển đổi trải nghiệm EKS và ArgoCD của bạn chưa? Hãy thử tích hợp Amazon Q CLI với ArgoCD MCP ngay và khám phá lý do vì sao các đội DevOps đang đưa nó vào bộ công cụ thiết yếu của họ.
-

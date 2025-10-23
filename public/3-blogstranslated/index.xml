@@ -8,13 +8,6 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/3-blogstranslated/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>3.7 Blog7</title>
-      <link>http://localhost:1313/3-blogstranslated/3.7-blog7/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/3-blogstranslated/3.7-blog7/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
       <title>3.8 Blog8</title>
       <link>http://localhost:1313/3-blogstranslated/3.8-blog8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,6 +55,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/3-blogstranslated/3.6-blog6/index.html</guid>
       <description>GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink&#xA;Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.</description>
+    </item>
+    <item>
+      <title> Blog 7</title>
+      <link>http://localhost:1313/3-blogstranslated/3.7-blog7/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/3-blogstranslated/3.7-blog7/index.html</guid>
+      <description>Introducing Strands Agents 1.0: Production-Ready Multi-Agent Orchestration Made Simple Ryan Coleman and Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments&#xA;Today we are excited to announce version 1.0 of the Strands Agents SDK, marking a significant milestone in our journey to make building AI agents simple, reliable, and production-ready. Strands Agents is an open source SDK that takes a model-driven approach to building and running AI agents in just a few lines of code. Strands scales from simple to complex agent use cases, and from local development to deployment in production.</description>
     </item>
   </channel>
 </rss>
