@@ -5,21 +5,21 @@ weight = 7
 pre = "<b> 3.7. </b>"
 +++
 
-# **Ra Mắt Strands Agents 1.0: Đơn Giản Hóa Việc Điều Phối Đa tác tử Đã Sẵn Sàng Triển Khai**
+# **Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa**
 
 _Ryan Coleman và Belle Guttman_ | 15/07/2025 | [Amazon Machine Learning](https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/amazon-machine-learning/), [Announcements](https://aws.amazon.com/blogs/opensource/category/post-types/announcements/), [Artificial Intelligence](https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/), [Open Source](https://aws.amazon.com/blogs/opensource/category/open-source/)| [Permalink](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-1-0-production-ready-multi-agent-orchestration-made-simple/) | [Comments](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-1-0-production-ready-multi-agent-orchestration-made-simple/#Comments)
 
-Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của [Strands Agents SDK](https://github.com/strands-agents/sdk-python), đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các tác tử AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho sản xuất. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp tiếp cận dựa trên mô hình (model-driven), giúp bạn xây dựng và vận hành các tác tử AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng tác tử đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường sản xuất (production).
+Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của [Strands Agents SDK](https://github.com/strands-agents/sdk-python), đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho sản xuất. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.
 
-Kể từ khi ra mắt bản xem trước vào tháng 5 năm 2025, chúng tôi đã nhận được hơn 2.000 lượt sao trên GitHub và hơn 150 ngàn lượt tải xuống trên PyPI. Strands 1.0 mang đến mức độ đơn giản tương tự cho các ứng dụng đa tác tử như những gì Strands đã làm được với các tác tử đơn lẻ, với việc bổ sung bốn nguyên mẫu mới và hỗ trợ cho giao thức Agent to Agent (A2A). Để đưa kiến trúc đa tác tử vào môi trường sản xuất, phiên bản 1.0 cũng bao gồm một trình quản lý session mới để truy xuất trạng thái tác tử từ một kho dữ liệu từ xa, cùng với việc cải thiện hỗ trợ bất đồng bộ xuyên suốt toàn bộ SDK. Nhằm tăng tính linh hoạt để xây dựng tác tử của bạn với bất kỳ mô hình nào, cStrands 1.0 đã mở rộng hỗ trợ thêm API của năm nhà cung cấp mô hình mới, được đóng góp bởi các đối tác như [Anthropic](https://www.anthropic.com/), [Meta](https://www.llama.com/), [OpenAI](https://openai.com/), [Cohere](https://cohere.com/), [Mistral](https://mistral.ai/), [Stability](https://stability.ai/), [Writer](https://writer.com/) và [Baseten](https://www.baseten.co/) (xem [pull request](https://github.com/strands-agents/sdk-python/pull/389)). Bây giờ, hãy cùng đi sâu vào chi tiết các cập nhật này. Các mẫu code đầy đủ có sẵn tại trang [strandsagents.com.](https://strandsagents.com/)
+Kể từ khi ra mắt bản xem trước vào tháng 5 năm 2025, chúng tôi đã nhận được hơn 2.000 lượt sao trên GitHub và hơn 150 ngàn lượt tải xuống trên PyPI. Strands 1.0 mang đến mức độ đơn giản tương tự cho các ứng dụng multi-agent như những gì Strands đã làm được với các agent đơn lẻ, với việc bổ sung bốn nguyên mẫu mới và hỗ trợ cho giao thức Agent to Agent (A2A). Để đưa kiến trúc multi-agent vào môi trường sản xuất, phiên bản 1.0 cũng bao gồm một trình quản lý session mới để truy xuất trạng thái agent từ một kho dữ liệu từ xa, cùng với việc cải thiện hỗ trợ bất đồng bộ xuyên suốt toàn bộ SDK. Nhằm tăng tính linh hoạt để xây dựng agent của bạn với bất kỳ mô hình nào, cStrands 1.0 đã mở rộng hỗ trợ thêm API của năm nhà cung cấp mô hình mới, được đóng góp bởi các đối tác như [Anthropic](https://www.anthropic.com/), [Meta](https://www.llama.com/), [OpenAI](https://openai.com/), [Cohere](https://cohere.com/), [Mistral](https://mistral.ai/), [Stability](https://stability.ai/), [Writer](https://writer.com/) và [Baseten](https://www.baseten.co/) (xem [pull request](https://github.com/strands-agents/sdk-python/pull/389)). Bây giờ, hãy cùng đi sâu vào chi tiết các cập nhật này. Các mẫu code đầy đủ có sẵn tại trang [strandsagents.com.](https://strandsagents.com/)
 
-## Đơn giản hóa các mô hình đa tác tử
+## Đơn giản hóa các mô hình multi-agent
 
-Các mô hình đa tác tử cho phép các tác tử AI chuyên biệt cùng nhau làm việc—phân công nhiệm vụ, chia sẻ kiến thức và phối hợp hành động—nhằm giải quyết những vấn đề phức tạp mà một tác tử đơn lẻ không thể xử lý được. Strands 1.0 giới thiệu bốn nguyên mẫu trực quan, giúp việc điều phối nhiều tác tử trở thành một phần mở rộng đơn giản của tổ hợp mô hình/công cụ/prompt mà bạn vốn đã sử dụng để tạo ra các tác tử đơn lẻ.
+Các mô hình multi-agent cho phép các agent AI chuyên biệt cùng nhau làm việc—phân công nhiệm vụ, chia sẻ kiến thức và phối hợp hành động—nhằm giải quyết những vấn đề phức tạp mà một agent đơn lẻ không thể xử lý được. Strands 1.0 giới thiệu bốn nguyên mẫu trực quan, giúp việc điều phối nhiều agent trở thành một phần mở rộng đơn giản của tổ hợp mô hình/công cụ/prompt mà bạn vốn đã sử dụng để tạo ra các agent đơn lẻ.
 
 **1. Agents-as-Tools: Đơn giản hóa việc ủy quyền theo cấp bậc**
 
-Mô hình agents-as-tools biến các tác tử chuyên biệt thành những công cụ thông minh mà các tác tử khác có thể gọi đến. Điều này tạo điều kiện cho việc ủy quyền theo cấp bậc, nơi các tác tử hoạt động như người điều phối có thể chủ động tham vấn các chuyên gia theo từng lĩnh vực cụ thể mà không từ bỏ quyền kiểm soát yêu cầu. Điều này phản ánh cách thức làm việc của các đội nhóm con người — một quản lý dự án không cần phải biết mọi thứ, họ chỉ cần biết nên tham khảo ý kiến của chuyên gia nào cho từng nhiệm vụ cụ thể.
+Mô hình agents-as-tools biến các agent chuyên biệt thành những công cụ thông minh mà các agent khác có thể gọi đến. Điều này tạo điều kiện cho việc ủy quyền theo cấp bậc, nơi các agent hoạt động như người điều phối có thể chủ động tham vấn các chuyên gia theo từng lĩnh vực cụ thể mà không từ bỏ quyền kiểm soát yêu cầu. Điều này phản ánh cách thức làm việc của các đội nhóm con người — một quản lý dự án không cần phải biết mọi thứ, họ chỉ cần biết nên tham khảo ý kiến của chuyên gia nào cho từng nhiệm vụ cụ thể.
 
 ``` Python
 
@@ -60,11 +60,11 @@ executive_assistant = Agent(
 result = executive_assistant("I have a business meeting in Portland next week. Suggest a nice place to stay near the local startup scene, and suggest a few startups to visit") 
 
 ```
-Trong ví dụ rút gọn này, chúng ta định nghĩa hai tác tử du lịch và nghiên cứu, mỗi tác tử có prompt và công cụ chuyên biệt cho lĩnh vực của mình, mà tác tử trợ lý điều hành có thể gọi đến để lấy thông tin phục vụ yêu cầu của người dùng. Tác tử trợ lý điều hành chịu trách nhiệm tổng hợp đầu vào từ các tác tử khác và tạo ra phản hồi gửi lại cho người dùng. Tìm hiểu thêm về mô hình [Agents-as-Tools](https://strandsagents.com/latest/user-guide/concepts/multi-agent/agents-as-tools/) trong tài liệu chính thức của Strands.
+Trong ví dụ rút gọn này, chúng ta định nghĩa hai agent du lịch và nghiên cứu, mỗi agent có prompt và công cụ chuyên biệt cho lĩnh vực của mình, mà agent trợ lý điều hành có thể gọi đến để lấy thông tin phục vụ yêu cầu của người dùng. agent trợ lý điều hành chịu trách nhiệm tổng hợp đầu vào từ các agent khác và tạo ra phản hồi gửi lại cho người dùng. Tìm hiểu thêm về mô hình [Agents-as-Tools](https://strandsagents.com/latest/user-guide/concepts/multi-agent/agents-as-tools/) trong tài liệu chính thức của Strands.
 
-**2. Chuyển giao: chuyển giao quyền kiểm soát rõ ràng**
+**2. Handoffs: chuyển giao quyền kiểm soát rõ ràng**
 
-Tính năng chuyển giao cho phép các tác tử chủ động chuyển trách nhiệm sang con người khi gặp phải nhiệm vụ vượt quá phạm vi chuyên môn của mình, đồng thời giữ nguyên toàn bộ ngữ cảnh cuộc trò chuyện trong quá trình chuyển giao. trands cung cấp sẵn công cụ được tích hợp sẵn `handoff_to_user` giúp cho các tác tử có thể dùng để chuyển giao quyền kiểm soát một cách liền mạch trong khi vẫn duy trì lịch sử và ngữ cảnh cuộc trò chuyện - giống như một nhân viên dịch vụ khách hàng cung cấp chủ động yêu cầu khách cung cấp thêm thông tin về trường hợp của họ.
+Tính năng Handoffs cho phép các agent chủ động chuyển trách nhiệm sang con người khi gặp phải nhiệm vụ vượt quá phạm vi chuyên môn của mình, đồng thời giữ nguyên toàn bộ ngữ cảnh cuộc trò chuyện trong quá trình chuyển giao. Strands cung cấp sẵn công cụ được tích hợp sẵn `handoff_to_user` giúp cho các agent có thể dùng để chuyển giao quyền kiểm soát một cách liền mạch trong khi vẫn duy trì lịch sử và ngữ cảnh cuộc trò chuyện - giống như một nhân viên dịch vụ khách hàng cung cấp chủ động yêu cầu khách cung cấp thêm thông tin về trường hợp của họ.
 
 ``` Python
 
@@ -86,7 +86,7 @@ agent("I have a question about my order.")
 
 ```
 
-Các tác tử cũng có thể đặt câu hỏi cho con người khi được yêu cầu làm như vậy
+Các agent cũng có thể đặt câu hỏi cho con người khi được yêu cầu làm như vậy
 
 ``` Python
 
@@ -108,7 +108,7 @@ agent("I have a question about my order.")
 
 **3. Swarms: Các nhóm cộng tác tự tổ chức**
 
-Một Swarm tạo ra các tác tử tự chủ phối hợp động thông qua việc chia sẻ bộ nhớ,cho phép nhiều chuyên gia có thể cộng tác cho các tác vụ phức tạp. Hãy hình dung nó giống như một buổi động não nơi các chuyên gia xây dựng ý tưởng dựa trên ý tưởng của nhau, với đội ngũ tự tổ chức để mang lại kết quả tập thể tốt nhất.
+Một Swarm tạo ra các agent tự chủ phối hợp động thông qua việc chia sẻ bộ nhớ,cho phép nhiều chuyên gia có thể cộng tác cho các tác vụ phức tạp. Hãy hình dung nó giống như một buổi động não nơi các chuyên gia xây dựng ý tưởng dựa trên ý tưởng của nhau, với đội ngũ tự tổ chức để mang lại kết quả tập thể tốt nhất.
 
 ``` Python
 
@@ -155,7 +155,7 @@ Nghiên cứu thêm về [Swarms](https://strandsagents.com/latest/user-guide/co
 
 **4. Graphs: Kiểm soát quy trình làm việc mang tính xác định**
 
-Graphs cho phép bạn xác định quy trình làm việc của các tác tử một cách rõ ràng với nhưng định tuyến có điều kiện và những điểm ra quyết định, rất hữu ích cho những quy trình yêu cầu các bước cụ thể, cơ chế phê duyệt hoặc các ngưỡng kiểm soát chất lượng. Giống như một dây chuyền lắp ráp hoặc chuỗi phê duyệt được thiết kế tốt, graphs đảm bảo các tác tử luôn tuân thủ các quy tắc nghiệp vụ đã định sẵn theo đúng trình tự mỗi lần thực thi.
+Graphs cho phép bạn xác định quy trình làm việc của các agent một cách rõ ràng với những định tuyến có điều kiện và những điểm ra quyết định, rất hữu ích cho những quy trình yêu cầu các bước cụ thể, cơ chế phê duyệt hoặc các ngưỡng kiểm soát chất lượng. Giống như một dây chuyền lắp ráp hoặc chuỗi phê duyệt được thiết kế tốt, graphs đảm bảo các agent luôn tuân thủ các quy tắc nghiệp vụ đã định sẵn theo đúng trình tự mỗi lần thực thi.
 
 ``` Python
 from strands import Agent  
@@ -204,7 +204,7 @@ results = customer_support_graph("I need help with my order!")
 
 Nghiên cứu thêm về [Graphs](https://strandsagents.com/latest/user-guide/concepts/multi-agent/graph/) trong tài liệu về Strands
 
-Các mô hình đa tác tử (multi-agent patterns) này được thiết kế để được áp dụng dần dần và kết hợp một cách tự do — hãy bắt đầu với các tác tử đơn lẻ, thêm các chuyên gia như là công cụ, phát triển thành các Swarms, và điều phối bằng các Graphs khi nhu cầu của bạn tăng lên. Hãy kết hợp và tùy chỉnh các mô hình để tạo ra các hệ thống tinh vi: swarms có thể chứa các graphs, graphs có thể điều phối các swarms, và bất kỳ mô hình nào cũng có thể sử dụng các tác tử được trang bị các tác tử khác làm công cụ.
+Các mô hình multi-agent (multi-agent patterns) này được thiết kế để được áp dụng dần dần và kết hợp một cách tự do — hãy bắt đầu với các agent đơn lẻ, thêm các chuyên gia như là công cụ, phát triển thành các Swarms, và điều phối bằng các Graphs khi nhu cầu của bạn tăng lên. Hãy kết hợp và tùy chỉnh các mô hình để tạo ra các hệ thống tinh vi: swarms có thể chứa các graphs, graphs có thể điều phối các swarms, và bất kỳ mô hình nào cũng có thể sử dụng các agent được trang bị các agent khác làm công cụ.
 
 ``` Python
 from strands import Agent, tool 
@@ -237,9 +237,9 @@ graph = builder.build()
 # The patterns nest naturally - swarms in graphs, agents as tools everywhere  
 result = graph("How has green energy evolved over the last few years?") 
 ```
-## Hệ thống đa tác tử (Multi-Agent) với A2A
+## Hệ thống Multi-Agent với A2A
 
-Strand 1.0 đã bao gồm việc hỗ trợ cho [giao thức Agent-to-Agent (A2A)](https://a2aproject.github.io/A2A/latest/), một tiêu chuẩn mở cho phép các tác tử từ các nền tảng khác nhau có thể giao tiếp một cách liền mạch. Bất kỳ tác tử Strands cũng có thể được đóng gói với các khả năng A2A để trở nên có thể truy cập qua mạng và tuân thủ giao thức A2A. Các tác tử A2A từ các tổ chức bên ngoài cũng có thể được sử dụng trực tiếp trong tất cả các mô hình đa tác tử của Strands.
+Strand 1.0 đã bao gồm việc hỗ trợ cho [giao thức Agent-to-Agent (A2A)](https://a2aproject.github.io/A2A/latest/), một tiêu chuẩn mở cho phép các agent từ các nền tảng khác nhau có thể giao tiếp một cách liền mạch. Bất kỳ agent Strands cũng có thể được đóng gói với các khả năng A2A để trở nên có thể truy cập qua mạng và tuân thủ giao thức A2A. Các agent A2A từ các tổ chức bên ngoài cũng có thể được sử dụng trực tiếp trong tất cả các mô hình multi-agent của Strands.
 
 ``` Python
 from strands import Agent 
@@ -262,13 +262,13 @@ a2a_tool_provider = A2AClientToolProvider(known_agent_urls=[partner_agent_url, c
 orchestrator = Agent(tools=[a2a_tool_provider.tools]) 
 ```
 
-Bởi vì A2A cung cấp các tính năng như agent card, một mô tả được chuẩn hóa về khả năng của tác tử, các hệ thống đa tác tử được bật A2A có thể dễ dàng khám phá và kết nối với các tác tử được tạo ra bởi các nhóm hoặc các tổ chức khác. Strands tự động tạo ra thẻ tác tử dựa trên các công cụ bạn đã cung cấp cho tác tử. Để xem các ví dụ hoạt động hoàn chỉnh và bắt đầu với tính năng tích hợp A2A, hãy tham khảo [repository mẫu](https://github.com/strands-agents/samples/tree/main/03-integrations/Native-A2A-Support) của chúng tôi và [tài liệu A2A của Strands](https://strandsagents.com/latest/user-guide/concepts/multi-agent/agent-to-agent/).
+Bởi vì A2A cung cấp các tính năng như agent card, một mô tả được chuẩn hóa về khả năng của agent, các hệ thống multi-agent được bật A2A có thể dễ dàng khám phá và kết nối với các agent được tạo ra bởi các nhóm hoặc các tổ chức khác. Strands tự động tạo ra thẻ agent dựa trên các công cụ bạn đã cung cấp cho agent. Để xem các ví dụ hoạt động hoàn chỉnh và bắt đầu với tính năng tích hợp A2A, hãy tham khảo [repository mẫu](https://github.com/strands-agents/samples/tree/main/03-integrations/Native-A2A-Support) của chúng tôi và [tài liệu A2A của Strands](https://strandsagents.com/latest/user-guide/concepts/multi-agent/agent-to-agent/).
 
-## Sẵn sàng cho sản xuất
+## Sẵn sàng cho môi trường production
 
 Mặc dù Strands đã được các đội nội bộ của Amazon như Amazon Q Developer và AWS Glue sử dụng trong môi trường production từ lâu trước khi ra mắt công chúng, chúng tôi đã và đang làm việc ngược lại với hàng trăm khách hàng trên toàn thế giới để mở rộng Strands nhằm hỗ trợ các nhu cầu sản xuất của bạn. Các cập nhật này bao gồm một tầng trừu tượng quản lý session để hỗ trợ việc lưu trữ liên tục dữ liệu vào và phục hồi từ các kho dữ liệu bên ngoài, đầu ra có cấu trúc, cải thiện hỗ trợ bất đồng bộ, và nhiều thứ khác nữa (xem chi tiết trong [changelog các phiên bản phát hành](https://github.com/strands-agents/sdk-python/releases))
 
-**Quản lý session bền vững:** Chúng tôi đã thêm vào `SessionManager`, một trừu tượng quản lý session cho phép tự động lưu trữ liên tục và khôi phục lịch sử hội thoại cũng như trạng thái của tác tử. Nhờ đó, các tác tử có thể lưu toàn bộ lịch sử cuộc trò chuyện vào một hệ thống lưu trữ như Amazon Simple Storage Service (Amazon S3) và tiếp tục cuộc hội thoại một cách liền mạch ngay cả sau khi hệ thống tính toán khởi động lại. Dưới đây là một ví dụ sử dụng cơ chế lưu trữ liên tục dựa trên file cơ bản.
+**Quản lý session bền vững:** Chúng tôi đã thêm vào `SessionManager`, một trừu tượng quản lý session cho phép tự động lưu trữ liên tục và khôi phục lịch sử hội thoại cũng như trạng thái của agent. Nhờ đó, các agent có thể lưu toàn bộ lịch sử cuộc trò chuyện vào một hệ thống lưu trữ như Amazon Simple Storage Service (Amazon S3) và tiếp tục cuộc hội thoại một cách liền mạch ngay cả sau khi hệ thống tính toán khởi động lại. Dưới đây là một ví dụ sử dụng cơ chế lưu trữ liên tục dựa trên file cơ bản.
 
 ``` Python
 from strands import Agent 
@@ -291,9 +291,9 @@ agent("I can't access my email")
 # Later, even after a restart, restore the full conversation 
 ```
 
-Bạn có thể mở rộng lớp trừu tượng này bằng cách tự triển khai backend lưu trữ của riêng mình thông qua mẫu thiết kế Data Access Object (DAO). Strands đã tích hợp sẵn hai backend mặc định: hệ thống file cục bộ và Amazon S3. Mỗi tác tử nhận một ID duy nhất để theo dõi, và hệ thống xử lý các tác tử đồng thời  trong cùng một session cho các kịch bản đa tác tử, đảm bảo rằng các tác tử luôn duy trì ngữ cảnh qua các lần triển khai, mở rộng quy mô hệ thống hoặc khởi động lại. Tìm hiểu thêm về [Session Management](https://strandsagents.com/latest/user-guide/concepts/agents/session-management/) trong tài liệu của Strands.
+Bạn có thể mở rộng lớp trừu tượng này bằng cách tự triển khai backend lưu trữ của riêng mình thông qua mẫu thiết kế Data Access Object (DAO). Strands đã tích hợp sẵn hai backend mặc định: hệ thống file cục bộ và Amazon S3. Mỗi agent nhận một ID duy nhất để theo dõi, và hệ thống xử lý các agent đồng thời  trong cùng một session cho các kịch bản multi-agent, đảm bảo rằng các agent luôn duy trì ngữ cảnh qua các lần triển khai, mở rộng quy mô hệ thống hoặc khởi động lại. Tìm hiểu thêm về [Session Management](https://strandsagents.com/latest/user-guide/concepts/agents/session-management/) trong tài liệu của Strands.
 
-**Hỗ trợ bất đồng bộ nguyên bản và hiệu năng được cải thiện:** Các khối lượng công việc production đòi hỏi độ tin cậy cao và hiệu năng phản hồi nhanh. Trong phiên bản 1.0, chúng tôi đã cải tiến kiến trúc vòng lặp sự kiện của Strands để hỗ trợ thao tác bất đồng bộ trên toàn bộ stack. Các công cụ và nhà cung cấp mô hình giờ đây có thể chạy bất đồng bộ mà không bị chặn, cho phép thực thi đồng thời thực sự. Phương thức `stream_async` mới ruyền phát tất cả các sự kiện của tác tử — văn bản, việc sử dụng công cụ, các bước suy luận — theo thời gian thực, với hỗ trợ hủy bỏ tích hợp sẵn khi người dùng rời khỏi trang.
+**Hỗ trợ bất đồng bộ nguyên bản và hiệu năng được cải thiện:** Các khối lượng công việc production đòi hỏi độ tin cậy cao và hiệu năng phản hồi nhanh. Trong phiên bản 1.0, chúng tôi đã cải tiến kiến trúc vòng lặp sự kiện của Strands để hỗ trợ thao tác bất đồng bộ trên toàn bộ stack. Các công cụ và nhà cung cấp mô hình giờ đây có thể chạy bất đồng bộ mà không bị chặn, cho phép thực thi đồng thời thực sự. Phương thức `stream_async` mới truyền phát tất cả các sự kiện của agent — văn bản, việc sử dụng công cụ, các bước suy luận — theo thời gian thực, với hỗ trợ hủy bỏ tích hợp sẵn khi người dùng rời khỏi trang.
 
 ``` Python
 import asyncio 
@@ -339,7 +339,7 @@ async def evaluate_models_concurrently(prompt: str):
 
 Tìm hiểu thêm về [Hỗ trợ bất động bộ nguyên bản](https://strandsagents.com/latest/user-guide/concepts/streaming/async-iterators/) trong tài liệu chính thức của Strands.
 
-**Mở rộng hỗ trợ đa dạng nhà cung cấp mô hình:** Khách hàng đã chia sẻ rằng họ cần linh hoạt trong việc sử dụng các mô hình khác nhau cho các tác vụ khác nhau. Để đáp ứng nhu cầu này, Strands Agents đã nhận được sự hỗ trợ mạnh mẽ từ cộng đồng các nhà cung cấp mô hình. Các nhà cung cấp như [Anthropic](https://www.anthropic.com/), [Meta](https://www.llama.com/), [OpenAI](https://openai.com/), [Cohere](https://cohere.com/), [Mistral](https://mistral.ai/), [Stability](https://stability.ai/) và [Writer](https://writer.com/) đã đóng góp cho phép API mô hình của họ được sử dụng bởi một Strands Agent thông qua code. Việc truy cập Strands Agents thông qua hạ tầng API do chính các nhà cung cấp này cung cấp giúp các nhà phát triển tập trung vào việc xây dựng giải pháp AI, mà không cần lo lắng về quản lý cơ sở hạ tầng. Những bổ sung này bổ trợ hoàn hảo cho khả năng hỗ trợ từ giai đoạn xem trước đối với mọi mô hình trên Amazon Bedrock, OpenAI, và bất kỳ endpoint tương thích OpenAI nào thông qua LiteLLM. Strands cho phép bạn sử dụng các mô hình khác nhau cho mỗi tác tử, hoặc chuyển đổi mô hình và nhà cung cấp mô hình mà không cần sửa đổi công cụ hoặc logic của bạn.
+**Mở rộng hỗ trợ đa dạng nhà cung cấp mô hình:** Khách hàng đã chia sẻ rằng họ cần linh hoạt trong việc sử dụng các mô hình khác nhau cho các tác vụ khác nhau. Để đáp ứng nhu cầu này, Strands Agents đã nhận được sự hỗ trợ mạnh mẽ từ cộng đồng các nhà cung cấp mô hình. Các nhà cung cấp như [Anthropic](https://www.anthropic.com/), [Meta](https://www.llama.com/), [OpenAI](https://openai.com/), [Cohere](https://cohere.com/), [Mistral](https://mistral.ai/), [Stability](https://stability.ai/) và [Writer](https://writer.com/) đã đóng góp cho phép API mô hình của họ được sử dụng bởi một Strands Agent thông qua code. Việc truy cập Strands Agents thông qua hạ tầng API do chính các nhà cung cấp này cung cấp giúp các nhà phát triển tập trung vào việc xây dựng giải pháp AI, mà không cần lo lắng về quản lý cơ sở hạ tầng. Những bổ sung này bổ trợ hoàn hảo cho khả năng hỗ trợ từ giai đoạn xem trước đối với mọi mô hình trên Amazon Bedrock, OpenAI, và bất kỳ endpoint tương thích OpenAI nào thông qua LiteLLM. Strands cho phép bạn sử dụng các mô hình khác nhau cho mỗi agent, hoặc chuyển đổi mô hình và nhà cung cấp mô hình mà không cần sửa đổi công cụ hoặc logic của bạn.
 
 ``` Python
 from strands import Agent
@@ -397,6 +397,6 @@ analyzer = Agent(
 )
 ```
 
-Cộng đồng Strands đã đóng vai trò then chốt trong việc định hình tất cả những cải tiến này thông qua việc sử dụng thực tế, phản hồi và những đóng góp mã nguồn trực tiếp. Trong số hơn 150 pull request (PR) đã được hợp nhất vào Strands từ phiên bản 0.1.0 đến 1.0, 22% được đóng góp bởi các thành viên cộng đồng, những người đã sửa lỗi, thêm nhà cung cấp mô hình, viết tài liệu, thêm tính năng và tái cấu trúc các lớp để cải thiện hiệu suất. Chúng tôi vô cùng biết ơn [mỗi người trong số các bạn](https://github.com/strands-agents/sdk-python/graphs/contributors) vì đã giúp Strands trở thành cách đơn giản nhất để đưa một tác tử từ bản thử nghiệm đến môi trường sản xuất.
+Cộng đồng Strands đã đóng vai trò then chốt trong việc định hình tất cả những cải tiến này thông qua việc sử dụng thực tế, phản hồi và những đóng góp mã nguồn trực tiếp. Trong số hơn 150 pull request (PR) đã được hợp nhất vào Strands từ phiên bản 0.1.0 đến 1.0, 22% được đóng góp bởi các thành viên cộng đồng, những người đã sửa lỗi, thêm nhà cung cấp mô hình, viết tài liệu, thêm tính năng và tái cấu trúc các lớp để cải thiện hiệu suất. Chúng tôi vô cùng biết ơn [mỗi người trong số các bạn](https://github.com/strands-agents/sdk-python/graphs/contributors) vì đã giúp Strands trở thành cách đơn giản nhất để đưa một agent từ bản thử nghiệm đến môi trường sản xuất.
 
-Tương lai của AI là đa tác tử (multi-agent), và với Strands 1.0, tương lai đó đã sẵn sàng cho sản xuất. Hãy bắt đầu xây dựng ngay hôm nay tại [strandsagents.com.](https://strandsagents.com/)
+Tương lai của AI là multi-agent (multi-agent), và với Strands 1.0, tương lai đó đã sẵn sàng cho sản xuất. Hãy bắt đầu xây dựng ngay hôm nay tại [strandsagents.com.](https://strandsagents.com/)

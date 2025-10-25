@@ -7,11 +7,11 @@ pre = "<b> 3.6. </b>"
 
 # **Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên**
 
-_Jagdish Komakula, Aditya Ambati, và Anand Krishna Varanasi_ | 17/07/2025 | [ Amazon Elastic Kubernetes Service](https://aws.amazon.com/blogs/devops/category/compute/amazon-kubernetes-service/), [Amazon Q](https://aws.amazon.com/blogs/devops/category/amazon-q/), [Amazon Q Developer](https://aws.amazon.com/blogs/devops/category/amazon-q/amazon-q-developer/), [Developer Tools](https://aws.amazon.com/blogs/devops/category/developer-tools/), [Technical How-to ](https://aws.amazon.com/blogs/devops/category/post-types/technical-how-to/) | [Permalink](https://aws.amazon.com/blogs/devops/gitops-continuous-delivery-with-argocd-and-eks-using-natural-language/)
+_Jagdish Komakula, Aditya Ambati và Anand Krishna Varanasi_ | 17/07/2025 | [ Amazon Elastic Kubernetes Service](https://aws.amazon.com/blogs/devops/category/compute/amazon-kubernetes-service/), [Amazon Q](https://aws.amazon.com/blogs/devops/category/amazon-q/), [Amazon Q Developer](https://aws.amazon.com/blogs/devops/category/amazon-q/amazon-q-developer/), [Developer Tools](https://aws.amazon.com/blogs/devops/category/developer-tools/), [Technical How-to ](https://aws.amazon.com/blogs/devops/category/post-types/technical-how-to/) | [Permalink](https://aws.amazon.com/blogs/devops/gitops-continuous-delivery-with-argocd-and-eks-using-natural-language/)
 
 ## Giới thiệu
 
-ArgoCD là một bộ công cụ GitOps hàng đầu giúp các nhóm quản lý việc triển khai Kubernets một cách khai báo, sử dụng Git là nguồn thông tin đáng tin cậy duy nhất. Bộ tính năng mạnh mẽ của nó bao gồm hệ thống đồng bộ tự động, hỗ trợ khôi phục, phát hiện sai lệch, chiến lược triển khai nâng cao, TÍch hợp RBAC, và hỗ trợ đa cụm (multi-cluster), khiến nó trẻ thành giải pháp được ưa chuộng cho việc triển khai ứng dụng trên Kubernetes. Tuy nhiên, khi các tổ chức mở rộng quy mô, một vài điểm khó khăn và thách thử vận hành bắt đầu xuất hiện.
+ArgoCD là một bộ công cụ GitOps hàng đầu giúp các nhóm quản lý việc triển khai Kubernets một cách khai báo, sử dụng Git là nguồn thông tin đáng tin cậy duy nhất. Bộ tính năng mạnh mẽ của nó bao gồm hệ thống đồng bộ tự động, hỗ trợ khôi phục, phát hiện sai lệch, chiến lược triển khai nâng cao, TÍch hợp RBAC, và hỗ trợ đa cụm (multi-cluster), khiến nó trở thành giải pháp được ưa chuộng cho việc triển khai ứng dụng trên Kubernetes. Tuy nhiên, khi các tổ chức mở rộng quy mô, một vài điểm khó khăn và thách thử vận hành bắt đầu xuất hiện.
 
 ## Điểm khó khăn khi sử dụng ArgoCD theo phương pháp truyền thống
 
@@ -25,13 +25,13 @@ ArgoCD là một bộ công cụ GitOps hàng đầu giúp các nhóm quản lý
 
 - Khi các tổ chức áp dụng các chiến lược đa cụm (multi-cluster), việc quản lý quyền truy cập, RBAC và khả năng hiển thị tài nguyên của ArgoCD trên nhiều môi trường trả nên công kềnh, thường dẫn tới việc làm phân mảnh quy trình làm việc và tạo ra các lỗ hổng bảo mật tiềm ẩn.
 
-## Cách ArgoCD MCP Server cùng với Amazon Q CLI giải quyểt các vấn đề trên:
+## Cách ArgoCD MCP Server cùng với Amazon Q CLI giải quyết các vấn đề trên:
 
 - Việc tích hợp máy chủ ArgoCD MCP với [Amazon Q CLI](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html) đã thay đổi căn bản trải nghiệm người dùng bằng cách giới thiệu tương tác bằng ngôn ngữ tự nhiên cho các thao tác GitOps.
 
-- Với MCP, người dùng có thể quản lý việc triển khai, giám sát trạng thái ứng dụng, và thực hiện thao tác đồng bộ hóa và khôi phục việc vận hành bằng cách sử dụng sử dụng ngôn ngữ giao tiếp thông thường thay vì các câu lệnh kỹ thuật (commands) haowjc YAML. Ví dụ, một người dùng có thể hỏi đơn giản là: "Những ứng dụng nào đang không đồng bộ ở môi trường production?" hay "Đồng bộ ứng dụng api-service," và hệ thống sẽ thực hiện ngầm các lệnh gọi API ArgoCD phù hợp.
+- Với MCP, người dùng có thể quản lý việc triển khai, giám sát trạng thái ứng dụng, và thực hiện thao tác đồng bộ hóa và khôi phục việc vận hành bằng cách sử dụng sử dụng ngôn ngữ giao tiếp thông thường thay vì các câu lệnh kỹ thuật (commands) hoặc YAML. Ví dụ, một người dùng có thể hỏi đơn giản là: "Những ứng dụng nào đang không đồng bộ ở môi trường production?" hay "Đồng bộ ứng dụng api-service," và hệ thống sẽ thực hiện ngầm các lệnh gọi API ArgoCD phù hợp.
 
-- Điều này giúp dân chủ hóa quyền truy cập vào GitOps, cho phép các thành viên trong nhóm ít chuyên kỹ thuật (như QA, các người quản lý sản phẩm hoặc kỹ sự hỗ trợ) có thể tương tác an toàn với các quy trình triển khai.
+- Điều này giúp dân chủ hóa quyền truy cập vào GitOps, cho phép các thành viên trong nhóm ít chuyên kỹ thuật (như QA, các người quản lý sản phẩm hoặc kỹ sư hỗ trợ) có thể tương tác an toàn với các quy trình triển khai.
 
 - Giao diện ngôn ngữ tự nhiên giúp loại bỏ độ phức tạp của việc quản lý đa cụm (multi-cluster) và đa môi trường (multi-environment). Người dùng có thể truy vấn hoặc thực hiện hành động trên các tài nguyên giữa các cụm mà không cần ghi nhớ tên tài nguyên, namespace hoặc endpoint API.
 
@@ -135,7 +135,7 @@ Sau đây là các điều kiện tiên quyết cho việc thiết lập môi tr
 
 Khi cấu hình xong, bạn có thể bắt đầu sử dụng câu lệnh bằng ngôn ngữ tự nhiên với Amazon Q CLI để tương tác với các ứng dụng ArgoCD của mình.
 
-### Quản lý các ứng dụng applicantion bằng cách sử dụng ngôn ngữ tự nhiên
+### Quản lý các ứng dụng bằng cách sử dụng ngôn ngữ tự nhiên
 
 Dưới đây là một số câu lệnh (prompts) để tương tác với các ứng dụng ArgoCD trong cụm EKS của bạn
 
@@ -155,7 +155,7 @@ Dưới đây là một số câu lệnh (prompts) để tương tác với các
 
 <p style="text-align: center;"><i>Amazon Q sẽ tạo một ứng dụng mới từ thông tin GitRepo cung cấp</i></p>
 
-**Xem trạng thái triển khái**
+**Xem trạng thái triển khai**
 
 **Câu lệnh**: `Show me the resource tree for team-carmen app`
 
