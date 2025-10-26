@@ -27,27 +27,27 @@ Many AWS services have features to help you build and manage a multi-Region arch
     <link href="http://localhost:1313/vi/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="vi">
     <link href="http://localhost:1313/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="en">
     <link href="/3-blogstranslated/3.5-blog5/index.xml" rel="alternate" type="application/rss+xml" title=" Blog 5">
-    <link href="/images/logo.png?1761401338" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1761401338" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1761401338" defer></script>
-    <script src="/js/search-lunr.js?1761401338" defer></script>
-    <script src="/js/search.js?1761401338" defer></script>
+    <link href="/images/logo.png?1761453841" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1761453841" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1761453841" defer></script>
+    <script src="/js/search-lunr.js?1761453841" defer></script>
+    <script src="/js/search.js?1761453841" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1761401338";
+      window.relearn.index_js_url="/searchindex.en.js?1761453841";
     </script>
-    <script src="/js/lunr/lunr.min.js?1761401338" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1761401338" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1761401338" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1761401338" defer></script>
+    <script src="/js/lunr/lunr.min.js?1761453841" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1761453841" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1761453841" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1761453841" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761401338" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761401338" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761401338" rel="stylesheet">
-    <link href="/css/theme.css?1761401338" rel="stylesheet">
-    <link href="/css/format-html.css?1761401338" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761453841" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761453841" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761453841" rel="stylesheet">
+    <link href="/css/theme.css?1761453841" rel="stylesheet">
+    <link href="/css/format-html.css?1761453841" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -101,7 +101,7 @@ Many AWS services have features to help you build and manage a multi-Region arch
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/css/custom.css?1761401338" rel="stylesheet">
+    <link href="/css/custom.css?1761453841" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/3-blogstranslated/3.5-blog5/index.html">
     <div id="R-body" class="default-animation">
@@ -189,8 +189,8 @@ Many AWS services have features to help you build and manage a multi-Region arch
 <p>It is a best practice to configure <a href="http://aws.amazon.com/cloudtrail" rel="external" target="_blank">AWS CloudTrail</a> to keep a record of all relevant AWS API activity in your account for auditing purposes. When you utilize multiple Regions or accounts, these CloudTrail logs should be <a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html" rel="external" target="_blank">aggregated</a> into a single Amazon S3 bucket for easier analysis. To prevent misuse, the centralized logs should be treated with higher severity, with only limited access to key systems and personnel.</p>
 <p>To stay on top of <a href="https://aws.amazon.com/security-hub" rel="external" target="_blank">AWS Security Hub</a> findings, you can <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation-enable.html" rel="external" target="_blank">aggregate and link findings from multiple locations to a single Region. </a>This is an easy way to create a centralized view of Security Hub findings across accounts and Regions. Once set up, the findings are continuously synced between Regions to keep you updated on global results in a single dashboard.</p>
 <p>We put these features together in Figure 1. We used IAM to grant fine-grained access to AWS services and resources, Directory Service for Microsoft AD for authentication to Microsoft applications, and Secrets Manager to store sensitive database credentials. Our data, which moves freely between Regions, is encrypted with KMS multi-Region keys, and all AWS API access is logged with CloudTrail and aggregated to a central S3 bucket that only our security team has access to.</p>
-<p><a href="#R-image-9bafc64b6e203d483c85142e325316ac" class="lightbox-link"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9bafc64b6e203d483c85142e325316ac"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png"></a></p>
+<p><a href="#R-image-2e817510a83a3e5f25d1c3d85bddd669" class="lightbox-link"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e817510a83a3e5f25d1c3d85bddd669"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png"></a></p>
 <p><em>Figure 1. Multi-Region security, identity, and compliance services</em></p>
 <h2 id="building-a-global-network">Building a global network</h2>
 <p>For resources launched into virtual networks in different Regions, <a href="http://aws.amazon.com/vpc" rel="external" target="_blank">Amazon Virtual Cloud (Amazon VPC)</a> allows <a href="https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html" rel="external" target="_blank">private routing between Regions and accounts with VPC peering</a>. These resources can communicate using private IP addresses and do not require an internet gateway, VPN, or separate network appliances. This feature works well for smaller networks that only require a few peering connections. However, transitive routing is not allowed, and as the number of peered virtual private cloud (VPCs) increases, the mesh of peered connections can become difficult to manage and troubleshoot.</p>
@@ -201,8 +201,8 @@ Many AWS services have features to help you build and manage a multi-Region arch
 <p>The <a href="http://aws.amazon.com/cloudfront" rel="external" target="_blank">Amazon CloundFront</a> content delivery network is global, built across 300+ points of presence (PoP) spread throughout the world. Applications that have multiple possible origins, such as across Regions, can use <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html" rel="external" target="_blank">CloudFront origin failover</a> to automatically fail over to a recovery origin when the primary is not available. CloudFront’s capabilities expand beyond serving content, with the ability to run compute at the edge. <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html" rel="external" target="_blank">CloudFront Functions</a> make it easy to run lightweight JavaScript code, and <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html" rel="external" target="_blank">AWS Lambda@Edge</a> enables you to run Node.js and Python functions closer to users of your application, which improves performance and reduces latency. By placing compute at the edge, you can take load off of your origin and provide quicker responses for your global end users.</p>
 <p>Built on the AWS global network, <a href="http://aws.amazon.com/global-accelerator" rel="external" target="_blank">AWS Global Accelerator</a> provides two static anycast IPs to give a single-entry point for internet-facing applications. You can seamlessly add or remove origins while continuing to automatically route traffic to the closest healthy Regional endpoint. If a failure is detected, Global Accelerator will <a href="https://docs.aws.amazon.com/global-accelerator/latest/dg/disaster-recovery-resiliency.html" rel="external" target="_blank">automatically redirect traffic to a healthy endpoint</a> within seconds, with no changes to the static IP.</p>
 <p>Figure 2 uses a Route 53 latency-based routing policy to route users to the quickest endpoint, CloudFront is used to serve static content such as videos and images, and Transit Gateway creates a global private network for our devices to talk securely across Regions.</p>
-<p><a href="#R-image-bd7380806d4a84a17647346dd443e97a" class="lightbox-link"><img alt="figure2" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bd7380806d4a84a17647346dd443e97a"><img alt="figure2" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png"></a></p>
+<p><a href="#R-image-bc11ec01995ecafcbf3f8ffe3ad8a985" class="lightbox-link"><img alt="figure2" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bc11ec01995ecafcbf3f8ffe3ad8a985"><img alt="figure2" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png"></a></p>
 <p><em>Building and managing the compute layer</em></p>
 <h2 id="xây-dựng-và-quản-lý-lớp-tính-toán-compute-layer">Xây dựng và quản lý lớp tính toán (compute layer)</h2>
 <p>Although <a href="http://aws.amazon.com/ec2" rel="external" target="_blank">Amazon Elastic Compute Cloud (Amazon EC2)</a> instances and their associated <a href="http://aws.amazon.com/ebs" rel="external" target="_blank">Amazon Elastic Block Store (Amazon EBS)</a> volumes reside in a single AZ <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html" rel="external" target="_blank">Amazon Data Lifecycle Manager</a> can automate the process of taking and copying EBS snapshots across Regions. This can enhance DR strategies by providing an easy cold backup-and-restore option for EBS volumes. If you need to back up more than just EBS volumes, <a href="https://aws.amazon.com/backup/" rel="external" target="_blank">AWS Backup</a>  provides a central place to do this across multiple services and is covered in <a href="https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-2-data-and-replication/" rel="external" target="_blank">part 2</a>.</p>
@@ -210,8 +210,8 @@ Many AWS services have features to help you build and manage a multi-Region arch
 <p>Microservice-based applications that use containers benefit from quicker start-up times. <a href="http://aws.amazon.com/ecr/" rel="external" target="_blank">Amazon Elastic Container Registry (Amazon ECR)</a> can help ensure this happens consistently across Regions with <a href="https://aws.amazon.com/blogs/containers/cross-region-replication-in-amazon-ecr-has-landed/" rel="external" target="_blank">private image replication</a> at the registry level. An ECR private registry can be configured for either cross-Region or cross-account replication to ensure your images are ready in secondary Regions when needed.</p>
 <p>As an architecture expands into multiple Regions, it can become difficult to track where resources are provisioned. <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#global-view" rel="external" target="_blank">Amazon EC2 Global View</a> helps alleviate this by providing a centralized dashboard to see Amazon EC2 resources such as instances, VPCs, subnets, security groups, and volumes in all active Regions.</p>
 <p>We bring these compute layer features together in Figure 3 by using EC2 Image Builder to copy our latest golden AMI across Regions for deployment. We also back up each EBS volume for 3 days and replicate it across Regions using Data Lifecycle Manager.</p>
-<p><a href="#R-image-7263041e6d98d7cc4cf038ce80f30567" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7263041e6d98d7cc4cf038ce80f30567"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png"></a></p>
+<p><a href="#R-image-19e34f8fbbd0e5ed9bac7fa1179ea52b" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-19e34f8fbbd0e5ed9bac7fa1179ea52b"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png"></a></p>
 <p><em>Figure 3. AMI and EBS snapshot copy across Regions</em></p>
 <h2 id="bringing-it-together">Bringing it together</h2>
 <p>At the end of each part of this blog series, we build on a sample application based on the services covered. This shows you how to bring these services together to build a multi-Region application with AWS services. We don’t use every service mentioned, just those that fit the use case.</p>
@@ -242,8 +242,8 @@ Many AWS services have features to help you build and manage a multi-Region arch
 <p>IAM is used to grant access to manage our AWS resources.</p>
 </li>
 </ul>
-<p><a href="#R-image-f98260ebb2b39b57a76a99a8065bafa9" class="lightbox-link"><img alt="Figure 4" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f98260ebb2b39b57a76a99a8065bafa9"><img alt="Figure 4" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png"></a></p>
+<p><a href="#R-image-b2b9020e937d0adff40fd141bb86569f" class="lightbox-link"><img alt="Figure 4" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b2b9020e937d0adff40fd141bb86569f"><img alt="Figure 4" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png"></a></p>
 <p><em>Figure 4. Building an application with AWS multi-Region services using services covered in Part 1</em></p>
 <h3 id="summary">Summary</h3>
 <p>It’s important to create a solid foundation when architecting a multi-Region application. These foundations lay the groundwork for you to move fast in a secure, reliable, and elastic way as you build out your application. Many AWS services include native features to help you build a multi-Region architecture. Your architecture will be different depending on the reason for expanding beyond a single Region. In this post, we covered specific features across AWS security, networking, and compute services that have built-in functionality to take away some of the undifferentiated heavy lifting. We’ll cover data, application, and management services in future posts.</p>
@@ -341,8 +341,8 @@ We’ve chosen some <a href="https://aws.amazon.com/solutions/" rel="external" t
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1761401338" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761401338" defer></script>
-    <script src="/js/theme.js?1761401338" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1761453841" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761453841" defer></script>
+    <script src="/js/theme.js?1761453841" defer></script>
   </body>
 </html>

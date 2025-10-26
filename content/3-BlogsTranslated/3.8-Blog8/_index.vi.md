@@ -102,3 +102,72 @@ Illumina khuyến nghị sử dụng f1.4xlarge khi dùng instance F1 và f2.6xl
 
 2. Phân tích Tumor-Normal sử dụng một cặp mẫu đã được khảo sát trong một [ấn phẩm về phân tích ung thư của DRAGEN](https://www.biorxiv.org/content/10.1101/2023.03.23.534011v2) trước đây. Hai mẫu này có độ phủ khoảng 110x (tumor) và 40x (normal). Các mẫu được phân tích bằng DRAGEN v4.4 Somatic pipeline, bao gồm alignment, small variant calling, cũng như phân tích CNV và SV. hg38 linear genome reference của DRAGEN được sử dụng cho phân tích Tumor-Normal. Các file dữ liệu fastq của mẫu có thể truy cập trên Amazon S3 qua các liên kết: [Tumor fastq R1](https://s3/dragen-wgs-tn-somatic-benchmarking-datasets/fastq/HCC1395_75pc/tumor/T_SRR7890895_75pc_1.fastq.gz), [Tumor fastq R2](https://s3/dragen-wgs-tn-somatic-benchmarking-datasets/fastq/HCC1395_75pc/tumor/T_SRR7890895_75pc_2.fastq.gz), [Normal fastq R1](https://s3/dragen-wgs-tn-somatic-benchmarking-datasets/fastq/HCC1395_75pc/normal/N_SRR7890889_1.fastq.gz), [Normal fastq R2](https://s3/dragen-wgs-tn-somatic-benchmarking-datasets/fastq/HCC1395_75pc/normal/N_SRR7890889_2.fastq.gz).
 
+## So sánh hiệu năng về tốc độ và chi phí: Phân tích WGS
+
+Phân tích WGS sử dụng DRAGEN v4.4 cho thấy lợi thế đáng kể về hiệu suất chi phí trên các instance Amazon EC2 F2 so với F1, đồng thời vẫn cho ra kết quả phân tích tương đương giữa hai thế hệ instance¹:
+
+- Phân tích WGS cơ bản, bao gồm alignment và small variant calling. DRAGEN v4.4 chạy trên f2.6xlarge đạt tốc độ **nhanh hơn 1,5 lần** và **chỉ tốn 40% chi phí compute EC2** so với f1.4xlarge.
+
+- Phân tích WGS đầy đủ, bao gồm alignment, small variant calling, calling of CNVs, SVs, repeat expansions, và variant annotation. Phân tích DRAGEN trên f2.6xlarge đạt tốc độ **nhanh gấp 2 lần** và **chỉ tốn 30% chi phí compute EC2** so với f1.4xlarge.
+
+![image2](../../../images/Blog8/HPCBlog-366-f1.png)
+
+*Hình 1: Instance f2.6xlarge nhanh hơn 1.5 lần trong Phân tích WGS Cơ bản và nhanh hơn 2.1 lần trong Phân tích WGS Đầy đủ so với f1.4xlarge.*
+
+![image3](../../../images/Blog8/HPCBlog-366-f2.png)
+
+*Hình 2: Chi phí compute EC2 trên f2.6xlarge chỉ bằng 40% chi phí trên f1.4xlarge cho Phân tích WGS Cơ bản và bằng 30% chi phí trên f1.4xlarge cho Phân tích WGS Đầy đủ.*
+
+## So sánh hiệu năng về tốc độ và chi phí: Phân tích Tumor-Normal
+
+Giống như kết quả WGS, trong phân tích Tumor-Normal, DRAGEN v4.4 cũng cho thấy lợi thế đáng kể về hiệu suất chi phí trên các instance Amazon EC2 F2 so với F1, đồng thời vẫn tạo ra kết quả phân tích tương đương giữa hai thế hệ instance¹:
+
+- Phân tích Tumor-Normal, bao gồm alignment, small variant calling và calling CNVs/SVs. Phân tích bằng DRAGEN trên f2.6xlarge đạt tốc độ **nhanh hơn 1.7 lần** và **chỉ tốn 35% chi phí compute EC2** so với f1.4xlarge.
+
+![image4](../../../images/Blog8/HPCBlog-366-f3.png)
+
+*Hình 3: Instance f2.6xlarge nhanh hơn 1.7 lần so với f1.4xlarge trong Phân tích Tumor-Normal.*
+
+![image5](../../../images/Blog8/HPCBlog-366-f4.png)
+
+*Hình 4: Chi phí compute EC2 trên f2.6xlarge chỉ bằng 35% chi phí trên f1.4xlarge cho Phân tích Tumor-Normal WGS.*
+
+## Các lợi ích khác
+
+Các pipeline phân tích genomic truyền thống sử dụng BWA-MEM và GATK chạy trên CPU từng là tiêu chuẩn công nghiệp trong quá khứ, nhưng DRAGEN đã ngày càng được ưa chuộng nhờ những ưu thế vượt trội về tốc độ và độ chính xác. Nhiều công bố đã được bình duyệt đã so sánh tốc độ và độ chính xác của DRAGEN với các pipeline dựa trên BWA/GATK chạy trên CPU. Ví dụ, [Ziegler et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/36513709/) đã phát hiện ra rằng phân tích DRAGEN trên phần cứng FPGA nhanh hơn gấp hơn 8 lần và chính xác hơn so với các pipeline dựa trên BWA/GATK chạy trên CPU, trong khi [Sedlazek et al. (2024)](https://www.nature.com/articles/s41587-024-02382-1) cũng ghi nhận DRAGEN cho hiệu suất và độ chính xác cao hơn so với các pipeline dựa trên BWA/GATK.
+
+Việc sử dụng DRAGEN trên các instance F — được tăng tốc bởi FPGA — còn mang lại lợi thế về tiêu thụ điện năng so với các giải pháp truyền thống dựa trên CPU và GPU. FPGA vốn dĩ hiệu quả năng lượng hơn, tiêu thụ ít điện năng hơn để đạt cùng mức hiệu năng tính toán cho các khối lượng công việc này. Điều này đặc biệt quan trọng trong các tác vụ phân tích dữ liệu genomic, nơi khối lượng dữ liệu và thời gian xử lý có thể rất lớn.
+
+Chẳng hạn, FPGA đạt được hiệu suất trên mỗi watt cao hơn so với CPU và GPU trong các tác vụ WGS của DRAGEN. Các bộ tăng tốc dựa trên FPGA có thể cung cấp thông lượng vượt trội với mức tiêu thụ điện năng thấp hơn. Điều này là nhờ khả năng tùy chỉnh linh hoạt của FPGA, cho phép cấu hình tối ưu hóa nhằm nâng cao hiệu quả năng lượng. Ngược lại, CPU và GPU — dù mạnh mẽ — thường tiêu tốn nhiều năng lượng hơn để thực hiện cùng một tác vụ, dẫn đến chi phí vận hành cao hơn và tác động môi trường lớn hơn.
+
+Tiêu thụ điện năng thấp hơn của các FPGA dẫn đến giảm các yêu cầu về làm mát, đây có thể là một yếu tố chi phí đáng kể trong các môi trường điện toán quy mô lớn. Ngoài ra, hiệu quả năng lượng của FPGA khiến chúng trở thành lựa chọn hấp dẫn cho các ứng dụng điện toán hiệu năng cao, nơi khả năng mở rộng và hiệu quả chi phí đóng vai trò then chốt.
+
+Tóm lại, việc triển khai DRAGEN trên các instance thuộc họ ‘F’ của Amazon EC2 mang lại một giải pháp tiết kiệm năng lượng hơn cho phân tích dữ liệu genomic so với các phương pháp truyền thống dựa trên CPU hoặc GPU, đồng thời mang lại cả lợi ích về chi phí lẫn lợi ích môi trường.
+
+## Khả năng triển khai và các tùy chọn triển khai trên cloud của instance F2
+
+Các instance Amazon EC2 F2 hiện đã có sẵn tại nhiều Region của AWS, bao gồm US East (N. Virginia), US West (Oregon), Europe (London) và Asia Pacific (Sydney), với kế hoạch mở rộng thêm sang nhiều Region khác trong tương lai. F2 cung cấp nhiều kích cỡ khác nhau như f2.6xlarge, f2.12xlarge và f2.48xlarge, nhằm đáp ứng đa dạng nhu cầu khối lượng công việc. 
+
+Khi cấu hình lưu trữ và compute để chạy các workload DRAGEN trên các instance F của AWS, bạn cần lựa chọn các tùy chọn phù hợp để cân bằng giữa hiệu năng và chi phí. Hãy cân nhắc các tùy chọn lưu trữ như là [Amazon EBS gp3 volumes](https://aws.amazon.com/ebs/general-purpose/) được cấu hình theo RAID, [Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre/) cho thông lượng cao hơn và [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/) cho lưu trữ liên tục. Ngoài ra, việc truyền trực tuyến các tệp BAM và dữ liệu tham chiếu từ [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) hoặc sử dụng [Mountpoint for Amazon S3](https://aws.amazon.com/s3/features/mountpoint/) để mount bucket S3 vào hệ thống file cục bộ giúp truy cập dữ liệu một cách tiết kiệm chi phí và đơn giản hóa quy trình. Bằng cách lựa chọn và cấu hình cẩn thận các giải pháp lưu trữ này, bạn có thể đảm bảo hiệu năng tối ưu và hiệu quả chi phí cho các workload HPC của mình. Bên cạnh đó, bạn cũng nên cân nhắc sử dụng [Illumina Connected Analytics (ICA)](https://www.illumina.com/products/by-type/informatics-products/connected-analytics.html) hoặc [AWS Batch](https://aws.amazon.com/batch/) để quản lý workflow. Illumina cung cấp hướng dẫn chi tiết về cách triển khai [DRAGEN trên AWS](https://help.dragen.illumina.com/reference/dragen-multi-cloud/dragen-on-aws) trong [tài liệu hướng dẫn người dùng DRAGEN trực tuyến](https://help.dragen.illumina.com/) của họ.
+
+## Kết luận
+
+Tóm lại, các instance Amazon EC2 F2 đánh dấu một bước tiến đáng kể trong lĩnh vực điện toán đám mây được cung cấp bởi FPGA, mang lại hiệu năng, bộ nhớ, dung lượng lưu trữ và khả năng mạng vượt trội so với thế hệ trước. Sự kết hợp giữa các pipeline toàn diện của DRAGEN và sức mạnh tính toán được nâng cấp của Amazon EC2 F2 cho phép xử lý nhanh hơn, hiệu quả hơn đối với các bộ dữ liệu phức tạp – từ whole genome sequencing đến phân tích single-cell RNA.
+
+Hãy bắt đầu chuyển đổi sang F2 ngay hôm nay. Vui lòng liên hệ với đội ngũ tài khoản AWS của bạn hoặc Illumina để được hỗ trợ trong quá trình chuyển đổi sang Amazon EC2 F2 instances.
+
+Để biết thêm thông tin về DRAGEN trên AWS, hãy tìm kiếm [DRAGEN Complete Suite trên AWS Marketplace](https://aws.amazon.com/marketplace/search/results?searchTerms=DRAGEN+Complete+Suite), xem [blog DRAGEN v4.4](https://developer.illumina.com/news-updates/dragen-v4-4), hoặc truy cập [trang chủ Illumina Informatics Solutions](https://www.illumina.com/products/by-type/informatics-products.html).
+
+## Tài liệu tham khảo
+
+Scheffler, K. et al. “Somatic small-variant calling methods in Illumina DRAGEN™ Secondary Analysis.” BioRxiv (2023). [https://www.biorxiv.org/content/10.1101/2023.03.23.534011v2](https://www.biorxiv.org/content/10.1101/2023.03.23.534011v2)
+
+Sedlazeck, F. J. et al. “Comprehensive genome analysis and variant detection at scale using DRAGEN.” Nature Biotechnology (2024). [https://www.nature.com/articles/s41587-024-02382-1](https://www.nature.com/articles/s41587-024-02382-1)
+
+Ziegler, A. et al. “Comparison of calling pipelines for whole genome sequencing: an empirical study demonstrating the importance of mapping and alignment.” Scientific Reports (2022). 
+[https://pubmed.ncbi.nlm.nih.gov/36513709/](https://pubmed.ncbi.nlm.nih.gov/36513709/)
+
+## Chú thích
+
+Sự tương đương giữa F1 và F2 hard-filtered.vcf cùng các tệp kết quả khác dựa trên kết quả phân tích sử dụng DRAGEN 4.4.4 theo hướng dẫn sử dụng DRAGEN của Illumina. Lệnh vim diff cho thấy sự khác biệt duy nhất giữa hai tệp VCF là một mục hiển thị thời gian thực hiện phân tích. Khách hàng có thể tự thực hiện các phân tích tương tự để xác minh hoặc liên hệ với Illumina để biết thêm thông tin.
+

@@ -23,4 +23,11 @@ Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và q
 ## [Blog 6 - Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên](3-blogstranslated/3.6-blog6/)
 ArgoCD là một bộ công cụ GitOps hàng đầu giúp các nhóm quản lý việc triển khai Kubernets một cách khai báo, sử dụng Git là nguồn thông tin đáng tin cậy duy nhất. Bộ tính năng mạnh mẽ của nó bao gồm hệ thống đồng bộ tự động, hỗ trợ khôi phục, phát hiện sai lệch, chiến lược triển khai nâng cao, TÍch hợp RBAC, và hỗ trợ đa cụm (multi-cluster), khiến nó trẻ thành giải pháp được ưa chuộng cho việc triển khai ứng dụng trên Kubernetes. Tuy nhiên, khi các tổ chức mở rộng quy mô, một vài điểm khó khăn và thách thử vận hành bắt đầu xuất hiện.
 
+## [Blog 7 - Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa](3-blogstranslated/3.7-blog7/)
+Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của [Strands Agents SDK](https://github.com/strands-agents/sdk-python), đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho sản xuất. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.
+
+## [Blog 8 - Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2](3-blogstranslated/3.8-blog8/)
+Việc phân tích lượng dữ liệu genomic và multiomic ngày càng gia tăng đòi hỏi các giải pháp tính toán hiệu quả, có khả năng mở rộng và tiết kiệm chi phí. Amazon Web Services (AWS) tiếp tục hỗ trợ các khối lượng công việc này thông qua các dịch vụ tính toán tăng tốc bằng FPGA như các [instance Amazon EC2 F2](https://aws.amazon.com/ec2/instance-types/f2/).
+
+
 
