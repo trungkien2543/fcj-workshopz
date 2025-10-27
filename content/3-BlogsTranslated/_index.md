@@ -23,3 +23,10 @@ Many AWS services have features to help you build and manage a multi-Region arch
 
 ## [Blog 6 - GitOps continuous delivery with ArgoCD and EKS using natural language](3-blogstranslated/3.6-blog6/)
 ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.
+
+## [Blog 7 - Introducing Strands Agents 1.0: Production-Ready Multi-Agent Orchestration Made Simple](3-blogstranslated/3.7-blog7/)
+Today we are excited to announce version 1.0 of the [Strands Agents SDK](https://github.com/strands-agents/sdk-python), marking a significant milestone in our journey to make building AI agents simple, reliable, and production-ready. Strands Agents is an open source SDK that takes a model-driven approach to building and running AI agents in just a few lines of code. Strands scales from simple to complex agent use cases, and from local development to deployment in production.
+
+
+## [Blog 8 -Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances ](3-blogstranslated/3.8-blog8/)
+The analysis of ever-increasing amounts of genomic and multiomic data demands efficient, scalable, and cost-effective computational solutions. Amazon Web Services (AWS) continues to support these workloads through FPGA accelerated compute offerings such as [Amazon EC2 F2 instances](https://aws.amazon.com/ec2/instance-types/f2/).

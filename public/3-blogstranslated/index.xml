@@ -8,13 +8,6 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/3-blogstranslated/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>3.8 Blog8</title>
-      <link>http://localhost:1313/3-blogstranslated/3.8-blog8/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/3-blogstranslated/3.8-blog8/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
       <title>Blog 1</title>
       <link>http://localhost:1313/3-blogstranslated/3.1-blog1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,6 +55,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/3-blogstranslated/3.7-blog7/index.html</guid>
       <description>Introducing Strands Agents 1.0: Production-Ready Multi-Agent Orchestration Made Simple Ryan Coleman and Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments&#xA;Today we are excited to announce version 1.0 of the Strands Agents SDK, marking a significant milestone in our journey to make building AI agents simple, reliable, and production-ready. Strands Agents is an open source SDK that takes a model-driven approach to building and running AI agents in just a few lines of code. Strands scales from simple to complex agent use cases, and from local development to deployment in production.</description>
+    </item>
+    <item>
+      <title> Blog 8</title>
+      <link>http://localhost:1313/3-blogstranslated/3.8-blog8/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/3-blogstranslated/3.8-blog8/index.html</guid>
+      <description>Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, and Shyamal Mehtalia | 15/07/2025 | High Performance Computing, Life Sciences, Partner solutions&#xA;This post was contributed by Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), and Shyamal Mehtalia (Illumina)&#xA;The analysis of ever-increasing amounts of genomic and multiomic data demands efficient, scalable, and cost-effective computational solutions. Amazon Web Services (AWS) continues to support these workloads through FPGA accelerated compute offerings such as Amazon EC2 F2 instances.</description>
     </item>
   </channel>
 </rss>
