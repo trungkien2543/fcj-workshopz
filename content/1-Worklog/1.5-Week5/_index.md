@@ -9,7 +9,7 @@ pre = "<b> 1.5. </b>"
 Complete the remaining labs of module 5
 
 ### Tasks to be carried out this week:
-| Day | Task| Start Date | Completion Date | Resources |
+| Day | Task| Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | ----------------------------------------- |
 | 2 | - Translate blogs for week 5 | 06/10/2025 | 06/10/2025 | <https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/>
 | 3 | - **Practice:** <br>+ lab33: Encryption at Rest with AWS KMS | 07/10/2025 | 07/10/2025 | <https://000033.awsstudygroup.com/vi/>

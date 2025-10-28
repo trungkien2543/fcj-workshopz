@@ -12,7 +12,7 @@ pre = "<b> 1.4. </b>"
 * Implement static web application deployment through S3 and cloudfront
 
 ### Tasks to be carried out this week:
-| Day | Task| Start Date | Completion Date | Resources |
+| Day | Task| Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | ----------------------------------------- |
 | 2 | - Watch video lectures on S3 storage service <br> - Translate blogs for week 4 | 9/29/2025 | 9/29/2025 | <https://aws.amazon.com/blogs/migration-and-modernization/scaling-clouderas-development-environment-leveraging-amazon-eks-karpenter-bottlerocket-and-cilium-for-hybrid-cloud/>
 | 3 | - **Practice:** <br>+ lab57: STARTING WITH AMAZON S3 <br> + lab13: Deploy AWS Backup to the System <br> + lab 14: VM Import/Export| 9/30/2025 | 9/30/2025 | <https://000057.awsstudygroup.com> <https://000014.awsstudygroup.com> <https://000013.awsstudygroup.com/>

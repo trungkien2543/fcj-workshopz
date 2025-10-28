@@ -12,7 +12,7 @@ pre = "<b> 1.6. </b>"
 
 ### Tasks to be carried out this week:
 
-| Day | Task                                                                                                     | Start date | Completion date | Resources                                                |
+| Day | Task                                                                                                     | Start date | Completion date | Reference Material                                                |
 | --- | -------------------------------------------------------------------------------------------------------- | ---------- | --------------- | -------------------------------------------------------- |
 | 2   | - Review module 2: Understanding basic VPC architecture and related important components                 | 12/10/2025 | 12/10/2025      |
 | 3   | - Study module: Database hosting service on AWS                                                          | 13/10/2025 | 13/10/2025      | Video series about the module on AWS Study Group channel |

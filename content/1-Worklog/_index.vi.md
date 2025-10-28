@@ -18,3 +18,5 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 **Tuần 5:** [Tìm hiểu về Dịch vụ bảo mật trên AWS](1.5-week5/)
 
 **Tuần 6:** [Học về dịch vụ cơ sở dữ liệu trên cloud của AWS](1.6-Week6/)
+
+**Tuần 7:** [Tập triển khai khai ứng dụng lên aws với docker](1.7-Week7/)

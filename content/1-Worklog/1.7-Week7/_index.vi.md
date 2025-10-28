@@ -12,12 +12,18 @@ Dịch các bài blogs
 
 ### Các công việc cần triển khai trong tuần này:
 
-| Thứ | Công việc                                                                                                               | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                                   |
-| --- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Thứ | Công việc                                                                                                               | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                           |
+| --- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------- |
 | 2   | - Chỉnh sửa API tự động thông báo cho dự án cuối khóa                                                                   | 20/10/2025   | 20/10/2025      |
-| 3   | - **Thực hành:** lab15: Triển khai ứng dụng trên Docker với AWS                                                         | 21/10/2025   | 21/10/2025      | <https://000015.awsstudygroup.com/vi/>                                                                                           |
-| 4   | - Dịch bài blogs: Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên | 22/10/2025   | 22/10/2025      | [Blog 6](../../3-BlogsTranslated/3.6-Blog6/_index.vi.md)                     |
+| 3   | - **Thực hành:** lab15: Triển khai ứng dụng trên Docker với AWS                                                         | 21/10/2025   | 21/10/2025      | <https://000015.awsstudygroup.com/vi/>                   |
+| 4   | - Dịch bài blogs: Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên | 22/10/2025   | 22/10/2025      | [Blog 6](../../3-BlogsTranslated/3.6-Blog6/_index.vi.md) |
 | 5   | - Dịch bài blogs: Ra Mắt Strands Agents 1.0: Đơn Giản Hóa Việc Điều Phối Đa tác tử Đã Sẵn Sàng Triển Khai               | 23/10/2025   | 23/10/2025      | [Blog 7](../../3-BlogsTranslated/3.7-Blog7/_index.vi.md) |
-| 6   |                                                                                                                         | 24/10/2025   | 24/10/2025      | <https://000003.awsstudygroup.com/vi/>                                                                                           |
+| 6   | - **Thực hành:** lab58: Làm việc với Amazon System Manager - Session Manager                                            | 24/10/2025   | 24/10/2025      | <https://000058.awsstudygroup.com/vi/>                   |
 
 ### Kết quả đạt được tuần 7:
+
+- Thực hành bài lab tạo image và triển khai ứng dụng với docker
+
+- Thực hành lưu image của docker lên docker hub và Amazon ECR
+
+- Thực hành truy cập vào ec2 thông qua session manager để tăng cường bảo mật. Tránh việc mở port 22 để ssh hoặc bị lộ key-pair để ssh vào instance
