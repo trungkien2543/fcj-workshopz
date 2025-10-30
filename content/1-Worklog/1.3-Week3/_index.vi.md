@@ -24,14 +24,19 @@ pre = "<b> 1.3. </b>"
 
 * Hiểu được về dịch vụ Compute VM trên AWS
 
-* Biết cách triển khai 1 ứng dụng đơn giản lên máy chủ AWS Linux
+* Thực hành triển khai ứng dụng với EC2:
+  * Khởi tạo các instance và kết nối vào các instance đã khởi tạo
+  * Biết cách triển khai 1 ứng dụng đơn giản lên máy chủ AWS Linux
+  * Giới hạn quyền truy cập vào tài nguyên bằng AWS IAM
 
-* Quản trị quyền truy cập vào tài nguyên
+* Thực hành quản trị quyền truy cập với AWS IDENTITY AND ACCESS MANAGEMENT (IAM):
+  * Biết cách tạo IAM Role để phân quyền tạm thời cho IAM User
 
-* Triển khai các chiến lược scaling hệ thống để cân bằng tải cho hệ thống
+* Thực hành sử dụng CloudWatch để theo dõi tình hình của hệ thống.
 
-* Sử dụng CloudWatch để theo dõi tình hình của hệ thống
+* Thực hành triển khai ứng dụng với Auto Scaling Group:
+  * Thiết lập Load Balancer để tự động phân phối lưu lượng truy cập trên nhiều mục tiêu
+  * Tạo Auto Scaling Group để tự động khởi tạo thêm instance theo các chiến lược khác nhau
 
 * Triển khai AWS Backup cho hệ thống
 
-* Biết giới hạn quyền truy cập vào tài nguyên bằng IAM

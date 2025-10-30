@@ -24,14 +24,18 @@ pre = "<b> 1.3. </b>"
 
 * Understand the Compute VM service on AWS
 
-* Know how to deploy a simple application to an AWS Linux server
+* Practice deploying applications with EC2:
+  * Initialize instances and connect to initialized instances
+  * Know how to deploy a simple application to an AWS Linux server
+  * Limit access to resources using AWS IAM
 
-* Manage access to resources
+* Practice managing access rights with AWS IDENTITY AND ACCESS MANAGEMENT (IAM):
+  * Know how to create an IAM Role to temporarily grant permissions to an IAM User
 
-* Implement system scaling strategies to balance the system load
+* Practice using CloudWatch to monitor the status of the system.
 
-* Use CloudWatch to monitor the system's health
+* Practice deploying applications with Auto Scaling Group:
+  * Set up a Load Balancer to automatically distribute traffic across multiple targets
+  * Create an Auto Scaling Group to automatically initialize more instances according to different strategies
 
 * Deploy AWS Backup for the system
-
-* Know how to limit access to resources using IAM

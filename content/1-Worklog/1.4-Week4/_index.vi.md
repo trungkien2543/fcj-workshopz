@@ -17,17 +17,23 @@ pre = "<b> 1.4. </b>"
 | 3   | - **Thực hành:** <br>+ lab57:  Khởi Đầu Với Amazon S3 <br> + lab13: Triển khai AWS Backup cho hệ thống <br> + lab 14: VM Import/Export| 30/9/2025 | 30/9/2025 | <https://000057.awsstudygroup.com> <https://000014.awsstudygroup.com> <https://000013.awsstudygroup.com/>
 | 4   | - Xem video bài giảng về dịch vụ bảo mật trên AWS| 1/10/2025 | 1/10/2025 | 
 | 5   | - **Thực hành:** <br>+ lab2:  Quản trị quyền truy cập với AWS Identity and Access Management (IAM) <br> + lab44: IAM Role & Condition <br> + lab 48: Cấp quyền cho ứng dụng truy cập dịch vụ AWS với IAM Role | 2/10/2025 | 2/10/2025 | <https://000048.awsstudygroup.com/vi/> <https://000002.awsstudygroup.com/vi/> <https://000044.awsstudygroup.com/vi/>
-| 6   | - **Thực hành:** <br>+ lab30:  Giới hạn quyền truy cập với IAM Permission Bounary | 3/10/2025 | 3/10/2025 | <https://000030.awsstudygroup.com/vi/>
+| 6   | - **Thực hành:** <br>+ lab30:  Giới hạn quyền truy cập với IAM Permission Boundary | 3/10/2025 | 3/10/2025 | <https://000030.awsstudygroup.com/vi/>
 ### Kết quả đạt được tuần 4:
 
 * Hiểu được về dịch vụ lưu trữ trên S3
 
-* Biết cách triển khai 1 trang web tĩnh thông qua Amazon S3 và cloudFront
+* Thực hành hosting một website tĩnh bằng Amazon S3:
+  * Biết cách khởi tạo một S3 và tải dữ liệu của website tĩnh lên đó
+  * Thực hành cấu hình AWS CloudFront để host một website tĩnh trên S3 mà không cần public thông tin về bucket
+  * Tìm hiểu về chức năng Bucket Versioning để bảo toàn và khôi phục phiên bản của mọi đối tượng được lưu trong bucket
+  * Tìm hiểu chức năng Amzon S3 Cross-Region Replication (CRR) để tự động sao chép các đối tượng qua các vùng AWS khác nhau
 
-* Thực hành triển khai backup cho hệ thống
+* Thực hành triển khai backup cho hệ thống, hiểu về hai khái niệm chính là RPO và RTO
 
 * Biết cách thực hiện import máy chủ ảo từ vm ware vào máy chủ EC2 và ngược lại
 
-* Thực hiện quản trị quyền truy cập vào hệ thống với AWS IAM
+* Thực hành quản trị quyền truy cập vào hệ thống với AWS IAM:
+  * Biết cách tạo ra IAM User có quyền với S3 và dùng access key đã tạo cho user để upload file từ máy chủ lên S3
+  * Biết cách tạo IAM Role để gán quyền cho EC2 có thể gửi file lên S3 mà không cần dùng access key để tránh bị lộ thông tin 
 
-* Tạo IAM Role để thực hiện truy cập dịch vụ AWS mà không dùng AccessKe/Secret Key để đảm bảo an toàn
+* Thực hành sử dụng IAM Permissions Boundary để giới hạn quyền của người dùng, từ đó đơn giản hóa việc quản lý quyền và tránh cấp phát các quyền không cần thiết.

@@ -24,12 +24,18 @@ pre = "<b> 1.4. </b>"
 
 * Understand about storage services on S3
 
-* Know how to deploy a static website through Amazon S3 and cloudFront
+* Practice hosting a static website using Amazon S3:
+  * Know how to initialize an S3 and upload data of the static website to it
+  * Practice configuring AWS CloudFront to host a static website on S3 without having to public information about the bucket
+  * Learn about the Bucket Versioning to preserve and restore versions of all objects stored in the bucket
+  * Learn about the Amzon S3 Cross-Region Replication (CRR) to automatically copy objects across different AWS regions
 
-* Practice deploying backups for the system
+* Practice implementing backups for the system, understand the two main concepts of RPO and RTO
 
-* Know how to import virtual servers from vm ware to EC2 server
+* Learn how to import virtual machines from VMware to Amazon EC2 instances and migrate EC2 instances back to on-premises VMware environments. 
 
-* Manage access rights to the system with AWS IAM
+* Practice managing system access using AWS IAM by:
+  * Creating an IAM user with permissions to access Amazon S3, and using the user’s access keys to upload files from a server to an S3 bucket.
+  * Creating an IAM role for EC2 instances that grants S3 upload permissions, enabling secure access to S3 without embedding access keys (thus avoiding credential exposure).
 
-* Create an IAM Role to access AWS services without using AccessKey/Secret Key to ensure security
+* Practice using IAM PERMISSION BOUNDARY to limit user permissions, thereby simplifying permission management and avoiding the assignment of unnecessary privileges.
