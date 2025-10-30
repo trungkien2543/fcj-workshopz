@@ -27,12 +27,18 @@ pre = " <b> 1.2. </b> "
 
 * Understand VPC service and how to create a virtual private network on AWS
 
-* Know how to configure security group, subnet, route table
+* Practice building a VPC virtual private network:
+  * Create VPC, Subnet, Internet Gateway, Route Table, Security Group, Activate VPC Flow Logs
+  * Deploy public and private EC2 servers. Create NAT Gateway to connect private instances to the internet. Use Reachability Analyzer to test connectivity
 
-* Create the first EC2
+* Practice setting up HYBRID DNS with ROUTE 53 RESOLVER:
+  * Take advantage of templates from AWS Quick Start to build a highly available and secure network infrastructure using AWS CloudFormation.
+  * Know how to log in to the server using RDP protocol
+  * Set up DNS
 
-* Build a hybrid DNS system based on ROUTE53
+
+* Practice setting up VPC Peering to allow 2 VPCs to communicate with each other
+
+* Practice using AWS Transit Gateway to optimize the system when there are many vpc that need to communicate with each other. Avoid creating too many VPC Peering
 
 * Participate in event cloud day vietnam and learn more about migration, modernization
-
-* Know how to clean up unused resources

@@ -23,12 +23,20 @@ pre = " <b> 1.1. </b> "
 
 ### Week 1 Achievements:
 
-* Understand what AWS is and have a basic understanding of AWS's global infrastructure.
+- Understand what AWS is and have a basic understanding of AWS's global infrastructure:
+  - Compute
+  - Storage
+  - IAM
+  - ...
 
-* Successfully created and configured an AWS Free Tier account.
+- Practice initializing aws account:
+  - Create a new account in aws
+  - Set up MFA for the new account
+  - Create an IAM User as Admin to use in daily tasks
+  - Learn about AWS Support
 
-* Get familiar with the AWS Management Console and know how to find, access, and use services from the web interface.
+- Get familiar with the AWS Management Console and know how to find, access, and use services from the web interface.
 
-* Manage budgets by creating budgets and setting alerts.
+- Manage budgets by creating budgets and setting alerts.
 
-* Configure a hugo project to write a workshop.
+- Configure a hugo project to write a workshop.
