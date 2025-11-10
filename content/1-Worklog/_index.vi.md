@@ -5,7 +5,7 @@ weight = 1
 pre = " <b> 1. </b> "
 +++
 
-Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
+Nội dung các công việc thực hiện trong các tuần như sau:
 
 **Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS](1.1-week1/)
 
@@ -20,3 +20,5 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 **Tuần 6:** [Học về dịch vụ cơ sở dữ liệu trên cloud của AWS](1.6-Week6/)
 
 **Tuần 7:** [Tập triển khai khai ứng dụng lên aws với docker](1.7-Week7/)
+
+**Tuần 8:** [Học cách tối ưu chi phí trên AWS](1.8-Week8/)

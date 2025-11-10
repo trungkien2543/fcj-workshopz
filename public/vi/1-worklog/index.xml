@@ -3,10 +3,17 @@
   <channel>
     <title>Worklog</title>
     <link>http://localhost:1313/vi/1-worklog/index.html</link>
-    <description>Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS&#xA;Tuần 2: Xây dựng VPC và Hyrid DNS với Route53&#xA;Tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS&#xA;Tuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3</description>
+    <description>Nội dung các công việc thực hiện trong các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS&#xA;Tuần 2: Xây dựng VPC và Hyrid DNS với Route53&#xA;Tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS&#xA;Tuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3&#xA;Tuần 5: Tìm hiểu về Dịch vụ bảo mật trên AWS&#xA;Tuần 6: Học về dịch vụ cơ sở dữ liệu trên cloud của AWS</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <atom:link href="http://localhost:1313/vi/1-worklog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.9 Week9</title>
+      <link>http://localhost:1313/vi/1-worklog/1.9-week9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vi/1-worklog/1.9-week9/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
     <item>
       <title>Tuần 1</title>
       <link>http://localhost:1313/vi/1-worklog/1.1-week1/index.html</link>
@@ -33,14 +40,14 @@
       <link>http://localhost:1313/vi/1-worklog/1.4-week4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/vi/1-worklog/1.4-week4/index.html</guid>
-      <description>Mục tiêu tuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3 Tìm hiểu về Dịch vụ bảo mật trên AWS Thực hiện triển khai được ứng dụng static web thông qua S3 và cloudfront Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Xem video bài giảng về dịch vụ lưu trữ S3 - Dịch blogs cho tuần 4 29/9/2025 29/9/2025 https://aws.amazon.com/blogs/migration-and-modernization/scaling-clouderas-development-environment-leveraging-amazon-eks-karpenter-bottlerocket-and-cilium-for-hybrid-cloud/ 3 - Thực hành: + lab57: Khởi Đầu Với Amazon S3 + lab13: Triển khai AWS Backup cho hệ thống + lab 14: VM Import/Export 30/9/2025 30/9/2025 https://000057.awsstudygroup.com https://000014.awsstudygroup.com https://000013.awsstudygroup.com/ 4 - Xem video bài giảng về dịch vụ bảo mật trên AWS 1/10/2025 1/10/2025 5 - Thực hành: + lab2: Quản trị quyền truy cập với AWS Identity and Access Management (IAM) + lab44: IAM Role &amp; Condition + lab 48: Cấp quyền cho ứng dụng truy cập dịch vụ AWS với IAM Role 2/10/2025 2/10/2025 https://000048.awsstudygroup.com/vi/ https://000002.awsstudygroup.com/vi/ https://000044.awsstudygroup.com/vi/ 6 - Thực hành: + lab30: Giới hạn quyền truy cập với IAM Permission Bounary 3/10/2025 3/10/2025 https://000030.awsstudygroup.com/vi/ Kết quả đạt được tuần 4: Hiểu được về dịch vụ lưu trữ trên S3</description>
+      <description>Mục tiêu tuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3 Tìm hiểu về Dịch vụ bảo mật trên AWS Thực hiện triển khai được ứng dụng static web thông qua S3 và cloudfront Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Xem video bài giảng về dịch vụ lưu trữ S3 - Dịch blogs cho tuần 4 29/9/2025 29/9/2025 https://aws.amazon.com/blogs/migration-and-modernization/scaling-clouderas-development-environment-leveraging-amazon-eks-karpenter-bottlerocket-and-cilium-for-hybrid-cloud/ 3 - Thực hành: + lab57: Khởi Đầu Với Amazon S3 + lab13: Triển khai AWS Backup cho hệ thống + lab 14: VM Import/Export 30/9/2025 30/9/2025 https://000057.awsstudygroup.com https://000014.awsstudygroup.com https://000013.awsstudygroup.com/ 4 - Xem video bài giảng về dịch vụ bảo mật trên AWS 1/10/2025 1/10/2025 5 - Thực hành: + lab2: Quản trị quyền truy cập với AWS Identity and Access Management (IAM) + lab44: IAM Role &amp; Condition + lab 48: Cấp quyền cho ứng dụng truy cập dịch vụ AWS với IAM Role 2/10/2025 2/10/2025 https://000048.awsstudygroup.com/vi/ https://000002.awsstudygroup.com/vi/ https://000044.awsstudygroup.com/vi/ 6 - Thực hành: + lab30: Giới hạn quyền truy cập với IAM Permission Boundary 3/10/2025 3/10/2025 https://000030.awsstudygroup.com/vi/ Kết quả đạt được tuần 4: Hiểu được về dịch vụ lưu trữ trên S3</description>
     </item>
     <item>
       <title>Tuần 5</title>
       <link>http://localhost:1313/vi/1-worklog/1.5-week5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/vi/1-worklog/1.5-week5/index.html</guid>
-      <description>Mục tiêu tuần 5: Nghiên cứu thêm về Dịch vụ bảo mật trên AWS Thực xong các lab còn lại của module 5 Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch blogs cho tuần 5 06/10/2025 06/10/2025 https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/ 3 - Thực hành: + lab33: Mã hóa ở trạng thái lưu trữ với AWS KMS 07/10/2025 07/10/2025 https://000033.awsstudygroup.com/vi/ 4 - Lập trình api cho dự án cuối khóa module project, section 08/10/2025 08/10/2025 5 - Thực hành: + lab12: Sử dụng AWS IAM Identity Center để quản lý định danh mạnh mẽ 09/10/2025 09/10/2025 https://000012.awsstudygroup.com/vi/ 6 - Lập trình api cho dự án cuối khóa module task 10/10/2025 10/10/2025 Kết quả đạt được tuần 4: Mã hóa dữ liệu trên S3 bằng KMS</description>
+      <description>Mục tiêu tuần 5: Nghiên cứu thêm về Dịch vụ bảo mật trên AWS Thực xong các lab còn lại của module 5 Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch blogs cho tuần 5 06/10/2025 06/10/2025 https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/ 3 - Thực hành: + lab33: Mã hóa ở trạng thái lưu trữ với AWS KMS 07/10/2025 07/10/2025 https://000033.awsstudygroup.com/vi/ 4 - Lập trình api cho dự án cuối khóa module project, section 08/10/2025 08/10/2025 5 - Thực hành: + lab12: Sử dụng AWS IAM Identity Center để quản lý định danh mạnh mẽ 09/10/2025 09/10/2025 https://000012.awsstudygroup.com/vi/ 6 - Lập trình api cho dự án cuối khóa module task 10/10/2025 10/10/2025 Kết quả đạt được tuần 5: Thực hành mã hóa ở trạng thái lưu trữ với AWS KMS:</description>
     </item>
     <item>
       <title>Tuần 6</title>
@@ -61,7 +68,7 @@
       <link>http://localhost:1313/vi/1-worklog/1.8-week8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/vi/1-worklog/1.8-week8/index.html</guid>
-      <description>This is a new chapter.</description>
+      <description>Mục tiêu tuần 8: Dịch bài blogs còn lại&#xA;Thực hành một số bài hỗ trợ cho việc tối ưu hệ thống&#xA;Tìm các tối ưu ứng dụng cho dự án cuối khóa&#xA;Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch bài blogs 8: Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2 27/10/2025 27/10/2025 Blog 8 3 - Chỉnh sửa lại cấu trúc cho các worklogs - Xem lại nội dung lý thuyết của một số dịch vụ trên AWS - Tìm hiểu về Desgin Pattern để ứng dụng cho dự án cuối khóa như: Proxy Pattern, Prototype Pattern, Builder Pattern 28/10/2025 28/10/2025 https://viblo.asia/p/proxy-design-pattern-tro-thu-dac-luc-cua-developers-RQqKLB2bl7z https://viblo.asia/p/prototype-design-pattern-tro-thu-dac-luc-cua-developers-GrLZDBQO5k0 4 - Thực hành: lab 22: Tối ưu chi phí EC2 với Lambda 29/10/2025 29/10/2025 https://000022.awsstudygroup.com/vi/ 5 - Thực hành: lab 29: Bắt đầu với Grafana trên AWS 30/10/2025 30/10/2025 https://000029.awsstudygroup.com/vi/ 6 - Tìm hiểu về WebSocket 31/10/2025 31/10/2025 https://www.geeksforgeeks.org/web-tech/what-is-web-socket-and-how-it-is-different-from-the-http/ Kết quả đạt được tuần 8: Tìm hiểu về 1 số design pattern hữu ích để tích hợp vào đồ án cuối khóa:</description>
     </item>
   </channel>
 </rss>

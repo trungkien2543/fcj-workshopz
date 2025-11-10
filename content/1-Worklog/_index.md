@@ -5,7 +5,7 @@ weight = 1
 pre = " <b> 1. </b> "
 +++
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+The content of the tasks carried out in each week is as follows:
 
 **Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
 
@@ -20,3 +20,5 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 **Week 6:** [Learn about database services on AWS Cloud](1.6-Week6/)
 
 **Week 7:** [Practice deploying applications to aws with docker](1.7-Week7/)
+
+**Week 8:** [Learn how to optimize costs on AWS.](1.8-Week8/)

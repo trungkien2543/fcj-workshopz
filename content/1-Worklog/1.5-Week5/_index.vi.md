@@ -18,12 +18,17 @@ pre = "<b> 1.5. </b>"
 | 5   | - **Thực hành:** <br>+ lab12:  Sử dụng AWS IAM Identity Center để quản lý định danh mạnh mẽ | 09/10/2025 | 09/10/2025 | <https://000012.awsstudygroup.com/vi/>
 | 6   | - Lập trình api cho dự án cuối khóa module task | 10/10/2025 | 10/10/2025 | 
 
-### Kết quả đạt được tuần 4:
+### Kết quả đạt được tuần 5:
 
-* Mã hóa dữ liệu trên S3 bằng KMS
+* Thực hành mã hóa ở trạng thái lưu trữ với AWS KMS:
+  * Tìm hiểu về 2 loại khóa đối xứng và bất đối xứng 
+  * Tìm hiểu dịch vụ AWS CloudTrail để ghi nhật ký, giám sát liên tục và duy trì hoạt động của tài khoản có liên quan đến các hoạt động diễn ra trên cơ sở hạ tầng AWS
+  * Biết cách tạo KMS để mã hóa dữ liệu trên S3
 
 * Biết các tạo các group, user, permission set để phần quyền account trên tổ chức
 
 * Biết kết nối tài khoản trong tổ chức trên CLI để sử dụng tài nguyên của dự án
 
 * Tạo các permission set theo nhiều cách để quản lý linh hoạt hơn
+
+* Hoàn thành được 1 số API cho dự án cuối khóa
