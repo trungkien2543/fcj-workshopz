@@ -6,9 +6,9 @@ pre = "<b> 1.7. </b>"
 
 ### Week 7 Objectives:
 
-Practice labs on deploying applications to AWS
+- Practice labs on deploying applications to AWS
 
-Translate blog posts
+- Translate blog posts
 
 ### Tasks to be carried out this week:
 

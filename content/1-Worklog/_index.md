@@ -22,3 +22,6 @@ The content of the tasks carried out in each week is as follows:
 **Week 7:** [Practice deploying applications to aws with docker](1.7-Week7/)
 
 **Week 8:** [Learn how to optimize costs on AWS.](1.8-Week8/)
+
+**Week 9:** [Complete the interface and functionality for Task UpComing. Practice with Serverless](1.9-Week9/)
+

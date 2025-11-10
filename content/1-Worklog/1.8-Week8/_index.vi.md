@@ -6,11 +6,11 @@ pre = "<b> 1.8. </b>"
 
 ### Mục tiêu tuần 8:
 
-Dịch bài blogs còn lại 
+- Dịch bài blogs còn lại 
 
-Thực hành một số bài hỗ trợ cho việc tối ưu hệ thống
+- Thực hành một số bài hỗ trợ cho việc tối ưu hệ thống
 
-Tìm các tối ưu ứng dụng cho dự án cuối khóa
+- Tìm các tối ưu ứng dụng cho dự án cuối khóa
 
 ### Các công việc cần triển khai trong tuần này:
 

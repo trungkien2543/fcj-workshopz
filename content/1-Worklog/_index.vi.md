@@ -22,3 +22,5 @@ Nội dung các công việc thực hiện trong các tuần như sau:
 **Tuần 7:** [Tập triển khai khai ứng dụng lên aws với docker](1.7-Week7/)
 
 **Tuần 8:** [Học cách tối ưu chi phí trên AWS](1.8-Week8/)
+
+**Tuần 9:** [Hoàn thiện phần giao diện và chức năng cho Task UpComing. Thực hành thử với Serverless](1.9-Week9/)

@@ -6,9 +6,9 @@ pre = "<b> 1.7. </b>"
 
 ### Mục tiêu tuần 7:
 
-Thực hành các bài lab về việc triển khai ứng dụng lên AWS
+- Thực hành các bài lab về việc triển khai ứng dụng lên AWS
 
-Dịch các bài blogs
+- Dịch các bài blogs
 
 ### Các công việc cần triển khai trong tuần này:
 

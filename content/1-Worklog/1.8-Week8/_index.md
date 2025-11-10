@@ -6,21 +6,21 @@ pre = "<b> 1.8. </b>"
 
 ### Week 8 Objectives:
 
-Translate the remaining blog posts.
+- Translate the remaining blog posts.
 
-Practice some exercises that support system optimization.
+- Practice some exercises that support system optimization.
 
-Identify application optimizations for the final project.
+- Identify application optimizations for the final project.
 
 
 ### Tasks to be carried out this week:
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Day |Task| Start Date | Completion Date | Reference Material|
 | --- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------- |
 | 2   | - Translate blog 8: Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances | 27/10/2025   | 27/10/2025      | [Blog 8](../../3-BlogsTranslated/3.7-Blog7/_index.vi.md) |  
 | 3   | - Revise the structure of worklogs <br> - Review theoretical content of several AWS services <br> - Learn about Design Patterns to apply in the final project such as: Proxy Pattern, Prototype Pattern, Builder Pattern                                                      | 28/10/2025   | 28/10/2025      | <https://viblo.asia/p/proxy-design-pattern-tro-thu-dac-luc-cua-developers-RQqKLB2bl7z> <https://viblo.asia/p/prototype-design-pattern-tro-thu-dac-luc-cua-developers-GrLZDBQO5k0>                  |
-| 4   | - **Practice:** lab 22: Optimizing EC2 Costs with Lambda | 29/10/2025   | 29/10/2025      | <https://000022.awsstudygroup.com/vi/> |
-| 5   | - **Practice:** lab 29: Getting started with Grafana basic  | 30/10/2025   | 30/10/2025      | <https://000029.awsstudygroup.com/vi/> |
+| 4   | - **Practice:** lab 22: Optimizing EC2 Costs with Lambda | 29/10/2025   | 29/10/2025      | <https://000022.awsstudygroup.com> |
+| 5   | - **Practice:** lab 29: Getting started with Grafana basic  | 30/10/2025   | 30/10/2025      | <https://000029.awsstudygroup.com> |
 | 6   | - Learn about WebSocket | 31/10/2025   | 31/10/2025      | <https://www.geeksforgeeks.org/web-tech/what-is-web-socket-and-how-it-is-different-from-the-http/> |
 
 
