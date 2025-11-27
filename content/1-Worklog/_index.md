@@ -25,3 +25,4 @@ The content of the tasks carried out in each week is as follows:
 
 **Week 9:** [Complete the interface and functionality for Task UpComing. Practice with Serverless](1.9-Week9/)
 
+**Week 10:** [Build the comment, notifications UI/UX, and the APIs related to file management](1.10-Week10/)

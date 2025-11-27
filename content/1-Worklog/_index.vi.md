@@ -24,3 +24,5 @@ Nội dung các công việc thực hiện trong các tuần như sau:
 **Tuần 8:** [Học cách tối ưu chi phí trên AWS](1.8-Week8/)
 
 **Tuần 9:** [Hoàn thiện phần giao diện và chức năng cho Task UpComing. Thực hành thử với Serverless](1.9-Week9/)
+
+**Tuần 10:** [Xây dựng giao diện comment, notifications và các API liên quan tới quản lý file](1.10-Week10/)
