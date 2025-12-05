@@ -2,100 +2,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Worklog :: My Hugo Site</title>
-    <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/index.html</link>
+    <link>http://localhost:1313/fcj-workshopz/1-worklog/index.html</link>
     <description>The content of the tasks carried out in each week is as follows:&#xA;Week 1: Getting familiar with AWS and basic AWS services&#xA;Week 2: Building VPC and Hybrid DNS with Route53&#xA;Week 3: Learn about Compute VM services on AWS&#xA;Week 4: Learn about Amazon S3 storage service&#xA;Week 5: Learn about security services on AWS&#xA;Week 6: Learn about database services on AWS Cloud&#xA;Week 7: Practice deploying applications to aws with docker&#xA;Week 8: Learn how to optimize costs on AWS.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/1-worklog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fcj-workshopz/1-worklog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week 1</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.1-week1/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.1-week1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.1-week1/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.1-week1/index.html</guid>
       <description>Week 1 Objectives: Connect and get acquainted with members of First Cloud Journey. Understand basic AWS services, how to use the console management. Discuss topic and technology for first project. Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Get to know FCJ members - Read and note the rules and regulations at the internship unit - Watch the video lecture on module 1 - Learn about the terms: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations) 8/9/2025 8/9/2025 https://policies.fcjuni.com/ 3 - Practice: + lab01: Create first account, use IAM, create MFA + lab07: Create budgets 9/9/2025 9/9/2025 https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 - Learn how to do personal workshops using hugo.io - Translate AWS blogs 10/9/2025 10/9/2025 https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 - Write logs and configuration for the workshop 11/9/2025 11/9/2025 Week 1 Achievements: Understand what AWS is and have a basic understanding of AWS’s global infrastructure:</description>
     </item>
     <item>
       <title>Week 2</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.2-week2/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.2-week2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.2-week2/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.2-week2/index.html</guid>
       <description>Week 2 Objectives: Learn the basic VPC architecture and its important components Do the labs in module 2 Read the book Aws advanced network Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Learn more terms related to VPC practice 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Practice: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Learn how to do DNS setup exercises with route 53 Practice: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Join Cloud Day Vietnam in Ho Chi Minh City 18/09/2025 18/9/2025 6 - Translate blogs - Write worklogs and event reports 1 19/09/2025 19/9/2025 Original link 7 - Practice: + lab20: Set up AWS Transit Gatewayy + lab19: Setting up VPC Peering 20/09/2025 20/9/2025 https://000020.awsstudygroup.com/vi/ https://000019.awsstudygroup.com/vi/ Week 2 Achievements: Understand VPC service and how to create a virtual private network on AWS</description>
     </item>
     <item>
       <title> Week 3</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.3-week3/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.3-week3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.3-week3/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.3-week3/index.html</guid>
       <description>Week 3 Objectives: Learn about VM services on AWS Perform application development on EC2, create backups and use cloudwatch to monitor the system Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Watch video lectures about Compute VM service on AWS - Translate blogs for week 3 22/9/2025 22/9/2025 original link 3 - Practice: + lab04: Initialize and learn basic features of Amazon EC2 23/9/2025 23/9/2025 https://000004.awsstudygroup.com/ 4 - Practice: + lab04 section 8: Limit resource usage using IAM service + lab02: Manage access rights with AWS Identity and Access Management (IAM) 24/9/2025 24/9/2025 https://000004.awsstudygroup.com/vi/8-costusagegovernance/ https://000002.awsstudygroup.com/vi/ 5 - Practice: + lab08: Using CloudWatch 25/9/2025 25/9/2025 https://000008.awsstudygroup.com/ 6 - Practice: + lab06: Deploy FCJ Management application with Auto Scaling Group + lab13: Deploy aws backup for the system 26/9/2025 26/9/2025 https://000006.awsstudygroup.com/ https://000013.awsstudygroup.com/ Week 3 Achievements: Understand the Compute VM service on AWS</description>
     </item>
     <item>
       <title>Week 4</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.4-week4/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.4-week4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.4-week4/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.4-week4/index.html</guid>
       <description>Week 4 Objectives: Learn about Amazon S3 Storage Service Learn about Security Services on AWS Implement static web application deployment through S3 and cloudfront Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Watch video lectures on S3 storage service - Translate blogs for week 4 9/29/2025 9/29/2025 original link 3 - Practice: + lab57: STARTING WITH AMAZON S3 + lab13: Deploy AWS Backup to the System + lab 14: VM Import/Export 9/30/2025 9/30/2025 https://000057.awsstudygroup.com https://000014.awsstudygroup.com https://000013.awsstudygroup.com/ 4 - Watch video lectures on security services on AWS 10/1/2025 10/1/2025 5 - Practice: + lab2: AWS Identity and Access Management (IAM) Access Control + lab44: IAM Role &amp; Condition + lab 48: Granting authorization for an application to access AWS services with an IAM role. 10/2/2025 10/2/2025 https://000048.awsstudygroup.com https://000002.awsstudygroup.com https://000044.awsstudygroup.com 6 - Practice: + lab30: LIMITATION OF USER RIGHTS WITH IAM PERMISSION BOUNDARY 3/10/2025 3/10/2025 https://000030.awsstudygroup.com Week 4 Achievements: Understand about storage services on S3</description>
     </item>
     <item>
       <title>Week 5</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.5-week5/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.5-week5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.5-week5/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.5-week5/index.html</guid>
       <description>Week 5 Objectives: Complete the remaining labs of module 5&#xA;Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Translate blogs for week 5 06/10/2025 06/10/2025 original link 3 - Practice: + lab33: Encryption at Rest with AWS KMS 07/10/2025 07/10/2025 https://000033.awsstudygroup.com/vi/ 4 - API programming for the taskflow service in project, section modules 08/10/2025 08/10/2025 5 - Practice: + lab12: Using AWS IAM Identity Center for robust identity management 09/10/2025 09/10/2025 https://000012.awsstudygroup.com/vi/ 6 - API programming for the taskflow service in task, member, comment modules 10/10/2025 10/10/2025 Week 5 Achievements: Practiced encryption at rest using AWS KMS:</description>
     </item>
     <item>
       <title>Week 6</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.6-week6/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.6-week6/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.6-week6/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.6-week6/index.html</guid>
       <description>Week 6 Objectives: Learn about AWS cloud database services Practice labs related to using RDS Review the content and practice of module 2 Tasks to be carried out this week: Day Task Start date Completion date Reference Material 2 - Review module 2: Understanding basic VPC architecture and related important components 12/10/2025 12/10/2025 3 - Study module: Database hosting service on AWS 13/10/2025 13/10/2025 Video series about the module on AWS Study Group channel 4 - Practice: lab 05: Amazon Relational Database Service (Amazon RDS) 14/10/2025 14/10/2025 https://000005.awsstudygroup.com/vi/ 5 - Learn to use cache, Redis for final project 15/10/2025 15/10/2025 https://www.youtube.com/watch?v=HSknuSIoK6A 6 - Practice: lab 03: Getting Started with Amazon Virtual Private Cloud (VPC) and AWS Site-to-Site VPN 16/10/2025 16/10/2025 https://000003.awsstudygroup.com/vi/ Week 6 Achievements: Learn about different database services: RDS, ElastiCache, Redshift.</description>
     </item>
     <item>
       <title>Week 7</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.7-week7/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.7-week7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.7-week7/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.7-week7/index.html</guid>
       <description>Week 7 Objectives: Practice labs on deploying applications to AWS&#xA;Translate blog posts&#xA;Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Editing the automatic notification API for the final project 20/10/2025 20/10/2025 3 - Practice: lab15: Deploying applications on Docker with AWS 21/10/2025 21/10/2025 https://000015.awsstudygroup.com/vi/ 4 - Translating blog posts: Continuous deployment based on GitOps methodology with ArgoCD and EKS using natural language 22/10/2025 22/10/2025 original link 5 - Translated blogs: Introducing Strands Agents 1.0: Simplifying Multi-Agent Orchestration Ready for Deployment 23/10/2025 23/10/2025 original link 6 - Practice: lab58: Working with Amazon System Manager - Session Manager 24/10/2025 24/10/2025 https://000058.awsstudygroup.com/vi/ Week 7 Achievements: Practice lab to create image and deploy application with docker</description>
     </item>
     <item>
       <title>Week 8</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.8-week8/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.8-week8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.8-week8/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.8-week8/index.html</guid>
       <description>Week 8 Objectives: Translate the remaining blog posts.&#xA;Practice some exercises that support system optimization.&#xA;Identify application optimizations for the final project.&#xA;Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Translate blog 8: Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances 27/10/2025 27/10/2025 original link 3 - Revise the structure of worklogs - Review theoretical content of several AWS services - Learn about Design Patterns to apply in the final project such as: Proxy Pattern, Prototype Pattern, Builder Pattern 28/10/2025 28/10/2025 https://viblo.asia/p/proxy-design-pattern-tro-thu-dac-luc-cua-developers-RQqKLB2bl7z https://viblo.asia/p/prototype-design-pattern-tro-thu-dac-luc-cua-developers-GrLZDBQO5k0 4 - Practice: lab 22: Optimizing EC2 Costs with Lambda 29/10/2025 29/10/2025 https://000022.awsstudygroup.com 5 - Practice: lab 29: Getting started with Grafana basic 30/10/2025 30/10/2025 https://000029.awsstudygroup.com 6 - Learn about WebSocket 31/10/2025 31/10/2025 https://www.geeksforgeeks.org/web-tech/what-is-web-socket-and-how-it-is-different-from-the-http/ Week 8 Achievements: Learn about some useful design patterns to integrate into the final project:</description>
     </item>
     <item>
       <title>Week 9</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.9-week9/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.9-week9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.9-week9/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.9-week9/index.html</guid>
       <description>Week 9 Objectives: Integrate WebSocket into the Notification module&#xA;Practice labs related to Serverless Computing&#xA;Complete the interface and API calls for the Task UpComing feature&#xA;Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Integrate WebSocket into the project and run a demo 3/11/2025 3/11/2025 3 - Build the interface for the Task UpComing feature, including displaying the task list, filtering by date, and creating tasks 4/11/2025 4/11/2025 4 - Practice: lab 78: Serverless – Interaction between Lambda, S3, and DynamoDB 5/11/2025 5/11/2025 https://000078.awsstudygroup.com/vi/ 5 - Complete creating, editing, and deleting tasks in the Task UpComing feature - Design the interface for comments of each task 6/11/2025 6/11/2025 6 - Complete API integration for the Task UpComing feature 7/11/2025 7/11/2025 Week 9 Achievements: Complete the Task UpComing feature:</description>
     </item>
     <item>
       <title>Week 10</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.10-week10/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.10-week10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.10-week10/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.10-week10/index.html</guid>
       <description>Week 10 Objectives: Complete the FE for comments in tasks within the project.&#xA;Complete the notifications FE with real-time updates.&#xA;Build APIs for storing data on AWS S3.&#xA;Build APIs for the comment attachment feature in task comments.&#xA;Tasks to be carried out this week: Day Task Start Date End Date Reference Materials 2 - Set up WebSocket on the frontend and connect it to the server - Create ModalNotification and ItemNotification components for displaying notifications 10/11/2025 10/11/2025 3 - Build the UI for the comment feature in the task detail view - Integrate API into the comment UI 11/11/2025 11/11/2025 4 - Build API for uploading files to AWS S3 12/11/2025 12/11/2025 5 - Build API to allow users to attach files stored on S3 to comments 13/11/2025 13/11/2025 6 - Complete the notifications UI 14/11/2025 14/11/2025 Week 10 Achievements: Completed the comment UI in the task detail UI:</description>
     </item>
     <item>
       <title>Week 11</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.11-week11/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.11-week11/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.11-week11/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.11-week11/index.html</guid>
       <description>Week 11 Objectives: Write the internship report and revise the content of worklogs, blogs, and events in preparation for submission&#xA;Complete the UI for the task comment attach&#xA;Fix WebSocket logic issues that prevented user notifications from displaying correctly and integrate WebSocket calls via API Gateway&#xA;Tasks to be carried out this week: Day Task Start Date End Date Reference Material 2 - Write internship report in preparation for submission - Revise the content of worklogs, translated blogs, and events 17/11/2025 17/11/2025 3 - Fix WebSocket logic issue when using pagination in the notifications page 18/11/2025 18/11/2025 4 - Develop UI to integrate attached image files for comments 19/11/2025 19/11/2025 5 - Complete comment attach UI and integrate API 20/11/2025 21/11/2025 6 - Implement WebSocket calls via API Gateway instead of direct calls and fix double-header issues 21/11/2025 21/11/2025 Week 11 Achievements: Completed the internship report for submission</description>
     </item>
     <item>
       <title>Week 12</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.12-week12/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.12-week12/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.12-week12/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.12-week12/index.html</guid>
       <description>Week 12 Objectives: Continue developing and fixing UI for the final project&#xA;Add functionality for users to customize receiving notifications via email&#xA;Add functionality to respond to project invitations directly on the notification page&#xA;Tasks to be carried out this week: Day Task Start Date End Date Reference Material 2 - Test the UI and APIs completed in previous weeks to see if any new issues arise 24/11/2025 24/11/2025 3 - Write 2 APIs to accept and decline project invitations - Add functionality to respond to project invitations directly on the notification page 25/11/2025 25/11/2025 4 - Write API allowing users to customize whether they receive notifications via email 26/11/2025 26/11/2025 5 - Develop UI for the settings page to allow users to customize which notifications they will receive 27/11/2025 27/11/2025 6 - Add a CRITICAL priority level for tasks - Add UI to select priority levels and labels in task details 28/11/2025 28/11/2025 Week 12 Achievements: Completed testing of previously developed UI and APIs</description>
     </item>
     <item>
       <title>Week 13</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.13-week13/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/1.13-week13/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.13-week13/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/1.13-week13/index.html</guid>
       <description>Week 13 Objectives: Edit, finalize, and review the final project&#xA;Complete the remaining parts for the workshop and prepare the report&#xA;Tasks to be carried out this week: Day Task Start Date End Date Reference Material Mon - Add AI model suggestion button in the add labels interface of task details and integrate API to test the AI model - Replace manual mapper in taskflow service with MapStruct to optimize performance 01/12/2025 01/12/2025 Tue - Build API for the completed interface of the system. Allow reviewing activities of project members 02/12/2025 02/12/2025 Wed - Finalize UI edits and call API for the completed interface to review project members’ activities 03/12/2025 03/12/2025 Thu - Edit comment interface; fix the issue of taskdetails page not opening - Fix notification service after integrating MapStruct which caused incorrect DTO responses 04/12/2025 04/12/2025 Fri - Edit and finalize the personal workshop 05/12/2025 05/12/2025 Week 13 Achievements: Integrated AI model suggestion feature for labels in the interface</description>
     </item>
   </channel>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week 13 :: My Hugo Site</title>
-    <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.13-week13/index.html</link>
+    <link>http://localhost:1313/fcj-workshopz/1-worklog/1.13-week13/index.html</link>
     <description>Week 13 Objectives: Edit, finalize, and review the final project&#xA;Complete the remaining parts for the workshop and prepare the report&#xA;Tasks to be carried out this week: Day Task Start Date End Date Reference Material Mon - Add AI model suggestion button in the add labels interface of task details and integrate API to test the AI model - Replace manual mapper in taskflow service with MapStruct to optimize performance 01/12/2025 01/12/2025 Tue - Build API for the completed interface of the system. Allow reviewing activities of project members 02/12/2025 02/12/2025 Wed - Finalize UI edits and call API for the completed interface to review project members’ activities 03/12/2025 03/12/2025 Thu - Edit comment interface; fix the issue of taskdetails page not opening - Fix notification service after integrating MapStruct which caused incorrect DTO responses 04/12/2025 04/12/2025 Fri - Edit and finalize the personal workshop 05/12/2025 05/12/2025 Week 13 Achievements: Integrated AI model suggestion feature for labels in the interface</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.13-week13/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fcj-workshopz/1-worklog/1.13-week13/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

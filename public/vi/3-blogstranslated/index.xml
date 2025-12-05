@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Các bài blog đã dịch :: My Hugo Site</title>
-    <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.html</link>
+    <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/index.html</link>
     <description>Blog 1 - Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau Điều gì sẽ xảy ra nếu trí tuệ nhân tạo (AI) có thể tăng cường khả năng lắng nghe và kết nối thực sự với người khác của chúng ta? Điều gì sẽ xảy ra nếu công nghệ có thể khai thác những trải nghiệm sống chung của chúng ta và giúp chúng ta trở nên nhân văn hơn với nhau? Đây là những câu hỏi mà Tiến sĩ Grin Lord, nhà tâm lý học lâm sàng và nhà sáng lập công ty phân tích hội thoại mpathic, đã dành 15 năm theo đuổi.</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog 1</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.html</guid>
       <description>Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau Bonnie McClure và Chalaire Miller | 30/4/2024 | Startup, Startup Spotlight&#xA;Ở cấp độ cơ bản của con người, chúng ta muốn lắng nghe. Chúng ta muốn kết nối, và muốn hiểu người khác. Thật không may, chúng ta thường đối mặt với nhiều thứ canh trạnh với sự chú ý của mình, cái mà khiến chúng ta trờ thành người lắng nghe kém</description>
     </item>
     <item>
       <title>Blog 2</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.html</guid>
       <description>Tiết kiệm nhờ công nghệ: Những cách sáng tạo để cắt giảm chi phí cho doanh nghiệp nhỏ của bạn Henrique Trevisan, Jonathan Woods, and Vince Anderson | 23/4/2024 | in Best Practices, Permalink&#xA;Việc vận hành một doanh nghiệp nhỏ có nghĩa là tận dụng tối đa từng đô la trong khi vẫn duy trì dịch vụ chất lượng cao. Khi doanh nghiệp và nền tảng đám mây của bạn sử dụng mở rộng, bạn phải tìm cách để quản lý nguồn lực công nghệ một cách hiệu quả để bảo vệ lợi nhuận của bạn. Trong môi trường kinh tế thách thức ngày nay, tối ưu chi phí đã trở thành là ưu tiên hàng đầu của chủ doanh nghiệp những người muốn cắt giảm chi phí mà không cần hy sinh hiệu năng, bảo mật và trải nghiệm người dùng.</description>
     </item>
     <item>
       <title>Blog 3</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.html</guid>
       <description>Đẩy nhanh làn sóng khởi nghiệp AI thế hệ tiếp theo Swami Sivasubramanian | 13/06/2024 | in AWS for Startups, Featured, Startup, Startup Spotlight | Permalink&#xA;Từ ngày đầu tiên, AWS đã giúp các công ty khởi nghiệp hiện thực hóa ý tưởng của họ bằng cách dân chủ hóa quyền truy cập tới chủ hóa quyền truy cập vào công nghệ đang hỗ trợ một số doanh nghiệp lớn nhất trên thế giới, bao gồm cả Amazon. Mỗi năm kể từ 2020, chúng tôi đã cung cấp cho các công ty khởi nghiệp gần 1 tỷ đô la tín dụng khuyến mãi AWS. Không có gì ngẫu nhiên khi 80% kỳ lân của thế giới sử dụng AWS. Tôi rất may mắn khi chứng kiến sự phát triển của các công ty khởi nghiệp trong suốt thời gian làm việc tại AWS - các công ty như Netflix, Wiz và Airtasker. Và tôi rát hào hứng với tốc độ nhanh chóng mà các công ty khởi nghiệp ứng dụng công nghệ trí tuệ nhân tạo (AI) và cách mà công nghệ này đang tạo ra một thế hệ khởi nghiệp hoàn toàn mới.</description>
     </item>
     <item>
       <title> Blog 4</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html</guid>
       <description>Mở rộng môi trường phát triển của Cloudera: Tận dụng Amazon EKS, Karpenter, Bottlerocket và Cilium cho mô hình Hybrid Cloud Harpreet Virk and Padma Iyer | 26/09/2025 | in Advanced (300), Amazon Elastic Kubernetes Service, Best Practices, Containers, Graviton, Migration, Migration Acceleration Program (MAP) | Permalink |&#xA;Bài viết này được viết cùng với Shreelola Hegde,Sriharsha Devineni và Lee Watterworth đến từ Cloudera&#xA;Cloudera là một công ty hàng đầu thế giới về quản trị dữ liệu doanh nghiệp, phân tích và AI. Nền tảng Cloudera cho phép các tổ chức có thể quản lý, xử lý và phân tích các tập dữ liệu lớn, giúp các doanh nghiệp trong nhiều ngành công nghiệp như tài chính, chăm sóc sức khỏe, sản xuất, và viễn thông đẩy nhanh việc áp dụng AI/ML và mở khóa thông tin chi tiết theo thời gian thực.</description>
     </item>
     <item>
       <title> Blog 5</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html</guid>
       <description>Tạo ứng dụng đa vùng với dịch cụ AWS - Phần 1, Tính toán, Mạng và Bảo mật Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink&#xA;Nhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và quản lý một kiến trúc đa vùng nhưng việc xác định những khả năng đó trên hơn 200 dịch vụ có thể rất khó khăn.</description>
     </item>
     <item>
       <title> Blog 6</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html</guid>
       <description>Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên Jagdish Komakula, Aditya Ambati và Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink&#xA;Giới thiệu ArgoCD là một bộ công cụ GitOps hàng đầu giúp các nhóm quản lý việc triển khai Kubernets một cách khai báo, sử dụng Git là nguồn thông tin đáng tin cậy duy nhất. Bộ tính năng mạnh mẽ của nó bao gồm hệ thống đồng bộ tự động, hỗ trợ khôi phục, phát hiện sai lệch, chiến lược triển khai nâng cao, Tích hợp RBAC, và hỗ trợ đa cụm (multi-cluster), khiến nó trở thành giải pháp được ưa chuộng cho việc triển khai ứng dụng trên Kubernetes. Tuy nhiên, khi các tổ chức mở rộng quy mô, một vài điểm khó khăn và thử thách vận hành bắt đầu xuất hiện.</description>
     </item>
     <item>
       <title> Blog 7</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html</guid>
       <description>Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments&#xA;Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.</description>
     </item>
     <item>
       <title> Blog 8</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html</guid>
       <description>Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2 Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, và Shyamal Mehtalia | 15/07/2025 | High Performance Computing, Life Sciences, Partner solutions&#xA;Bài viết này được đóng góp bởi Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), và Shyamal Mehtalia (Illumina)</description>
     </item>
   </channel>
