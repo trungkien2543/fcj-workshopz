@@ -11,7 +11,7 @@ _Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, and Shyamal Mehta
 
 This post was contributed by Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), and Shyamal Mehtalia (Illumina)
 
-![image1](../../../images/Blog8/HPCBlog-366-p1-1024x286.png)
+![image1](/images/Blog8/HPCBlog-366-p1-1024x286.png)
 
 The analysis of ever-increasing amounts of genomic and multiomic data demands efficient, scalable, and cost-effective computational solutions. Amazon Web Services (AWS) continues to support these workloads through FPGA accelerated compute offerings such as [Amazon EC2 F2 instances](https://aws.amazon.com/ec2/instance-types/f2/).
 
@@ -110,11 +110,11 @@ WGS analysis using DRAGEN v4.4 demonstrated significant price performance advant
 
 - Complete WGS analysis, including alignment, small variant calling and calling of CNVs, SVs, and repeat expansions, and variant annotation. DRAGEN analysis on f2.6xlarge had **2x the speed** and **30% of the EC2 compute cost** vs f1.4xlarge.
 
-![image2](../../../images/Blog8/HPCBlog-366-f1.png)
+![image2](/images/Blog8/HPCBlog-366-f1.png)
 
 *Figure 1: f2.6xlarge is 1.5x faster for WGS Basic Analysis and 2.1x faster for WGS Full Analysis than f1.4xlarge.*
 
-![image3](../../../images/Blog8/HPCBlog-366-f2.png)
+![image3](/images/Blog8/HPCBlog-366-f2.png)
 
 *Figure 2: EC2 compute cost on f2.6xlarge is 40% of the cost on f1.4xlarge for WGS Basic Analysis and 30% of the cost on f1.4xlarge for WGS Full Analysis.*
 
@@ -124,11 +124,11 @@ As with the WGS results, for Tumor Normal analysis DRAGEN v4.4 also demonstrated
 
 - Tumor Normal analysis, including alignment, small variant calling, and calling of CNVs and SVs. DRAGEN analysis on f2.6xlarge had **1.7x the speed** and **35% of the EC2 compute cost** vs f1.4xlarge.
 
-![image4](../../../images/Blog8/HPCBlog-366-f3.png)
+![image4](/images/Blog8/HPCBlog-366-f3.png)
 
 *Figure 3: f2.6xlarge is 1.7x faster than f1.4xlarge for Tumor Normal Analysis.*
 
-![image5](../../../images/Blog8/HPCBlog-366-f4.png)
+![image5](/images/Blog8/HPCBlog-366-f4.png)
 
 *Figure 4: EC2 compute cost on f2.6xlarge is 35% of the cost on f1.4xlarge for WGS Tumor Normal Analysis.*
 

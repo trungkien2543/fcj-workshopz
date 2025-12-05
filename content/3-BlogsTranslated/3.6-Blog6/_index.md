@@ -142,7 +142,7 @@ Listed below are some example prompts to interact with ArgoCD applications in yo
 
 **Prompt**: `List all ArgoCD applications in my cluster`
 
-![example](../../../images/Blog6/17632-image-1.png)
+![example](/images/Blog6/17632-image-1.png)
 
 <p style="text-align: center;"><i>Amazon Q will use the ArgoCD MCP server to retrieve and display all applications</i></p>
 
@@ -150,7 +150,7 @@ Listed below are some example prompts to interact with ArgoCD applications in yo
 
 **Prompt**: `Create new argocd application using App name: game-2048   Repo: https://github.com/aws-ia/terraform-aws-eks-blueprints  Path: patterns/gitops/getting-started-argocd/k8s. Branch: main  Namespace: argocd`
 
-![example](../../../images/Blog6/17632-image-2.png)
+![example](/images/Blog6/17632-image-2.png)
 
 <p style="text-align: center;"><i>Amazon Q will create a new application from GitRepo information provided</i></p>
 
@@ -158,7 +158,7 @@ Listed below are some example prompts to interact with ArgoCD applications in yo
 
 **Câu lệnh**: `Show me the resource tree for team-carmen app`
 
-![example](../../../images/Blog6/17632-image-8.png) 
+![example](/images/Blog6/17632-image-8.png) 
 
 <p style="text-align: center;"><i>Amazon Q will display the hierarchy of Kubernetes resources managed by the application</i></p>
 
@@ -166,13 +166,13 @@ Listed below are some example prompts to interact with ArgoCD applications in yo
 
 **Prompt**: `Show me the applications that’s out of sync`
 
-![example](../../../images/Blog6/17632-image-3.png)
+![example](/images/Blog6/17632-image-3.png)
 
 <p style="text-align: center;"><i>Amazon Q will display the out of sync applications</i></p>
 
 **Prompt**: `Sync the application`
 
-![example](../../../images/Blog6/17632-image-4.png)
+![example](/images/Blog6/17632-image-4.png)
 
 <p style="text-align: center;"><i>Amazon Q syncing application</i></p>
 
@@ -186,7 +186,7 @@ Amazon Q will:
 
 **Prompt**: `Check the health of all resources in the team-geordie application`
 
-![example](../../../images/Blog6/17632-image-6.png)
+![example](/images/Blog6/17632-image-6.png)
 
 <p style="text-align: center;"><i>Amazon Q showing health status of all the resources in an application</i></p>
 
@@ -198,7 +198,7 @@ Amazon Q will:
 
 **Prompt**: `Show me the logs for the failing pod in the team-platform application`
 
-![example](../../../images/Blog6/17632-image-7.png)
+![example](/images/Blog6/17632-image-7.png)
 
 <p style="text-align: center;"><i>Amazon Q showing logs of problematic pod</i></p>
 

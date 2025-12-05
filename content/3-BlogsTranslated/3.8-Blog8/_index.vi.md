@@ -11,7 +11,7 @@ _Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, và Shyamal Mehta
 
 Bài viết này được đóng góp bởi Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), và Shyamal Mehtalia (Illumina)
 
-![image1](/images/Blog8/HPCBlog-366-f1.png)
+![/images/Blog8/HPCBlog-366-f1.png)
 
 Việc phân tích lượng dữ liệu genomic và multiomic ngày càng gia tăng đòi hỏi các giải pháp tính toán hiệu quả, có khả năng mở rộng và tiết kiệm chi phí. Amazon Web Services (AWS) tiếp tục hỗ trợ các workload này thông qua các dịch vụ tính toán tăng tốc FPGA như các [instance Amazon EC2 F2](https://aws.amazon.com/ec2/instance-types/f2/).
 
@@ -110,11 +110,11 @@ Phân tích WGS sử dụng DRAGEN v4.4 cho thấy lợi thế đáng kể về 
 
 - Phân tích WGS đầy đủ, bao gồm alignment, small variant calling, calling of CNVs, SVs, repeat expansions, và variant annotation. Phân tích DRAGEN trên f2.6xlarge đạt tốc độ **nhanh gấp 2 lần** và **chỉ tốn 30% chi phí compute EC2** so với f1.4xlarge.
 
-![image2](../../../images/Blog8/HPCBlog-366-f1.png)
+![image2](/images/Blog8/HPCBlog-366-f1.png)
 
 *Hình 1: Instance f2.6xlarge nhanh hơn 1.5 lần trong Phân tích WGS cơ bản và nhanh hơn 2.1 lần trong Phân tích WGS đầy đủ so với f1.4xlarge.*
 
-![image3](../../../images/Blog8/HPCBlog-366-f2.png)
+![image3](/images/Blog8/HPCBlog-366-f2.png)
 
 *Hình 2: Chi phí compute EC2 trên f2.6xlarge chỉ bằng 40% chi phí trên f1.4xlarge cho Phân tích WGS cơ bản và bằng 30% chi phí trên f1.4xlarge cho Phân tích WGS đầy đủ.*
 
@@ -124,11 +124,11 @@ Giống như kết quả WGS, trong phân tích Tumor-Normal, DRAGEN v4.4 cũng 
 
 - Phân tích Tumor-Normal, bao gồm alignment, small variant calling và calling CNVs/SVs. Phân tích bằng DRAGEN trên f2.6xlarge đạt tốc độ **nhanh hơn 1.7 lần** và **chỉ tốn 35% chi phí compute EC2** so với f1.4xlarge.
 
-![image4](../../../images/Blog8/HPCBlog-366-f3.png)
+![image4](/images/Blog8/HPCBlog-366-f3.png)
 
 *Hình 3: Instance f2.6xlarge nhanh hơn 1.7 lần so với f1.4xlarge trong Phân tích Tumor-Normal.*
 
-![image5](../../../images/Blog8/HPCBlog-366-f4.png)
+![image5](/images/Blog8/HPCBlog-366-f4.png)
 
 *Hình 4: Chi phí compute EC2 trên f2.6xlarge chỉ bằng 35% chi phí trên f1.4xlarge cho Phân tích Tumor-Normal WGS.*
 

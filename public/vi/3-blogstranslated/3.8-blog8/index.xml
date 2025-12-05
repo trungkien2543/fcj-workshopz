@@ -3,7 +3,7 @@
   <channel>
     <title> Blog 8 :: My Hugo Site</title>
     <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html</link>
-    <description>Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2 Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, và Shyamal Mehtalia | 15/07/2025 | High Performance Computing, Life Sciences, Partner solutions&#xA;Bài viết này được đóng góp bởi Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), và Shyamal Mehtalia (Illumina)</description>
+    <description>Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2 Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, và Shyamal Mehtalia | 15/07/2025 | High Performance Computing, Life Sciences, Partner solutions&#xA;Bài viết này được đóng góp bởi Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), và Shyamal Mehtalia (Illumina)&#xA;![/images/Blog8/HPCBlog-366-f1.png)&#xA;Việc phân tích lượng dữ liệu genomic và multiomic ngày càng gia tăng đòi hỏi các giải pháp tính toán hiệu quả, có khả năng mở rộng và tiết kiệm chi phí. Amazon Web Services (AWS) tiếp tục hỗ trợ các workload này thông qua các dịch vụ tính toán tăng tốc FPGA như các instance Amazon EC2 F2.</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.xml" rel="self" type="application/rss+xml" />

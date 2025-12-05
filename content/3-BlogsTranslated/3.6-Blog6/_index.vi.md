@@ -143,7 +143,7 @@ Dưới đây là một số câu lệnh (prompts) để tương tác với các
 
 **Câu lệnh**: `List all ArgoCD applications in my cluster`
 
-![example](../../../images/Blog6/17632-image-1.png)
+![example](/images/Blog6/17632-image-1.png)
 
 <p style="text-align: center;"><i>Amazon Q sẽ sử dụng máy chủ ArgoCD MCP để truy xuất và hiển thị tất cả các ứng dụng</i></p>
 
@@ -151,7 +151,7 @@ Dưới đây là một số câu lệnh (prompts) để tương tác với các
 
 **Câu lệnh**: `Create new argocd application using App name: game-2048   Repo: https://github.com/aws-ia/terraform-aws-eks-blueprints  Path: patterns/gitops/getting-started-argocd/k8s. Branch: main  Namespace: argocd`
 
-![example](../../../images/Blog6/17632-image-2.png)
+![example](/images/Blog6/17632-image-2.png)
 
 <p style="text-align: center;"><i>Amazon Q sẽ tạo một ứng dụng mới từ thông tin GitRepo cung cấp</i></p>
 
@@ -159,7 +159,7 @@ Dưới đây là một số câu lệnh (prompts) để tương tác với các
 
 **Câu lệnh**: `Show me the resource tree for team-carmen app`
 
-![example](../../../images/Blog6/17632-image-8.png)
+![example](/images/Blog6/17632-image-8.png)
 
 <p style="text-align: center;"><i>Amazon Q sẽ hiển thị cấu trúc phân cấp của các tài nguyên Kubernetes do ứng dụng quản lý.</i></p>
 
@@ -167,13 +167,13 @@ Dưới đây là một số câu lệnh (prompts) để tương tác với các
 
 **Câu lệnh**: `Show me the applications that’s out of sync`
 
-![example](../../../images/Blog6/17632-image-3.png)
+![example](/images/Blog6/17632-image-3.png)
 
 <p style="text-align: center;"><i>Amazon Q sẽ hiển thị các ứng dụng không đồng bộ</i></p>
 
 **Câu lệnh**: `Sync the application`
 
-![example](../../../images/Blog6/17632-image-4.png)
+![example](/images/Blog6/17632-image-4.png)
 
 <p style="text-align: center;"><i>Amazon Q đang đồng bộ hóa các ứng dụng</i></p>
 
@@ -187,7 +187,7 @@ Amazon Q sẽ:
 
 **Câu lệnh**: `Check the health of all resources in the team-geordie application`
 
-![example](../../../images/Blog6/17632-image-6.png)
+![example](/images/Blog6/17632-image-6.png)
 
 <p style="text-align: center;"><i>Amazon Q đang đưa ra trạng thái sức khỏe của tất cả tài nguyên trong một ứng dụng</i></p>
 
@@ -199,7 +199,7 @@ Amazon Q sẽ:
 
 **Câu lệnh**: `Show me the logs for the failing pod in the team-platform application`
 
-![example](../../../images/Blog6/17632-image-7.png)
+![example](/images/Blog6/17632-image-7.png)
 
 <p style="text-align: center;"><i>Amazon Q đang hiển thị các log của pod gặp sự cố</i></p>
 

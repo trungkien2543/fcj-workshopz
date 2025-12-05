@@ -4,13 +4,12 @@ languageCode = "en-us"
 title = "My Hugo Site"
 theme = "hugo-theme-relearn"
 
-# Relative URLs giúp link CSS/JS/ảnh đúng cả khi deploy subpath
-# relativeURLs = true
+# Sử dụng đường dẫn tuyệt đối để link CSS/JS/ảnh đúng
+relativeURLs = false
 canonifyURLs = true
 
 [minify]
   disableXML = true
-
 
 [params]
 
@@ -19,12 +18,12 @@ canonifyURLs = true
 
   # Logo header
   [params.logo]
-    path = "images/logo.png"   # không có '/' đầu tiên
+    path = "/images/logo.png"   # Thêm '/' đầu tiên để Hugo hiểu là root
     alt = "Logo"
     width = "40px"
     height = "40px"
 
-  logoUrl = "images/logo.png"
+  logoUrl = "/images/logo.png"  # cũng thêm '/' đầu tiên
 
 [languages]
 
