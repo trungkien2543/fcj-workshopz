@@ -1,36 +1,37 @@
-baseURL = 'https://trungkien2543.github.io/fcj-workshopz/'
-languageCode = 'en-us'
-title = ''
+# Base URL GitHub Pages
+baseURL = "https://trungkien2543.github.io/fcj-workshopz/"
+languageCode = "en-us"
+title = "My Hugo Site"
+theme = "hugo-theme-relearn"
 
-theme = 'hugo-theme-relearn'
-
-# Thêm dòng này để đảm bảo các link tương đối
-relativeURLs = true
+# Relative URLs giúp link CSS/JS/ảnh đúng cả khi deploy subpath
+# relativeURLs = true
+canonifyURLs = true
 
 [params]
 
+  # Custom CSS
   custom_css = ["css/custom.css"]
 
-  # Logo cho header
+  # Logo header
   [params.logo]
-    path = "/images/logo.png"
+    path = "images/logo.png"   # không có '/' đầu tiên
     alt = "Logo"
     width = "40px"
     height = "40px"
-  
-  # Hoặc cách đơn giản hơn
-  logoUrl = "/images/logo.png"
 
-    
+  logoUrl = "images/logo.png"
+
 [languages]
+
   [languages.vi]
-    languageName = 'Tiếng Việt'
+    languageName = "Tiếng Việt"
     weight = 1
     [languages.vi.params]
       landingPageName = "Trang chủ"
-    
+
   [languages.en]
-    languageName = 'English'
+    languageName = "English"
     weight = 2
     [languages.en.params]
       landingPageName = "Home"

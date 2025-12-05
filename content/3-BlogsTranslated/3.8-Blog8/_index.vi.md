@@ -11,7 +11,7 @@ _Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, và Shyamal Mehta
 
 Bài viết này được đóng góp bởi Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), và Shyamal Mehtalia (Illumina)
 
-![image1](../../../images/Blog8/HPCBlog-366-p1-1024x286.png)
+![image1](/images/Blog8/HPCBlog-366-f1.png)
 
 Việc phân tích lượng dữ liệu genomic và multiomic ngày càng gia tăng đòi hỏi các giải pháp tính toán hiệu quả, có khả năng mở rộng và tiết kiệm chi phí. Amazon Web Services (AWS) tiếp tục hỗ trợ các workload này thông qua các dịch vụ tính toán tăng tốc FPGA như các [instance Amazon EC2 F2](https://aws.amazon.com/ec2/instance-types/f2/).
 

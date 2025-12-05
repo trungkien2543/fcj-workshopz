@@ -5,7 +5,7 @@ var relearn_searchindex = [
     "description": "This is a new chapter.",
     "tags": [],
     "title": "1.11 Week11",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.11-week11/index.html"
+    "uri": "/vi/1-worklog/1.11-week11/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -13,7 +13,7 @@ var relearn_searchindex = [
     "description": "This is a new chapter.",
     "tags": [],
     "title": "1.12 Week12",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.12-week12/index.html"
+    "uri": "/vi/1-worklog/1.12-week12/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -21,7 +21,7 @@ var relearn_searchindex = [
     "description": "Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau Bonnie McClure và Chalaire Miller | 30/4/2024 | Startup, Startup Spotlight\nỞ cấp độ cơ bản của con người, chúng ta muốn lắng nghe. Chúng ta muốn kết nối, và muốn hiểu người khác. Thật không may, chúng ta thường đối mặt với nhiều thứ canh trạnh với sự chú ý của mình, cái mà khiến chúng ta trờ thành người lắng nghe kém",
     "tags": [],
     "title": "Blog 1",
-    "uri": "/fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.html"
+    "uri": "/vi/3-blogstranslated/3.1-blog1/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các sự kiện đã tham gia",
@@ -29,7 +29,7 @@ var relearn_searchindex = [
     "description": "Bài thu hoạch “Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders” Mục Đích Của Sự Kiện Quy tụ các doanh nghiệp, nhà phát triển và lãnh đạo để cùng nhau khai thác những đổi mới trong lĩnh vực điện toán đám mây và AI. Giúp Việt Nam đẩy mạnh chuyển đổi số, khám phá những công nghệ Gen AI, cloud và những giải pháp kỹ thuật số mới cho tương lai Khám phá các giải pháp tiên tiến từ các chuyên gia và đối tác của Amazon Web Services (AWS) Là cơ hội để kết nối với công động công nghệ Danh sách các diễn giả Eric Yeo : Country General Manager, Vietnam, Cambodia, Laos \u0026 Myanmar, AWS Dr. Jens Lottner: CEO, Techcombank Ms. Trang Phung: CEO \u0026 Co-Founder, U2U Network Jaime Valles: Vice President, General Manager Asia Pacific and Japan, AWS Jeff Johnson: Managing Director, ASEAN, AWS Vu Van: Co-founder \u0026 CEO, ELSA Corp Nguyen Hoa Binh: Chairman, Nexttech Group' Dieter Botha: CEO, TymeX Hung Nguyen Gia: Head of Solutions Architect, AWS Son Do: Technical Account Manager, AWS Nguyen Van Hai: Director of Software Engineering, Techcombank Phuc Nguyen: Solutions Architect, AWS Alex Tran: AI Director, OCB Nguyen Minh Ngan: AI Specialist, OCB Nguyen Manh Tuyen: Head of Data Application, LPBank Securities Vinh Nguyen: Co-Founder \u0026 CTO, Ninety Eight Hung Hoang: Customer Solutions Manager, AWS Taiki Dang: Solutions Architect, AWS Nội Dung Nổi Bật Tận dụng AWS Q để cải thiện và nâng cao năng suất cho lập trình viên Cải thiện chất lượng code Đẩy nhanh việc triển khai các giải pháp Cung cấp trợ lý lập trình thông minh Duy trì sự tuân thủ nghiêm ngặt, quyền riêng tư và bảo mật dữ liệu Khai phá tiềm năng AI của Việt Nam Tỷ lệ tăng trưởng áp dụng AI đạt 39% 55% doanh nghiệp Việt Nam cho rằng kỹ năng số hạn chế là rào cản chính đối với việc áp dụng và mở rộng AI. Di chuyển, hiện đại hóa và xây dựng trên AWS Tìm hiểu các chiến lược di chuyển và hiện đại hóa quy mô lớn trên AWS thông qua các nghiên cứu điển hình thực tế từ Techcombank. Nâng cao kiến thức về việc hiện đại hóa ứng dụng bằng các công cụ được hỗ trợ bởi Generative AI, với những hiểu biết thực tế từ VPBank Nhận được những chia sẻ sâu sắc từ các chuyên gia hàng đầu ngành thông qua các buổi thảo luận nhóm về hiện đại hóa ứng dụng Tìm hiểu về hiện đại hóa đám mây dựa trên trí tuệ nhân tạo đặc biệt dành cho môi trường VMware Hiểu rõ các thực hành tốt nhất về bảo mật AWS từ môi trường phát triển đến môi trường sản xuất Kết nối và học hỏi trực tiếp từ các Kiến trúc sư Giải pháp AWS và các chuyên gia trong ngành Những gì học được Tại sao hiện đại hóa lại quan trọng ? Những thách thức từ hệ thống cũ: làm chậm quá trình đổi mới và làm tăng chi phí Lợi ích của hiện đại hóa: tạo điều kiện cho sự linh hoạt, cung cấp thông tin chuyên sâu và thúc đẩy đổi mới lấy khách hàng làm trung tâm. Tác động đến doanh nghiệp: hiệu quả, khả năng mở rộng, khả năng phục hồi, tính canh tranh và bền vững Hành trình Hiện đại hóa Đánh giá (Assess): Kiểm kê môi trường hiện tại, xác định các điểm yếu. Khởi động (Mobilize): Thiết lập Trung tâm Năng lực Chuyên môn (CCoE), xây dựng các nguyên tắc hướng dẫn và phát triển năng lực sử dụng đám mây. Di chuyển \u0026 Hiện đại hóa (Migrate \u0026 Modernize): Ưu tiên các công việc có tác động cao để di chuyển và hiện đại hóa. Tái tạo (Reinvent): Ứng dụng trí tuệ nhân tạo (AI), tự động hóa, sản phẩm dữ liệu và các mô hình kinh doanh mới. AWS Transform (Dịch vụ AI có khả năng tự động hành động (agentic AI) đầu tiên dành cho việc di chuyển và hiện đại hóa quy mô lớn) Đánh giá (Assessment): Xây dựng lập luận kinh doanh (business case) để di chuyển sang AWS. VMware: Công cụ hỗ trợ giúp di chuyển từ môi trường VMware sang Amazon EC2. Mainframe: Công cụ hỗ trợ (agent) để hiện đại hóa các ứng dụng IBM z/OS (hệ thống máy chủ lớn). .NET: Công cụ hỗ trợ (agent) để hiện đại hóa các ứng dụng .NET dựa trên Windows sang nền tảng Linux. Các thách thức về bảo mật đám mây Rào cản đổi mới (Innovation roadblocks): Cách tiếp cận bảo mật truyền thống có thể khiến đội ngũ bảo mật bị coi là rào cản cho sự đổi mới. Thiếu chuyên môn \u0026 nguồn lực (Expertise \u0026 resource shortages): Các nhóm bảo mật hiện tại đang hoạt động ở mức năng lực tối đa và dành phần lớn thời gian cho các nhiệm vụ lặp lại, giá trị thấp. Quy mô và độ phức tạp (Scale and complexity): Việc quản lý bảo mật ở quy mô lớn trong môi trường đám mây đa dạng và phức tạp là một thách thức lớn. Bối cảnh mối đe dọa đang thay đổi (Evolving threat landscapes): Các chiến thuật tấn công và công nghệ mới liên tục xuất hiện, tạo ra một môi trường rủi ro luôn biến động. Yêu cầu về bảo vệ dữ liệu \u0026 quyền riêng tư (Data protection \u0026 privacy demands): Để duy trì niềm tin của khách hàng, các tổ chức phải đáp ứng các yêu cầu nghiêm ngặt về bảo vệ dữ liệu và quyền riêng tư theo quy định ngành (ví dụ: GDPR, PCI-DSS…). Threat Intelligence là nền tảng giúp các dịch vụ AWS phản ứng nhanh chóng, chủ động trước các mối đe dọa mới. AWS Shield Amazon GuardDuty Amazon S3 AWS WAF (Web Application Firewall) AWS Network Firewall Amazon Route 53 Resolver DNS Firewall Amazon VPC (Virtual Private Cloud) Trải nghiệm trong event Tham gia workshop “Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders” là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng, công cụ hiện đại. Một số trải nghiệm nổi bật:",
     "tags": [],
     "title": "Sự kiện 1",
-    "uri": "/fcj-workshopz/vi/4-eventparticipated/4.1-event1/index.html"
+    "uri": "/vi/4-eventparticipated/4.1-event1/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -37,7 +37,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 1: Kết nối, làm quen với các thành viên trong First Cloud Journey. Hiểu dịch vụ AWS cơ bản, cách dùng console management. Thảo luận về chủ đề và công nghệ cho project đầu tiên. Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 | - Làm quen với các thành viên FCJ - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập - Xem video bài giảng về module 1 - Tìm hiểu về các thuật ngữ: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations)| 8/9/2025 | 8/9/2025 | https://policies.fcjuni.com/ 3 | - Thực hành: + lab01: Tạo account đầu tiên, sử dụng IAM, tạo MFA + lab07: Tạo các budget| 9/9/2025 | 9/9/2025 | https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 | - Tìm hiểu cách làm workshop cá nhân bằng hugo.io - Dịch bài blogs của AWS | 10/9/2025 | 10/9/2025| https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 | - Viết worklog và cấu hình cho bài workshop | 11/09/2025 | 11/9/2025 |\n6 | - Xem các video bài giảng và nghiên cứu thêm các thuật ngữ xuất hiện trong module 2 | 12/09/2025 | 12/9/2025 |",
     "tags": [],
     "title": "Tuần 1",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.1-week1/index.html"
+    "uri": "/vi/1-worklog/1.1-week1/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập",
@@ -45,7 +45,7 @@ var relearn_searchindex = [
     "description": "Nội dung các công việc thực hiện trong các tuần như sau:\nTuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS\nTuần 2: Xây dựng VPC và Hyrid DNS với Route53\nTuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS\nTuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3\nTuần 5: Tìm hiểu về Dịch vụ bảo mật trên AWS\nTuần 6: Học về dịch vụ cơ sở dữ liệu trên cloud của AWS",
     "tags": [],
     "title": "Worklog",
-    "uri": "/fcj-workshopz/vi/1-worklog/index.html"
+    "uri": "/vi/1-worklog/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -53,7 +53,7 @@ var relearn_searchindex = [
     "description": "Tiết kiệm nhờ công nghệ: Những cách sáng tạo để cắt giảm chi phí cho doanh nghiệp nhỏ của bạn Henrique Trevisan, Jonathan Woods, and Vince Anderson | 23/4/2024 | in Best Practices, Permalink\nViệc vận hành một doanh nghiệp nhỏ có nghĩa là tận dụng tối đa từng đô la trong khi vẫn duy trì dịch vụ chất lượng cao. Khi doanh nghiệp và nền tảng đám mây của bạn sử dụng mở rộng, bạn phải tìm cách để quản lý nguồn lực công nghệ một cách hiệu quả để bảo vệ lợi nhuận của bạn. Trong môi trường kinh tế thách thức ngày nay, tối ưu chi phí đã trở thành là ưu tiên hàng đầu của chủ doanh nghiệp những người muốn cắt giảm chi phí mà không cần hy sinh hiệu năng, bảo mật và trải nghiệm người dùng.",
     "tags": [],
     "title": "Blog 2",
-    "uri": "/fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.html"
+    "uri": "/vi/3-blogstranslated/3.2-blog2/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -61,7 +61,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 2: Tìm hiểu kiến trúc VPC cơ bản và các thành phần quan trọng có liên quan Thực hiện các bài lab trong module 2 Đọc tìm hiểu cuốn Aws advanced network Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Tìm hiểu thêm các thuật ngữ có liên quan tới bài thực hành VPC 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Thực hành: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Tìm hiểu cách làm bài tập thiết lập DNS với route 53 Thực hành: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Tham gia cloud day vietnam tại thành phố Hồ Chí Minh 18/09/2025 18/9/2025 6 - Dịch blogs - Viết worklog và báo cáo event 1 19/09/2025 19/9/2025 https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/ 7 - Thực hành: + lab20: Thiết lập AWS Transit Gateway + lab19: Thiết lập VPC Peering 20/09/2025 20/9/2025 https://000020.awsstudygroup.com/vi/ https://000019.awsstudygroup.com/vi/ Kết quả đạt được tuần 2: Hiểu được về dịch vụ VPC và cách để tạo ra 1 mạng riêng ảo trên AWS",
     "tags": [],
     "title": "Tuần 2",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.2-week2/index.html"
+    "uri": "/vi/1-worklog/1.2-week2/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -69,7 +69,7 @@ var relearn_searchindex = [
     "description": "Đẩy nhanh làn sóng khởi nghiệp AI thế hệ tiếp theo Swami Sivasubramanian | 13/06/2024 | in AWS for Startups, Featured, Startup, Startup Spotlight | Permalink\nTừ ngày đầu tiên, AWS đã giúp các công ty khởi nghiệp hiện thực hóa ý tưởng của họ bằng cách dân chủ hóa quyền truy cập tới chủ hóa quyền truy cập vào công nghệ đang hỗ trợ một số doanh nghiệp lớn nhất trên thế giới, bao gồm cả Amazon. Mỗi năm kể từ 2020, chúng tôi đã cung cấp cho các công ty khởi nghiệp gần 1 tỷ đô la tín dụng khuyến mãi AWS. Không có gì ngẫu nhiên khi 80% kỳ lân của thế giới sử dụng AWS. Tôi rất may mắn khi chứng kiến sự phát triển của các công ty khởi nghiệp trong suốt thời gian làm việc tại AWS - các công ty như Netflix, Wiz và Airtasker. Và tôi rát hào hứng với tốc độ nhanh chóng mà các công ty khởi nghiệp ứng dụng công nghệ trí tuệ nhân tạo (AI) và cách mà công nghệ này đang tạo ra một thế hệ khởi nghiệp hoàn toàn mới.",
     "tags": [],
     "title": "Blog 3",
-    "uri": "/fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.html"
+    "uri": "/vi/3-blogstranslated/3.3-blog3/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập",
@@ -77,7 +77,7 @@ var relearn_searchindex = [
     "description": "Blog 1 - Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau Điều gì sẽ xảy ra nếu trí tuệ nhân tạo (AI) có thể tăng cường khả năng lắng nghe và kết nối thực sự với người khác của chúng ta? Điều gì sẽ xảy ra nếu công nghệ có thể khai thác những trải nghiệm sống chung của chúng ta và giúp chúng ta trở nên nhân văn hơn với nhau? Đây là những câu hỏi mà Tiến sĩ Grin Lord, nhà tâm lý học lâm sàng và nhà sáng lập công ty phân tích hội thoại mpathic, đã dành 15 năm theo đuổi.",
     "tags": [],
     "title": "Các bài blog đã dịch",
-    "uri": "/fcj-workshopz/vi/3-blogstranslated/index.html"
+    "uri": "/vi/3-blogstranslated/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -85,7 +85,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS Thực hiện triển khai được ứng dụng trên EC2, tạo backup và dùng cloudwatch để theo dõi hệ thống Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Xem video bài giảng về dịch vụ Compute VM trên AWS - Dịch blogs cho tuần 3 22/9/2025 22/9/2025 https://aws.amazon.com/vi/blogs/startups/accelerating-the-next-wave-of-generative-ai-startups/ 3 - Thực hành: + lab04: Khởi tạo và tìm hiểu các tính năng cơ bản của Amazon EC2 23/9/2025 23/9/2025 https://000004.awsstudygroup.com/ 4 - Thực hành: + lab04 mục 8: Giới hạn sử dụng tài nguyên bằng dịch vụ IAM + lab02: Quản trị quyền truy cập với AWS Identity and Access Management (IAM) 24/9/2025 24/9/2025 https://000004.awsstudygroup.com/vi/8-costusagegovernance/ https://000002.awsstudygroup.com/vi/ 5 - Thực hành: + lab08: Sử dụng CloudWatch 25/9/2025 25/9/2025 https://000008.awsstudygroup.com/ 6 - Thực hành: + lab06: Triển khai ứng dụng FCJ Management với Auto Scaling Group + lab13: Triển khai aws backup cho hệ thống 26/9/2025 26/9/2025 https://000006.awsstudygroup.com/ https://000013.awsstudygroup.com/ Kết quả đạt được tuần 3: Hiểu được về dịch vụ Compute VM trên AWS",
     "tags": [],
     "title": "Tuần 3",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.3-week3/index.html"
+    "uri": "/vi/1-worklog/1.3-week3/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -93,7 +93,7 @@ var relearn_searchindex = [
     "description": "Mở rộng môi trường phát triển của Cloudera: Tận dụng Amazon EKS, Karpenter, Bottlerocket và Cilium cho mô hình Hybrid Cloud Harpreet Virk and Padma Iyer | 26/09/2025 | in Advanced (300), Amazon Elastic Kubernetes Service, Best Practices, Containers, Graviton, Migration, Migration Acceleration Program (MAP) | Permalink |\nBài viết này được viết cùng với Shreelola Hegde,Sriharsha Devineni và Lee Watterworth đến từ Cloudera\nCloudera là một công ty hàng đầu thế giới về quản trị dữ liệu doanh nghiệp, phân tích và AI. Nền tảng Cloudera cho phép các tổ chức có thể quản lý, xử lý và phân tích các tập dữ liệu lớn, giúp các doanh nghiệp trong nhiều ngành công nghiệp như tài chính, chăm sóc sức khỏe, sản xuất, và viễn thông đẩy nhanh việc áp dụng AI/ML và mở khóa thông tin chi tiết theo thời gian thực.",
     "tags": [],
     "title": " Blog 4",
-    "uri": "/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html"
+    "uri": "/vi/3-blogstranslated/3.4-blog4/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập",
@@ -101,7 +101,7 @@ var relearn_searchindex = [
     "description": "Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.\nSự kiện 1 Tên sự kiện: Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders\nThời gian: 09:00 ngày 18/09/2025\nĐịa điểm: Tầng 36, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh",
     "tags": [],
     "title": "Các sự kiện đã tham gia",
-    "uri": "/fcj-workshopz/vi/4-eventparticipated/index.html"
+    "uri": "/vi/4-eventparticipated/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -109,7 +109,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3 Tìm hiểu về Dịch vụ bảo mật trên AWS Thực hiện triển khai được ứng dụng static web thông qua S3 và cloudfront Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Xem video bài giảng về dịch vụ lưu trữ S3 - Dịch blogs cho tuần 4 29/9/2025 29/9/2025 https://aws.amazon.com/blogs/migration-and-modernization/scaling-clouderas-development-environment-leveraging-amazon-eks-karpenter-bottlerocket-and-cilium-for-hybrid-cloud/ 3 - Thực hành: + lab57: Khởi Đầu Với Amazon S3 + lab13: Triển khai AWS Backup cho hệ thống + lab 14: VM Import/Export 30/9/2025 30/9/2025 https://000057.awsstudygroup.com https://000014.awsstudygroup.com https://000013.awsstudygroup.com/ 4 - Xem video bài giảng về dịch vụ bảo mật trên AWS 1/10/2025 1/10/2025 5 - Thực hành: + lab2: Quản trị quyền truy cập với AWS Identity and Access Management (IAM) + lab44: IAM Role \u0026 Condition + lab 48: Cấp quyền cho ứng dụng truy cập dịch vụ AWS với IAM Role 2/10/2025 2/10/2025 https://000048.awsstudygroup.com/vi/ https://000002.awsstudygroup.com/vi/ https://000044.awsstudygroup.com/vi/ 6 - Thực hành: + lab30: Giới hạn quyền truy cập với IAM Permission Boundary 3/10/2025 3/10/2025 https://000030.awsstudygroup.com/vi/ Kết quả đạt được tuần 4: Hiểu được về dịch vụ lưu trữ trên S3",
     "tags": [],
     "title": "Tuần 4",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.4-week4/index.html"
+    "uri": "/vi/1-worklog/1.4-week4/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -117,7 +117,7 @@ var relearn_searchindex = [
     "description": "Tạo ứng dụng đa vùng với dịch cụ AWS - Phần 1, Tính toán, Mạng và Bảo mật Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink\nNhiều dịch vụ AWS có các tính năng để giúp bạn xây dựng và quản lý một kiến trúc đa vùng nhưng việc xác định những khả năng đó trên hơn 200 dịch vụ có thể rất khó khăn.",
     "tags": [],
     "title": " Blog 5",
-    "uri": "/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html"
+    "uri": "/vi/3-blogstranslated/3.5-blog5/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -125,7 +125,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 5: Nghiên cứu thêm về Dịch vụ bảo mật trên AWS Thực xong các lab còn lại của module 5 Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch blogs cho tuần 5 06/10/2025 06/10/2025 https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/ 3 - Thực hành: + lab33: Mã hóa ở trạng thái lưu trữ với AWS KMS 07/10/2025 07/10/2025 https://000033.awsstudygroup.com/vi/ 4 - Lập trình api cho dự án cuối khóa module project, section 08/10/2025 08/10/2025 5 - Thực hành: + lab12: Sử dụng AWS IAM Identity Center để quản lý định danh mạnh mẽ 09/10/2025 09/10/2025 https://000012.awsstudygroup.com/vi/ 6 - Lập trình api cho dự án cuối khóa module task 10/10/2025 10/10/2025 Kết quả đạt được tuần 5: Thực hành mã hóa ở trạng thái lưu trữ với AWS KMS:",
     "tags": [],
     "title": "Tuần 5",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.5-week5/index.html"
+    "uri": "/vi/1-worklog/1.5-week5/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -133,7 +133,7 @@ var relearn_searchindex = [
     "description": "Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên Jagdish Komakula, Aditya Ambati và Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink\nGiới thiệu ArgoCD là một bộ công cụ GitOps hàng đầu giúp các nhóm quản lý việc triển khai Kubernets một cách khai báo, sử dụng Git là nguồn thông tin đáng tin cậy duy nhất. Bộ tính năng mạnh mẽ của nó bao gồm hệ thống đồng bộ tự động, hỗ trợ khôi phục, phát hiện sai lệch, chiến lược triển khai nâng cao, Tích hợp RBAC, và hỗ trợ đa cụm (multi-cluster), khiến nó trở thành giải pháp được ưa chuộng cho việc triển khai ứng dụng trên Kubernetes. Tuy nhiên, khi các tổ chức mở rộng quy mô, một vài điểm khó khăn và thử thách vận hành bắt đầu xuất hiện.",
     "tags": [],
     "title": " Blog 6",
-    "uri": "/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html"
+    "uri": "/vi/3-blogstranslated/3.6-blog6/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -141,7 +141,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 6: Học về dịch vụ cơ sở dữ liệu trên cloud của AWS Thực hành các bài lab liên quan tới việc sử dụng RDS Ôn tập lại nội dung và bài thực hành của module 2 về VPC Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Ôn tập xem lại module 2: Tìm hiểu kiến trúc VPC cơ bản và các thành phần quan trọng có liên quan 12/10/2025 12/10/2025 3 - Học module : Dịch vụ lưu trữ cơ sở dữ liệu trên AWS 13/10/2025 13/10/2025 Chuỗi video về module trên kênh AWS Study Group 4 - Thực hành: lab 05: Amazon Relational Database Service (Amazon RDS) 14/10/2025 14/10/2025 https://000005.awsstudygroup.com/vi/ 5 - Học sử dụng bộ nhớ cache, Redis cho đồ án cuối khóa 15/10/2025 15/10/2025 https://www.youtube.com/watch?v=HSknuSIoK6A 6 - Thực hành: lab 03: Bắt đầu với Amazon Virtual Private Cloud (VPC) và AWS Site-to-Site VPN 16/10/2025 16/10/2025 https://000003.awsstudygroup.com/vi/ Kết quả đạt được tuần 6: Học về các loại dịch vụ cơ sở dữ liệu: RDS, Elastic Cache, Red Shift",
     "tags": [],
     "title": "Tuần 6",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.6-week6/index.html"
+    "uri": "/vi/1-worklog/1.6-week6/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -149,7 +149,7 @@ var relearn_searchindex = [
     "description": "Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments\nHôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.",
     "tags": [],
     "title": " Blog 7",
-    "uri": "/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html"
+    "uri": "/vi/3-blogstranslated/3.7-blog7/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -157,7 +157,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 7: Thực hành các bài lab về việc triển khai ứng dụng lên AWS\nDịch các bài blogs\nCác công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Chỉnh sửa API tự động thông báo cho dự án cuối khóa 20/10/2025 20/10/2025 3 - Thực hành: lab15: Triển khai ứng dụng trên Docker với AWS 21/10/2025 21/10/2025 https://000015.awsstudygroup.com/vi/ 4 - Dịch bài blogs: Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên 22/10/2025 22/10/2025 Blog 6 5 - Dịch bài blogs: Ra Mắt Strands Agents 1.0: Đơn Giản Hóa Việc Điều Phối Đa tác tử Đã Sẵn Sàng Triển Khai 23/10/2025 23/10/2025 Blog 7 6 - Thực hành: lab58: Làm việc với Amazon System Manager - Session Manager 24/10/2025 24/10/2025 https://000058.awsstudygroup.com/vi/ Kết quả đạt được tuần 7: Thực hành bài lab tạo image và triển khai ứng dụng với docker",
     "tags": [],
     "title": "Tuần 7",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.7-week7/index.html"
+    "uri": "/vi/1-worklog/1.7-week7/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -165,7 +165,7 @@ var relearn_searchindex = [
     "description": "Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2 Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, và Shyamal Mehtalia | 15/07/2025 | High Performance Computing, Life Sciences, Partner solutions\nBài viết này được đóng góp bởi Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), và Shyamal Mehtalia (Illumina)",
     "tags": [],
     "title": " Blog 8",
-    "uri": "/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html"
+    "uri": "/vi/3-blogstranslated/3.8-blog8/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -173,7 +173,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 8: Dịch bài blogs còn lại\nThực hành một số bài hỗ trợ cho việc tối ưu hệ thống\nTìm các tối ưu ứng dụng cho dự án cuối khóa\nCác công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch bài blogs 8: Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2 27/10/2025 27/10/2025 Blog 8 3 - Chỉnh sửa lại cấu trúc cho các worklogs - Xem lại nội dung lý thuyết của một số dịch vụ trên AWS - Tìm hiểu về Desgin Pattern để ứng dụng cho dự án cuối khóa như: Proxy Pattern, Prototype Pattern, Builder Pattern 28/10/2025 28/10/2025 https://viblo.asia/p/proxy-design-pattern-tro-thu-dac-luc-cua-developers-RQqKLB2bl7z https://viblo.asia/p/prototype-design-pattern-tro-thu-dac-luc-cua-developers-GrLZDBQO5k0 4 - Thực hành: lab 22: Tối ưu chi phí EC2 với Lambda 29/10/2025 29/10/2025 https://000022.awsstudygroup.com/vi/ 5 - Thực hành: lab 29: Bắt đầu với Grafana trên AWS 30/10/2025 30/10/2025 https://000029.awsstudygroup.com/vi/ 6 - Tìm hiểu về WebSocket 31/10/2025 31/10/2025 https://www.geeksforgeeks.org/web-tech/what-is-web-socket-and-how-it-is-different-from-the-http/ Kết quả đạt được tuần 8: Tìm hiểu về 1 số design pattern hữu ích để tích hợp vào đồ án cuối khóa:",
     "tags": [],
     "title": "Tuần 8",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.8-week8/index.html"
+    "uri": "/vi/1-worklog/1.8-week8/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -181,7 +181,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 9: Tích hợp WebSocket vào module Notification\nThực hành bài lab có liên quan tới Serverless Computing\nHoàn thành xong giao diện và call api cho phần Task UpComing\nCác công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Tích hợp WebSocket vào dự án và chạy demo 3/11/2025 3/11/2025 3 - Làm giao diện cho phần Task UpComing bao gồm hiển thị danh sách, lọc theo ngày, tạo task 4/11/2025 4/11/2025 4 - Thực hành: lab 78: Serverless - Tương tác giữa Lambda với S3 và DynamoDB 5/11/2025 5/11/2025 https://000078.awsstudygroup.com/vi/ 5 - Hoàn thành việc tạo, sửa, xóa task trong phần Task UpComing - Thiết kế giao diện cho phần comment của từng task 6/11/2025 6/11/2025 6 - Hoàn việc tích hợp api cho phần Task UpComing 7/11/2025 7/11/2025 Kết quả đạt được tuần 9: Hoàn thành phần Task UpComming:",
     "tags": [],
     "title": "Tuần 9",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.9-week9/index.html"
+    "uri": "/vi/1-worklog/1.9-week9/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -189,7 +189,7 @@ var relearn_searchindex = [
     "description": "Mục tiêu tuần 10: Hoàn thành xong phần giao diện cho comment trong các task trong dự án\nHoàn thành xong giao diện notifications có thể thông báo realtime\nXây dựng các API cho việc lưu trữ dữ liệu lên S3 của AWS\nXây dựng API cho chức năng comment attach của phần comment trong task\nCác công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Cài đặt WebSocket cho frontend và tạo kết nối với phía server - Tạo ModalNotification, ItemNotification cho giao diện hiển thị thông báo 10/11/2025 10/11/2025 3 - Xây dựng giao diện cho chức năng comment trong phần xem chi tiết task - Tích hợp API vào giao diện comment 11/11/2025 11/11/2025 4 - Xây dựng API cho chức năng upload file lên S3 của AWS 12/11/2025 12/11/2025 5 - Xây dựng API cho phép người dùng thực hiện đính kèm các file được lưu trên S3 vào comment 13/11/2025 13/11/2025 6 - Hoàn tất giao diện notification 14/11/2025 14/11/2025 Kết quả đạt được tuần 10: Hoàn thành được giao diện comment trong phần chi tiết task:",
     "tags": [],
     "title": "1.10 Week10",
-    "uri": "/fcj-workshopz/vi/1-worklog/1.10-week10/index.html"
+    "uri": "/vi/1-worklog/1.10-week10/index.html"
   },
   {
     "breadcrumb": "",
@@ -197,7 +197,7 @@ var relearn_searchindex = [
     "description": "Thông tin sinh viên: Họ và tên: Lê Trung Kiên\nSố điện thoại: 0931261009\nEmail: trungkien1862@gmail.com\nTrường: Đại học Sài Gòn\nNgành: Công nghệ thông tin\nLớp: DCT1213\nCông ty thực tập: Công ty TNHH Amazon Web Services Vietnam\nVị trí thực tập: FCJ Cloud Intern\nThời gian thực tập: Từ ngày 08/09/2025 đến ngày 11/11/2025",
     "tags": [],
     "title": "Báo cáo thực tập",
-    "uri": "/fcj-workshopz/vi/index.html"
+    "uri": "/vi/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập",
@@ -205,7 +205,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Thể loại",
-    "uri": "/fcj-workshopz/vi/categories/index.html"
+    "uri": "/vi/categories/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập",
@@ -213,6 +213,6 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Thẻ",
-    "uri": "/fcj-workshopz/vi/tags/index.html"
+    "uri": "/vi/tags/index.html"
   }
 ]

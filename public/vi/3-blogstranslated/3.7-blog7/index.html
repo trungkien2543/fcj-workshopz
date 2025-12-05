@@ -1,296 +1,577 @@
-<!doctype html><html lang=vi dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.150.0"><meta name=generator content="Relearn 8.0.1+b23cf6629eada0c2802f34ae4012e04343497862"><meta name=description content="Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments
-Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content=" Blog 7"><meta name=twitter:description content="Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments
-Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production."><meta property="og:url" content="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html"><meta property="og:title" content=" Blog 7"><meta property="og:description" content="Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments
-Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production."><meta property="og:locale" content="vi"><meta property="og:type" content="website"><meta itemprop=name content=" Blog 7"><meta itemprop=description content="Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments
-Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production."><meta itemprop=wordCount content="3092"><title>Blog 7</title><link href=https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html rel=alternate hreflang=x-default><link href=https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html rel=alternate hreflang=vi><link href=https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html rel=alternate hreflang=en><link href=../../../fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.xml rel=alternate type=application/rss+xml title=" Blog 7"><link href=../../../fcj-workshopz/images/logo.png?1764901268 rel=icon type=image/png><link href=../../../fcj-workshopz/css/auto-complete/auto-complete.min.css?1764901268 rel=stylesheet><script src=../../../fcj-workshopz/js/auto-complete/auto-complete.min.js?1764901268 defer></script><script src=../../../fcj-workshopz/js/search-lunr.min.js?1764901268 defer></script><script src=../../../fcj-workshopz/js/search.min.js?1764901268 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="../../../fcj-workshopz/searchindex.vi.js?1764901268"</script><script src=../../../fcj-workshopz/js/lunr/lunr.min.js?1764901268 defer></script><script src=../../../fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1764901268 defer></script><script src=../../../fcj-workshopz/js/lunr/lunr.multi.min.js?1764901268 defer></script><script src=../../../fcj-workshopz/js/lunr/lunr.vi.min.js?1764901268 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["vi"]</script><link href=../../../fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764901268 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=../../../fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764901268 rel=stylesheet></noscript><link href=../../../fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1764901268 rel=stylesheet><link href=../../../fcj-workshopz/css/theme.min.css?1764901268 rel=stylesheet><link href=../../../fcj-workshopz/css/format-html.min.css?1764901268 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/vi/3-blogstranslated/3.7-blog7/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://trungkien2543.github.io/fcj-workshopz",window.relearn.disableAnchorCopy=!1,window.relearn.disableAnchorScrolling=!1,window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.relearn.getItem=(e,t)=>e.getItem(t),window.relearn.setItem=(e,t,n)=>e.setItem(t,n),window.relearn.removeItem=(e,t)=>e.removeItem(t),window.T_Copy_to_clipboard=`Sao chép vào bảng tạm`,window.T_Copied_to_clipboard=`Sao chép vào bảng tạm!`,window.T_Copy_link_to_clipboard=`Sao chép nối kết vào bảng tạm`,window.T_Link_copied_to_clipboard=`Liên kết được sao chép vào bảng tạm!`,window.T_Reset_view=`Đặt lại dạng xem`,window.T_View_reset=`Xem đặt lại!`,window.T_No_results_found=`Không tìm thấy kết quả nào cho "{0}"`,window.T_N_results_found=`{1} kết quả được tìm thấy cho "{0}"`,window.relearn.themevariants=["auto"],window.relearn.customvariantname="my-custom-variant",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.relearn.setItem(window.localStorage,window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.relearn.getItem(window.localStorage,window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.relearn.getItem(window.localStorage,window.relearn.absBaseUri+"/variant")??"";e==window.relearn.customvariantname||(!e||!window.relearn.themevariants.includes(e))&&(e=window.relearn.themevariants[0],window.relearn.setItem(window.localStorage,window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><link href=../../../fcj-workshopz/css/custom.css?1764901268 rel=stylesheet></head><body class="mobile-support html" data-url=../../../fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar><div class=topbar-wrapper><div class=topbar-sidebar-divider></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><button class=topbar-control onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></div><div class="topbar-button topbar-button-toc" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><button class=topbar-control onclick=toggleTopbarFlyout(this) type=button title="Mục lục (CTRL+ALT+t)"><i class="fa-fw fas fa-list-alt"></i></button><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#đơn-giản-hóa-các-mô-hình-multi-agent>Đơn giản hóa các mô hình multi-agent</a></li><li><a href=#hệ-thống-multi-agent-với-a2a>Hệ thống Multi-Agent với A2A</a></li><li><a href=#sẵn-sàng-cho-môi-trường-production>Sẵn sàng cho môi trường production</a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=../../../fcj-workshopz/vi/index.html><span itemprop=name>Báo cáo thực tập</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=../../../fcj-workshopz/vi/3-blogstranslated/index.html><span itemprop=name>Các bài blog đã dịch</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Blog 7</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><a class=topbar-control href=../../../fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html title="Blog 6 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></div><div class="topbar-button topbar-button-next" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><a class=topbar-control href=../../../fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html title="Blog 8 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></div><div class="topbar-button topbar-button-more" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><button class=topbar-control onclick=toggleTopbarFlyout(this) type=button title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable 3-blogstranslated" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline></header><h1 id=blog-7>Blog 7</h1><h1 id=ra-mắt-strands-agents-10-việc-điều-phối-multi-agent-cho-môi-trường-production-đã-được-đơn-giản-hóa><strong>Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa</strong></h1><p><em>Ryan Coleman và Belle Guttman</em> | 15/07/2025 | <a href=https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/amazon-machine-learning/ rel=external target=_blank>Amazon Machine Learning</a>, <a href=https://aws.amazon.com/blogs/opensource/category/post-types/announcements/ rel=external target=_blank>Announcements</a>, <a href=https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/ rel=external target=_blank>Artificial Intelligence</a>, <a href=https://aws.amazon.com/blogs/opensource/category/open-source/ rel=external target=_blank>Open Source</a>| <a href=https://aws.amazon.com/blogs/opensource/introducing-strands-agents-1-0-production-ready-multi-agent-orchestration-made-simple/ rel=external target=_blank>Permalink</a> | <a href=https://aws.amazon.com/blogs/opensource/introducing-strands-agents-1-0-production-ready-multi-agent-orchestration-made-simple/#Comments rel=external target=_blank>Comments</a></p><p>Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của <a href=https://github.com/strands-agents/sdk-python rel=external target=_blank>Strands Agents SDK</a>, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.</p><p>Kể từ khi ra mắt bản xem trước vào tháng 5 năm 2025, chúng tôi đã nhận được hơn 2.000 lượt sao trên GitHub và hơn 150 ngàn lượt tải xuống trên PyPI. Strands 1.0 mang đến mức độ đơn giản tương tự cho các ứng dụng multi-agent như những gì Strands đã làm được với các agent đơn lẻ, với việc bổ sung bốn primitive mới và hỗ trợ cho giao thức Agent to Agent (A2A). Để đưa kiến trúc multi-agent vào môi trường production, phiên bản 1.0 cũng bao gồm một trình quản lý session mới để truy xuất trạng thái agent từ một kho dữ liệu từ xa, cùng với việc cải thiện hỗ trợ bất đồng bộ xuyên suốt toàn bộ SDK. Nhằm tăng tính linh hoạt để xây dựng agent của bạn với bất kỳ mô hình nào, cStrands 1.0 đã mở rộng hỗ trợ thêm API của năm nhà cung cấp mô hình mới, được đóng góp bởi các đối tác như <a href=https://www.anthropic.com/ rel=external target=_blank>Anthropic</a>, <a href=https://www.llama.com/ rel=external target=_blank>Meta</a>, <a href=https://openai.com/ rel=external target=_blank>OpenAI</a>, <a href=https://cohere.com/ rel=external target=_blank>Cohere</a>, <a href=https://mistral.ai/ rel=external target=_blank>Mistral</a>, <a href=https://stability.ai/ rel=external target=_blank>Stability</a>, <a href=https://writer.com/ rel=external target=_blank>Writer</a> và <a href=https://www.baseten.co/ rel=external target=_blank>Baseten</a> (xem <a href=https://github.com/strands-agents/sdk-python/pull/389 rel=external target=_blank>pull request</a>). Bây giờ, hãy cùng đi sâu vào chi tiết các cập nhật này. Các mẫu code đầy đủ có sẵn tại trang <a href=https://strandsagents.com/ rel=external target=_blank>strandsagents.com.</a></p><h2 id=đơn-giản-hóa-các-mô-hình-multi-agent>Đơn giản hóa các mô hình multi-agent</h2><p>Các mô hình multi-agent cho phép các agent AI chuyên biệt cùng nhau làm việc—phân công nhiệm vụ, chia sẻ kiến thức và phối hợp hành động—nhằm giải quyết những vấn đề phức tạp mà một agent đơn lẻ không thể xử lý được. Strands 1.0 giới thiệu bốn primitive trực quan, giúp việc điều phối nhiều agent trở thành một phần mở rộng đơn giản của tổ hợp mô hình/công cụ/prompt mà bạn vốn đã sử dụng để tạo ra các agent đơn lẻ.</p><p><strong>1. Agents-as-Tools: Đơn giản hóa việc ủy quyền theo cấp bậc</strong></p><p>Mô hình agents-as-tools biến các agent chuyên biệt thành những công cụ thông minh mà các agent khác có thể gọi đến. Điều này tạo điều kiện cho việc ủy quyền theo cấp bậc, nơi các agent hoạt động như người điều phối có thể chủ động tham vấn các chuyên gia theo từng lĩnh vực cụ thể mà không từ bỏ quyền kiểm soát yêu cầu. Điều này phản ánh cách thức làm việc của các đội nhóm con người — một quản lý dự án không cần phải biết mọi thứ, họ chỉ cần biết nên tham khảo ý kiến của chuyên gia nào cho từng nhiệm vụ cụ thể.</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent, tool 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands_tools <span style=color:#f92672>import</span> calculator, file_write, python_repl, journal 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>@tool</span> 
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>web_search</span>(query: str) <span style=color:#f92672>-&gt;</span> str: 
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;Dummy web search results here!&#34;</span> 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Create specialized agents </span>
-</span></span><span style=display:flex><span>research_analyst_agent <span style=color:#f92672>=</span> Agent( 
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;You are a research specialist who gathers and analyzes information about local startup markets&#34;</span>, 
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[web_search, calculator, file_write, python_repl] 
-</span></span><span style=display:flex><span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>travel_advisor_agent <span style=color:#f92672>=</span> Agent( 
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;You are a travel expert who helps with trip planning and destination advice&#34;</span>, 
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[web_search, journal] 
-</span></span><span style=display:flex><span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Convert the agents into tools </span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>@tool</span> 
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>research_analyst</span>(query: str) <span style=color:#f92672>-&gt;</span> str: 
-</span></span><span style=display:flex><span>    response <span style=color:#f92672>=</span> research_analyst_agent(query) 
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> str(response) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>@tool</span> 
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>travel_advisor</span>(query: str) <span style=color:#f92672>-&gt;</span> str: 
-</span></span><span style=display:flex><span>    response <span style=color:#f92672>=</span> travel_advisor_agent(query) 
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> str(response) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Orchestrator naturally delegates to specialists </span>
-</span></span><span style=display:flex><span>executive_assistant <span style=color:#f92672>=</span> Agent(  
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[research_analyst, travel_advisor]  
-</span></span><span style=display:flex><span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>result <span style=color:#f92672>=</span> executive_assistant(<span style=color:#e6db74>&#34;I have a business meeting in Portland next week. Suggest a nice place to stay near the local startup scene, and suggest a few startups to visit&#34;</span>) </span></span></code></pre></div><p>Trong ví dụ rút gọn này, chúng ta định nghĩa hai agent du lịch và nghiên cứu, mỗi agent có prompt và công cụ chuyên biệt cho lĩnh vực của mình, mà agent trợ lý điều hành có thể gọi đến để lấy thông tin phục vụ yêu cầu của người dùng. agent trợ lý điều hành chịu trách nhiệm tổng hợp đầu vào từ các agent khác và tạo ra phản hồi gửi lại cho người dùng. Tìm hiểu thêm về mô hình <a href=https://strandsagents.com/latest/user-guide/concepts/multi-agent/agents-as-tools/ rel=external target=_blank>Agents-as-Tools</a> trong tài liệu chính thức của Strands.</p><p><strong>2. Handoffs: chuyển giao quyền kiểm soát rõ ràng</strong></p><p>Tính năng Handoffs cho phép các agent chủ động chuyển trách nhiệm sang con người khi gặp phải nhiệm vụ vượt quá phạm vi chuyên môn của mình, đồng thời giữ nguyên toàn bộ ngữ cảnh cuộc trò chuyện trong quá trình chuyển giao. Strands cung cấp sẵn công cụ được tích hợp sẵn <code>handoff_to_user</code> giúp cho các agent có thể dùng để chuyển giao quyền kiểm soát một cách liền mạch trong khi vẫn duy trì lịch sử và ngữ cảnh cuộc trò chuyện - giống như một nhân viên dịch vụ khách hàng cung cấp chủ động yêu cầu khách cung cấp thêm thông tin về trường hợp của họ.</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands_tools <span style=color:#f92672>import</span> handoff_to_user
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>SYSTEM_PROMPT<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Answer the user&#39;s support query. Ask them questions with the handoff_to_user tool when you need more information
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Include the handoff_to_user tool in our agent&#39;s tool list</span>
-</span></span><span style=display:flex><span>agent <span style=color:#f92672>=</span> Agent(
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span>SYSTEM_PROMPT,
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[handoff_to_user]
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># The agent calls the handoff_to_user tool which includes the question for the customer</span>
-</span></span><span style=display:flex><span>agent(<span style=color:#e6db74>&#34;I have a question about my order.&#34;</span>)</span></span></code></pre></div><p>Các agent cũng có thể đặt câu hỏi cho con người khi được yêu cầu làm như vậy</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>SYSTEM_PROMPT<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Answer the user&#39;s support query. Ask them questions when you need more information
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>agent <span style=color:#f92672>=</span> Agent(
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span>SYSTEM_PROMPT,
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># The agent asks questions by streaming them back as text</span>
-</span></span><span style=display:flex><span>agent(<span style=color:#e6db74>&#34;I have a question about my order.&#34;</span>)</span></span></code></pre></div><p><strong>3. Swarms: Các nhóm cộng tác tự tổ chức</strong></p><p>Một Swarm tạo ra các agent tự chủ phối hợp động thông qua việc chia sẻ bộ nhớ,cho phép nhiều chuyên gia có thể cộng tác cho các tác vụ phức tạp. Hãy hình dung nó giống như một buổi thảo luận nhóm, nơi các chuyên gia xây dựng ý tưởng dựa trên ý tưởng của nhau, với đội ngũ tự tổ chức để mang lại kết quả tập thể tốt nhất.</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>import</span> logging  
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands.multiagent <span style=color:#f92672>import</span> Swarm 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands_tools <span style=color:#f92672>import</span> memory, calculator, file_write 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Enables Strands debug logs level, and prints to stderr </span>
-</span></span><span style=display:flex><span>logging<span style=color:#f92672>.</span>getLogger(<span style=color:#e6db74>&#34;strands.multiagent&#34;</span>)<span style=color:#f92672>.</span>setLevel(logging<span style=color:#f92672>.</span>DEBUG) 
-</span></span><span style=display:flex><span>logging<span style=color:#f92672>.</span>basicConfig( 
-</span></span><span style=display:flex><span>    format<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>%(levelname)s</span><span style=color:#e6db74> | </span><span style=color:#e6db74>%(name)s</span><span style=color:#e6db74> | </span><span style=color:#e6db74>%(message)s</span><span style=color:#e6db74>&#34;</span>, 
-</span></span><span style=display:flex><span>    handlers<span style=color:#f92672>=</span>[logging<span style=color:#f92672>.</span>StreamHandler()] 
-</span></span><span style=display:flex><span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>researcher <span style=color:#f92672>=</span> Agent( 
-</span></span><span style=display:flex><span>    name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;researcher&#34;</span>, 
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;You research topics thoroughly using your memory and built-in knowledge&#34;</span>, 
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[memory] 
-</span></span><span style=display:flex><span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>analyst <span style=color:#f92672>=</span> Agent( 
-</span></span><span style=display:flex><span>    name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;analyst&#34;</span>, 
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;You analyze data and create insights&#34;</span>, 
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[calculator, memory] 
-</span></span><span style=display:flex><span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>writer <span style=color:#f92672>=</span> Agent( 
-</span></span><span style=display:flex><span>    name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;writer&#34;</span>, 
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;You write comprehensive reports based on research and analysis&#34;</span>, 
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[file_write, memory] 
-</span></span><span style=display:flex><span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Swarm automatically coordinates agents </span>
-</span></span><span style=display:flex><span>market_research_team <span style=color:#f92672>=</span> Swarm([researcher, analyst, writer]) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>result <span style=color:#f92672>=</span> market_research_team( 
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;What is the history of AI since 1950? Create a comprehensive report&#34;</span> 
-</span></span><span style=display:flex><span>) </span></span></code></pre></div><p>Nghiên cứu thêm về <a href=https://strandsagents.com/latest/user-guide/concepts/multi-agent/swarm/ rel=external target=_blank>Swarms</a> trong tài liệu về Strands</p><p><strong>4. Graphs: Kiểm soát quy trình làm việc mang tính xác định</strong></p><p>Graphs cho phép bạn xác định quy trình làm việc của các agent một cách rõ ràng với những định tuyến có điều kiện và những điểm ra quyết định, rất hữu ích cho những quy trình yêu cầu các bước cụ thể, cơ chế phê duyệt hoặc các ngưỡng kiểm soát chất lượng. Giống như một dây chuyền lắp ráp hoặc chuỗi phê duyệt được thiết kế tốt, graphs đảm bảo các agent luôn tuân thủ các quy tắc nghiệp vụ đã định sẵn theo đúng trình tự mỗi lần thực thi.</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent  
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands.multiagent <span style=color:#f92672>import</span> GraphBuilder  
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>analyzer_agent <span style=color:#f92672>=</span> Agent(  
-</span></span><span style=display:flex><span>    name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;analyzer&#34;</span>,  
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Analyze customer requests and categorize them&#34;</span>,  
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[text_classifier, sentiment_analyzer]  
-</span></span><span style=display:flex><span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>normal_processor <span style=color:#f92672>=</span> Agent(  
-</span></span><span style=display:flex><span>    name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;normal_processor&#34;</span>,  
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Handle routine requests automatically&#34;</span>,  
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[knowledge_base, auto_responder]  
-</span></span><span style=display:flex><span>)  
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>critical_processor <span style=color:#f92672>=</span> Agent(  
-</span></span><span style=display:flex><span>    name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;critical_processor&#34;</span>,  
-</span></span><span style=display:flex><span>    system_prompt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Handle critical requests quickly&#34;</span>,  
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[knowledge_base, escalate_to_support_agent]  
-</span></span><span style=display:flex><span>)  
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Build deterministic workflow  </span>
-</span></span><span style=display:flex><span>builder <span style=color:#f92672>=</span> GraphBuilder()  
-</span></span><span style=display:flex><span>builder<span style=color:#f92672>.</span>add_node(analyzer_agent, <span style=color:#e6db74>&#34;analyze&#34;</span>)  
-</span></span><span style=display:flex><span>builder<span style=color:#f92672>.</span>add_node(normal_processor, <span style=color:#e6db74>&#34;normal_processor&#34;</span>)  
-</span></span><span style=display:flex><span>builder<span style=color:#f92672>.</span>add_node(critical_processor, <span style=color:#e6db74>&#34;critical_processor&#34;</span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Define conditional routing </span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>is_approved</span>(state): 
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>True</span> 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>is_critical</span>(state): 
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>False</span> 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>builder<span style=color:#f92672>.</span>add_edge(<span style=color:#e6db74>&#34;analyze&#34;</span>, <span style=color:#e6db74>&#34;normal_processor&#34;</span>, condition<span style=color:#f92672>=</span>is_approved)  
-</span></span><span style=display:flex><span>builder<span style=color:#f92672>.</span>add_edge(<span style=color:#e6db74>&#34;analyze&#34;</span>, <span style=color:#e6db74>&#34;critical_processor&#34;</span>, condition<span style=color:#f92672>=</span>is_critical)  
-</span></span><span style=display:flex><span>builder<span style=color:#f92672>.</span>set_entry_point(<span style=color:#e6db74>&#34;analyze&#34;</span>)  
-</span></span><span style=display:flex><span>customer_support_graph <span style=color:#f92672>=</span> builder<span style=color:#f92672>.</span>build() 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Execute the graph with user input </span>
-</span></span><span style=display:flex><span>results <span style=color:#f92672>=</span> customer_support_graph(<span style=color:#e6db74>&#34;I need help with my order!&#34;</span>) </span></span></code></pre></div><p>Nghiên cứu thêm về <a href=https://strandsagents.com/latest/user-guide/concepts/multi-agent/graph/ rel=external target=_blank>Graphs</a> trong tài liệu về Strands</p><p>Các mô hình multi-agent (multi-agent patterns) này được thiết kế để được áp dụng dần dần và kết hợp một cách tự do — hãy bắt đầu với các agent đơn lẻ, thêm các chuyên gia như là công cụ, phát triển thành các Swarms, và điều phối bằng các Graphs khi nhu cầu của bạn tăng lên. Hãy kết hợp và tùy chỉnh các mô hình để tạo ra các hệ thống tinh vi: swarms có thể chứa các graphs, graphs có thể điều phối các swarms, và bất kỳ mô hình nào cũng có thể sử dụng các agent được trang bị thêm các agent khác làm công cụ.</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent, tool 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands.multiagent <span style=color:#f92672>import</span> GraphBuilder, Swarm 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands_tools <span style=color:#f92672>import</span> memory, calculator, python_repl, file_write  
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Start simple with a single agent </span>
-</span></span><span style=display:flex><span>agent <span style=color:#f92672>=</span> Agent(tools<span style=color:#f92672>=</span>[memory]) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Create specialist agents that a lead orchestrator agent can consult </span>
-</span></span><span style=display:flex><span>data_analyst <span style=color:#f92672>=</span> Agent(name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;analyst&#34;</span>, tools<span style=color:#f92672>=</span>[calculator, python_repl]) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>@tool</span> 
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>data_analyst_tool</span>(query: str) <span style=color:#f92672>-&gt;</span> str: 
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> str(data_analyst(query)) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>analyst_orchestrator <span style=color:#f92672>=</span> Agent(tools<span style=color:#f92672>=</span>[memory, data_analyst_tool]) <span style=color:#75715e># Agents-as-tools </span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Compose patterns together - a graph that uses a swarm </span>
-</span></span><span style=display:flex><span>researcher <span style=color:#f92672>=</span> Agent(name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;researcher&#34;</span>, tools<span style=color:#f92672>=</span>[memory]) 
-</span></span><span style=display:flex><span>writer <span style=color:#f92672>=</span> Agent(name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;writer&#34;</span>, tools<span style=color:#f92672>=</span>[file_write]) 
-</span></span><span style=display:flex><span>research_swarm <span style=color:#f92672>=</span> Swarm([researcher, analyst_orchestrator, writer]) 
-</span></span><span style=display:flex><span>review_agent <span style=color:#f92672>=</span> Agent(system_prompt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Review the research quality and suggest improvements&#34;</span>) 
-</span></span><span style=display:flex><span>builder <span style=color:#f92672>=</span> GraphBuilder() 
-</span></span><span style=display:flex><span>builder<span style=color:#f92672>.</span>add_node(research_swarm, <span style=color:#e6db74>&#34;research&#34;</span>) <span style=color:#75715e># Swarm as graph node </span>
-</span></span><span style=display:flex><span>builder<span style=color:#f92672>.</span>add_node(review_agent, <span style=color:#e6db74>&#34;review&#34;</span>) 
-</span></span><span style=display:flex><span>builder<span style=color:#f92672>.</span>add_edge(<span style=color:#e6db74>&#34;research&#34;</span>, <span style=color:#e6db74>&#34;review&#34;</span>) 
-</span></span><span style=display:flex><span>graph <span style=color:#f92672>=</span> builder<span style=color:#f92672>.</span>build() 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># The patterns nest naturally - swarms in graphs, agents as tools everywhere  </span>
-</span></span><span style=display:flex><span>result <span style=color:#f92672>=</span> graph(<span style=color:#e6db74>&#34;How has green energy evolved over the last few years?&#34;</span>) </span></span></code></pre></div><h2 id=hệ-thống-multi-agent-với-a2a>Hệ thống Multi-Agent với A2A</h2><p>Strand 1.0 đã bao gồm việc hỗ trợ cho <a href=https://a2aproject.github.io/A2A/latest/ rel=external target=_blank>giao thức Agent-to-Agent (A2A)</a>, một tiêu chuẩn mở cho phép các agent từ các nền tảng khác nhau có thể giao tiếp một cách liền mạch. Bất kỳ agent Strands cũng có thể được tích hợp các khả năng A2A để trở nên có thể truy cập qua mạng và tuân thủ giao thức A2A. Các agent A2A từ các tổ chức bên ngoài cũng có thể được sử dụng trực tiếp trong tất cả các mô hình multi-agent của Strands.</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands.multiagent.a2a <span style=color:#f92672>import</span> A2AServer 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands_tools.a2a_client <span style=color:#f92672>import</span> A2AClientToolProvider 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Serve your agent via A2A protocol </span>
-</span></span><span style=display:flex><span>local_agent <span style=color:#f92672>=</span> Agent(name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;analyzer&#34;</span>, tools<span style=color:#f92672>=</span>[web_search, data_analysis]) 
-</span></span><span style=display:flex><span>a2a_agent <span style=color:#f92672>=</span> A2AServer(agent<span style=color:#f92672>=</span>local_agent, port<span style=color:#f92672>=</span><span style=color:#ae81ff>9000</span>) 
-</span></span><span style=display:flex><span>a2a_agent<span style=color:#f92672>.</span>serve() <span style=color:#75715e># AgentCard available at http://localhost:9000/.well-known/agent.json </span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Use remote A2A agents </span>
-</span></span><span style=display:flex><span>partner_agent_url <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://partner.com&#34;</span> 
-</span></span><span style=display:flex><span>cloud_agent_url <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://cloud.ai&#34;</span> 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Connect to remote A2A enabled agents </span>
-</span></span><span style=display:flex><span>a2a_tool_provider <span style=color:#f92672>=</span> A2AClientToolProvider(known_agent_urls<span style=color:#f92672>=</span>[partner_agent_url, cloud_agent_url]) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Orchestrate remote agents </span>
-</span></span><span style=display:flex><span>orchestrator <span style=color:#f92672>=</span> Agent(tools<span style=color:#f92672>=</span>[a2a_tool_provider<span style=color:#f92672>.</span>tools]) </span></span></code></pre></div><p>Bởi vì A2A cung cấp các tính năng như agent card, một mô tả được chuẩn hóa về khả năng của agent, các hệ thống multi-agent được bật A2A có thể dễ dàng khám phá và kết nối với các agent được tạo ra bởi các nhóm hoặc các tổ chức khác. Strands tự động tạo ra thẻ agent dựa trên các công cụ bạn đã cung cấp cho agent. Để xem các ví dụ hoạt động hoàn chỉnh và bắt đầu với tính năng tích hợp A2A, hãy tham khảo <a href=https://github.com/strands-agents/samples/tree/main/03-integrations/Native-A2A-Support rel=external target=_blank>repository mẫu</a> của chúng tôi và <a href=https://strandsagents.com/latest/user-guide/concepts/multi-agent/agent-to-agent/ rel=external target=_blank>tài liệu A2A của Strands</a>.</p><h2 id=sẵn-sàng-cho-môi-trường-production>Sẵn sàng cho môi trường production</h2><p>Mặc dù Strands đã được các đội nội bộ của Amazon như Amazon Q Developer và AWS Glue sử dụng trong môi trường production từ lâu trước khi ra mắt công chúng, chúng tôi đã và đang làm việc ngược lại với hàng trăm khách hàng trên toàn thế giới để mở rộng Strands nhằm đáp ứng các nhu cầu production của bạn. Các cập nhật này bao gồm một tầng trừu tượng quản lý session để hỗ trợ việc lưu trữ liên tục dữ liệu vào và phục hồi từ các kho dữ liệu bên ngoài, đầu ra có cấu trúc, cải thiện hỗ trợ bất đồng bộ, và nhiều thứ khác nữa (xem chi tiết trong <a href=https://github.com/strands-agents/sdk-python/releases rel=external target=_blank>changelog các phiên bản phát hành</a>)</p><p><strong>Quản lý session bền vững:</strong> Chúng tôi đã thêm vào <code>SessionManager</code>, một công cụ trừu tượng hóa quản lý session cho phép tự động lưu trữ liên tục và khôi phục lịch sử hội thoại cũng như trạng thái của agent. Nhờ đó, các agent có thể lưu toàn bộ lịch sử cuộc trò chuyện vào một hệ thống lưu trữ như Amazon Simple Storage Service (Amazon S3) và tiếp tục cuộc hội thoại một cách liền mạch ngay cả sau khi hệ thống khởi động lại. Dưới đây là một ví dụ sử dụng cơ chế lưu trữ liên tục dựa trên file cơ bản.</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands.session.file_session_manager <span style=color:#f92672>import</span> FileSessionManager 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Create a session manager with file-based storage </span>
-</span></span><span style=display:flex><span>Session_manager <span style=color:#f92672>=</span> FileSessionManager(session_id<span style=color:#f92672>=</span><span style=color:#960050;background-color:#1e0010>”</span>customer_support<span style=color:#960050;background-color:#1e0010>”</span>, base_dir<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;./agent_sessions&#34;</span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Agent automatically persists all conversations </span>
-</span></span><span style=display:flex><span>agent <span style=color:#f92672>=</span> Agent( 
-</span></span><span style=display:flex><span>    id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;support_bot_1&#34;</span>, 
-</span></span><span style=display:flex><span>    session_manager<span style=color:#f92672>=</span>session_manager, 
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[knowledge_base, ticket_system] 
-</span></span><span style=display:flex><span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Messages are automatically saved as the conversation progresses </span>
-</span></span><span style=display:flex><span>agent(<span style=color:#e6db74>&#34;Help me reset my password&#34;</span>) 
-</span></span><span style=display:flex><span>agent(<span style=color:#e6db74>&#34;I can&#39;t access my email&#34;</span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Later, even after a restart, restore the full conversation </span></span></span></code></pre></div><p>Bạn có thể mở rộng lớp trừu tượng này bằng cách tự triển khai backend lưu trữ của riêng mình thông qua mẫu thiết kế Data Access Object (DAO), và Strands đã tích hợp sẵn hai backend mặc định: hệ thống file cục bộ và Amazon S3. Mỗi agent nhận một ID duy nhất để theo dõi, và hệ thống xử lý các agent đồng thời trong cùng một session cho các kịch bản multi-agent, đảm bảo rằng các agent luôn duy trì ngữ cảnh qua các lần triển khai, mở rộng quy mô hệ thống hoặc khởi động lại. Tìm hiểu thêm về <a href=https://strandsagents.com/latest/user-guide/concepts/agents/session-management/ rel=external target=_blank>Session Management</a> trong tài liệu của Strands.</p><p><strong>Hỗ trợ bất đồng bộ nguyên bản và cải thiện hiệu năng:</strong> Các workload trong môi trường production đòi hỏi độ tin cậy cao và hiệu năng phản hồi nhanh. Trong phiên bản 1.0, chúng tôi đã cải tiến kiến trúc vòng lặp sự kiện của Strands để hỗ trợ thao tác bất đồng bộ trên toàn bộ stack. Các công cụ và nhà cung cấp mô hình giờ đây có thể chạy bất đồng bộ mà không bị chặn, cho phép thực thi đồng thời thực sự. Phương thức <code>stream_async</code> mới truyền phát tất cả các sự kiện của agent — văn bản, việc sử dụng công cụ, các bước suy luận — theo thời gian thực, vđồng thời tích hợp cơ chế hủy khi người dùng rời khỏi trang.</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>import</span> asyncio 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> fastapi <span style=color:#f92672>import</span> FastAPI 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> fastapi.responses <span style=color:#f92672>import</span> StreamingResponse 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent 
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands_tools <span style=color:#f92672>import</span> calculator 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>app <span style=color:#f92672>=</span> FastAPI() 
-</span></span><span style=display:flex><span><span style=color:#a6e22e>@app.post</span>(<span style=color:#e6db74>&#34;/chat&#34;</span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>async</span> <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>chat_endpoint</span>(message: str): 
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>async</span> <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>stream_response</span>(): 
-</span></span><span style=display:flex><span>        agent <span style=color:#f92672>=</span> Agent(tools<span style=color:#f92672>=</span>[web_search, calculator]) 
-</span></span><span style=display:flex><span>        <span style=color:#75715e># Stream agent responses in real-time </span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>async</span> <span style=color:#66d9ef>for</span> event <span style=color:#f92672>in</span> agent<span style=color:#f92672>.</span>stream_async(message): 
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> <span style=color:#e6db74>&#34;data&#34;</span> <span style=color:#f92672>in</span> event: 
-</span></span><span style=display:flex><span>                <span style=color:#66d9ef>yield</span> <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;data: </span><span style=color:#e6db74>{</span>event[<span style=color:#e6db74>&#39;data&#39;</span>]<span style=color:#e6db74>}</span><span style=color:#ae81ff>\n\n</span><span style=color:#e6db74>&#34;</span> 
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>elif</span> <span style=color:#e6db74>&#34;current_tool_use&#34;</span> <span style=color:#f92672>in</span> event: 
-</span></span><span style=display:flex><span>                <span style=color:#66d9ef>yield</span> <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;event: tool</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>data: Using </span><span style=color:#e6db74>{</span>event[<span style=color:#e6db74>&#39;current_tool_use&#39;</span>][<span style=color:#e6db74>&#39;name&#39;</span>]<span style=color:#e6db74>}</span><span style=color:#ae81ff>\n\n</span><span style=color:#e6db74>&#34;</span> 
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> StreamingResponse(stream_response(), media_type<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/event-stream&#34;</span>) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Concurrent agent evaluation </span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>async</span> <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>evaluate_models_concurrently</span>(prompt: str): 
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>async</span> <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>stream</span>(agent: Agent): 
-</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;STARTING: </span><span style=color:#e6db74>{</span>agent<span style=color:#f92672>.</span>name<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>) 
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>async</span> <span style=color:#66d9ef>for</span> event <span style=color:#f92672>in</span> agent<span style=color:#f92672>.</span>stream_async(prompt): 
-</span></span><span style=display:flex><span>            <span style=color:#75715e># handle events </span>
-</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;ENDING: </span><span style=color:#e6db74>{</span>agent<span style=color:#f92672>.</span>name<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>) 
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> event[<span style=color:#960050;background-color:#1e0010>“</span>result<span style=color:#960050;background-color:#1e0010>”</span>]  <span style=color:#75715e># last event is the agent result </span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    agents <span style=color:#f92672>=</span> [ 
-</span></span><span style=display:flex><span>        Agent(name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;claude&#34;</span>, model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;us.anthropic.claude-3-7-sonnet-20250219-v1:0”), </span>
-</span></span><span style=display:flex><span>        Agent(name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;deepseek”, model=&#34;</span>us<span style=color:#f92672>.</span>deepseek<span style=color:#f92672>.</span>r1<span style=color:#f92672>-</span>v1:<span style=color:#ae81ff>0</span><span style=color:#960050;background-color:#1e0010>”</span>), 
-</span></span><span style=display:flex><span>        Agent(name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;nova&#34;</span>, model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;us.amazon.nova-pro-v1:0&#34;</span>) 
-</span></span><span style=display:flex><span>    ] 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#75715e># Execute all agents concurrently </span>
-</span></span><span style=display:flex><span>    responses <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> asyncio<span style=color:#f92672>.</span>gather(<span style=color:#f92672>*</span>[stream(agent) <span style=color:#66d9ef>for</span> agent <span style=color:#f92672>in</span> agents]) 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> responses </span></span></code></pre></div><p>Tìm hiểu thêm về <a href=https://strandsagents.com/latest/user-guide/concepts/streaming/async-iterators/ rel=external target=_blank>Hỗ trợ bất động bộ nguyên bản</a> trong tài liệu chính thức của Strands.</p><p><strong>Mở rộng hỗ trợ đa dạng nhà cung cấp mô hình:</strong> Khách hàng đã chia sẻ rằng họ cần linh hoạt trong việc sử dụng các mô hình khác nhau cho các tác vụ khác nhau. Để đáp ứng nhu cầu này, Strands Agents đã nhận được sự hỗ trợ mạnh mẽ từ cộng đồng các nhà cung cấp mô hình. Các nhà cung cấp như <a href=https://www.anthropic.com/ rel=external target=_blank>Anthropic</a>, <a href=https://www.llama.com/ rel=external target=_blank>Meta</a>, <a href=https://openai.com/ rel=external target=_blank>OpenAI</a>, <a href=https://cohere.com/ rel=external target=_blank>Cohere</a>, <a href=https://mistral.ai/ rel=external target=_blank>Mistral</a>, <a href=https://stability.ai/ rel=external target=_blank>Stability</a> và <a href=https://writer.com/ rel=external target=_blank>Writer</a> đã đóng góp cho phép API mô hình của họ được sử dụng bởi một Strands Agent thông qua code. Việc truy cập Strands Agents thông qua hạ tầng API do chính các nhà cung cấp này cung cấp giúp các nhà phát triển tập trung vào việc xây dựng các giải pháp AI-powered, mà không cần lo lắng về quản lý cơ sở hạ tầng. Những bổ sung này bổ trợ hoàn hảo cho khả năng hỗ trợ từ giai đoạn xem trước đối với mọi mô hình trên Amazon Bedrock, OpenAI, và bất kỳ endpoint tương thích OpenAI nào thông qua LiteLLM. Strands cho phép bạn sử dụng các mô hình khác nhau cho mỗi agent, hoặc chuyển đổi mô hình và nhà cung cấp mô hình mà không cần sửa đổi công cụ hoặc logic của bạn.</p><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python><span style=display:flex><span><span style=color:#f92672>from</span> strands <span style=color:#f92672>import</span> Agent
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands.models <span style=color:#f92672>import</span> BedrockModel
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands.models.openai <span style=color:#f92672>import</span> OpenAIModel
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> strands.models.anthropic <span style=color:#f92672>import</span> AnthropicModel
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Configure different model providers</span>
-</span></span><span style=display:flex><span>bedrock_model <span style=color:#f92672>=</span> BedrockModel(
-</span></span><span style=display:flex><span>    model_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;us.amazon.nova-pro-v1:0&#34;</span>,
-</span></span><span style=display:flex><span>    temperature<span style=color:#f92672>=</span><span style=color:#ae81ff>0.3</span>,
-</span></span><span style=display:flex><span>    top_p<span style=color:#f92672>=</span><span style=color:#ae81ff>0.8</span>,
-</span></span><span style=display:flex><span>    region_name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;us-west-2&#34;</span>
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>openai_model <span style=color:#f92672>=</span> OpenAIModel(
-</span></span><span style=display:flex><span>    client_args<span style=color:#f92672>=</span>{
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;api_key&#34;</span>: <span style=color:#e6db74>&#34;your-api-key&#34;</span>,
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>    model_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gpt-4o&#34;</span>,
-</span></span><span style=display:flex><span>    params<span style=color:#f92672>=</span>{
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;max_tokens&#34;</span>: <span style=color:#ae81ff>1000</span>,
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;temperature&#34;</span>: <span style=color:#ae81ff>0.7</span>,
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>anthropic_model <span style=color:#f92672>=</span> AnthropicModel(
-</span></span><span style=display:flex><span>    client_args<span style=color:#f92672>=</span>{
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;api_key&#34;</span>: <span style=color:#e6db74>&#34;your-api-key&#34;</span>,
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>    max_tokens<span style=color:#f92672>=</span><span style=color:#ae81ff>1028</span>,
-</span></span><span style=display:flex><span>    model_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;claude-3-7-sonnet-20250219&#34;</span>,
-</span></span><span style=display:flex><span>    params<span style=color:#f92672>=</span>{
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;temperature&#34;</span>: <span style=color:#ae81ff>0.5</span>,
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Swap models or use different models for different agents in the same system</span>
-</span></span><span style=display:flex><span>researcher <span style=color:#f92672>=</span> Agent(
-</span></span><span style=display:flex><span>    name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;researcher&#34;</span>,
-</span></span><span style=display:flex><span>    model<span style=color:#f92672>=</span>anthropic_model,
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[web_search]
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>writer <span style=color:#f92672>=</span> Agent(
-</span></span><span style=display:flex><span>    name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;writer&#34;</span>, 
-</span></span><span style=display:flex><span>    model<span style=color:#f92672>=</span>openai_model,
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[document_formatter]
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>analyzer <span style=color:#f92672>=</span> Agent(
-</span></span><span style=display:flex><span>    name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;analyzer&#34;</span>,
-</span></span><span style=display:flex><span>    model<span style=color:#f92672>=</span>bedrock_model,
-</span></span><span style=display:flex><span>    tools<span style=color:#f92672>=</span>[data_processor]
-</span></span><span style=display:flex><span>)</span></span></code></pre></div><p>Cộng đồng Strands đã đóng vai trò then chốt trong việc định hình tất cả những cải tiến này thông qua việc sử dụng thực tế, phản hồi và những đóng góp mã nguồn trực tiếp. Trong số hơn 150 pull request (PR) đã được merge vào Strands từ phiên bản 0.1.0 đến 1.0, 22% được đóng góp bởi các thành viên cộng đồng, những người đã sửa lỗi, thêm nhà cung cấp mô hình, viết tài liệu, thêm tính năng và tái cấu trúc các lớp để cải thiện hiệu suất. Chúng tôi vô cùng biết ơn <a href=https://github.com/strands-agents/sdk-python/graphs/contributors rel=external target=_blank>mỗi người trong số các bạn</a> vì đã giúp Strands trở thành cách đơn giản nhất để đưa một agent từ nguyên mẫu đến triển khai thực tế.</p><p>Tương lai của AI là multi-agent (multi-agent), và với Strands 1.0, tương lai đó đã sẵn sàng để triển khai trong môi trường production. Hãy bắt đầu xây dựng ngay hôm nay tại <a href=https://strandsagents.com/ rel=external target=_blank>strandsagents.com.</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><div id=R-header class=default-animation><a id=R-logo class=R-default href=../../../fcj-workshopz/vi/index.html><div class=logo-title></div></a></div><search><form action=../../../fcj-workshopz/vi/search/index.html method=get><div class="searchbox default-animation"><button class=search-detail type=submit title="Tìm kiếm (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
-<label class=a11y-only for=R-search-by>Tìm kiếm</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder="Tìm kiếm...">
-<button class=search-clear type=button data-search-clear title="Xóa tìm kiếm"><i class="fas fa-times" title="Xóa tìm kiếm"></i></button></div></form></search></div><div id=R-homelinks class="default-animation homelinks"><div class="R-menu-divider default-animation"><hr class=padding></div><div class="R-sidebarmenu R-shortcutmenu-homelinks"><ul class="space collapsible-menu"><li data-nav-id=/fcj-workshopz/vi/index.html><a class=padding href=../../../fcj-workshopz/vi/index.html>Trang chủ</a></li></ul></div><div class="R-menu-divider default-animation"><hr class=padding></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols"><ul></ul></div><div class="R-menu-divider default-animation"><hr class=padding></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/fcj-workshopz/vi/1-worklog/index.html><a class=padding href=../../../fcj-workshopz/vi/1-worklog/index.html><b>1. </b>Worklog</a><ul id=R-subsections-16447363d800ec5deaa3b0a76c63c922 class=collapsible-menu></ul></li><li class=parent data-nav-id=/fcj-workshopz/vi/3-blogstranslated/index.html><a class=padding href=../../../fcj-workshopz/vi/3-blogstranslated/index.html><b>3. </b>Các bài blog đã dịch</a><ul id=R-subsections-dff4ca4b61121a10b58696aacb50b106 class=collapsible-menu><li data-nav-id=/fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.html><a class=padding href=../../../fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.html><b>3.1. </b>Blog 1</a></li><li data-nav-id=/fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.html><a class=padding href=../../../fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.html><b>3.2. </b>Blog 2</a></li><li data-nav-id=/fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.html><a class=padding href=../../../fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.html><b>3.3. </b>Blog 3</a></li><li data-nav-id=/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html><a class=padding href=../../../fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html><b>3.4. </b>Blog 4</a></li><li data-nav-id=/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html><a class=padding href=../../../fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html><b>3.5. </b>Blog 5</a></li><li data-nav-id=/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html><a class=padding href=../../../fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html><b>3.6. </b>Blog 6</a></li><li class=active data-nav-id=/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html><a class=padding href=../../../fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html><b>3.7. </b>Blog 7</a></li><li data-nav-id=/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html><a class=padding href=../../../fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html><b>3.8. </b>Blog 8</a></li></ul></li><li data-nav-id=/fcj-workshopz/vi/4-eventparticipated/index.html><a class=padding href=../../../fcj-workshopz/vi/4-eventparticipated/index.html><b>4. </b>Các sự kiện đã tham gia</a><ul id=R-subsections-a3223440c4beb7b035882258d4302894 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin></div><div class="R-menu-divider default-animation"><hr class=padding></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Ngôn ngữ</label>
-<select id=R-select-language><option id=R-select-language-vi value=vi data-url=../../../fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html lang=vi selected data-selected>Tiếng Việt</option><option id=R-select-language-en value=en data-url=../../../fcj-workshopz/3-blogstranslated/3.7-blog7/index.html lang=en>English</option></select></div><div class=clear></div></div></li></ul></div><div id=R-footer><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=../../../fcj-workshopz/js/clipboard/clipboard.min.js?1764901268 defer></script><script src=../../../fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1764901268 defer></script><script src=../../../fcj-workshopz/js/theme.min.js?1764901268 defer></script></body></html>
+<!DOCTYPE html>
+<html lang="vi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/fcj-workshopz/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=fcj-workshopz/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta name="generator" content="Relearn 8.0.1+b23cf6629eada0c2802f34ae4012e04343497862">
+    <meta name="description" content="Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments
+Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Blog 7 :: My Hugo Site">
+    <meta name="twitter:description" content="Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments
+Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.">
+    <meta property="og:url" content="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html">
+    <meta property="og:site_name" content="My Hugo Site">
+    <meta property="og:title" content=" Blog 7 :: My Hugo Site">
+    <meta property="og:description" content="Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments
+Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.">
+    <meta property="og:locale" content="vi">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Blog 7 :: My Hugo Site">
+    <meta itemprop="description" content="Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa Ryan Coleman và Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments
+Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của Strands Agents SDK, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.">
+    <meta itemprop="wordCount" content="3092">
+    <title> Blog 7 :: My Hugo Site</title>
+    <link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html" rel="alternate" hreflang="x-default">
+    <link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html" rel="alternate" hreflang="vi">
+    <link href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html" rel="alternate" hreflang="en">
+    <link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.xml" rel="alternate" type="application/rss+xml" title=" Blog 7 :: My Hugo Site">
+    <link href="http://localhost:1313/fcj-workshopz/images/logo.png?1764902275" rel="icon" type="image/png">
+    <link href="http://localhost:1313/fcj-workshopz/css/auto-complete/auto-complete.min.css?1764902275" rel="stylesheet">
+    <script src="http://localhost:1313/fcj-workshopz/js/auto-complete/auto-complete.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/search-lunr.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/search.js?1764902275" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="http://localhost:1313/fcj-workshopz/searchindex.vi.js?1764902275";
+    </script>
+    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.multi.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.vi.min.js?1764902275" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['vi'];
+    </script>
+    <link href="http://localhost:1313/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764902275" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="http://localhost:1313/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764902275" rel="stylesheet"></noscript>
+    <link href="http://localhost:1313/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1764902275" rel="stylesheet">
+    <link href="http://localhost:1313/fcj-workshopz/css/theme.css?1764902275" rel="stylesheet">
+    <link href="http://localhost:1313/fcj-workshopz/css/format-html.css?1764902275" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/vi\/3-blogstranslated\/3.7-blog7\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/fcj-workshopz';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Sao chép vào bảng tạm`;
+      window.T_Copied_to_clipboard = `Sao chép vào bảng tạm!`;
+      window.T_Copy_link_to_clipboard = `Sao chép nối kết vào bảng tạm`;
+      window.T_Link_copied_to_clipboard = `Liên kết được sao chép vào bảng tạm!`;
+      window.T_Reset_view = `Đặt lại dạng xem`;
+      window.T_View_reset = `Xem đặt lại!`;
+      window.T_No_results_found = `Không tìm thấy kết quả nào cho "{0}"`;
+      window.T_N_results_found = `{1} kết quả được tìm thấy cho "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="http://localhost:1313/fcj-workshopz/css/custom.css?1764902275" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#đơn-giản-hóa-các-mô-hình-multi-agent">Đơn giản hóa các mô hình multi-agent</a></li>
+    <li><a href="#hệ-thống-multi-agent-với-a2a">Hệ thống Multi-Agent với A2A</a></li>
+    <li><a href="#sẵn-sàng-cho-môi-trường-production">Sẵn sàng cho môi trường production</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/fcj-workshopz/vi/index.html"><span itemprop="name">Báo cáo thực tập</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/index.html"><span itemprop="name">Các bài blog đã dịch</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Blog 7</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html" title="Blog 6 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html" title="Blog 8 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 3-blogstranslated" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="blog-7"> Blog 7</h1>
+
+<h1 id="ra-mắt-strands-agents-10-việc-điều-phối-multi-agent-cho-môi-trường-production-đã-được-đơn-giản-hóa"><strong>Ra Mắt Strands Agents 1.0: Việc điều phối Multi-Agent cho môi trường production đã được đơn giản hóa</strong></h1>
+<p><em>Ryan Coleman và Belle Guttman</em> | 15/07/2025 | <a href="https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/amazon-machine-learning/" rel="external" target="_blank">Amazon Machine Learning</a>, <a href="https://aws.amazon.com/blogs/opensource/category/post-types/announcements/" rel="external" target="_blank">Announcements</a>, <a href="https://aws.amazon.com/blogs/opensource/category/artificial-intelligence/" rel="external" target="_blank">Artificial Intelligence</a>, <a href="https://aws.amazon.com/blogs/opensource/category/open-source/" rel="external" target="_blank">Open Source</a>| <a href="https://aws.amazon.com/blogs/opensource/introducing-strands-agents-1-0-production-ready-multi-agent-orchestration-made-simple/" rel="external" target="_blank">Permalink</a> | <a href="https://aws.amazon.com/blogs/opensource/introducing-strands-agents-1-0-production-ready-multi-agent-orchestration-made-simple/#Comments" rel="external" target="_blank">Comments</a></p>
+<p>Hôm nay, chúng tôi vui mừng thông báo về phiên bản 1.0 của <a href="https://github.com/strands-agents/sdk-python" rel="external" target="_blank">Strands Agents SDK</a>, đánh dấu một cột mốc quan trọng trong hành trình giúp việc xây dựng các agent AI trở nên đơn giản, đáng tin cậy và sẵn sàng cho môi trường production. Strands Agents là một SDK mã nguồn mở, áp dụng phương pháp model-driven, giúp bạn xây dựng và vận hành các agent AI chỉ trong vài dòng code. Strands có khả năng mở rộng từ các trường hợp sử dụng agent đơn giản đến phức tạp, cũng như từ phát triển cục bộ đến triển khai trong môi trường production.</p>
+<p>Kể từ khi ra mắt bản xem trước vào tháng 5 năm 2025, chúng tôi đã nhận được hơn 2.000 lượt sao trên GitHub và hơn 150 ngàn lượt tải xuống trên PyPI. Strands 1.0 mang đến mức độ đơn giản tương tự cho các ứng dụng multi-agent như những gì Strands đã làm được với các agent đơn lẻ, với việc bổ sung bốn primitive mới và hỗ trợ cho giao thức Agent to Agent (A2A). Để đưa kiến trúc multi-agent vào môi trường production, phiên bản 1.0 cũng bao gồm một trình quản lý session mới để truy xuất trạng thái agent từ một kho dữ liệu từ xa, cùng với việc cải thiện hỗ trợ bất đồng bộ xuyên suốt toàn bộ SDK. Nhằm tăng tính linh hoạt để xây dựng agent của bạn với bất kỳ mô hình nào, cStrands 1.0 đã mở rộng hỗ trợ thêm API của năm nhà cung cấp mô hình mới, được đóng góp bởi các đối tác như <a href="https://www.anthropic.com/" rel="external" target="_blank">Anthropic</a>, <a href="https://www.llama.com/" rel="external" target="_blank">Meta</a>, <a href="https://openai.com/" rel="external" target="_blank">OpenAI</a>, <a href="https://cohere.com/" rel="external" target="_blank">Cohere</a>, <a href="https://mistral.ai/" rel="external" target="_blank">Mistral</a>, <a href="https://stability.ai/" rel="external" target="_blank">Stability</a>, <a href="https://writer.com/" rel="external" target="_blank">Writer</a> và <a href="https://www.baseten.co/" rel="external" target="_blank">Baseten</a> (xem <a href="https://github.com/strands-agents/sdk-python/pull/389" rel="external" target="_blank">pull request</a>). Bây giờ, hãy cùng đi sâu vào chi tiết các cập nhật này. Các mẫu code đầy đủ có sẵn tại trang <a href="https://strandsagents.com/" rel="external" target="_blank">strandsagents.com.</a></p>
+<h2 id="đơn-giản-hóa-các-mô-hình-multi-agent">Đơn giản hóa các mô hình multi-agent</h2>
+<p>Các mô hình multi-agent cho phép các agent AI chuyên biệt cùng nhau làm việc—phân công nhiệm vụ, chia sẻ kiến thức và phối hợp hành động—nhằm giải quyết những vấn đề phức tạp mà một agent đơn lẻ không thể xử lý được. Strands 1.0 giới thiệu bốn primitive trực quan, giúp việc điều phối nhiều agent trở thành một phần mở rộng đơn giản của tổ hợp mô hình/công cụ/prompt mà bạn vốn đã sử dụng để tạo ra các agent đơn lẻ.</p>
+<p><strong>1. Agents-as-Tools: Đơn giản hóa việc ủy quyền theo cấp bậc</strong></p>
+<p>Mô hình agents-as-tools biến các agent chuyên biệt thành những công cụ thông minh mà các agent khác có thể gọi đến. Điều này tạo điều kiện cho việc ủy quyền theo cấp bậc, nơi các agent hoạt động như người điều phối có thể chủ động tham vấn các chuyên gia theo từng lĩnh vực cụ thể mà không từ bỏ quyền kiểm soát yêu cầu. Điều này phản ánh cách thức làm việc của các đội nhóm con người — một quản lý dự án không cần phải biết mọi thứ, họ chỉ cần biết nên tham khảo ý kiến của chuyên gia nào cho từng nhiệm vụ cụ thể.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent, tool 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands_tools <span style="color:#f92672">import</span> calculator, file_write, python_repl, journal 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@tool</span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">web_search</span>(query: str) <span style="color:#f92672">-&gt;</span> str: 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Dummy web search results here!&#34;</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create specialized agents </span>
+</span></span><span style="display:flex;"><span>research_analyst_agent <span style="color:#f92672">=</span> Agent( 
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;You are a research specialist who gathers and analyzes information about local startup markets&#34;</span>, 
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[web_search, calculator, file_write, python_repl] 
+</span></span><span style="display:flex;"><span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>travel_advisor_agent <span style="color:#f92672">=</span> Agent( 
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;You are a travel expert who helps with trip planning and destination advice&#34;</span>, 
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[web_search, journal] 
+</span></span><span style="display:flex;"><span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Convert the agents into tools </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@tool</span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">research_analyst</span>(query: str) <span style="color:#f92672">-&gt;</span> str: 
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> research_analyst_agent(query) 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> str(response) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@tool</span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">travel_advisor</span>(query: str) <span style="color:#f92672">-&gt;</span> str: 
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> travel_advisor_agent(query) 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> str(response) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Orchestrator naturally delegates to specialists </span>
+</span></span><span style="display:flex;"><span>executive_assistant <span style="color:#f92672">=</span> Agent(  
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[research_analyst, travel_advisor]  
+</span></span><span style="display:flex;"><span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> executive_assistant(<span style="color:#e6db74">&#34;I have a business meeting in Portland next week. Suggest a nice place to stay near the local startup scene, and suggest a few startups to visit&#34;</span>) </span></span></code></pre></div>
+<p>Trong ví dụ rút gọn này, chúng ta định nghĩa hai agent du lịch và nghiên cứu, mỗi agent có prompt và công cụ chuyên biệt cho lĩnh vực của mình, mà agent trợ lý điều hành có thể gọi đến để lấy thông tin phục vụ yêu cầu của người dùng. agent trợ lý điều hành chịu trách nhiệm tổng hợp đầu vào từ các agent khác và tạo ra phản hồi gửi lại cho người dùng. Tìm hiểu thêm về mô hình <a href="https://strandsagents.com/latest/user-guide/concepts/multi-agent/agents-as-tools/" rel="external" target="_blank">Agents-as-Tools</a> trong tài liệu chính thức của Strands.</p>
+<p><strong>2. Handoffs: chuyển giao quyền kiểm soát rõ ràng</strong></p>
+<p>Tính năng Handoffs cho phép các agent chủ động chuyển trách nhiệm sang con người khi gặp phải nhiệm vụ vượt quá phạm vi chuyên môn của mình, đồng thời giữ nguyên toàn bộ ngữ cảnh cuộc trò chuyện trong quá trình chuyển giao. Strands cung cấp sẵn công cụ được tích hợp sẵn <code>handoff_to_user</code> giúp cho các agent có thể dùng để chuyển giao quyền kiểm soát một cách liền mạch trong khi vẫn duy trì lịch sử và ngữ cảnh cuộc trò chuyện - giống như một nhân viên dịch vụ khách hàng cung cấp chủ động yêu cầu khách cung cấp thêm thông tin về trường hợp của họ.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands_tools <span style="color:#f92672">import</span> handoff_to_user
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>SYSTEM_PROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Answer the user&#39;s support query. Ask them questions with the handoff_to_user tool when you need more information
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Include the handoff_to_user tool in our agent&#39;s tool list</span>
+</span></span><span style="display:flex;"><span>agent <span style="color:#f92672">=</span> Agent(
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span>SYSTEM_PROMPT,
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[handoff_to_user]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The agent calls the handoff_to_user tool which includes the question for the customer</span>
+</span></span><span style="display:flex;"><span>agent(<span style="color:#e6db74">&#34;I have a question about my order.&#34;</span>)</span></span></code></pre></div>
+<p>Các agent cũng có thể đặt câu hỏi cho con người khi được yêu cầu làm như vậy</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>SYSTEM_PROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Answer the user&#39;s support query. Ask them questions when you need more information
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>agent <span style="color:#f92672">=</span> Agent(
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span>SYSTEM_PROMPT,
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The agent asks questions by streaming them back as text</span>
+</span></span><span style="display:flex;"><span>agent(<span style="color:#e6db74">&#34;I have a question about my order.&#34;</span>)</span></span></code></pre></div>
+<p><strong>3. Swarms: Các nhóm cộng tác tự tổ chức</strong></p>
+<p>Một Swarm tạo ra các agent tự chủ phối hợp động thông qua việc chia sẻ bộ nhớ,cho phép nhiều chuyên gia có thể cộng tác cho các tác vụ phức tạp. Hãy hình dung nó giống như một buổi thảo luận nhóm, nơi các chuyên gia xây dựng ý tưởng dựa trên ý tưởng của nhau, với đội ngũ tự tổ chức để mang lại kết quả tập thể tốt nhất.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> logging  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands.multiagent <span style="color:#f92672">import</span> Swarm 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands_tools <span style="color:#f92672">import</span> memory, calculator, file_write 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Enables Strands debug logs level, and prints to stderr </span>
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74">&#34;strands.multiagent&#34;</span>)<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG) 
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>basicConfig( 
+</span></span><span style="display:flex;"><span>    format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> | </span><span style="color:#e6db74">%(name)s</span><span style="color:#e6db74"> | </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#34;</span>, 
+</span></span><span style="display:flex;"><span>    handlers<span style="color:#f92672">=</span>[logging<span style="color:#f92672">.</span>StreamHandler()] 
+</span></span><span style="display:flex;"><span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>researcher <span style="color:#f92672">=</span> Agent( 
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;researcher&#34;</span>, 
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;You research topics thoroughly using your memory and built-in knowledge&#34;</span>, 
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[memory] 
+</span></span><span style="display:flex;"><span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>analyst <span style="color:#f92672">=</span> Agent( 
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;analyst&#34;</span>, 
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;You analyze data and create insights&#34;</span>, 
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[calculator, memory] 
+</span></span><span style="display:flex;"><span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>writer <span style="color:#f92672">=</span> Agent( 
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;writer&#34;</span>, 
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;You write comprehensive reports based on research and analysis&#34;</span>, 
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[file_write, memory] 
+</span></span><span style="display:flex;"><span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Swarm automatically coordinates agents </span>
+</span></span><span style="display:flex;"><span>market_research_team <span style="color:#f92672">=</span> Swarm([researcher, analyst, writer]) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> market_research_team( 
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;What is the history of AI since 1950? Create a comprehensive report&#34;</span> 
+</span></span><span style="display:flex;"><span>) </span></span></code></pre></div>
+<p>Nghiên cứu thêm về <a href="https://strandsagents.com/latest/user-guide/concepts/multi-agent/swarm/" rel="external" target="_blank">Swarms</a> trong tài liệu về Strands</p>
+<p><strong>4. Graphs: Kiểm soát quy trình làm việc mang tính xác định</strong></p>
+<p>Graphs cho phép bạn xác định quy trình làm việc của các agent một cách rõ ràng với những định tuyến có điều kiện và những điểm ra quyết định, rất hữu ích cho những quy trình yêu cầu các bước cụ thể, cơ chế phê duyệt hoặc các ngưỡng kiểm soát chất lượng. Giống như một dây chuyền lắp ráp hoặc chuỗi phê duyệt được thiết kế tốt, graphs đảm bảo các agent luôn tuân thủ các quy tắc nghiệp vụ đã định sẵn theo đúng trình tự mỗi lần thực thi.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands.multiagent <span style="color:#f92672">import</span> GraphBuilder  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>analyzer_agent <span style="color:#f92672">=</span> Agent(  
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;analyzer&#34;</span>,  
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Analyze customer requests and categorize them&#34;</span>,  
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[text_classifier, sentiment_analyzer]  
+</span></span><span style="display:flex;"><span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>normal_processor <span style="color:#f92672">=</span> Agent(  
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;normal_processor&#34;</span>,  
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Handle routine requests automatically&#34;</span>,  
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[knowledge_base, auto_responder]  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>critical_processor <span style="color:#f92672">=</span> Agent(  
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;critical_processor&#34;</span>,  
+</span></span><span style="display:flex;"><span>    system_prompt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Handle critical requests quickly&#34;</span>,  
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[knowledge_base, escalate_to_support_agent]  
+</span></span><span style="display:flex;"><span>)  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build deterministic workflow  </span>
+</span></span><span style="display:flex;"><span>builder <span style="color:#f92672">=</span> GraphBuilder()  
+</span></span><span style="display:flex;"><span>builder<span style="color:#f92672">.</span>add_node(analyzer_agent, <span style="color:#e6db74">&#34;analyze&#34;</span>)  
+</span></span><span style="display:flex;"><span>builder<span style="color:#f92672">.</span>add_node(normal_processor, <span style="color:#e6db74">&#34;normal_processor&#34;</span>)  
+</span></span><span style="display:flex;"><span>builder<span style="color:#f92672">.</span>add_node(critical_processor, <span style="color:#e6db74">&#34;critical_processor&#34;</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define conditional routing </span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">is_approved</span>(state): 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">is_critical</span>(state): 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>builder<span style="color:#f92672">.</span>add_edge(<span style="color:#e6db74">&#34;analyze&#34;</span>, <span style="color:#e6db74">&#34;normal_processor&#34;</span>, condition<span style="color:#f92672">=</span>is_approved)  
+</span></span><span style="display:flex;"><span>builder<span style="color:#f92672">.</span>add_edge(<span style="color:#e6db74">&#34;analyze&#34;</span>, <span style="color:#e6db74">&#34;critical_processor&#34;</span>, condition<span style="color:#f92672">=</span>is_critical)  
+</span></span><span style="display:flex;"><span>builder<span style="color:#f92672">.</span>set_entry_point(<span style="color:#e6db74">&#34;analyze&#34;</span>)  
+</span></span><span style="display:flex;"><span>customer_support_graph <span style="color:#f92672">=</span> builder<span style="color:#f92672">.</span>build() 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Execute the graph with user input </span>
+</span></span><span style="display:flex;"><span>results <span style="color:#f92672">=</span> customer_support_graph(<span style="color:#e6db74">&#34;I need help with my order!&#34;</span>) </span></span></code></pre></div>
+<p>Nghiên cứu thêm về <a href="https://strandsagents.com/latest/user-guide/concepts/multi-agent/graph/" rel="external" target="_blank">Graphs</a> trong tài liệu về Strands</p>
+<p>Các mô hình multi-agent (multi-agent patterns) này được thiết kế để được áp dụng dần dần và kết hợp một cách tự do — hãy bắt đầu với các agent đơn lẻ, thêm các chuyên gia như là công cụ, phát triển thành các Swarms, và điều phối bằng các Graphs khi nhu cầu của bạn tăng lên. Hãy kết hợp và tùy chỉnh các mô hình để tạo ra các hệ thống tinh vi: swarms có thể chứa các graphs, graphs có thể điều phối các swarms, và bất kỳ mô hình nào cũng có thể sử dụng các agent được trang bị thêm các agent khác làm công cụ.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent, tool 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands.multiagent <span style="color:#f92672">import</span> GraphBuilder, Swarm 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands_tools <span style="color:#f92672">import</span> memory, calculator, python_repl, file_write  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Start simple with a single agent </span>
+</span></span><span style="display:flex;"><span>agent <span style="color:#f92672">=</span> Agent(tools<span style="color:#f92672">=</span>[memory]) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create specialist agents that a lead orchestrator agent can consult </span>
+</span></span><span style="display:flex;"><span>data_analyst <span style="color:#f92672">=</span> Agent(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;analyst&#34;</span>, tools<span style="color:#f92672">=</span>[calculator, python_repl]) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@tool</span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">data_analyst_tool</span>(query: str) <span style="color:#f92672">-&gt;</span> str: 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> str(data_analyst(query)) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>analyst_orchestrator <span style="color:#f92672">=</span> Agent(tools<span style="color:#f92672">=</span>[memory, data_analyst_tool]) <span style="color:#75715e"># Agents-as-tools </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compose patterns together - a graph that uses a swarm </span>
+</span></span><span style="display:flex;"><span>researcher <span style="color:#f92672">=</span> Agent(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;researcher&#34;</span>, tools<span style="color:#f92672">=</span>[memory]) 
+</span></span><span style="display:flex;"><span>writer <span style="color:#f92672">=</span> Agent(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;writer&#34;</span>, tools<span style="color:#f92672">=</span>[file_write]) 
+</span></span><span style="display:flex;"><span>research_swarm <span style="color:#f92672">=</span> Swarm([researcher, analyst_orchestrator, writer]) 
+</span></span><span style="display:flex;"><span>review_agent <span style="color:#f92672">=</span> Agent(system_prompt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Review the research quality and suggest improvements&#34;</span>) 
+</span></span><span style="display:flex;"><span>builder <span style="color:#f92672">=</span> GraphBuilder() 
+</span></span><span style="display:flex;"><span>builder<span style="color:#f92672">.</span>add_node(research_swarm, <span style="color:#e6db74">&#34;research&#34;</span>) <span style="color:#75715e"># Swarm as graph node </span>
+</span></span><span style="display:flex;"><span>builder<span style="color:#f92672">.</span>add_node(review_agent, <span style="color:#e6db74">&#34;review&#34;</span>) 
+</span></span><span style="display:flex;"><span>builder<span style="color:#f92672">.</span>add_edge(<span style="color:#e6db74">&#34;research&#34;</span>, <span style="color:#e6db74">&#34;review&#34;</span>) 
+</span></span><span style="display:flex;"><span>graph <span style="color:#f92672">=</span> builder<span style="color:#f92672">.</span>build() 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The patterns nest naturally - swarms in graphs, agents as tools everywhere  </span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> graph(<span style="color:#e6db74">&#34;How has green energy evolved over the last few years?&#34;</span>) </span></span></code></pre></div>
+<h2 id="hệ-thống-multi-agent-với-a2a">Hệ thống Multi-Agent với A2A</h2>
+<p>Strand 1.0 đã bao gồm việc hỗ trợ cho <a href="https://a2aproject.github.io/A2A/latest/" rel="external" target="_blank">giao thức Agent-to-Agent (A2A)</a>, một tiêu chuẩn mở cho phép các agent từ các nền tảng khác nhau có thể giao tiếp một cách liền mạch. Bất kỳ agent Strands cũng có thể được tích hợp các khả năng A2A để trở nên có thể truy cập qua mạng và tuân thủ giao thức A2A. Các agent A2A từ các tổ chức bên ngoài cũng có thể được sử dụng trực tiếp trong tất cả các mô hình multi-agent của Strands.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands.multiagent.a2a <span style="color:#f92672">import</span> A2AServer 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands_tools.a2a_client <span style="color:#f92672">import</span> A2AClientToolProvider 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Serve your agent via A2A protocol </span>
+</span></span><span style="display:flex;"><span>local_agent <span style="color:#f92672">=</span> Agent(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;analyzer&#34;</span>, tools<span style="color:#f92672">=</span>[web_search, data_analysis]) 
+</span></span><span style="display:flex;"><span>a2a_agent <span style="color:#f92672">=</span> A2AServer(agent<span style="color:#f92672">=</span>local_agent, port<span style="color:#f92672">=</span><span style="color:#ae81ff">9000</span>) 
+</span></span><span style="display:flex;"><span>a2a_agent<span style="color:#f92672">.</span>serve() <span style="color:#75715e"># AgentCard available at http://localhost:9000/.well-known/agent.json </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Use remote A2A agents </span>
+</span></span><span style="display:flex;"><span>partner_agent_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://partner.com&#34;</span> 
+</span></span><span style="display:flex;"><span>cloud_agent_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://cloud.ai&#34;</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Connect to remote A2A enabled agents </span>
+</span></span><span style="display:flex;"><span>a2a_tool_provider <span style="color:#f92672">=</span> A2AClientToolProvider(known_agent_urls<span style="color:#f92672">=</span>[partner_agent_url, cloud_agent_url]) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Orchestrate remote agents </span>
+</span></span><span style="display:flex;"><span>orchestrator <span style="color:#f92672">=</span> Agent(tools<span style="color:#f92672">=</span>[a2a_tool_provider<span style="color:#f92672">.</span>tools]) </span></span></code></pre></div>
+<p>Bởi vì A2A cung cấp các tính năng như agent card, một mô tả được chuẩn hóa về khả năng của agent, các hệ thống multi-agent được bật A2A có thể dễ dàng khám phá và kết nối với các agent được tạo ra bởi các nhóm hoặc các tổ chức khác. Strands tự động tạo ra thẻ agent dựa trên các công cụ bạn đã cung cấp cho agent. Để xem các ví dụ hoạt động hoàn chỉnh và bắt đầu với tính năng tích hợp A2A, hãy tham khảo <a href="https://github.com/strands-agents/samples/tree/main/03-integrations/Native-A2A-Support" rel="external" target="_blank">repository mẫu</a> của chúng tôi và <a href="https://strandsagents.com/latest/user-guide/concepts/multi-agent/agent-to-agent/" rel="external" target="_blank">tài liệu A2A của Strands</a>.</p>
+<h2 id="sẵn-sàng-cho-môi-trường-production">Sẵn sàng cho môi trường production</h2>
+<p>Mặc dù Strands đã được các đội nội bộ của Amazon như Amazon Q Developer và AWS Glue sử dụng trong môi trường production từ lâu trước khi ra mắt công chúng, chúng tôi đã và đang làm việc ngược lại với hàng trăm khách hàng trên toàn thế giới để mở rộng Strands nhằm đáp ứng các nhu cầu production của bạn. Các cập nhật này bao gồm một tầng trừu tượng quản lý session để hỗ trợ việc lưu trữ liên tục dữ liệu vào và phục hồi từ các kho dữ liệu bên ngoài, đầu ra có cấu trúc, cải thiện hỗ trợ bất đồng bộ, và nhiều thứ khác nữa (xem chi tiết trong <a href="https://github.com/strands-agents/sdk-python/releases" rel="external" target="_blank">changelog các phiên bản phát hành</a>)</p>
+<p><strong>Quản lý session bền vững:</strong> Chúng tôi đã thêm vào <code>SessionManager</code>, một công cụ trừu tượng hóa quản lý session cho phép tự động lưu trữ liên tục và khôi phục lịch sử hội thoại cũng như trạng thái của agent. Nhờ đó, các agent có thể lưu toàn bộ lịch sử cuộc trò chuyện vào một hệ thống lưu trữ như Amazon Simple Storage Service (Amazon S3) và tiếp tục cuộc hội thoại một cách liền mạch ngay cả sau khi hệ thống khởi động lại. Dưới đây là một ví dụ sử dụng cơ chế lưu trữ liên tục dựa trên file cơ bản.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands.session.file_session_manager <span style="color:#f92672">import</span> FileSessionManager 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a session manager with file-based storage </span>
+</span></span><span style="display:flex;"><span>Session_manager <span style="color:#f92672">=</span> FileSessionManager(session_id<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">”</span>customer_support<span style="color:#960050;background-color:#1e0010">”</span>, base_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./agent_sessions&#34;</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Agent automatically persists all conversations </span>
+</span></span><span style="display:flex;"><span>agent <span style="color:#f92672">=</span> Agent( 
+</span></span><span style="display:flex;"><span>    id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;support_bot_1&#34;</span>, 
+</span></span><span style="display:flex;"><span>    session_manager<span style="color:#f92672">=</span>session_manager, 
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[knowledge_base, ticket_system] 
+</span></span><span style="display:flex;"><span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Messages are automatically saved as the conversation progresses </span>
+</span></span><span style="display:flex;"><span>agent(<span style="color:#e6db74">&#34;Help me reset my password&#34;</span>) 
+</span></span><span style="display:flex;"><span>agent(<span style="color:#e6db74">&#34;I can&#39;t access my email&#34;</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Later, even after a restart, restore the full conversation </span></span></span></code></pre></div>
+<p>Bạn có thể mở rộng lớp trừu tượng này bằng cách tự triển khai backend lưu trữ của riêng mình thông qua mẫu thiết kế Data Access Object (DAO), và Strands đã tích hợp sẵn hai backend mặc định: hệ thống file cục bộ và Amazon S3. Mỗi agent nhận một ID duy nhất để theo dõi, và hệ thống xử lý các agent đồng thời  trong cùng một session cho các kịch bản multi-agent, đảm bảo rằng các agent luôn duy trì ngữ cảnh qua các lần triển khai, mở rộng quy mô hệ thống hoặc khởi động lại. Tìm hiểu thêm về <a href="https://strandsagents.com/latest/user-guide/concepts/agents/session-management/" rel="external" target="_blank">Session Management</a> trong tài liệu của Strands.</p>
+<p><strong>Hỗ trợ bất đồng bộ nguyên bản và cải thiện hiệu năng:</strong> Các workload trong môi trường production đòi hỏi độ tin cậy cao và hiệu năng phản hồi nhanh. Trong phiên bản 1.0, chúng tôi đã cải tiến kiến trúc vòng lặp sự kiện của Strands để hỗ trợ thao tác bất đồng bộ trên toàn bộ stack. Các công cụ và nhà cung cấp mô hình giờ đây có thể chạy bất đồng bộ mà không bị chặn, cho phép thực thi đồng thời thực sự. Phương thức <code>stream_async</code> mới truyền phát tất cả các sự kiện của agent — văn bản, việc sử dụng công cụ, các bước suy luận — theo thời gian thực, vđồng thời tích hợp cơ chế hủy khi người dùng rời khỏi trang.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> asyncio 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> fastapi <span style="color:#f92672">import</span> FastAPI 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> fastapi.responses <span style="color:#f92672">import</span> StreamingResponse 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands_tools <span style="color:#f92672">import</span> calculator 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> FastAPI() 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.post</span>(<span style="color:#e6db74">&#34;/chat&#34;</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">chat_endpoint</span>(message: str): 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">stream_response</span>(): 
+</span></span><span style="display:flex;"><span>        agent <span style="color:#f92672">=</span> Agent(tools<span style="color:#f92672">=</span>[web_search, calculator]) 
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Stream agent responses in real-time </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">for</span> event <span style="color:#f92672">in</span> agent<span style="color:#f92672">.</span>stream_async(message): 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;data&#34;</span> <span style="color:#f92672">in</span> event: 
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">yield</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;data: </span><span style="color:#e6db74">{</span>event[<span style="color:#e6db74">&#39;data&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;current_tool_use&#34;</span> <span style="color:#f92672">in</span> event: 
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">yield</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;event: tool</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">data: Using </span><span style="color:#e6db74">{</span>event[<span style="color:#e6db74">&#39;current_tool_use&#39;</span>][<span style="color:#e6db74">&#39;name&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> StreamingResponse(stream_response(), media_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/event-stream&#34;</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Concurrent agent evaluation </span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">evaluate_models_concurrently</span>(prompt: str): 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">stream</span>(agent: Agent): 
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;STARTING: </span><span style="color:#e6db74">{</span>agent<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">for</span> event <span style="color:#f92672">in</span> agent<span style="color:#f92672">.</span>stream_async(prompt): 
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># handle events </span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;ENDING: </span><span style="color:#e6db74">{</span>agent<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> event[<span style="color:#960050;background-color:#1e0010">“</span>result<span style="color:#960050;background-color:#1e0010">”</span>]  <span style="color:#75715e"># last event is the agent result </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    agents <span style="color:#f92672">=</span> [ 
+</span></span><span style="display:flex;"><span>        Agent(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claude&#34;</span>, model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;us.anthropic.claude-3-7-sonnet-20250219-v1:0”), </span>
+</span></span><span style="display:flex;"><span>        Agent(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;deepseek”, model=&#34;</span>us<span style="color:#f92672">.</span>deepseek<span style="color:#f92672">.</span>r1<span style="color:#f92672">-</span>v1:<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">”</span>), 
+</span></span><span style="display:flex;"><span>        Agent(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nova&#34;</span>, model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;us.amazon.nova-pro-v1:0&#34;</span>) 
+</span></span><span style="display:flex;"><span>    ] 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Execute all agents concurrently </span>
+</span></span><span style="display:flex;"><span>    responses <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> asyncio<span style="color:#f92672">.</span>gather(<span style="color:#f92672">*</span>[stream(agent) <span style="color:#66d9ef">for</span> agent <span style="color:#f92672">in</span> agents]) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> responses </span></span></code></pre></div>
+<p>Tìm hiểu thêm về <a href="https://strandsagents.com/latest/user-guide/concepts/streaming/async-iterators/" rel="external" target="_blank">Hỗ trợ bất động bộ nguyên bản</a> trong tài liệu chính thức của Strands.</p>
+<p><strong>Mở rộng hỗ trợ đa dạng nhà cung cấp mô hình:</strong> Khách hàng đã chia sẻ rằng họ cần linh hoạt trong việc sử dụng các mô hình khác nhau cho các tác vụ khác nhau. Để đáp ứng nhu cầu này, Strands Agents đã nhận được sự hỗ trợ mạnh mẽ từ cộng đồng các nhà cung cấp mô hình. Các nhà cung cấp như <a href="https://www.anthropic.com/" rel="external" target="_blank">Anthropic</a>, <a href="https://www.llama.com/" rel="external" target="_blank">Meta</a>, <a href="https://openai.com/" rel="external" target="_blank">OpenAI</a>, <a href="https://cohere.com/" rel="external" target="_blank">Cohere</a>, <a href="https://mistral.ai/" rel="external" target="_blank">Mistral</a>, <a href="https://stability.ai/" rel="external" target="_blank">Stability</a> và <a href="https://writer.com/" rel="external" target="_blank">Writer</a> đã đóng góp cho phép API mô hình của họ được sử dụng bởi một Strands Agent thông qua code. Việc truy cập Strands Agents thông qua hạ tầng API do chính các nhà cung cấp này cung cấp giúp các nhà phát triển tập trung vào việc xây dựng các giải pháp AI-powered, mà không cần lo lắng về quản lý cơ sở hạ tầng. Những bổ sung này bổ trợ hoàn hảo cho khả năng hỗ trợ từ giai đoạn xem trước đối với mọi mô hình trên Amazon Bedrock, OpenAI, và bất kỳ endpoint tương thích OpenAI nào thông qua LiteLLM. Strands cho phép bạn sử dụng các mô hình khác nhau cho mỗi agent, hoặc chuyển đổi mô hình và nhà cung cấp mô hình mà không cần sửa đổi công cụ hoặc logic của bạn.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">from</span> strands <span style="color:#f92672">import</span> Agent
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands.models <span style="color:#f92672">import</span> BedrockModel
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands.models.openai <span style="color:#f92672">import</span> OpenAIModel
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> strands.models.anthropic <span style="color:#f92672">import</span> AnthropicModel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure different model providers</span>
+</span></span><span style="display:flex;"><span>bedrock_model <span style="color:#f92672">=</span> BedrockModel(
+</span></span><span style="display:flex;"><span>    model_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;us.amazon.nova-pro-v1:0&#34;</span>,
+</span></span><span style="display:flex;"><span>    temperature<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>,
+</span></span><span style="display:flex;"><span>    top_p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>,
+</span></span><span style="display:flex;"><span>    region_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;us-west-2&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>openai_model <span style="color:#f92672">=</span> OpenAIModel(
+</span></span><span style="display:flex;"><span>    client_args<span style="color:#f92672">=</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;api_key&#34;</span>: <span style="color:#e6db74">&#34;your-api-key&#34;</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    model_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gpt-4o&#34;</span>,
+</span></span><span style="display:flex;"><span>    params<span style="color:#f92672">=</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;max_tokens&#34;</span>: <span style="color:#ae81ff">1000</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;temperature&#34;</span>: <span style="color:#ae81ff">0.7</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>anthropic_model <span style="color:#f92672">=</span> AnthropicModel(
+</span></span><span style="display:flex;"><span>    client_args<span style="color:#f92672">=</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;api_key&#34;</span>: <span style="color:#e6db74">&#34;your-api-key&#34;</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">1028</span>,
+</span></span><span style="display:flex;"><span>    model_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claude-3-7-sonnet-20250219&#34;</span>,
+</span></span><span style="display:flex;"><span>    params<span style="color:#f92672">=</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;temperature&#34;</span>: <span style="color:#ae81ff">0.5</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Swap models or use different models for different agents in the same system</span>
+</span></span><span style="display:flex;"><span>researcher <span style="color:#f92672">=</span> Agent(
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;researcher&#34;</span>,
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span>anthropic_model,
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[web_search]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>writer <span style="color:#f92672">=</span> Agent(
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;writer&#34;</span>, 
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span>openai_model,
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[document_formatter]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>analyzer <span style="color:#f92672">=</span> Agent(
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;analyzer&#34;</span>,
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span>bedrock_model,
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[data_processor]
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div>
+<p>Cộng đồng Strands đã đóng vai trò then chốt trong việc định hình tất cả những cải tiến này thông qua việc sử dụng thực tế, phản hồi và những đóng góp mã nguồn trực tiếp. Trong số hơn 150 pull request (PR) đã được merge vào Strands từ phiên bản 0.1.0 đến 1.0, 22% được đóng góp bởi các thành viên cộng đồng, những người đã sửa lỗi, thêm nhà cung cấp mô hình, viết tài liệu, thêm tính năng và tái cấu trúc các lớp để cải thiện hiệu suất. Chúng tôi vô cùng biết ơn <a href="https://github.com/strands-agents/sdk-python/graphs/contributors" rel="external" target="_blank">mỗi người trong số các bạn</a> vì đã giúp Strands trở thành cách đơn giản nhất để đưa một agent từ nguyên mẫu đến triển khai thực tế.</p>
+<p>Tương lai của AI là multi-agent (multi-agent), và với Strands 1.0, tương lai đó đã sẵn sàng để triển khai trong môi trường production. Hãy bắt đầu xây dựng ngay hôm nay tại <a href="https://strandsagents.com/" rel="external" target="_blank">strandsagents.com.</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="http://localhost:1313/fcj-workshopz/vi/index.html">
+            <div class="logo-title">My Hugo Site</div>
+          </a>
+        </div>
+        <search><form action="http://localhost:1313/fcj-workshopz/vi/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Tìm kiếm (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Tìm kiếm</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Tìm kiếm...">
+            <button class="search-clear" type="button" data-search-clear="" title="Xóa tìm kiếm"><i class="fas fa-times" title="Xóa tìm kiếm"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/vi/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/index.html">Trang chủ</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/vi/1-worklog/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/1-worklog/index.html"> <b> 1. </b> Worklog</a><ul id="R-subsections-16447363d800ec5deaa3b0a76c63c922" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/vi/3-blogstranslated/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/index.html"> <b> 3. </b> Các bài blog đã dịch</a><ul id="R-subsections-dff4ca4b61121a10b58696aacb50b106" class="collapsible-menu">
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.1-blog1/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.html"> <b> 3.1. </b> Blog 1</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.2-blog2/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.html"> <b> 3.2. </b> Blog 2</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.3-blog3/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.html"> <b> 3.3. </b>Blog 3</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.4-blog4/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html"><b> 3.4. </b> Blog 4</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.5-blog5/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html"><b> 3.5. </b> Blog 5</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.6-blog6/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html"><b> 3.6. </b> Blog 6</a></li>
+            <li class="active " data-nav-id="/vi/3-blogstranslated/3.7-blog7/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html"><b> 3.7. </b> Blog 7</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/3.8-blog8/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.8-blog8/index.html"><b> 3.8. </b> Blog 8</a></li></ul></li>
+            <li class="" data-nav-id="/vi/4-eventparticipated/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/vi/4-eventparticipated/index.html"> <b> 4. </b> Các sự kiện đã tham gia</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-vi" value="vi" data-url="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html" lang="vi" selected data-selected>Tiếng Việt</option>
+                    <option id="R-select-language-en" value="en" data-url="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html" lang="en">English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="http://localhost:1313/fcj-workshopz/js/clipboard/clipboard.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/theme.js?1764902275" defer></script>
+  </body>
+</html>

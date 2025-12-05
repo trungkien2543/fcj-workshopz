@@ -1,33 +1,499 @@
-<!doctype html><html lang=en dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.150.0"><meta name=generator content="Relearn 8.0.1+b23cf6629eada0c2802f34ae4012e04343497862"><meta name=description content="GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink
-Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content=" Blog 6"><meta name=twitter:description content="GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink
-Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent."><meta property="og:url" content="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html"><meta property="og:title" content=" Blog 6"><meta property="og:description" content="GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink
-Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent."><meta property="og:locale" content="en"><meta property="og:type" content="website"><meta itemprop=name content=" Blog 6"><meta itemprop=description content="GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink
-Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent."><meta itemprop=wordCount content="1267"><title>Blog 6</title><link href=https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html rel=alternate hreflang=x-default><link href=https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html rel=alternate hreflang=vi><link href=https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html rel=alternate hreflang=en><link href=../../fcj-workshopz/3-blogstranslated/3.6-blog6/index.xml rel=alternate type=application/rss+xml title=" Blog 6"><link href=../../fcj-workshopz/images/logo.png?1764901265 rel=icon type=image/png><link href=../../fcj-workshopz/css/auto-complete/auto-complete.min.css?1764901265 rel=stylesheet><script src=../../fcj-workshopz/js/auto-complete/auto-complete.min.js?1764901265 defer></script><script src=../../fcj-workshopz/js/search-lunr.min.js?1764901265 defer></script><script src=../../fcj-workshopz/js/search.min.js?1764901265 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="../../fcj-workshopz/searchindex.en.js?1764901265"</script><script src=../../fcj-workshopz/js/lunr/lunr.min.js?1764901265 defer></script><script src=../../fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1764901265 defer></script><script src=../../fcj-workshopz/js/lunr/lunr.multi.min.js?1764901265 defer></script><script src=../../fcj-workshopz/js/lunr/lunr.en.min.js?1764901265 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["en"]</script><link href=../../fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764901265 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=../../fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764901265 rel=stylesheet></noscript><link href=../../fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1764901265 rel=stylesheet><link href=../../fcj-workshopz/css/theme.min.css?1764901265 rel=stylesheet><link href=../../fcj-workshopz/css/format-html.min.css?1764901265 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/3-blogstranslated/3.6-blog6/index.html",window.relearn.relBasePath="../..",window.relearn.relBaseUri="../../..",window.relearn.absBaseUri="https://trungkien2543.github.io/fcj-workshopz",window.relearn.disableAnchorCopy=!1,window.relearn.disableAnchorScrolling=!1,window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.relearn.getItem=(e,t)=>e.getItem(t),window.relearn.setItem=(e,t,n)=>e.setItem(t,n),window.relearn.removeItem=(e,t)=>e.removeItem(t),window.T_Copy_to_clipboard=`Copy to clipboard`,window.T_Copied_to_clipboard=`Copied to clipboard!`,window.T_Copy_link_to_clipboard=`Copy link to clipboard`,window.T_Link_copied_to_clipboard=`Copied link to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.relearn.themevariants=["auto"],window.relearn.customvariantname="my-custom-variant",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.relearn.setItem(window.localStorage,window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.relearn.getItem(window.localStorage,window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.relearn.getItem(window.localStorage,window.relearn.absBaseUri+"/variant")??"";e==window.relearn.customvariantname||(!e||!window.relearn.themevariants.includes(e))&&(e=window.relearn.themevariants[0],window.relearn.setItem(window.localStorage,window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><link href=../../fcj-workshopz/css/custom.css?1764901265 rel=stylesheet></head><body class="mobile-support html" data-url=../../fcj-workshopz/3-blogstranslated/3.6-blog6/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar><div class=topbar-wrapper><div class=topbar-sidebar-divider></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><button class=topbar-control onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></div><div class="topbar-button topbar-button-toc" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><button class=topbar-control onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-list-alt"></i></button><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#introduction>Introduction</a></li><li><a href=#pain-points-with-traditional-argocd-usage>Pain Points with Traditional ArgoCD Usage</a></li><li><a href=#how-argocd-mcp-server-with-amazon-q-cli-addresses-these-challenges>How ArgoCD MCP Server with Amazon Q CLI addresses these challenges:</a></li><li><a href=#traditional-argocd-vs-argocd-mcp-server-with-amazon-q-cli>Traditional ArgoCD vs. ArgoCD MCP Server with Amazon Q CLI</a></li><li><a href=#setting-up-your-environment>Setting Up Your Environment</a><ul><li><a href=#pre-requisites>Pre-requisites</a></li><li><a href=#connecting-to-your-eks-cluster>Connecting to your EKS cluster</a></li><li><a href=#create-agrocd-api-token>Create AgroCD API Token</a></li><li><a href=#integrating-with-amazon-q-cli>Integrating with Amazon Q CLI</a></li><li><a href=#managing-argocd-applications-using-natural-language>Managing ArgoCD applications using natural language</a></li></ul></li><li><a href=#conclusion>Conclusion</a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=../../fcj-workshopz/index.html><span itemprop=name>Intership Report</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=../../fcj-workshopz/3-blogstranslated/index.html><span itemprop=name>BlogsTranslated</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Blog 6</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><a class=topbar-control href=../../fcj-workshopz/3-blogstranslated/3.5-blog5/index.html title="Blog 5 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></div><div class="topbar-button topbar-button-next" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><a class=topbar-control href=../../fcj-workshopz/3-blogstranslated/3.7-blog7/index.html title="Blog 7 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></div><div class="topbar-button topbar-button-more" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><button class=topbar-control onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable 3-blogstranslated" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline></header><h1 id=blog-6>Blog 6</h1><h1 id=gitops-continuous-delivery-with-argocd-and-eks-using-natural-language><strong>GitOps continuous delivery with ArgoCD and EKS using natural language</strong></h1><p><em>Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi</em> | 17/07/2025 | <a href=https://aws.amazon.com/blogs/devops/category/compute/amazon-kubernetes-service/ rel=external target=_blank>Amazon Elastic Kubernetes Service</a>, <a href=https://aws.amazon.com/blogs/devops/category/amazon-q/ rel=external target=_blank>Amazon Q</a>, <a href=https://aws.amazon.com/blogs/devops/category/amazon-q/amazon-q-developer/ rel=external target=_blank>Amazon Q Developer</a>, <a href=https://aws.amazon.com/blogs/devops/category/developer-tools/ rel=external target=_blank>Developer Tools</a>, <a href=https://aws.amazon.com/blogs/devops/category/post-types/technical-how-to/ rel=external target=_blank>Technical How-to </a>| <a href=https://aws.amazon.com/blogs/devops/gitops-continuous-delivery-with-argocd-and-eks-using-natural-language/ rel=external target=_blank>Permalink</a></p><h2 id=introduction>Introduction</h2><p>ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.</p><h2 id=pain-points-with-traditional-argocd-usage>Pain Points with Traditional ArgoCD Usage</h2><ul><li><p>GArgoCD’s UI and CLI are designed for users with extensive technical background. Interacting with YAML manifests, understanding Kubernetes resource relationships, and troubleshooting sync errors require specialized knowledge. This limits access to GitOps workflows for less technical stakeholders and increases reliance on DevOps engineers.</p></li><li><p>Managing ArgoCD across multiple clusters or environments (using hub-spoke, per-cluster, or grouped models) introduces significant operational complexity. Teams must handle multiple ArgoCD instances, maintain consistent configuration, and coordinate deployments, which can become a bottleneck as service footprints grow.</p></li><li><p>ArgoCD excels at syncing and monitoring Kubernetes resources but lacks built-in mechanisms for pre-deployment (e.g., image scanning) or post-deployment (e.g., load testing) tasks. This forces teams to rely on external tools or custom scripts, fragmenting the deployment pipeline and increasing maintenance effort.</p></li><li><p>Promoting applications across environments (Dev → Test → Prod) is not natively streamlined. Teams must manually orchestrate or script these promotions, slowing down urgent fixes and complicating the release process.</p></li><li><p>As organizations adopt multi-cluster strategies, managing ArgoCD’s access, RBAC, and resource visibility across environments becomes cumbersome, often leading to fragmented workflows and potential security gaps.</p></li></ul><h2 id=how-argocd-mcp-server-with-amazon-q-cli-addresses-these-challenges>How ArgoCD MCP Server with Amazon Q CLI addresses these challenges:</h2><ul><li><p>The integration of the ArgoCD MCP (Model Context Protocol) Server with <a href=https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html rel=external target=_blank>Amazon Q CLI</a> fundamentally transforms the user experience by introducing natural language interaction for GitOps operations.</p></li><li><p>With MCP, users can manage deployments, monitor application states, and perform sync or rollback operations using plain conversational language rather than technical commands or YAML. For example, a user can simply ask, “What applications are out of sync in production?” or “Sync the api-service application,” and the system executes the appropriate ArgoCD API calls in the background.</p></li><li><p>This democratizes access to GitOps, enabling less technical team members (such as QA, product managers, or support engineers) to safely interact with deployment workflows.</p></li><li><p>Natural language interfaces abstract away the complexity of multi-cluster and multi-environment management. Users can query or act on resources across clusters without memorizing resource names, namespaces, or API endpoints.</p></li><li><p>The MCP server handles authentication, session management, and robust error handling, reducing the need for manual troubleshooting and custom scripting.</p></li><li><p>The integration provides detailed feedback, intelligent endpoint handling, and comprehensive error messages, making it easier to diagnose and resolve issues. Full static type checking and environment-based configuration further enhance reliability and maintainability.</p></li><li><p>By leveraging Amazon Q CLI’s extensibility, users gain access to pre-built integrations and context-aware prompts, accelerating development and deployment workflows.</p></li><li><p>The MCP server enables AI assistants and language models to automate routine tasks, recommend actions, and even debug issues, acting as a virtual DevOps engineer. This can significantly reduce manual effort and speed up incident response.</p></li></ul><h2 id=traditional-argocd-vs-argocd-mcp-server-with-amazon-q-cli>Traditional ArgoCD vs. ArgoCD MCP Server with Amazon Q CLI</h2><table><thead><tr><th>Feature/Challenge</th><th>Traditional ArgoCD</th><th>With MCP Server + Amazon Q CLI</th></tr></thead><tbody><tr><td>User Interface</td><td>Technical UI/CLI, YAML required</td><td>Natural language, conversational</td></tr><tr><td>Access for Non-Engineers</td><td>Limited</td><td>Broad, democratized</td></tr><tr><td>Multi-Cluster Management</td><td>Complex, manual</td><td>Simplified, abstracted</td></tr><tr><td>Pre-Post Deployment Tasks</td><td>External tools/scripts needed</td><td>(Still external, but easier to invoke)</td></tr><tr><td>Application Promotion</td><td>Manual or scripted</td><td>Natural language, easier orchestration</td></tr><tr><td>Troubleshooting</td><td>Technical, error-prone</td><td>Guided, AI-assisted, detailed feedback</td></tr><tr><td>Automation</td><td>Scripting required</td><td>AI/agent-driven, proactive</td></tr></tbody></table><p>You can perform the following <a href="https://github.com/akuity/argocd-mcp?tab=readme-ov-file#available-tools" rel=external target=_blank>actions</a> using natural language using Amazon Q CLI integration with ArgoCD MCP server.</p><ul><li><p><strong>Application Management</strong>: List, create, update, and delete ArgoCD applications</p></li><li><p><strong>Sync Operations</strong>: Trigger sync operations and monitor their status</p></li><li><p><strong>Resource Tree Visualization</strong>: View the hierarchy of resources managed by applications</p></li><li><p><strong>Health Status Monitoring</strong>: Check the health of applications and their resources</p></li><li><p><strong>Event Tracking</strong>: View events related to applications and resources</p></li><li><p><strong>Log Access</strong>: Retrieve logs from application workloads</p></li><li><p><strong>Resource Actions</strong>: Execute actions on resources managed by applications</p></li></ul><h2 id=setting-up-your-environment>Setting Up Your Environment</h2><h3 id=pre-requisites>Pre-requisites</h3><p>Following are the pre-requisites for setting up your EKS environment to be managed by ArgoCD using Amazon Q CLI.</p><ul><li><p>An AWS account with appropriate permissions</p></li><li><p>AWS CLI v2.13.0 or later</p></li><li><p>Node.js v18.0.0 or later</p></li><li><p>npm v9.0.0 or later</p></li><li><p>Amazon Q CLI v1.0.0 or later (<code>npm install -g @aws/amazon-q-cli</code>)</p></li><li><p>An EKS cluster (v1.27 or later) with ArgoCD v2.8 or later installed</p></li></ul><h3 id=connecting-to-your-eks-cluster>Connecting to your EKS cluster</h3><ol><li>Use AWS CLI to update your kubeconfig</li></ol><p><code>aws eks update-kubeconfig --name &lt;cluster_name> --region &lt;region> --role-arn &lt;iam_role_arn></code></p><ol start=2><li>Verify ArgoCD pods are running properly in the argocd namespace</li></ol><p><code>kubectl get pods -n argocd</code></p><ol start=3><li>Access the ArgoCD server UI locally using port forwarding command</li></ol><p><code>kubectl port-forward svc/blueprints-addon-argocd-server -n argocd 8080:443</code></p><h3 id=create-agrocd-api-token>Create AgroCD API Token</h3><ol><li>Access the <strong>ArgoCD UI</strong> at <a href=https://localhost:8080 rel=external target=_blank>https://localhost:8080</a></li><li>Log in with the admin credentials</li><li>Navigate to User <strong>Settings > API Tokens</strong></li><li>Click <strong>“Generate New”</strong> to create a token</li><li>Create an Amazon Q CLI MCP configuration file at<code>.amazonq/mcp.json</code> and update the <strong>ARGOCD_BASE_URL</strong> and <strong>ARGOCD_API_TOKEN</strong> as per your environment setup.</li></ol><h3 id=integrating-with-amazon-q-cli>Integrating with Amazon Q CLI</h3><div class="highlight wrap-code" dir=auto><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
-</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;mcpServers&#34;</span>: {
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;argocd-mcp-stdio&#34;</span>: {
-</span></span><span style=display:flex><span>      <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;stdio&#34;</span>,
-</span></span><span style=display:flex><span>      <span style=color:#f92672>&#34;command&#34;</span>: <span style=color:#e6db74>&#34;npx&#34;</span>,
-</span></span><span style=display:flex><span>      <span style=color:#f92672>&#34;args&#34;</span>: [
-</span></span><span style=display:flex><span>         <span style=color:#e6db74>&#34;argocd-mcp@latest&#34;</span>,
-</span></span><span style=display:flex><span>         <span style=color:#e6db74>&#34;stdio&#34;</span>
-</span></span><span style=display:flex><span>      ],
-</span></span><span style=display:flex><span>      <span style=color:#f92672>&#34;env&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;ARGOCD_BASE_URL&#34;</span>: <span style=color:#e6db74>&#34;&lt;ARGOCD_BASE_URL&gt;&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;ARGOCD_API_TOKEN&#34;</span>: <span style=color:#e6db74>&#34;&lt;ARGOCD_API_TOKEN&gt;&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;NODE_TLS_REJECT_UNAUTHORIZED&#34;</span>: <span style=color:#e6db74>&#34;0&#34;</span>
-</span></span><span style=display:flex><span>      }
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}</span></span></code></pre></div><p>Once configured, you can start using natural language commands with Amazon Q CLI to interact with your ArgoCD applications.</p><h3 id=managing-argocd-applications-using-natural-language>Managing ArgoCD applications using natural language</h3><p>Listed below are some example prompts to interact with ArgoCD applications in your EKS cluster.</p><p><strong>List ArgoCD application</strong></p><p><strong>Prompt</strong>: <code>List all ArgoCD applications in my cluster</code></p><p><a href=#R-image-ae4dd643bba97b99c010ed8d0988c21f class=lightbox-link><img alt=example class="lazy lightbox figure-image" loading=lazy src=../../../images/Blog6/17632-image-1.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-ae4dd643bba97b99c010ed8d0988c21f><img alt=example class="lazy lightbox lightbox-image" loading=lazy src=../../../images/Blog6/17632-image-1.png></a></p><p style=text-align:center><i>Amazon Q will use the ArgoCD MCP server to retrieve and display all applications</i></p><p><strong>Create new ArgoCD application</strong></p><p><strong>Prompt</strong>: <code>Create new argocd application using App name: game-2048 Repo: https://github.com/aws-ia/terraform-aws-eks-blueprints Path: patterns/gitops/getting-started-argocd/k8s. Branch: main Namespace: argocd</code></p><p><a href=#R-image-08193fb5c88eecae0b00a326f315f8b5 class=lightbox-link><img alt=example class="lazy lightbox figure-image" loading=lazy src=../../../images/Blog6/17632-image-2.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-08193fb5c88eecae0b00a326f315f8b5><img alt=example class="lazy lightbox lightbox-image" loading=lazy src=../../../images/Blog6/17632-image-2.png></a></p><p style=text-align:center><i>Amazon Q will create a new application from GitRepo information provided</i></p><p><strong>Viewing deployment status</strong></p><p><strong>Câu lệnh</strong>: <code>Show me the resource tree for team-carmen app</code></p><p><a href=#R-image-4c1c27daf76b2e39a06907850193d0ef class=lightbox-link><img alt=example class="lazy lightbox figure-image" loading=lazy src=../../../images/Blog6/17632-image-8.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-4c1c27daf76b2e39a06907850193d0ef><img alt=example class="lazy lightbox lightbox-image" loading=lazy src=../../../images/Blog6/17632-image-8.png></a></p><p style=text-align:center><i>Amazon Q will display the hierarchy of Kubernetes resources managed by the application</i></p><p><strong>Synchronizing applications</strong></p><p><strong>Prompt</strong>: <code>Show me the applications that’s out of sync</code></p><p><a href=#R-image-df6ea10d2f9fcb573ddfb3620a23dea3 class=lightbox-link><img alt=example class="lazy lightbox figure-image" loading=lazy src=../../../images/Blog6/17632-image-3.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-df6ea10d2f9fcb573ddfb3620a23dea3><img alt=example class="lazy lightbox lightbox-image" loading=lazy src=../../../images/Blog6/17632-image-3.png></a></p><p style=text-align:center><i>Amazon Q will display the out of sync applications</i></p><p><strong>Prompt</strong>: <code>Sync the application</code></p><p><a href=#R-image-60a48fb513f9f4c7e265e0ea1b8d29f0 class=lightbox-link><img alt=example class="lazy lightbox figure-image" loading=lazy src=../../../images/Blog6/17632-image-4.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-60a48fb513f9f4c7e265e0ea1b8d29f0><img alt=example class="lazy lightbox lightbox-image" loading=lazy src=../../../images/Blog6/17632-image-4.png></a></p><p style=text-align:center><i>Amazon Q syncing application</i></p><p>Amazon Q will:</p><ul><li>Initiate a sync operation for the specified application</li><li>Monitor the sync progress</li><li>Report the final status of the sync operation</li></ul><p><strong>Healthchecks and monitoring</strong></p><p><strong>Prompt</strong>: <code>Check the health of all resources in the team-geordie application</code></p><p><a href=#R-image-b2d9b58e435094b922691b02d534f782 class=lightbox-link><img alt=example class="lazy lightbox figure-image" loading=lazy src=../../../images/Blog6/17632-image-6.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-b2d9b58e435094b922691b02d534f782><img alt=example class="lazy lightbox lightbox-image" loading=lazy src=../../../images/Blog6/17632-image-6.png></a></p><p style=text-align:center><i>Amazon Q showing health status of all the resources in an application</i></p><p>Amazon Q will:</p><ul><li>Retrieve the health status of all resources</li><li>Identify any unhealthy components</li><li>Provide recommendations for addressing issues</li></ul><p><strong>Prompt</strong>: <code>Show me the logs for the failing pod in the team-platform application</code></p><p><a href=#R-image-1176963b47e7997194ab2d06291f5852 class=lightbox-link><img alt=example class="lazy lightbox figure-image" loading=lazy src=../../../images/Blog6/17632-image-7.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-1176963b47e7997194ab2d06291f5852><img alt=example class="lazy lightbox lightbox-image" loading=lazy src=../../../images/Blog6/17632-image-7.png></a></p><p style=text-align:center><i>Amazon Q showing logs of problematic pod</i></p><p>Amazon Q will:</p><ul><li>Identify problematic pods</li><li>Retrieve and display relevant logs</li><li>Highlight potential error messages</li></ul><h2 id=conclusion>Conclusion</h2><p>The integration of Amazon Q CLI with ArgoCD through the MCP server marks a transformative advancement in Kubernetes management, combining ArgoCD’s GitOps capabilities with Amazon Q’s natural language processing. By transforming complex Kubernetes operations into simple conversational interactions, this solution allows teams to focus on what truly matters – creating value for their business. Rather than spending time memorizing commands or navigating technical complexities, teams can now manage their cloud infrastructure through natural dialogue, making the cloud-native journey more accessible and efficient for everyone.Ready to transform your EKS and ArgoCD experience? It’s highly recommended to try out Amazon Q CLI integration with ArgoCD MCP and discover why DevOps teams are making it an essential part of their toolkit.</p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><div id=R-header class=default-animation><a id=R-logo class=R-default href=../../fcj-workshopz/index.html><div class=logo-title></div></a></div><search><form action=../../fcj-workshopz/search/index.html method=get><div class="searchbox default-animation"><button class=search-detail type=submit title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-times" title="Clear search"></i></button></div></form></search></div><div id=R-homelinks class="default-animation homelinks"><div class="R-menu-divider default-animation"><hr class=padding></div><div class="R-sidebarmenu R-shortcutmenu-homelinks"><ul class="space collapsible-menu"><li data-nav-id=/fcj-workshopz/index.html><a class=padding href=../../fcj-workshopz/index.html>Home</a></li></ul></div><div class="R-menu-divider default-animation"><hr class=padding></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols"><ul></ul></div><div class="R-menu-divider default-animation"><hr class=padding></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/fcj-workshopz/1-worklog/index.html><a class=padding href=../../fcj-workshopz/1-worklog/index.html><b>1. </b>Worklog</a><ul id=R-subsections-16447363d800ec5deaa3b0a76c63c922 class=collapsible-menu></ul></li><li class=parent data-nav-id=/fcj-workshopz/3-blogstranslated/index.html><a class=padding href=../../fcj-workshopz/3-blogstranslated/index.html><b>3. </b>BlogsTranslated</a><ul id=R-subsections-dff4ca4b61121a10b58696aacb50b106 class=collapsible-menu><li data-nav-id=/fcj-workshopz/3-blogstranslated/3.1-blog1/index.html><a class=padding href=../../fcj-workshopz/3-blogstranslated/3.1-blog1/index.html><b>3.1. </b>Blog 1</a></li><li data-nav-id=/fcj-workshopz/3-blogstranslated/3.2-blog2/index.html><a class=padding href=../../fcj-workshopz/3-blogstranslated/3.2-blog2/index.html><b>3.2. </b>Blog 2</a></li><li data-nav-id=/fcj-workshopz/3-blogstranslated/3.3-blog3/index.html><a class=padding href=../../fcj-workshopz/3-blogstranslated/3.3-blog3/index.html><b>3.3. </b>Blog 3</a></li><li data-nav-id=/fcj-workshopz/3-blogstranslated/3.4-blog4/index.html><a class=padding href=../../fcj-workshopz/3-blogstranslated/3.4-blog4/index.html><b>3.4. </b>Blog 4</a></li><li data-nav-id=/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html><a class=padding href=../../fcj-workshopz/3-blogstranslated/3.5-blog5/index.html><b>3.5. </b>Blog 5</a></li><li class=active data-nav-id=/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html><a class=padding href=../../fcj-workshopz/3-blogstranslated/3.6-blog6/index.html><b>3.6. </b>Blog 6</a></li><li data-nav-id=/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html><a class=padding href=../../fcj-workshopz/3-blogstranslated/3.7-blog7/index.html><b>3.7. </b>Blog 7</a></li><li data-nav-id=/fcj-workshopz/3-blogstranslated/3.8-blog8/index.html><a class=padding href=../../fcj-workshopz/3-blogstranslated/3.8-blog8/index.html><b>3.8. </b>Blog 8</a></li></ul></li><li data-nav-id=/fcj-workshopz/4-eventparticipated/index.html><a class=padding href=../../fcj-workshopz/4-eventparticipated/index.html><b>4. </b>EventParticipated</a><ul id=R-subsections-a3223440c4beb7b035882258d4302894 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin></div><div class="R-menu-divider default-animation"><hr class=padding></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-vi value=vi data-url=../../fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-en value=en data-url=../../fcj-workshopz/3-blogstranslated/3.6-blog6/index.html lang=en selected data-selected>English</option></select></div><div class=clear></div></div></li></ul></div><div id=R-footer><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=../../fcj-workshopz/js/clipboard/clipboard.min.js?1764901265 defer></script><script src=../../fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1764901265 defer></script><script src=../../fcj-workshopz/js/theme.min.js?1764901265 defer></script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/fcj-workshopz/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=fcj-workshopz/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta name="generator" content="Relearn 8.0.1+b23cf6629eada0c2802f34ae4012e04343497862">
+    <meta name="description" content="GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink
+Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Blog 6 :: My Hugo Site">
+    <meta name="twitter:description" content="GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink
+Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.">
+    <meta property="og:url" content="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html">
+    <meta property="og:site_name" content="My Hugo Site">
+    <meta property="og:title" content=" Blog 6 :: My Hugo Site">
+    <meta property="og:description" content="GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink
+Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Blog 6 :: My Hugo Site">
+    <meta itemprop="description" content="GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink
+Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.">
+    <meta itemprop="wordCount" content="1267">
+    <title> Blog 6 :: My Hugo Site</title>
+    <link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html" rel="alternate" hreflang="x-default">
+    <link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html" rel="alternate" hreflang="vi">
+    <link href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html" rel="alternate" hreflang="en">
+    <link href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.xml" rel="alternate" type="application/rss+xml" title=" Blog 6 :: My Hugo Site">
+    <link href="http://localhost:1313/fcj-workshopz/images/logo.png?1764902275" rel="icon" type="image/png">
+    <link href="http://localhost:1313/fcj-workshopz/css/auto-complete/auto-complete.min.css?1764902275" rel="stylesheet">
+    <script src="http://localhost:1313/fcj-workshopz/js/auto-complete/auto-complete.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/search-lunr.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/search.js?1764902275" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="http://localhost:1313/fcj-workshopz/searchindex.en.js?1764902275";
+    </script>
+    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.multi.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.en.min.js?1764902275" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="http://localhost:1313/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764902275" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="http://localhost:1313/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764902275" rel="stylesheet"></noscript>
+    <link href="http://localhost:1313/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1764902275" rel="stylesheet">
+    <link href="http://localhost:1313/fcj-workshopz/css/theme.css?1764902275" rel="stylesheet">
+    <link href="http://localhost:1313/fcj-workshopz/css/format-html.css?1764902275" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/3-blogstranslated\/3.6-blog6\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/fcj-workshopz';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="http://localhost:1313/fcj-workshopz/css/custom.css?1764902275" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#pain-points-with-traditional-argocd-usage">Pain Points with Traditional ArgoCD Usage</a></li>
+    <li><a href="#how-argocd-mcp-server-with-amazon-q-cli-addresses-these-challenges">How ArgoCD MCP Server with Amazon Q CLI addresses these challenges:</a></li>
+    <li><a href="#traditional-argocd-vs-argocd-mcp-server-with-amazon-q-cli">Traditional ArgoCD vs. ArgoCD MCP Server with Amazon Q CLI</a></li>
+    <li><a href="#setting-up-your-environment">Setting Up Your Environment</a>
+      <ul>
+        <li><a href="#pre-requisites">Pre-requisites</a></li>
+        <li><a href="#connecting-to-your-eks-cluster">Connecting to your EKS cluster</a></li>
+        <li><a href="#create-agrocd-api-token">Create AgroCD API Token</a></li>
+        <li><a href="#integrating-with-amazon-q-cli">Integrating with Amazon Q CLI</a></li>
+        <li><a href="#managing-argocd-applications-using-natural-language">Managing ArgoCD applications using natural language</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/fcj-workshopz/index.html"><span itemprop="name">Intership Report</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/index.html"><span itemprop="name">BlogsTranslated</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Blog 6</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html" title="Blog 5 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html" title="Blog 7 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 3-blogstranslated" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="blog-6"> Blog 6</h1>
+
+<h1 id="gitops-continuous-delivery-with-argocd-and-eks-using-natural-language"><strong>GitOps continuous delivery with ArgoCD and EKS using natural language</strong></h1>
+<p><em>Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi</em> | 17/07/2025 | <a href="https://aws.amazon.com/blogs/devops/category/compute/amazon-kubernetes-service/" rel="external" target="_blank"> Amazon Elastic Kubernetes Service</a>, <a href="https://aws.amazon.com/blogs/devops/category/amazon-q/" rel="external" target="_blank">Amazon Q</a>, <a href="https://aws.amazon.com/blogs/devops/category/amazon-q/amazon-q-developer/" rel="external" target="_blank">Amazon Q Developer</a>, <a href="https://aws.amazon.com/blogs/devops/category/developer-tools/" rel="external" target="_blank">Developer Tools</a>, <a href="https://aws.amazon.com/blogs/devops/category/post-types/technical-how-to/" rel="external" target="_blank">Technical How-to </a> | <a href="https://aws.amazon.com/blogs/devops/gitops-continuous-delivery-with-argocd-and-eks-using-natural-language/" rel="external" target="_blank">Permalink</a></p>
+<h2 id="introduction">Introduction</h2>
+<p>ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.</p>
+<h2 id="pain-points-with-traditional-argocd-usage">Pain Points with Traditional ArgoCD Usage</h2>
+<ul>
+<li>
+<p>GArgoCD’s UI and CLI are designed for users with extensive technical background. Interacting with YAML manifests, understanding Kubernetes resource relationships, and troubleshooting sync errors require specialized knowledge. This limits access to GitOps workflows for less technical stakeholders and increases reliance on DevOps engineers.</p>
+</li>
+<li>
+<p>Managing ArgoCD across multiple clusters or environments (using hub-spoke, per-cluster, or grouped models) introduces significant operational complexity. Teams must handle multiple ArgoCD instances, maintain consistent configuration, and coordinate deployments, which can become a bottleneck as service footprints grow.</p>
+</li>
+<li>
+<p>ArgoCD excels at syncing and monitoring Kubernetes resources but lacks built-in mechanisms for pre-deployment (e.g., image scanning) or post-deployment (e.g., load testing) tasks. This forces teams to rely on external tools or custom scripts, fragmenting the deployment pipeline and increasing maintenance effort.</p>
+</li>
+<li>
+<p>Promoting applications across environments (Dev → Test → Prod) is not natively streamlined. Teams must manually orchestrate or script these promotions, slowing down urgent fixes and complicating the release process.</p>
+</li>
+<li>
+<p>As organizations adopt multi-cluster strategies, managing ArgoCD’s access, RBAC, and resource visibility across environments becomes cumbersome, often leading to fragmented workflows and potential security gaps.</p>
+</li>
+</ul>
+<h2 id="how-argocd-mcp-server-with-amazon-q-cli-addresses-these-challenges">How ArgoCD MCP Server with Amazon Q CLI addresses these challenges:</h2>
+<ul>
+<li>
+<p>The integration of the ArgoCD MCP (Model Context Protocol) Server with <a href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html" rel="external" target="_blank">Amazon Q CLI</a> fundamentally transforms the user experience by introducing natural language interaction for GitOps operations.</p>
+</li>
+<li>
+<p>With MCP, users can manage deployments, monitor application states, and perform sync or rollback operations using plain conversational language rather than technical commands or YAML. For example, a user can simply ask, “What applications are out of sync in production?” or “Sync the api-service application,” and the system executes the appropriate ArgoCD API calls in the background.</p>
+</li>
+<li>
+<p>This democratizes access to GitOps, enabling less technical team members (such as QA, product managers, or support engineers) to safely interact with deployment workflows.</p>
+</li>
+<li>
+<p>Natural language interfaces abstract away the complexity of multi-cluster and multi-environment management. Users can query or act on resources across clusters without memorizing resource names, namespaces, or API endpoints.</p>
+</li>
+<li>
+<p>The MCP server handles authentication, session management, and robust error handling, reducing the need for manual troubleshooting and custom scripting.</p>
+</li>
+<li>
+<p>The integration provides detailed feedback, intelligent endpoint handling, and comprehensive error messages, making it easier to diagnose and resolve issues. Full static type checking and environment-based configuration further enhance reliability and maintainability.</p>
+</li>
+<li>
+<p>By leveraging Amazon Q CLI’s extensibility, users gain access to pre-built integrations and context-aware prompts, accelerating development and deployment workflows.</p>
+</li>
+<li>
+<p>The MCP server enables AI assistants and language models to automate routine tasks, recommend actions, and even debug issues, acting as a virtual DevOps engineer. This can significantly reduce manual effort and speed up incident response.</p>
+</li>
+</ul>
+<h2 id="traditional-argocd-vs-argocd-mcp-server-with-amazon-q-cli">Traditional ArgoCD vs. ArgoCD MCP Server with Amazon Q CLI</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Feature/Challenge</th>
+          <th>Traditional ArgoCD</th>
+          <th>With MCP Server + Amazon Q CLI</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>User Interface</td>
+          <td>Technical UI/CLI, YAML required</td>
+          <td>Natural language, conversational</td>
+      </tr>
+      <tr>
+          <td>Access for Non-Engineers</td>
+          <td>Limited</td>
+          <td>Broad, democratized</td>
+      </tr>
+      <tr>
+          <td>Multi-Cluster Management</td>
+          <td>Complex, manual</td>
+          <td>Simplified, abstracted</td>
+      </tr>
+      <tr>
+          <td>Pre-Post Deployment Tasks</td>
+          <td>External tools/scripts needed</td>
+          <td>(Still external, but easier to invoke)</td>
+      </tr>
+      <tr>
+          <td>Application Promotion</td>
+          <td>Manual or scripted</td>
+          <td>Natural language, easier orchestration</td>
+      </tr>
+      <tr>
+          <td>Troubleshooting</td>
+          <td>Technical, error-prone</td>
+          <td>Guided, AI-assisted, detailed feedback</td>
+      </tr>
+      <tr>
+          <td>Automation</td>
+          <td>Scripting required</td>
+          <td>AI/agent-driven, proactive</td>
+      </tr>
+  </tbody>
+</table>
+<p>You can perform the following <a href="https://github.com/akuity/argocd-mcp?tab=readme-ov-file#available-tools" rel="external" target="_blank">actions</a> using natural language using Amazon Q CLI integration with ArgoCD MCP server.</p>
+<ul>
+<li>
+<p><strong>Application Management</strong>: List, create, update, and delete ArgoCD applications</p>
+</li>
+<li>
+<p><strong>Sync Operations</strong>: Trigger sync operations and monitor their status</p>
+</li>
+<li>
+<p><strong>Resource Tree Visualization</strong>: View the hierarchy of resources managed by applications</p>
+</li>
+<li>
+<p><strong>Health Status Monitoring</strong>: Check the health of applications and their resources</p>
+</li>
+<li>
+<p><strong>Event Tracking</strong>: View events related to applications and resources</p>
+</li>
+<li>
+<p><strong>Log Access</strong>: Retrieve logs from application workloads</p>
+</li>
+<li>
+<p><strong>Resource Actions</strong>: Execute actions on resources managed by applications</p>
+</li>
+</ul>
+<h2 id="setting-up-your-environment">Setting Up Your Environment</h2>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<p>Following are the pre-requisites for setting up your EKS environment to be managed by ArgoCD using Amazon Q CLI.</p>
+<ul>
+<li>
+<p>An AWS account with appropriate permissions</p>
+</li>
+<li>
+<p>AWS CLI v2.13.0 or later</p>
+</li>
+<li>
+<p>Node.js v18.0.0 or later</p>
+</li>
+<li>
+<p>npm v9.0.0 or later</p>
+</li>
+<li>
+<p>Amazon Q CLI v1.0.0 or later (<code>npm install -g @aws/amazon-q-cli</code>)</p>
+</li>
+<li>
+<p>An EKS cluster (v1.27 or later) with ArgoCD v2.8 or later installed</p>
+</li>
+</ul>
+<h3 id="connecting-to-your-eks-cluster">Connecting to your EKS cluster</h3>
+<ol>
+<li>Use AWS CLI to update your kubeconfig</li>
+</ol>
+<p><code>aws eks update-kubeconfig --name &lt;cluster_name&gt; --region &lt;region&gt; --role-arn &lt;iam_role_arn&gt;</code></p>
+<ol start="2">
+<li>Verify ArgoCD pods are running properly in the argocd namespace</li>
+</ol>
+<p><code>kubectl get pods -n argocd</code></p>
+<ol start="3">
+<li>Access the ArgoCD server UI locally using port forwarding command</li>
+</ol>
+<p><code>kubectl port-forward svc/blueprints-addon-argocd-server -n argocd 8080:443</code></p>
+<h3 id="create-agrocd-api-token">Create AgroCD API Token</h3>
+<ol>
+<li>Access the <strong>ArgoCD UI</strong> at <a href="https://localhost:8080" rel="external" target="_blank">https://localhost:8080</a></li>
+<li>Log in with the admin credentials</li>
+<li>Navigate to User <strong>Settings &gt; API Tokens</strong></li>
+<li>Click <strong>“Generate New”</strong> to create a token</li>
+<li>Create an Amazon Q CLI MCP configuration file at<code>.amazonq/mcp.json</code> and update the <strong>ARGOCD_BASE_URL</strong> and <strong>ARGOCD_API_TOKEN</strong> as per your environment setup.</li>
+</ol>
+<h3 id="integrating-with-amazon-q-cli">Integrating with Amazon Q CLI</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;mcpServers&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;argocd-mcp-stdio&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;stdio&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;npx&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;args&#34;</span>: [
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;argocd-mcp@latest&#34;</span>,
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;stdio&#34;</span>
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;env&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ARGOCD_BASE_URL&#34;</span>: <span style="color:#e6db74">&#34;&lt;ARGOCD_BASE_URL&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ARGOCD_API_TOKEN&#34;</span>: <span style="color:#e6db74">&#34;&lt;ARGOCD_API_TOKEN&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;NODE_TLS_REJECT_UNAUTHORIZED&#34;</span>: <span style="color:#e6db74">&#34;0&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Once configured, you can start using natural language commands with Amazon Q CLI to interact with your ArgoCD applications.</p>
+<h3 id="managing-argocd-applications-using-natural-language">Managing ArgoCD applications using natural language</h3>
+<p>Listed below are some example prompts to interact with ArgoCD applications in your EKS cluster.</p>
+<p><strong>List ArgoCD application</strong></p>
+<p><strong>Prompt</strong>: <code>List all ArgoCD applications in my cluster</code></p>
+<p><a href="#R-image-95dc2ce3b96928bbf46b4310c9d08828" class="lightbox-link"><img alt="example" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Blog6/17632-image-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-95dc2ce3b96928bbf46b4310c9d08828"><img alt="example" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Blog6/17632-image-1.png"></a></p>
+<p style="text-align: center;"><i>Amazon Q will use the ArgoCD MCP server to retrieve and display all applications</i></p>
+<p><strong>Create new ArgoCD application</strong></p>
+<p><strong>Prompt</strong>: <code>Create new argocd application using App name: game-2048   Repo: https://github.com/aws-ia/terraform-aws-eks-blueprints  Path: patterns/gitops/getting-started-argocd/k8s. Branch: main  Namespace: argocd</code></p>
+<p><a href="#R-image-299fb13db1041698a62cd82baa12b939" class="lightbox-link"><img alt="example" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Blog6/17632-image-2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-299fb13db1041698a62cd82baa12b939"><img alt="example" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Blog6/17632-image-2.png"></a></p>
+<p style="text-align: center;"><i>Amazon Q will create a new application from GitRepo information provided</i></p>
+<p><strong>Viewing deployment status</strong></p>
+<p><strong>Câu lệnh</strong>: <code>Show me the resource tree for team-carmen app</code></p>
+<p><a href="#R-image-f60f9e9e2a821232022b5cacf61c227d" class="lightbox-link"><img alt="example" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Blog6/17632-image-8.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f60f9e9e2a821232022b5cacf61c227d"><img alt="example" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Blog6/17632-image-8.png"></a></p>
+<p style="text-align: center;"><i>Amazon Q will display the hierarchy of Kubernetes resources managed by the application</i></p>
+<p><strong>Synchronizing applications</strong></p>
+<p><strong>Prompt</strong>: <code>Show me the applications that’s out of sync</code></p>
+<p><a href="#R-image-01348832d743fab4c9217090c3256d6e" class="lightbox-link"><img alt="example" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Blog6/17632-image-3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-01348832d743fab4c9217090c3256d6e"><img alt="example" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Blog6/17632-image-3.png"></a></p>
+<p style="text-align: center;"><i>Amazon Q will display the out of sync applications</i></p>
+<p><strong>Prompt</strong>: <code>Sync the application</code></p>
+<p><a href="#R-image-1de5eea6d64d36347f646fd1fec3f95b" class="lightbox-link"><img alt="example" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Blog6/17632-image-4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1de5eea6d64d36347f646fd1fec3f95b"><img alt="example" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Blog6/17632-image-4.png"></a></p>
+<p style="text-align: center;"><i>Amazon Q syncing application</i></p>
+<p>Amazon Q will:</p>
+<ul>
+<li>Initiate a sync operation for the specified application</li>
+<li>Monitor the sync progress</li>
+<li>Report the final status of the sync operation</li>
+</ul>
+<p><strong>Healthchecks and monitoring</strong></p>
+<p><strong>Prompt</strong>: <code>Check the health of all resources in the team-geordie application</code></p>
+<p><a href="#R-image-ab1318090c8723f75b961581ae5c2dda" class="lightbox-link"><img alt="example" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Blog6/17632-image-6.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab1318090c8723f75b961581ae5c2dda"><img alt="example" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Blog6/17632-image-6.png"></a></p>
+<p style="text-align: center;"><i>Amazon Q showing health status of all the resources in an application</i></p>
+<p>Amazon Q will:</p>
+<ul>
+<li>Retrieve the health status of all resources</li>
+<li>Identify any unhealthy components</li>
+<li>Provide recommendations for addressing issues</li>
+</ul>
+<p><strong>Prompt</strong>: <code>Show me the logs for the failing pod in the team-platform application</code></p>
+<p><a href="#R-image-65da528673986e7a87b0b261691d6d0a" class="lightbox-link"><img alt="example" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Blog6/17632-image-7.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-65da528673986e7a87b0b261691d6d0a"><img alt="example" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Blog6/17632-image-7.png"></a></p>
+<p style="text-align: center;"><i>Amazon Q showing logs of problematic pod</i></p>
+<p>Amazon Q will:</p>
+<ul>
+<li>Identify problematic pods</li>
+<li>Retrieve and display relevant logs</li>
+<li>Highlight potential error messages</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The integration of Amazon Q CLI with ArgoCD through the MCP server marks a transformative advancement in Kubernetes management, combining ArgoCD’s GitOps capabilities with Amazon Q’s natural language processing. By transforming complex Kubernetes operations into simple conversational interactions, this solution allows teams to focus on what truly matters – creating value for their business. Rather than spending time memorizing commands or navigating technical complexities, teams can now manage their cloud infrastructure through natural dialogue, making the cloud-native journey more accessible and efficient for everyone.Ready to transform your EKS and ArgoCD experience? It’s highly recommended to try out Amazon Q CLI integration with ArgoCD MCP and discover why DevOps teams are making it an essential part of their toolkit.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="http://localhost:1313/fcj-workshopz/index.html">
+            <div class="logo-title">My Hugo Site</div>
+          </a>
+        </div>
+        <search><form action="http://localhost:1313/fcj-workshopz/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/1-worklog/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/1-worklog/index.html"> <b> 1. </b> Worklog</a><ul id="R-subsections-16447363d800ec5deaa3b0a76c63c922" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/3-blogstranslated/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/index.html"> <b> 3. </b> BlogsTranslated</a><ul id="R-subsections-dff4ca4b61121a10b58696aacb50b106" class="collapsible-menu">
+            <li class="" data-nav-id="/3-blogstranslated/3.1-blog1/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.1-blog1/index.html"> <b> 3.1. </b> Blog 1</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.2-blog2/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.2-blog2/index.html"> <b> 3.2. </b> Blog 2</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.3-blog3/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.3-blog3/index.html"> <b> 3.3. </b>Blog 3</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.4-blog4/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.4-blog4/index.html"><b> 3.4. </b> Blog 4</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.5-blog5/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html"><b> 3.5. </b> Blog 5</a></li>
+            <li class="active " data-nav-id="/3-blogstranslated/3.6-blog6/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html"><b> 3.6. </b> Blog 6</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.7-blog7/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html"><b> 3.7. </b> Blog 7</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.8-blog8/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.8-blog8/index.html"><b> 3.8. </b> Blog 8</a></li></ul></li>
+            <li class="" data-nav-id="/4-eventparticipated/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/4-eventparticipated/index.html"> <b> 4. </b> EventParticipated</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-vi" value="vi" data-url="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.6-blog6/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-en" value="en" data-url="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html" lang="en" selected data-selected>English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="http://localhost:1313/fcj-workshopz/js/clipboard/clipboard.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1764902275" defer></script>
+    <script src="http://localhost:1313/fcj-workshopz/js/theme.js?1764902275" defer></script>
+  </body>
+</html>

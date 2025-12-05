@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.10 Week10</title><link>https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.10-week10/index.html</link><description>Mục tiêu tuần 10: Hoàn thành xong phần giao diện cho comment trong các task trong dự án
-Hoàn thành xong giao diện notifications có thể thông báo realtime
-Xây dựng các API cho việc lưu trữ dữ liệu lên S3 của AWS
-Xây dựng API cho chức năng comment attach của phần comment trong task
-Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Cài đặt WebSocket cho frontend và tạo kết nối với phía server - Tạo ModalNotification, ItemNotification cho giao diện hiển thị thông báo 10/11/2025 10/11/2025 3 - Xây dựng giao diện cho chức năng comment trong phần xem chi tiết task - Tích hợp API vào giao diện comment 11/11/2025 11/11/2025 4 - Xây dựng API cho chức năng upload file lên S3 của AWS 12/11/2025 12/11/2025 5 - Xây dựng API cho phép người dùng thực hiện đính kèm các file được lưu trên S3 vào comment 13/11/2025 13/11/2025 6 - Hoàn tất giao diện notification 14/11/2025 14/11/2025 Kết quả đạt được tuần 10: Hoàn thành được giao diện comment trong phần chi tiết task:</description><generator>Hugo</generator><language>vi</language><atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.10-week10/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.10 Week10 :: My Hugo Site</title>
+    <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.10-week10/index.html</link>
+    <description>Mục tiêu tuần 10: Hoàn thành xong phần giao diện cho comment trong các task trong dự án&#xA;Hoàn thành xong giao diện notifications có thể thông báo realtime&#xA;Xây dựng các API cho việc lưu trữ dữ liệu lên S3 của AWS&#xA;Xây dựng API cho chức năng comment attach của phần comment trong task&#xA;Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Cài đặt WebSocket cho frontend và tạo kết nối với phía server - Tạo ModalNotification, ItemNotification cho giao diện hiển thị thông báo 10/11/2025 10/11/2025 3 - Xây dựng giao diện cho chức năng comment trong phần xem chi tiết task - Tích hợp API vào giao diện comment 11/11/2025 11/11/2025 4 - Xây dựng API cho chức năng upload file lên S3 của AWS 12/11/2025 12/11/2025 5 - Xây dựng API cho phép người dùng thực hiện đính kèm các file được lưu trên S3 vào comment 13/11/2025 13/11/2025 6 - Hoàn tất giao diện notification 14/11/2025 14/11/2025 Kết quả đạt được tuần 10: Hoàn thành được giao diện comment trong phần chi tiết task:</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="http://localhost:1313/fcj-workshopz/vi/1-worklog/1.10-week10/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

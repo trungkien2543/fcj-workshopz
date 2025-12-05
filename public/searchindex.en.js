@@ -5,7 +5,7 @@ var relearn_searchindex = [
     "description": "This is a new chapter.",
     "tags": [],
     "title": "1.11 Week11",
-    "uri": "/fcj-workshopz/1-worklog/1.11-week11/index.html"
+    "uri": "/1-worklog/1.11-week11/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -13,7 +13,7 @@ var relearn_searchindex = [
     "description": "This is a new chapter.",
     "tags": [],
     "title": "1.12 Week12",
-    "uri": "/fcj-workshopz/1-worklog/1.12-week12/index.html"
+    "uri": "/1-worklog/1.12-week12/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e BlogsTranslated",
@@ -21,7 +21,7 @@ var relearn_searchindex = [
     "description": "Technology that teaches empathy? How mpathic uses AI to help us listen to each other by Bonnie McClure and Chalaire Miller | on 30 APR 2024 | Startup, Startup Spotlight\nOn a basic human level, we want to be heard. We want to connect with others, and we want to be understood. Unfortunately, we’re often faced with many things competing for our attention, which makes us bad listeners.Danielle Schlosser, Chief Innovation Officer",
     "tags": [],
     "title": "Blog 1",
-    "uri": "/fcj-workshopz/3-blogstranslated/3.1-blog1/index.html"
+    "uri": "/3-blogstranslated/3.1-blog1/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e EventParticipated",
@@ -29,7 +29,7 @@ var relearn_searchindex = [
     "description": "Event Summary: “Vietnam Cloud Day 2025: Ho Chi Minh City Connect Edition for Builders” Event Objectives Bring together enterprises, developers, and leaders to explore innovations in cloud computing and AI. Help Vietnam accelerate digital transformation, explore Gen AI technologies, cloud, and new digital solutions for the future Explore advanced solutions from Amazon Web Services (AWS) experts and partners Provide opportunities to connect with the technology community Speakers Eric Yeo : Country General Manager, Vietnam, Cambodia, Laos \u0026 Myanmar, AWS Dr. Jens Lottner: CEO, Techcombank Ms. Trang Phung: CEO \u0026 Co-Founder, U2U Network Jaime Valles: Vice President, General Manager Asia Pacific and Japan, AWS Jeff Johnson: Managing Director, ASEAN, AWS Vu Van: Co-founder \u0026 CEO, ELSA Corp Nguyen Hoa Binh: Chairman, Nexttech Group' Dieter Botha: CEO, TymeX Hung Nguyen Gia: Head of Solutions Architect, AWS Son Do: Technical Account Manager, AWS Nguyen Van Hai: Director of Software Engineering, Techcombank Phuc Nguyen: Solutions Architect, AWS Alex Tran: AI Director, OCB Nguyen Minh Ngan: AI Specialist, OCB Nguyen Manh Tuyen: Head of Data Application, LPBank Securities Vinh Nguyen: Co-Founder \u0026 CTO, Ninety Eight Hung Hoang: Customer Solutions Manager, AWS Taiki Dang: Solutions Architect, AWS Key Highlights Leveraging AWS Q to Improve and Enhance Developer Productivity Improve code quality Accelerate solution deployment Provide intelligent programming assistant Maintain strict compliance, privacy, and data security Unlocking Vietnam’s AI Potential AI adoption growth rate reaches 39% 55% of Vietnamese enterprises consider limited digital skills as the main barrier to AI adoption and scaling. Migrate, Modernize and Build on AWS Learn about large-scale migration and modernization strategies on AWS through real-world case studies from Techcombank. Enhance knowledge about application modernization using Generative AI-powered tools, with practical insights from VPBank Gain deep insights from leading industry experts through panel discussions on application modernization Learn about AI-driven cloud modernization specifically for VMware environments Understand AWS security best practices from development to production environments Connect and learn directly from AWS Solutions Architects and industry experts Key Takeaways Why is modernization matter ? Challenges from legacy systems: slowing innovation and increasing costs Benefits of modernization: enabling flexibility, providing deep insights, and driving customer-centric innovation. Impact on business: efficiency, scalability, resilience, competitiveness, and sustainability Modernization Journey Assess: Inventory current environment, identify weaknesses. Mobilize: Establish Center of Excellence (CCoE), build guiding principles, and develop cloud capabilities. Migrate \u0026 Modernize: Prioritize high-impact workloads for migration and modernization. Reinvent: Apply artificial intelligence (AI), automation, data products, and new business models. AWS Transform (First agentic AI service for large-scale migration and modernization) Assessment: Build business case for migrating to AWS. VMware: Supporting tools to help migrate from VMware environment to Amazon EC2. Mainframe: Agent to modernize IBM z/OS (mainframe) applications. .NET: Agent to modernize Windows-based .NET applications to Linux platform. Cloud Security Challenges Innovation roadblocks: Traditional security approaches can make security teams seen as barriers to innovation. Expertise \u0026 resource shortages: Current security teams are operating at maximum capacity and spending most of their time on repetitive, low-value tasks. Scale and complexity: Managing security at scale in diverse and complex cloud environments is a major challenge. Evolving threat landscapes: New attack tactics and technologies continuously emerge, creating an ever-changing risk environment. Data protection \u0026 privacy demands: To maintain customer trust, organizations must meet strict data protection and privacy requirements according to industry regulations (e.g., GDPR, PCI-DSS…). Threat Intelligence is the foundation that helps AWS services respond quickly and proactively to new threats. AWS Shield Amazon GuardDuty Amazon S3 AWS WAF (Web Application Firewall) AWS Network Firewall Amazon Route 53 Resolver DNS Firewall Amazon VPC (Virtual Private Cloud) Event Experience Participating in the workshop “Vietnam Cloud Day 2025: Ho Chi Minh City Connect Edition for Builders” was a very beneficial experience, helping me gain a comprehensive view of application modernization and modern tools. Some notable experiences:",
     "tags": [],
     "title": "Event 1",
-    "uri": "/fcj-workshopz/4-eventparticipated/4.1-event1/index.html"
+    "uri": "/4-eventparticipated/4.1-event1/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -37,7 +37,7 @@ var relearn_searchindex = [
     "description": "Week 1 Objectives: Connect and get acquainted with members of First Cloud Journey. Understand basic AWS services, how to use the console management. Discuss topic and technology for first project. Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Get to know FCJ members - Read and note the rules and regulations at the internship unit - Watch the video lecture on module 1 - Learn about the terms: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations) 8/9/2025 8/9/2025 https://policies.fcjuni.com/ 3 - Practice: + lab01: Create first account, use IAM, create MFA + lab07: Create budgets 9/9/2025 9/9/2025 https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 - Learn how to do personal workshops using hugo.io - Translate AWS blogs 10/9/2025 10/9/2025 https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 - Write logs and configuration for the workshop 11/9/2025 11/9/2025 Week 1 Achievements: Understand what AWS is and have a basic understanding of AWS’s global infrastructure:",
     "tags": [],
     "title": "Week 1",
-    "uri": "/fcj-workshopz/1-worklog/1.1-week1/index.html"
+    "uri": "/1-worklog/1.1-week1/index.html"
   },
   {
     "breadcrumb": "Intership Report",
@@ -45,7 +45,7 @@ var relearn_searchindex = [
     "description": "The content of the tasks carried out in each week is as follows:\nWeek 1: Getting familiar with AWS and basic AWS services\nWeek 2: Building VPC and Hybrid DNS with Route53\nWeek 3: Learn about Compute VM services on AWS\nWeek 4: Learn about Amazon S3 storage service\nWeek 5: Learn about security services on AWS\nWeek 6: Learn about database services on AWS Cloud\nWeek 7: Practice deploying applications to aws with docker\nWeek 8: Learn how to optimize costs on AWS.",
     "tags": [],
     "title": "Worklog",
-    "uri": "/fcj-workshopz/1-worklog/index.html"
+    "uri": "/1-worklog/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e BlogsTranslated",
@@ -53,7 +53,7 @@ var relearn_searchindex = [
     "description": "Tech-savvy savings: innovative ways to cut costs in your small businessn Henrique Trevisan, Jonathan Woods, and Vince Anderson | 23/4/2024 | in Best Practices, Permalink\nRunning a small business means making the most of every dollar while maintaining high-quality services. As your business grows and your cloud usage expands, you must find ways to efficiently manage technology resources to protect your bottom line. In today’s challenging economic environment, cost optimization has become a top priority for business owners who want to reduce expenses without sacrificing performance, security, or customer experience.",
     "tags": [],
     "title": "Blog 2",
-    "uri": "/fcj-workshopz/3-blogstranslated/3.2-blog2/index.html"
+    "uri": "/3-blogstranslated/3.2-blog2/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -61,7 +61,7 @@ var relearn_searchindex = [
     "description": "Week 2 Objectives: Learn the basic VPC architecture and its important components Do the labs in module 2 Read the book Aws advanced network Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Learn more terms related to VPC practice 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Practice: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Learn how to do DNS setup exercises with route 53 Practice: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Join Cloud Day Vietnam in Ho Chi Minh City 18/09/2025 18/9/2025 6 - Translate blogs - Write worklogs and event reports 1 19/09/2025 19/9/2025 https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/ 7 - Practice: + lab20: Set up AWS Transit Gatewayy + lab19: Setting up VPC Peering 20/09/2025 20/9/2025 https://000020.awsstudygroup.com/vi/ https://000019.awsstudygroup.com/vi/ Week 2 Achievements: Understand VPC service and how to create a virtual private network on AWS",
     "tags": [],
     "title": "Week 2",
-    "uri": "/fcj-workshopz/1-worklog/1.2-week2/index.html"
+    "uri": "/1-worklog/1.2-week2/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -69,7 +69,7 @@ var relearn_searchindex = [
     "description": "Week 3 Objectives: Learn about VM services on AWS Perform application development on EC2, create backups and use cloudwatch to monitor the system Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Watch video lectures about Compute VM service on AWS - Translate blogs for week 3 22/9/2025 22/9/2025 https://aws.amazon.com/vi/blogs/startups/accelerating-the-next-wave-of-generative-ai-startups/ 3 - Practice: + lab04: Initialize and learn basic features of Amazon EC2 23/9/2025 23/9/2025 https://000004.awsstudygroup.com/ 4 - Practice: + lab04 section 8: Limit resource usage using IAM service + lab02: Manage access rights with AWS Identity and Access Management (IAM) 24/9/2025 24/9/2025 https://000004.awsstudygroup.com/vi/8-costusagegovernance/ https://000002.awsstudygroup.com/vi/ 5 - Practice: + lab08: Using CloudWatch 25/9/2025 25/9/2025 https://000008.awsstudygroup.com/ 6 - Practice: + lab06: Deploy FCJ Management application with Auto Scaling Group + lab13: Deploy aws backup for the system 26/9/2025 26/9/2025 https://000006.awsstudygroup.com/ https://000013.awsstudygroup.com/ Week 3 Achievements: Understand the Compute VM service on AWS",
     "tags": [],
     "title": " Week 3",
-    "uri": "/fcj-workshopz/1-worklog/1.3-week3/index.html"
+    "uri": "/1-worklog/1.3-week3/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e BlogsTranslated",
@@ -77,7 +77,7 @@ var relearn_searchindex = [
     "description": "Accelerating the next wave of generative AI startups Swami Sivasubramanian | 13/06/2024 | in AWS for Startups, Featured, Startup, Startup Spotlight | Permalink\nSince day one, AWS has helped startups bring their ideas to life by democratizing access to the technology powering some of the largest enterprises around the world including Amazon. Each year since 2020, we have provided startups nearly $1 billion in AWS Promotional Credits. It’s no coincidence then that 80% of the world’s unicorns use AWS. I am lucky to have had a front row seat to the development of so many of these startups over my time at AWS—companies like Netflix, Wiz, and Airtasker. And I’m enthusiastic about the rapid pace at which startups are adopting generative artificial intelligence (AI) and how this technology is creating an entirely new generation of startups.",
     "tags": [],
     "title": "Blog 3",
-    "uri": "/fcj-workshopz/3-blogstranslated/3.3-blog3/index.html"
+    "uri": "/3-blogstranslated/3.3-blog3/index.html"
   },
   {
     "breadcrumb": "Intership Report",
@@ -85,7 +85,7 @@ var relearn_searchindex = [
     "description": "Blog 1 - Technology that teaches empathy? How mpathic uses AI to help us listen to each other What if artificial intelligence (AI) could augment our ability to really listen and truly relate to others? What if technology could draw upon our collective lived experiences and help us be more human to each other? These are the questions Dr. Grin Lord, clinical psychologist and founder of conversation analytics company mpathic, has spent the last 15 years chasing.",
     "tags": [],
     "title": "BlogsTranslated",
-    "uri": "/fcj-workshopz/3-blogstranslated/index.html"
+    "uri": "/3-blogstranslated/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e BlogsTranslated",
@@ -93,7 +93,7 @@ var relearn_searchindex = [
     "description": "Scaling Cloudera’s development environment: Leveraging Amazon EKS, Karpenter, Bottlerocket, and Cilium for hybrid cloud Harpreet Virk and Padma Iyer | 26/09/2025 | in Advanced (300), Amazon Elastic Kubernetes Service, Best Practices, Containers, Graviton, Migration, Migration Acceleration Program (MAP) | Permalink |\nThis post is co-written with Shreelola Hegde,Sriharsha Devineni and Lee Watterworth from Cloudera.\nCloudera is a global leader in enterprise data management, analytics, and AI. The Cloudera platform enables organizations to manage, process, and analyze massive datasets, helping businesses across industries like finance, healthcare, manufacturing, and telecommunications accelerate AI/ML adoption and unlock real-time insights.",
     "tags": [],
     "title": " Blog 4",
-    "uri": "/fcj-workshopz/3-blogstranslated/3.4-blog4/index.html"
+    "uri": "/3-blogstranslated/3.4-blog4/index.html"
   },
   {
     "breadcrumb": "Intership Report",
@@ -101,7 +101,7 @@ var relearn_searchindex = [
     "description": "During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.\nEvent 1 Event Name: GenAI-powered App-DB Modernization workshop\nDate \u0026 Time: 09:00, August 13, 2025\nLocation: 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City\nRole: Attendee",
     "tags": [],
     "title": "EventParticipated",
-    "uri": "/fcj-workshopz/4-eventparticipated/index.html"
+    "uri": "/4-eventparticipated/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -109,7 +109,7 @@ var relearn_searchindex = [
     "description": "Week 4 Objectives: Learn about Amazon S3 Storage Service Learn about Security Services on AWS Implement static web application deployment through S3 and cloudfront Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Watch video lectures on S3 storage service - Translate blogs for week 4 9/29/2025 9/29/2025 https://aws.amazon.com/blogs/migration-and-modernization/scaling-clouderas-development-environment-leveraging-amazon-eks-karpenter-bottlerocket-and-cilium-for-hybrid-cloud/ 3 - Practice: + lab57: STARTING WITH AMAZON S3 + lab13: Deploy AWS Backup to the System + lab 14: VM Import/Export 9/30/2025 9/30/2025 https://000057.awsstudygroup.com https://000014.awsstudygroup.com https://000013.awsstudygroup.com/ 4 - Watch video lectures on security services on AWS 10/1/2025 10/1/2025 5 - Practice: + lab2: AWS Identity and Access Management (IAM) Access Control + lab44: IAM Role \u0026 Condition + lab 48: Granting authorization for an application to access AWS services with an IAM role. 10/2/2025 10/2/2025 https://000048.awsstudygroup.com https://000002.awsstudygroup.com https://000044.awsstudygroup.com 6 - Practice: + lab30: LIMITATION OF USER RIGHTS WITH IAM PERMISSION BOUNDARY 3/10/2025 3/10/2025 https://000030.awsstudygroup.com Week 4 Achievements: Understand about storage services on S3",
     "tags": [],
     "title": "Week 4",
-    "uri": "/fcj-workshopz/1-worklog/1.4-week4/index.html"
+    "uri": "/1-worklog/1.4-week4/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e BlogsTranslated",
@@ -117,7 +117,7 @@ var relearn_searchindex = [
     "description": "Creating a Multi-Region Application with AWS Services – Part 1, Compute, Networking, and Security Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink\nMany AWS services have features to help you build and manage a multi-Region architecture, but identifying those capabilities across 200+ services can be overwhelming.",
     "tags": [],
     "title": " Blog 5",
-    "uri": "/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html"
+    "uri": "/3-blogstranslated/3.5-blog5/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -125,7 +125,7 @@ var relearn_searchindex = [
     "description": "Week 5 Objectives: Complete the remaining labs of module 5\nTasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Translate blogs for week 5 06/10/2025 06/10/2025 https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/ 3 - Practice: + lab33: Encryption at Rest with AWS KMS 07/10/2025 07/10/2025 https://000033.awsstudygroup.com/vi/ 4 - API programming for the final project module project, section 08/10/2025 08/10/2025 5 - Practice: + lab12: Using AWS IAM Identity Center for robust identity management 09/10/2025 09/10/2025 https://000012.awsstudygroup.com/vi/ 6 - API programming for module task final project 10/10/2025 10/10/2025 Week 5 Achievements: Encrypt data on S3 using KMS",
     "tags": [],
     "title": "Week 5",
-    "uri": "/fcj-workshopz/1-worklog/1.5-week5/index.html"
+    "uri": "/1-worklog/1.5-week5/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e BlogsTranslated",
@@ -133,7 +133,7 @@ var relearn_searchindex = [
     "description": "GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink\nIntroduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.",
     "tags": [],
     "title": " Blog 6",
-    "uri": "/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html"
+    "uri": "/3-blogstranslated/3.6-blog6/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -141,7 +141,7 @@ var relearn_searchindex = [
     "description": "Week 6 Objectives: Learn about AWS cloud database services Practice labs related to using RDS Review the content and practice of module 2 Tasks to be carried out this week: Day Task Start date Completion date Reference Material 2 - Review module 2: Understanding basic VPC architecture and related important components 12/10/2025 12/10/2025 3 - Study module: Database hosting service on AWS 13/10/2025 13/10/2025 Video series about the module on AWS Study Group channel 4 - Practice: lab 05: Amazon Relational Database Service (Amazon RDS) 14/10/2025 14/10/2025 https://000005.awsstudygroup.com/vi/ 5 - Learn to use cache, Redis for final project 15/10/2025 15/10/2025 https://www.youtube.com/watch?v=HSknuSIoK6A 6 - Practice: lab 03: Getting Started with Amazon Virtual Private Cloud (VPC) and AWS Site-to-Site VPN 16/10/2025 16/10/2025 https://000003.awsstudygroup.com/vi/ Week 6 Achievements: Learn about different database services: RDS, ElastiCache, Redshift.",
     "tags": [],
     "title": "Week 6",
-    "uri": "/fcj-workshopz/1-worklog/1.6-week6/index.html"
+    "uri": "/1-worklog/1.6-week6/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e BlogsTranslated",
@@ -149,7 +149,7 @@ var relearn_searchindex = [
     "description": "Introducing Strands Agents 1.0: Production-Ready Multi-Agent Orchestration Made Simple Ryan Coleman and Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments\nToday we are excited to announce version 1.0 of the Strands Agents SDK, marking a significant milestone in our journey to make building AI agents simple, reliable, and production-ready. Strands Agents is an open source SDK that takes a model-driven approach to building and running AI agents in just a few lines of code. Strands scales from simple to complex agent use cases, and from local development to deployment in production.",
     "tags": [],
     "title": " Blog 7",
-    "uri": "/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html"
+    "uri": "/3-blogstranslated/3.7-blog7/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -157,7 +157,7 @@ var relearn_searchindex = [
     "description": "Week 7 Objectives: Practice labs on deploying applications to AWS\nTranslate blog posts\nTasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Editing the automatic notification API for the final project 20/10/2025 20/10/2025 3 - Practice: lab15: Deploying applications on Docker with AWS 21/10/2025 21/10/2025 https://000015.awsstudygroup.com/vi/ 4 - Translating blog posts: Continuous deployment based on GitOps methodology with ArgoCD and EKS using natural language 22/10/2025 22/10/2025 Blog 6 5 - Translated blogs: Introducing Strands Agents 1.0: Simplifying Multi-Agent Orchestration Ready for Deployment 23/10/2025 23/10/2025 Blog 7 6 - Practice: lab58: Working with Amazon System Manager - Session Manager 24/10/2025 24/10/2025 https://000058.awsstudygroup.com/vi/ Week 7 Achievements: Practice lab to create image and deploy application with docker",
     "tags": [],
     "title": "Week 7",
-    "uri": "/fcj-workshopz/1-worklog/1.7-week7/index.html"
+    "uri": "/1-worklog/1.7-week7/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e BlogsTranslated",
@@ -165,7 +165,7 @@ var relearn_searchindex = [
     "description": "Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, and Shyamal Mehtalia | 15/07/2025 | High Performance Computing, Life Sciences, Partner solutions\nThis post was contributed by Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), and Shyamal Mehtalia (Illumina)\nThe analysis of ever-increasing amounts of genomic and multiomic data demands efficient, scalable, and cost-effective computational solutions. Amazon Web Services (AWS) continues to support these workloads through FPGA accelerated compute offerings such as Amazon EC2 F2 instances.",
     "tags": [],
     "title": " Blog 8",
-    "uri": "/fcj-workshopz/3-blogstranslated/3.8-blog8/index.html"
+    "uri": "/3-blogstranslated/3.8-blog8/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -173,7 +173,7 @@ var relearn_searchindex = [
     "description": "Week 8 Objectives: Translate the remaining blog posts.\nPractice some exercises that support system optimization.\nIdentify application optimizations for the final project.\nTasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Translate blog 8: Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances 27/10/2025 27/10/2025 Blog 8 3 - Revise the structure of worklogs - Review theoretical content of several AWS services - Learn about Design Patterns to apply in the final project such as: Proxy Pattern, Prototype Pattern, Builder Pattern 28/10/2025 28/10/2025 https://viblo.asia/p/proxy-design-pattern-tro-thu-dac-luc-cua-developers-RQqKLB2bl7z https://viblo.asia/p/prototype-design-pattern-tro-thu-dac-luc-cua-developers-GrLZDBQO5k0 4 - Practice: lab 22: Optimizing EC2 Costs with Lambda 29/10/2025 29/10/2025 https://000022.awsstudygroup.com 5 - Practice: lab 29: Getting started with Grafana basic 30/10/2025 30/10/2025 https://000029.awsstudygroup.com 6 - Learn about WebSocket 31/10/2025 31/10/2025 https://www.geeksforgeeks.org/web-tech/what-is-web-socket-and-how-it-is-different-from-the-http/ Week 8 Achievements: Learn about some useful design patterns to integrate into the final project:",
     "tags": [],
     "title": "Week 8",
-    "uri": "/fcj-workshopz/1-worklog/1.8-week8/index.html"
+    "uri": "/1-worklog/1.8-week8/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -181,7 +181,7 @@ var relearn_searchindex = [
     "description": "Week 9 Objectives: Integrate WebSocket into the Notification module\nPractice labs related to Serverless Computing\nComplete the interface and API calls for the Task UpComing feature\nTasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Integrate WebSocket into the project and run a demo 3/11/2025 3/11/2025 3 - Build the interface for the Task UpComing feature, including displaying the task list, filtering by date, and creating tasks 4/11/2025 4/11/2025 4 - Practice: lab 78: Serverless – Interaction between Lambda, S3, and DynamoDB 5/11/2025 5/11/2025 https://000078.awsstudygroup.com/vi/ 5 - Complete creating, editing, and deleting tasks in the Task UpComing feature - Design the interface for comments of each task 6/11/2025 6/11/2025 6 - Complete API integration for the Task UpComing feature 7/11/2025 7/11/2025 Week 9 Achievements: Complete the Task UpComing feature:",
     "tags": [],
     "title": "Week 9",
-    "uri": "/fcj-workshopz/1-worklog/1.9-week9/index.html"
+    "uri": "/1-worklog/1.9-week9/index.html"
   },
   {
     "breadcrumb": "Intership Report \u003e Worklog",
@@ -189,7 +189,7 @@ var relearn_searchindex = [
     "description": "Week 10 Objectives: Complete the FE for comments in tasks within the project.\nComplete the notifications FE with real-time updates.\nBuild APIs for storing data on AWS S3.\nBuild APIs for the comment attachment feature in task comments.\nTasks to be carried out this week: Day Task Start Date End Date Reference Materials 2 - Set up WebSocket on the frontend and connect it to the server - Create ModalNotification and ItemNotification components for displaying notifications 10/11/2025 10/11/2025 3 - Build the UI for the comment feature in the task detail view - Integrate API into the comment UI 11/11/2025 11/11/2025 4 - Build API for uploading files to AWS S3 12/11/2025 12/11/2025 5 - Build API to allow users to attach files stored on S3 to comments 13/11/2025 13/11/2025 6 - Complete the notifications UI 14/11/2025 14/11/2025 Week 10 Achievements: Completed the comment UI in the task detail UI:",
     "tags": [],
     "title": "1.10 Week10",
-    "uri": "/fcj-workshopz/1-worklog/1.10-week10/index.html"
+    "uri": "/1-worklog/1.10-week10/index.html"
   },
   {
     "breadcrumb": "Intership Report",
@@ -197,7 +197,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Categories",
-    "uri": "/fcj-workshopz/categories/index.html"
+    "uri": "/categories/index.html"
   },
   {
     "breadcrumb": "",
@@ -205,7 +205,7 @@ var relearn_searchindex = [
     "description": "Student Information: Full Name: Le Trung Kien\nPhone Number: 0931261009\nEmail: trungkien1862@gmail.om\nUniversity: Sai Gon University\nMajor: Information Technology\nClass: DCT1213\nInternship Company: Amazon Web Services Vietnam Co., Ltd.\nInternship Position: FCJ Cloud Intern\nInternship Duration: From 08/09/2025 to 12/11/2025\nReport Content Worklog Proposal Translated Blogs Events Participated Workshop Self-evaluation Sharing and Feedback",
     "tags": [],
     "title": "Intership Report",
-    "uri": "/fcj-workshopz/index.html"
+    "uri": "/index.html"
   },
   {
     "breadcrumb": "Intership Report",
@@ -213,6 +213,6 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Tags",
-    "uri": "/fcj-workshopz/tags/index.html"
+    "uri": "/tags/index.html"
   }
 ]
