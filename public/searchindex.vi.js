@@ -36,7 +36,7 @@ var relearn_searchindex = [
     "content": "This is a new chapter.",
     "description": "This is a new chapter.",
     "tags": [],
-    "title": "2 Proposal",
+    "title": "Bản đề xuất",
     "uri": "/vi/2-proposal/index.html"
   },
   {
@@ -46,6 +46,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Blog 2",
     "uri": "/vi/3-blogstranslated/3.2-blog2/index.html"
+  },
+  {
+    "breadcrumb": "Báo cáo thực tập \u003e Các sự kiện đã tham gia",
+    "content": "Bài thu hoạch “AWS CLOUD MASTERY SERIES #3 – Security on AWS” Mục Đích Của Sự Kiện Danh sách các diễn giả Nội Dung Nổi Bật Những gì học được Trải nghiệm trong event Tham gia workshop “Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders” là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng, công cụ hiện đại. Một số trải nghiệm nổi bật:\nHọc hỏi từ các diễn giả có chuyên môn cao Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ best practices trong thiết kế ứng dụng hiện đại. Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng Migration, Modernization và Cloud Security vào các project lớn. Kết nối và trao đổi Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp nâng cao ngôn ngữ chung (ubiquitous language) giữa business và tech. Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của business-first approach, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ. Bài học rút ra Chiến lược hiện đại hóa cần phased approach và đo lường, đánh giá chính xác tình trạng hiện tại, không nên vội vàng chuyển đổi toàn bộ hệ thống. Các công cụ AI như Amazon Q Developer có thể boost productivity nếu được tích hợp vào workflow phát triển hiện tại.",
+    "description": "Bài thu hoạch “AWS CLOUD MASTERY SERIES #3 – Security on AWS” Mục Đích Của Sự Kiện Danh sách các diễn giả Nội Dung Nổi Bật Những gì học được Trải nghiệm trong event Tham gia workshop “Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders” là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng, công cụ hiện đại. Một số trải nghiệm nổi bật:",
+    "tags": [],
+    "title": "Sự kiện 2",
+    "uri": "/vi/4-eventparticipated/4.2-event2/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
@@ -112,20 +120,20 @@ var relearn_searchindex = [
     "uri": "/vi/3-blogstranslated/3.5-blog5/index.html"
   },
   {
-    "breadcrumb": "Báo cáo thực tập",
-    "content": "This is a new chapter.",
-    "description": "This is a new chapter.",
-    "tags": [],
-    "title": "5 Workshop",
-    "uri": "/vi/5-workshop/index.html"
-  },
-  {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
     "content": "Mục tiêu tuần 5: Nghiên cứu thêm về Dịch vụ bảo mật trên AWS Thực xong các lab còn lại của module 5 Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch blogs cho tuần 5 06/10/2025 06/10/2025 link bài viết gốc 3 - Thực hành: + lab33: Mã hóa ở trạng thái lưu trữ với AWS KMS 07/10/2025 07/10/2025 https://000033.awsstudygroup.com/vi/ 4 - Lập trình api cho taskflow service ở các module project, section 08/10/2025 08/10/2025 5 - Thực hành: + lab12: Sử dụng AWS IAM Identity Center để quản lý định danh mạnh mẽ 09/10/2025 09/10/2025 https://000012.awsstudygroup.com/vi/ 6 - Lập trình api cho taskflow service ở các module member, task, comment 10/10/2025 10/10/2025 Kết quả đạt được tuần 5: Thực hành mã hóa ở trạng thái lưu trữ với AWS KMS:\nTìm hiểu về 2 loại khóa đối xứng và bất đối xứng Tìm hiểu dịch vụ AWS CloudTrail để ghi nhật ký, giám sát liên tục và duy trì hoạt động của tài khoản có liên quan đến các hoạt động diễn ra trên cơ sở hạ tầng AWS Biết cách tạo KMS để mã hóa dữ liệu trên S3 Biết các tạo các group, user, permission set để phần quyền account trên tổ chức\nBiết kết nối tài khoản trong tổ chức trên CLI để sử dụng tài nguyên của dự án\nTạo các permission set theo nhiều cách để quản lý linh hoạt hơn\nHoàn thành được 1 số API cho taskflow service",
     "description": "Mục tiêu tuần 5: Nghiên cứu thêm về Dịch vụ bảo mật trên AWS Thực xong các lab còn lại của module 5 Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch blogs cho tuần 5 06/10/2025 06/10/2025 link bài viết gốc 3 - Thực hành: + lab33: Mã hóa ở trạng thái lưu trữ với AWS KMS 07/10/2025 07/10/2025 https://000033.awsstudygroup.com/vi/ 4 - Lập trình api cho taskflow service ở các module project, section 08/10/2025 08/10/2025 5 - Thực hành: + lab12: Sử dụng AWS IAM Identity Center để quản lý định danh mạnh mẽ 09/10/2025 09/10/2025 https://000012.awsstudygroup.com/vi/ 6 - Lập trình api cho taskflow service ở các module member, task, comment 10/10/2025 10/10/2025 Kết quả đạt được tuần 5: Thực hành mã hóa ở trạng thái lưu trữ với AWS KMS:",
     "tags": [],
     "title": "Tuần 5",
     "uri": "/vi/1-worklog/1.5-week5/index.html"
+  },
+  {
+    "breadcrumb": "Báo cáo thực tập",
+    "content": "This is a new chapter.",
+    "description": "This is a new chapter.",
+    "tags": [],
+    "title": "Workshop",
+    "uri": "/vi/5-workshop/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -136,20 +144,20 @@ var relearn_searchindex = [
     "uri": "/vi/3-blogstranslated/3.6-blog6/index.html"
   },
   {
-    "breadcrumb": "Báo cáo thực tập",
-    "content": "This is a new chapter.",
-    "description": "This is a new chapter.",
-    "tags": [],
-    "title": "6 Self Evaluation",
-    "uri": "/vi/6-self-evaluation/index.html"
-  },
-  {
     "breadcrumb": "Báo cáo thực tập \u003e Worklog",
     "content": "Mục tiêu tuần 6: Học về dịch vụ cơ sở dữ liệu trên cloud của AWS Thực hành các bài lab liên quan tới việc sử dụng RDS Ôn tập lại nội dung và bài thực hành của module 2 về VPC Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Ôn tập xem lại module 2: Tìm hiểu kiến trúc VPC cơ bản và các thành phần quan trọng có liên quan 12/10/2025 12/10/2025 3 - Học module : Dịch vụ lưu trữ cơ sở dữ liệu trên AWS 13/10/2025 13/10/2025 Chuỗi video về module trên kênh AWS Study Group 4 - Thực hành: lab 05: Amazon Relational Database Service (Amazon RDS) 14/10/2025 14/10/2025 https://000005.awsstudygroup.com/vi/ 5 - Học sử dụng bộ nhớ cache, Redis cho đồ án cuối khóa 15/10/2025 15/10/2025 https://www.youtube.com/watch?v=HSknuSIoK6A 6 - Thực hành: lab 03: Bắt đầu với Amazon Virtual Private Cloud (VPC) và AWS Site-to-Site VPN 16/10/2025 16/10/2025 https://000003.awsstudygroup.com/vi/ Kết quả đạt được tuần 6: Học về các loại dịch vụ cơ sở dữ liệu: RDS, Elastic Cache, Red Shift\nHiểu về database concept và các thuật ngữ cần quan tâm khi thực hiện thao tác với cơ sở dữ liệu\nThực hành bài lab để triển khai hệ thống có sử dụng RDS để lưu trữ thông tin, kiểm tra log của cơ sở dữ liệu\nThực hành lại bài lab triển khai VPC để thành thục hơn khi triển khai VPC và sửa các lỗi khi triển khai\nHọc được cách cache dữ liệu lên Redis và các bảo vệ hệ thống tránh bị spam, bị mất dữ liệu",
     "description": "Mục tiêu tuần 6: Học về dịch vụ cơ sở dữ liệu trên cloud của AWS Thực hành các bài lab liên quan tới việc sử dụng RDS Ôn tập lại nội dung và bài thực hành của module 2 về VPC Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Ôn tập xem lại module 2: Tìm hiểu kiến trúc VPC cơ bản và các thành phần quan trọng có liên quan 12/10/2025 12/10/2025 3 - Học module : Dịch vụ lưu trữ cơ sở dữ liệu trên AWS 13/10/2025 13/10/2025 Chuỗi video về module trên kênh AWS Study Group 4 - Thực hành: lab 05: Amazon Relational Database Service (Amazon RDS) 14/10/2025 14/10/2025 https://000005.awsstudygroup.com/vi/ 5 - Học sử dụng bộ nhớ cache, Redis cho đồ án cuối khóa 15/10/2025 15/10/2025 https://www.youtube.com/watch?v=HSknuSIoK6A 6 - Thực hành: lab 03: Bắt đầu với Amazon Virtual Private Cloud (VPC) và AWS Site-to-Site VPN 16/10/2025 16/10/2025 https://000003.awsstudygroup.com/vi/ Kết quả đạt được tuần 6: Học về các loại dịch vụ cơ sở dữ liệu: RDS, Elastic Cache, Red Shift",
     "tags": [],
     "title": "Tuần 6",
     "uri": "/vi/1-worklog/1.6-week6/index.html"
+  },
+  {
+    "breadcrumb": "Báo cáo thực tập",
+    "content": "This is a new chapter.",
+    "description": "This is a new chapter.",
+    "tags": [],
+    "title": "Tự đánh giá",
+    "uri": "/vi/6-self-evaluation/index.html"
   },
   {
     "breadcrumb": "Báo cáo thực tập \u003e Các bài blog đã dịch",
@@ -164,7 +172,7 @@ var relearn_searchindex = [
     "content": "This is a new chapter.",
     "description": "This is a new chapter.",
     "tags": [],
-    "title": "7 Feedback",
+    "title": "Chia sẻ, đóng góp ý kiến",
     "uri": "/vi/7-feedback/index.html"
   },
   {

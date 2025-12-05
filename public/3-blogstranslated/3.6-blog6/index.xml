@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Blog 6 :: My Hugo Site</title>
-    <link>http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html</link>
+    <link>https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html</link>
     <description>GitOps continuous delivery with ArgoCD and EKS using natural language Jagdish Komakula, Aditya Ambati, and Anand Krishna Varanasi | 17/07/2025 | Amazon Elastic Kubernetes Service, Amazon Q, Amazon Q Developer, Developer Tools, Technical How-to | Permalink&#xA;Introduction ArgoCD is a leading GitOps tool that empowers teams to manage Kubernetes deployments declaratively, using Git as the single source of truth. Its robust feature set, including automated sync, rollback support, drift detection, advanced deployment strategies, RBAC integration, and multi-cluster support, makes it a go-to solution for Kubernetes application delivery. However, as organizations scale, several pain points and operational challenges become apparent.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.6-blog6/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
