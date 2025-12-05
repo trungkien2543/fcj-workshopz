@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog 3 :: My Hugo Site</title>
-    <link>http://localhost:1313/vi/3-blogstranslated/3.3-blog3/index.html</link>
+    <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.html</link>
     <description>Đẩy nhanh làn sóng khởi nghiệp AI thế hệ tiếp theo Swami Sivasubramanian | 13/06/2024 | in AWS for Startups, Featured, Startup, Startup Spotlight | Permalink&#xA;Từ ngày đầu tiên, AWS đã giúp các công ty khởi nghiệp hiện thực hóa ý tưởng của họ bằng cách dân chủ hóa quyền truy cập tới chủ hóa quyền truy cập vào công nghệ đang hỗ trợ một số doanh nghiệp lớn nhất trên thế giới, bao gồm cả Amazon. Mỗi năm kể từ 2020, chúng tôi đã cung cấp cho các công ty khởi nghiệp gần 1 tỷ đô la tín dụng khuyến mãi AWS. Không có gì ngẫu nhiên khi 80% kỳ lân của thế giới sử dụng AWS. Tôi rất may mắn khi chứng kiến sự phát triển của các công ty khởi nghiệp trong suốt thời gian làm việc tại AWS - các công ty như Netflix, Wiz và Airtasker. Và tôi rát hào hứng với tốc độ nhanh chóng mà các công ty khởi nghiệp ứng dụng công nghệ trí tuệ nhân tạo (AI) và cách mà công nghệ này đang tạo ra một thế hệ khởi nghiệp hoàn toàn mới.</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/vi/3-blogstranslated/3.3-blog3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.3-blog3/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

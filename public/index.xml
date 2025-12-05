@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Intership Report :: My Hugo Site</title>
-    <link>http://localhost:1313/index.html</link>
+    <link>http://localhost:1313/fcj-workshopz/index.html</link>
     <description>Student Information: Full Name: Le Trung Kien&#xA;Phone Number: 0931261009&#xA;Email: trungkien1862@gmail.om&#xA;University: Sai Gon University&#xA;Major: Information Technology&#xA;Class: DCT1213&#xA;Internship Company: Amazon Web Services Vietnam Co., Ltd.&#xA;Internship Position: FCJ Cloud Intern&#xA;Internship Duration: From 08/09/2025 to 12/11/2025&#xA;Report Content Worklog Proposal Translated Blogs Events Participated Workshop Self-evaluation Sharing and Feedback</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fcj-workshopz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Worklog</title>
-      <link>http://localhost:1313/1-worklog/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/1-worklog/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/1-worklog/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/1-worklog/index.html</guid>
       <description>The content of the tasks carried out in each week is as follows:&#xA;Week 1: Getting familiar with AWS and basic AWS services&#xA;Week 2: Building VPC and Hybrid DNS with Route53&#xA;Week 3: Learn about Compute VM services on AWS&#xA;Week 4: Learn about Amazon S3 storage service&#xA;Week 5: Learn about security services on AWS&#xA;Week 6: Learn about database services on AWS Cloud&#xA;Week 7: Practice deploying applications to aws with docker&#xA;Week 8: Learn how to optimize costs on AWS.</description>
     </item>
     <item>
       <title>BlogsTranslated</title>
-      <link>http://localhost:1313/3-blogstranslated/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/3-blogstranslated/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/3-blogstranslated/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/3-blogstranslated/index.html</guid>
       <description>Blog 1 - Technology that teaches empathy? How mpathic uses AI to help us listen to each other What if artificial intelligence (AI) could augment our ability to really listen and truly relate to others? What if technology could draw upon our collective lived experiences and help us be more human to each other? These are the questions Dr. Grin Lord, clinical psychologist and founder of conversation analytics company mpathic, has spent the last 15 years chasing.</description>
     </item>
     <item>
       <title>EventParticipated</title>
-      <link>http://localhost:1313/4-eventparticipated/index.html</link>
+      <link>http://localhost:1313/fcj-workshopz/4-eventparticipated/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/4-eventparticipated/index.html</guid>
+      <guid>http://localhost:1313/fcj-workshopz/4-eventparticipated/index.html</guid>
       <description>During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.&#xA;Event 1 Event Name: GenAI-powered App-DB Modernization workshop&#xA;Date &amp; Time: 09:00, August 13, 2025&#xA;Location: 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City&#xA;Role: Attendee</description>
     </item>
   </channel>

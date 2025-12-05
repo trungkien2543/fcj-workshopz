@@ -1,5 +1,5 @@
 # Base URL GitHub Pages
-baseURL = "https://trungkien2543.github.io/"
+baseURL = "https://trungkien2543.github.io/fcj-workshopz/"
 languageCode = "en-us"
 title = "My Hugo Site"
 theme = "hugo-theme-relearn"
@@ -7,6 +7,10 @@ theme = "hugo-theme-relearn"
 # Relative URLs giúp link CSS/JS/ảnh đúng cả khi deploy subpath
 # relativeURLs = true
 canonifyURLs = true
+
+[minify]
+  disableXML = true
+
 
 [params]
 

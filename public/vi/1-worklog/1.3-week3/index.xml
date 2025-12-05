@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tuần 3 :: My Hugo Site</title>
-    <link>http://localhost:1313/vi/1-worklog/1.3-week3/index.html</link>
+    <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.3-week3/index.html</link>
     <description>Mục tiêu tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS Thực hiện triển khai được ứng dụng trên EC2, tạo backup và dùng cloudwatch để theo dõi hệ thống Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Xem video bài giảng về dịch vụ Compute VM trên AWS - Dịch blogs cho tuần 3 22/9/2025 22/9/2025 https://aws.amazon.com/vi/blogs/startups/accelerating-the-next-wave-of-generative-ai-startups/ 3 - Thực hành: + lab04: Khởi tạo và tìm hiểu các tính năng cơ bản của Amazon EC2 23/9/2025 23/9/2025 https://000004.awsstudygroup.com/ 4 - Thực hành: + lab04 mục 8: Giới hạn sử dụng tài nguyên bằng dịch vụ IAM + lab02: Quản trị quyền truy cập với AWS Identity and Access Management (IAM) 24/9/2025 24/9/2025 https://000004.awsstudygroup.com/vi/8-costusagegovernance/ https://000002.awsstudygroup.com/vi/ 5 - Thực hành: + lab08: Sử dụng CloudWatch 25/9/2025 25/9/2025 https://000008.awsstudygroup.com/ 6 - Thực hành: + lab06: Triển khai ứng dụng FCJ Management với Auto Scaling Group + lab13: Triển khai aws backup cho hệ thống 26/9/2025 26/9/2025 https://000006.awsstudygroup.com/ https://000013.awsstudygroup.com/ Kết quả đạt được tuần 3: Hiểu được về dịch vụ Compute VM trên AWS</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/vi/1-worklog/1.3-week3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fcj-workshopz/vi/1-worklog/1.3-week3/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
