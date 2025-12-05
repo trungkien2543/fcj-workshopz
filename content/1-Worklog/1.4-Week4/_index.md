@@ -14,7 +14,7 @@ pre = "<b> 1.4. </b>"
 ### Tasks to be carried out this week:
 | Day | Task| Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Watch video lectures on S3 storage service <br> - Translate blogs for week 4 | 9/29/2025 | 9/29/2025 | <https://aws.amazon.com/blogs/migration-and-modernization/scaling-clouderas-development-environment-leveraging-amazon-eks-karpenter-bottlerocket-and-cilium-for-hybrid-cloud/>
+| 2 | - Watch video lectures on S3 storage service <br> - Translate blogs for week 4 | 9/29/2025 | 9/29/2025 | [original link](https://aws.amazon.com/blogs/migration-and-modernization/scaling-clouderas-development-environment-leveraging-amazon-eks-karpenter-bottlerocket-and-cilium-for-hybrid-cloud/)
 | 3 | - **Practice:** <br>+ lab57: STARTING WITH AMAZON S3 <br> + lab13: Deploy AWS Backup to the System <br> + lab 14: VM Import/Export| 9/30/2025 | 9/30/2025 | <https://000057.awsstudygroup.com> <https://000014.awsstudygroup.com> <https://000013.awsstudygroup.com/>
 | 4 | - Watch video lectures on security services on AWS| 10/1/2025 | 10/1/2025 |
 | 5 | - **Practice:** <br>+ lab2: AWS Identity and Access Management (IAM) Access Control <br> + lab44: IAM Role & Condition <br> + lab 48: Granting authorization for an application to access AWS services with an IAM role. | 10/2/2025 | 10/2/2025 | <https://000048.awsstudygroup.com> <https://000002.awsstudygroup.com> <https://000044.awsstudygroup.com>
