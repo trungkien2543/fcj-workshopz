@@ -1,11 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog 1</title>
-    <link>http://localhost:1313/vi/3-blogstranslated/3.1-blog1/index.html</link>
-    <description>Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau Bonnie McClure và Chalaire Miller | 30/4/2024 | Startup, Startup Spotlight&#xA;Ở cấp độ cơ bản của con người, chúng ta muốn lắng nghe. Chúng ta muốn kết nối, và muốn hiểu người khác. Thật không may, chúng ta thường đối mặt với nhiều thứ canh trạnh với sự chú ý của mình, cái mà khiến chúng ta trờ thành người lắng nghe kém</description>
-    <generator>Hugo</generator>
-    <language>vi</language>
-    <atom:link href="http://localhost:1313/vi/3-blogstranslated/3.1-blog1/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog 1</title><link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.html</link><description>Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau Bonnie McClure và Chalaire Miller | 30/4/2024 | Startup, Startup Spotlight
+Ở cấp độ cơ bản của con người, chúng ta muốn lắng nghe. Chúng ta muốn kết nối, và muốn hiểu người khác. Thật không may, chúng ta thường đối mặt với nhiều thứ canh trạnh với sự chú ý của mình, cái mà khiến chúng ta trờ thành người lắng nghe kém</description><generator>Hugo</generator><language>vi</language><atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.1-blog1/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Week 9</title>
-    <link>http://localhost:1313/1-worklog/1.9-week9/index.html</link>
-    <description>Week 9 Objectives: Integrate WebSocket into the Notification module&#xA;Practice labs related to Serverless Computing&#xA;Complete the interface and API calls for the Task UpComing feature&#xA;Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Integrate WebSocket into the project and run a demo 3/11/2025 3/11/2025 3 - Build the interface for the Task UpComing feature, including displaying the task list, filtering by date, and creating tasks 4/11/2025 4/11/2025 4 - Practice: lab 78: Serverless – Interaction between Lambda, S3, and DynamoDB 5/11/2025 5/11/2025 https://000078.awsstudygroup.com/vi/ 5 - Complete creating, editing, and deleting tasks in the Task UpComing feature - Design the interface for comments of each task 6/11/2025 6/11/2025 6 - Complete API integration for the Task UpComing feature 7/11/2025 7/11/2025 Week 9 Achievements: Complete the Task UpComing feature:</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/1-worklog/1.9-week9/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Week 9</title><link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.9-week9/index.html</link><description>Week 9 Objectives: Integrate WebSocket into the Notification module
+Practice labs related to Serverless Computing
+Complete the interface and API calls for the Task UpComing feature
+Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Integrate WebSocket into the project and run a demo 3/11/2025 3/11/2025 3 - Build the interface for the Task UpComing feature, including displaying the task list, filtering by date, and creating tasks 4/11/2025 4/11/2025 4 - Practice: lab 78: Serverless – Interaction between Lambda, S3, and DynamoDB 5/11/2025 5/11/2025 https://000078.awsstudygroup.com/vi/ 5 - Complete creating, editing, and deleting tasks in the Task UpComing feature - Design the interface for comments of each task 6/11/2025 6/11/2025 6 - Complete API integration for the Task UpComing feature 7/11/2025 7/11/2025 Week 9 Achievements: Complete the Task UpComing feature:</description><generator>Hugo</generator><language>en</language><atom:link href="https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.9-week9/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

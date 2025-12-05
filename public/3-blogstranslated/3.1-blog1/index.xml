@@ -1,11 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog 1</title>
-    <link>http://localhost:1313/3-blogstranslated/3.1-blog1/index.html</link>
-    <description>Technology that teaches empathy? How mpathic uses AI to help us listen to each other by Bonnie McClure and Chalaire Miller | on 30 APR 2024 | Startup, Startup Spotlight&#xA;On a basic human level, we want to be heard. We want to connect with others, and we want to be understood. Unfortunately, we’re often faced with many things competing for our attention, which makes us bad listeners.Danielle Schlosser, Chief Innovation Officer</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/3-blogstranslated/3.1-blog1/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog 1</title><link>https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.1-blog1/index.html</link><description>Technology that teaches empathy? How mpathic uses AI to help us listen to each other by Bonnie McClure and Chalaire Miller | on 30 APR 2024 | Startup, Startup Spotlight
+On a basic human level, we want to be heard. We want to connect with others, and we want to be understood. Unfortunately, we’re often faced with many things competing for our attention, which makes us bad listeners.Danielle Schlosser, Chief Innovation Officer</description><generator>Hugo</generator><language>en</language><atom:link href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.1-blog1/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

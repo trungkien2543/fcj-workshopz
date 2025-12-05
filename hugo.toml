@@ -1,8 +1,11 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://trungkien2543.github.io/fcj-workshopz/'
 languageCode = 'en-us'
 title = ''
 
 theme = 'hugo-theme-relearn'
+
+# Thêm dòng này để đảm bảo các link tương đối
+relativeURLs = true
 
 [params]
 

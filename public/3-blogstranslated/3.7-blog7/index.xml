@@ -1,11 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title> Blog 7</title>
-    <link>http://localhost:1313/3-blogstranslated/3.7-blog7/index.html</link>
-    <description>Introducing Strands Agents 1.0: Production-Ready Multi-Agent Orchestration Made Simple Ryan Coleman and Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments&#xA;Today we are excited to announce version 1.0 of the Strands Agents SDK, marking a significant milestone in our journey to make building AI agents simple, reliable, and production-ready. Strands Agents is an open source SDK that takes a model-driven approach to building and running AI agents in just a few lines of code. Strands scales from simple to complex agent use cases, and from local development to deployment in production.</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/3-blogstranslated/3.7-blog7/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog 7</title><link>https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html</link><description>Introducing Strands Agents 1.0: Production-Ready Multi-Agent Orchestration Made Simple Ryan Coleman and Belle Guttman | 15/07/2025 | Amazon Machine Learning, Announcements, Artificial Intelligence, Open Source| Permalink | Comments
+Today we are excited to announce version 1.0 of the Strands Agents SDK, marking a significant milestone in our journey to make building AI agents simple, reliable, and production-ready. Strands Agents is an open source SDK that takes a model-driven approach to building and running AI agents in just a few lines of code. Strands scales from simple to complex agent use cases, and from local development to deployment in production.</description><generator>Hugo</generator><language>en</language><atom:link href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.7-blog7/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

@@ -1,11 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title> Blog 8</title>
-    <link>http://localhost:1313/3-blogstranslated/3.8-blog8/index.html</link>
-    <description>Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, and Shyamal Mehtalia | 15/07/2025 | High Performance Computing, Life Sciences, Partner solutions&#xA;This post was contributed by Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), and Shyamal Mehtalia (Illumina)&#xA;The analysis of ever-increasing amounts of genomic and multiomic data demands efficient, scalable, and cost-effective computational solutions. Amazon Web Services (AWS) continues to support these workloads through FPGA accelerated compute offerings such as Amazon EC2 F2 instances.</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/3-blogstranslated/3.8-blog8/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog 8</title><link>https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.8-blog8/index.html</link><description>Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances Eric Allen, Mark Azadpour, Deepthi Shankar, Olivia Choudhury, and Shyamal Mehtalia | 15/07/2025 | High Performance Computing, Life Sciences, Partner solutions
+This post was contributed by Eric Allen (AWS), Olivia Choudhury (AWS), Mark Azadpour (AWS), Deepthi Shankar (Illumina), and Shyamal Mehtalia (Illumina)
+The analysis of ever-increasing amounts of genomic and multiomic data demands efficient, scalable, and cost-effective computational solutions. Amazon Web Services (AWS) continues to support these workloads through FPGA accelerated compute offerings such as Amazon EC2 F2 instances.</description><generator>Hugo</generator><language>en</language><atom:link href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.8-blog8/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

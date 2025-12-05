@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tuần 9</title>
-    <link>http://localhost:1313/vi/1-worklog/1.9-week9/index.html</link>
-    <description>Mục tiêu tuần 9: Tích hợp WebSocket vào module Notification&#xA;Thực hành bài lab có liên quan tới Serverless Computing&#xA;Hoàn thành xong giao diện và call api cho phần Task UpComing&#xA;Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Tích hợp WebSocket vào dự án và chạy demo 3/11/2025 3/11/2025 3 - Làm giao diện cho phần Task UpComing bao gồm hiển thị danh sách, lọc theo ngày, tạo task 4/11/2025 4/11/2025 4 - Thực hành: lab 78: Serverless - Tương tác giữa Lambda với S3 và DynamoDB 5/11/2025 5/11/2025 https://000078.awsstudygroup.com/vi/ 5 - Hoàn thành việc tạo, sửa, xóa task trong phần Task UpComing - Thiết kế giao diện cho phần comment của từng task 6/11/2025 6/11/2025 6 - Hoàn việc tích hợp api cho phần Task UpComing 7/11/2025 7/11/2025 Kết quả đạt được tuần 9: Hoàn thành phần Task UpComming:</description>
-    <generator>Hugo</generator>
-    <language>vi</language>
-    <atom:link href="http://localhost:1313/vi/1-worklog/1.9-week9/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tuần 9</title><link>https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.9-week9/index.html</link><description>Mục tiêu tuần 9: Tích hợp WebSocket vào module Notification
+Thực hành bài lab có liên quan tới Serverless Computing
+Hoàn thành xong giao diện và call api cho phần Task UpComing
+Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Tích hợp WebSocket vào dự án và chạy demo 3/11/2025 3/11/2025 3 - Làm giao diện cho phần Task UpComing bao gồm hiển thị danh sách, lọc theo ngày, tạo task 4/11/2025 4/11/2025 4 - Thực hành: lab 78: Serverless - Tương tác giữa Lambda với S3 và DynamoDB 5/11/2025 5/11/2025 https://000078.awsstudygroup.com/vi/ 5 - Hoàn thành việc tạo, sửa, xóa task trong phần Task UpComing - Thiết kế giao diện cho phần comment của từng task 6/11/2025 6/11/2025 6 - Hoàn việc tích hợp api cho phần Task UpComing 7/11/2025 7/11/2025 Kết quả đạt được tuần 9: Hoàn thành phần Task UpComming:</description><generator>Hugo</generator><language>vi</language><atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.9-week9/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
