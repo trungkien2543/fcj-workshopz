@@ -26,6 +26,9 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Disable Jekyll
+        run: touch public/.nojekyl
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
