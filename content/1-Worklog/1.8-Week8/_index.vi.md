@@ -10,7 +10,7 @@ pre = "<b> 1.8. </b>"
 
 - Thực hành một số bài hỗ trợ cho việc tối ưu hệ thống
 
-- Tìm các tối ưu ứng dụng cho dự án cuối khóa
+- Tìm cách tối ưu ứng dụng cho dự án cuối khóa
 
 ### Các công việc cần triển khai trong tuần này:
 

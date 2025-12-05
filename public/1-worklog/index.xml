@@ -8,20 +8,6 @@
     <language>en</language>
     <atom:link href="https://trungkien2543.github.io/fcj-workshopz/1-worklog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1.11 Week11</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.11-week11/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.11-week11/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
-      <title>1.12 Week12</title>
-      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.12-week12/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.12-week12/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
       <title>Week 1</title>
       <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.1-week1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -85,11 +71,25 @@
       <description>Week 9 Objectives: Integrate WebSocket into the Notification module&#xA;Practice labs related to Serverless Computing&#xA;Complete the interface and API calls for the Task UpComing feature&#xA;Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Integrate WebSocket into the project and run a demo 3/11/2025 3/11/2025 3 - Build the interface for the Task UpComing feature, including displaying the task list, filtering by date, and creating tasks 4/11/2025 4/11/2025 4 - Practice: lab 78: Serverless – Interaction between Lambda, S3, and DynamoDB 5/11/2025 5/11/2025 https://000078.awsstudygroup.com/vi/ 5 - Complete creating, editing, and deleting tasks in the Task UpComing feature - Design the interface for comments of each task 6/11/2025 6/11/2025 6 - Complete API integration for the Task UpComing feature 7/11/2025 7/11/2025 Week 9 Achievements: Complete the Task UpComing feature:</description>
     </item>
     <item>
-      <title>1.10 Week10</title>
+      <title>Week 10</title>
       <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.10-week10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.10-week10/index.html</guid>
       <description>Week 10 Objectives: Complete the FE for comments in tasks within the project.&#xA;Complete the notifications FE with real-time updates.&#xA;Build APIs for storing data on AWS S3.&#xA;Build APIs for the comment attachment feature in task comments.&#xA;Tasks to be carried out this week: Day Task Start Date End Date Reference Materials 2 - Set up WebSocket on the frontend and connect it to the server - Create ModalNotification and ItemNotification components for displaying notifications 10/11/2025 10/11/2025 3 - Build the UI for the comment feature in the task detail view - Integrate API into the comment UI 11/11/2025 11/11/2025 4 - Build API for uploading files to AWS S3 12/11/2025 12/11/2025 5 - Build API to allow users to attach files stored on S3 to comments 13/11/2025 13/11/2025 6 - Complete the notifications UI 14/11/2025 14/11/2025 Week 10 Achievements: Completed the comment UI in the task detail UI:</description>
+    </item>
+    <item>
+      <title>Week 11</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.11-week11/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.11-week11/index.html</guid>
+      <description>Week 11 Objectives: Write the internship report and revise the content of worklogs, blogs, and events in preparation for submission&#xA;Complete the UI for the task comment attach&#xA;Fix WebSocket logic issues that prevented user notifications from displaying correctly and integrate WebSocket calls via API Gateway&#xA;Tasks to be carried out this week: Day Task Start Date End Date Reference Material 2 - Write internship report in preparation for submission - Revise the content of worklogs, translated blogs, and events 17/11/2025 17/11/2025 3 - Fix WebSocket logic issue when using pagination in the notifications page 18/11/2025 18/11/2025 4 - Develop UI to integrate attached image files for comments 19/11/2025 19/11/2025 5 - Complete comment attach UI and integrate API 20/11/2025 21/11/2025 6 - Implement WebSocket calls via API Gateway instead of direct calls and fix double-header issues 21/11/2025 21/11/2025 Week 11 Achievements: Completed the internship report for submission</description>
+    </item>
+    <item>
+      <title>Week 12</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.12-week12/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.12-week12/index.html</guid>
+      <description>Week 12 Objectives: Continue developing and fixing UI for the final project&#xA;Add functionality for users to customize receiving notifications via email&#xA;Add functionality to respond to project invitations directly on the notification page&#xA;Tasks to be carried out this week: Day Task Start Date End Date Reference Material 2 - Test the UI and APIs completed in previous weeks to see if any new issues arise 24/11/2025 24/11/2025 3 - Write 2 APIs to accept and decline project invitations - Add functionality to respond to project invitations directly on the notification page 25/11/2025 25/11/2025 4 - Write API allowing users to customize whether they receive notifications via email 26/11/2025 26/11/2025 5 - Develop UI for the settings page to allow users to customize which notifications they will receive 27/11/2025 27/11/2025 6 - Add a CRITICAL priority level for tasks - Add UI to select priority levels and labels in task details 28/11/2025 28/11/2025 Week 12 Achievements: Completed testing of previously developed UI and APIs</description>
     </item>
   </channel>
 </rss>

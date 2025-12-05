@@ -1,6 +1,5 @@
 +++
 title = " Week 3"
-type = ""
 weight = 3
 pre = "<b> 1.3. </b>"
 +++

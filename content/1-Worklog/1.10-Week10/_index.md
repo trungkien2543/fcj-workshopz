@@ -1,9 +1,8 @@
 +++
-title = "1.10 Week10"
-type = "chapter"
+title = "Week 10"
 weight = 10
+pre = "<b> 1.10. </b>"
 +++
-
 ### Week 10 Objectives:
 
 - Complete the FE for comments in tasks within the project.

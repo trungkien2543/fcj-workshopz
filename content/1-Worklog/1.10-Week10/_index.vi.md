@@ -1,7 +1,7 @@
 +++
-title = "1.10 Week10"
-type = "chapter"
+title = "Tuần 10"
 weight = 10
+pre = "<b> 1.10. </b>"
 +++
 
 ### Mục tiêu tuần 10:

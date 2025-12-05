@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1.11 Week11 :: My Hugo Site</title>
+    <title>Week 11 :: My Hugo Site</title>
     <link>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.11-week11/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Week 11 Objectives: Write the internship report and revise the content of worklogs, blogs, and events in preparation for submission&#xA;Complete the UI for the task comment attach&#xA;Fix WebSocket logic issues that prevented user notifications from displaying correctly and integrate WebSocket calls via API Gateway&#xA;Tasks to be carried out this week: Day Task Start Date End Date Reference Material 2 - Write internship report in preparation for submission - Revise the content of worklogs, translated blogs, and events 17/11/2025 17/11/2025 3 - Fix WebSocket logic issue when using pagination in the notifications page 18/11/2025 18/11/2025 4 - Develop UI to integrate attached image files for comments 19/11/2025 19/11/2025 5 - Complete comment attach UI and integrate API 20/11/2025 21/11/2025 6 - Implement WebSocket calls via API Gateway instead of direct calls and fix double-header issues 21/11/2025 21/11/2025 Week 11 Achievements: Completed the internship report for submission</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.11-week11/index.xml" rel="self" type="application/rss+xml" />

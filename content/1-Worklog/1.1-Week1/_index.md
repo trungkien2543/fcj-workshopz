@@ -1,6 +1,5 @@
 +++
 title = "Week 1"
-type = "chapter"
 weight = 1
 pre = " <b> 1.1. </b> "
 +++
