@@ -25,12 +25,4 @@ The content of the tasks carried out in each week is as follows:
 
 **Week 9:** [Complete the interface and functionality for Task UpComing. Practice with Serverless](1.9-Week9/)
 
-**Week 10:** [Completed the comment interface in tasks, implemented real-time notifications, and built APIs for comment attachments](1.10-Week10/)
-
-**Week 11:** [Built UI and integrated APIs for the comment attachment interface. Fixed issues related to WebSocket](1.11-Week11/)
-
-**Week 12:** [Added features for customizing email notifications and responding to project invitations on the notification page](1.12-Week12/)
-
-**Week 13:** [Finalized the project and prepared the project report](1.13-Week13/)
-
-
+**Week 10:** [Build the comment, notifications UI/UX, and the APIs related to file management](1.10-Week10/)

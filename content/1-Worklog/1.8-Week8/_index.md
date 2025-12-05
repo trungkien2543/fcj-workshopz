@@ -17,7 +17,7 @@ pre = "<b> 1.8. </b>"
 
 | Day |Task| Start Date | Completion Date | Reference Material|
 | --- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------- |
-| 2   | - Translate blog 8: Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances | 27/10/2025   | 27/10/2025      | [original link](https://aws.amazon.com/vi/blogs/hpc/enabling-rapid-genomic-and-multiomic-data-analysis-with-illumina-dragen-v4-4-on-amazon-ec2-f2-instances/) |  
+| 2   | - Translate blog 8: Enabling Rapid Genomic and Multiomic Data Analysis with Illumina DRAGEN™ v4.4 on Amazon EC2 F2 Instances | 27/10/2025   | 27/10/2025      | [Blog 8](../../3-BlogsTranslated/3.7-Blog7/_index.vi.md) |  
 | 3   | - Revise the structure of worklogs <br> - Review theoretical content of several AWS services <br> - Learn about Design Patterns to apply in the final project such as: Proxy Pattern, Prototype Pattern, Builder Pattern                                                      | 28/10/2025   | 28/10/2025      | <https://viblo.asia/p/proxy-design-pattern-tro-thu-dac-luc-cua-developers-RQqKLB2bl7z> <https://viblo.asia/p/prototype-design-pattern-tro-thu-dac-luc-cua-developers-GrLZDBQO5k0>                  |
 | 4   | - **Practice:** lab 22: Optimizing EC2 Costs with Lambda | 29/10/2025   | 29/10/2025      | <https://000022.awsstudygroup.com> |
 | 5   | - **Practice:** lab 29: Getting started with Grafana basic  | 30/10/2025   | 30/10/2025      | <https://000029.awsstudygroup.com> |

@@ -17,7 +17,7 @@ pre = " <b> 1.2. </b> "
 | 3   | - **Thực hành:** <br>+ lab03: Amazon VPC and AWS Site-to-Site VPN Workshop | 16/9/2025 | 16/9/2025 | <http://000003.awsstudygroup.com/> |
 | 4   | - Tìm hiểu cách làm bài tập thiết lập DNS với route 53 <br> **Thực hành:** + lab10: Set up Hybrid DNS with Route 53 Resolver   | 17/9/2025 | 17/9/2025| <https://000010.awsstudygroup.com/> |
 | 5   | - Tham gia cloud day vietnam tại thành phố Hồ Chí Minh | 18/09/2025 | 18/9/2025 |  |
-| 6   | - Dịch blogs <br> - Viết worklog và báo cáo event 1 | 19/09/2025 | 19/9/2025 | [link bài viết gốc](https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/) |
+| 6   | - Dịch blogs <br> - Viết worklog và báo cáo event 1 | 19/09/2025 | 19/9/2025 | <https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/> |
 | 7   | - **Thực hành:** <br>+ lab20: Thiết lập AWS Transit Gateway <br>+ lab19: Thiết lập VPC Peering | 20/09/2025 | 20/9/2025 | <https://000020.awsstudygroup.com/vi/> <https://000019.awsstudygroup.com/vi/> |
 
 

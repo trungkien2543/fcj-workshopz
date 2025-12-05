@@ -14,7 +14,7 @@ pre = " <b> 1.1. </b> "
 | Day |Task| Start Date | Completion Date | Reference Material|
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
 |2| - Get to know FCJ members <br> - Read and note the rules and regulations at the internship unit <br> - Watch the video lecture on module 1 <br> - Learn about the terms: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations) | 8/9/2025 | 8/9/2025 | <https://policies.fcjuni.com/>
-|3| - **Practice:** <br>+ lab01: Create first account, use IAM, create MFA <br> + lab07: Create budgets | 9/9/2025 | 9/9/2025 | <https://000001.awsstudygroup.com/vi/> <br> <https://000007.awsstudygroup.com/vi/> |
+|3| - **Practice:** <br>+ lab01: Create first account, use IAM, create MFA <br> + lab07: Create budgets | 9/9/2025 | 9/9/2025 | <https://000001.awsstudygroup.com/vi/> <https://000007.awsstudygroup.com/vi/> |
 |4 | - Learn how to do personal workshops using hugo.io <br> - Translate AWS blogs |  10/9/2025 | 10/9/2025|  <https://mcshelby.github.io/hugo-theme-relearn/index.html> <https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/> <https://gohugo.io/getting-started/quick-start/>|
 |5| - Write logs and configuration for the workshop | 11/9/2025 | 11/9/2025 |  |
 
