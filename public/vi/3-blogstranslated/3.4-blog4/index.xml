@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Blog 4 :: My Hugo Site</title>
-    <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html</link>
+    <link>http://localhost:1313/vi/3-blogstranslated/3.4-blog4/index.html</link>
     <description>Mở rộng môi trường phát triển của Cloudera: Tận dụng Amazon EKS, Karpenter, Bottlerocket và Cilium cho mô hình Hybrid Cloud Harpreet Virk and Padma Iyer | 26/09/2025 | in Advanced (300), Amazon Elastic Kubernetes Service, Best Practices, Containers, Graviton, Migration, Migration Acceleration Program (MAP) | Permalink |&#xA;Bài viết này được viết cùng với Shreelola Hegde,Sriharsha Devineni và Lee Watterworth đến từ Cloudera&#xA;Cloudera là một công ty hàng đầu thế giới về quản trị dữ liệu doanh nghiệp, phân tích và AI. Nền tảng Cloudera cho phép các tổ chức có thể quản lý, xử lý và phân tích các tập dữ liệu lớn, giúp các doanh nghiệp trong nhiều ngành công nghiệp như tài chính, chăm sóc sức khỏe, sản xuất, và viễn thông đẩy nhanh việc áp dụng AI/ML và mở khóa thông tin chi tiết theo thời gian thực.</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/vi/3-blogstranslated/3.4-blog4/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

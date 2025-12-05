@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Worklog :: My Hugo Site</title>
-    <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/index.html</link>
+    <link>http://localhost:1313/vi/1-worklog/index.html</link>
     <description>Nội dung các công việc thực hiện trong các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS&#xA;Tuần 2: Xây dựng VPC và Hyrid DNS với Route53&#xA;Tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS&#xA;Tuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3&#xA;Tuần 5: Tìm hiểu về Dịch vụ bảo mật trên AWS&#xA;Tuần 6: Học về dịch vụ cơ sở dữ liệu trên cloud của AWS</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/fcj-workshopz/vi/1-worklog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/vi/1-worklog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.11 Week11</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.11-week11/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.11-week11/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.11-week11/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.11-week11/index.html</guid>
       <description>This is a new chapter.</description>
     </item>
     <item>
       <title>1.12 Week12</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.12-week12/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.12-week12/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.12-week12/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.12-week12/index.html</guid>
       <description>This is a new chapter.</description>
     </item>
     <item>
       <title>Tuần 1</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.1-week1/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.1-week1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.1-week1/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.1-week1/index.html</guid>
       <description>Mục tiêu tuần 1: Kết nối, làm quen với các thành viên trong First Cloud Journey. Hiểu dịch vụ AWS cơ bản, cách dùng console management. Thảo luận về chủ đề và công nghệ cho project đầu tiên. Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 | - Làm quen với các thành viên FCJ - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập - Xem video bài giảng về module 1 - Tìm hiểu về các thuật ngữ: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations)| 8/9/2025 | 8/9/2025 | https://policies.fcjuni.com/ 3 | - Thực hành: + lab01: Tạo account đầu tiên, sử dụng IAM, tạo MFA + lab07: Tạo các budget| 9/9/2025 | 9/9/2025 | https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 | - Tìm hiểu cách làm workshop cá nhân bằng hugo.io - Dịch bài blogs của AWS | 10/9/2025 | 10/9/2025| https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 | - Viết worklog và cấu hình cho bài workshop | 11/09/2025 | 11/9/2025 |&#xA;6 | - Xem các video bài giảng và nghiên cứu thêm các thuật ngữ xuất hiện trong module 2 | 12/09/2025 | 12/9/2025 |</description>
     </item>
     <item>
       <title>Tuần 2</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.2-week2/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.2-week2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.2-week2/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.2-week2/index.html</guid>
       <description>Mục tiêu tuần 2: Tìm hiểu kiến trúc VPC cơ bản và các thành phần quan trọng có liên quan Thực hiện các bài lab trong module 2 Đọc tìm hiểu cuốn Aws advanced network Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Tìm hiểu thêm các thuật ngữ có liên quan tới bài thực hành VPC 15/9/2025 15/9/2025 https://viblo.asia/p/tim-hieu-ve-aws-phan-1-vpc-virtual-private-cloud-924lJGv05PM 3 - Thực hành: + lab03: Amazon VPC and AWS Site-to-Site VPN Workshop 16/9/2025 16/9/2025 http://000003.awsstudygroup.com/ 4 - Tìm hiểu cách làm bài tập thiết lập DNS với route 53 Thực hành: + lab10: Set up Hybrid DNS with Route 53 Resolver 17/9/2025 17/9/2025 https://000010.awsstudygroup.com/ 5 - Tham gia cloud day vietnam tại thành phố Hồ Chí Minh 18/09/2025 18/9/2025 6 - Dịch blogs - Viết worklog và báo cáo event 1 19/09/2025 19/9/2025 https://aws.amazon.com/vi/blogs/smb/tech-savvy-savings-innovative-ways-to-cut-costs-in-your-small-business/ 7 - Thực hành: + lab20: Thiết lập AWS Transit Gateway + lab19: Thiết lập VPC Peering 20/09/2025 20/9/2025 https://000020.awsstudygroup.com/vi/ https://000019.awsstudygroup.com/vi/ Kết quả đạt được tuần 2: Hiểu được về dịch vụ VPC và cách để tạo ra 1 mạng riêng ảo trên AWS</description>
     </item>
     <item>
       <title>Tuần 3</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.3-week3/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.3-week3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.3-week3/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.3-week3/index.html</guid>
       <description>Mục tiêu tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS Thực hiện triển khai được ứng dụng trên EC2, tạo backup và dùng cloudwatch để theo dõi hệ thống Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Xem video bài giảng về dịch vụ Compute VM trên AWS - Dịch blogs cho tuần 3 22/9/2025 22/9/2025 https://aws.amazon.com/vi/blogs/startups/accelerating-the-next-wave-of-generative-ai-startups/ 3 - Thực hành: + lab04: Khởi tạo và tìm hiểu các tính năng cơ bản của Amazon EC2 23/9/2025 23/9/2025 https://000004.awsstudygroup.com/ 4 - Thực hành: + lab04 mục 8: Giới hạn sử dụng tài nguyên bằng dịch vụ IAM + lab02: Quản trị quyền truy cập với AWS Identity and Access Management (IAM) 24/9/2025 24/9/2025 https://000004.awsstudygroup.com/vi/8-costusagegovernance/ https://000002.awsstudygroup.com/vi/ 5 - Thực hành: + lab08: Sử dụng CloudWatch 25/9/2025 25/9/2025 https://000008.awsstudygroup.com/ 6 - Thực hành: + lab06: Triển khai ứng dụng FCJ Management với Auto Scaling Group + lab13: Triển khai aws backup cho hệ thống 26/9/2025 26/9/2025 https://000006.awsstudygroup.com/ https://000013.awsstudygroup.com/ Kết quả đạt được tuần 3: Hiểu được về dịch vụ Compute VM trên AWS</description>
     </item>
     <item>
       <title>Tuần 4</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.4-week4/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.4-week4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.4-week4/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.4-week4/index.html</guid>
       <description>Mục tiêu tuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3 Tìm hiểu về Dịch vụ bảo mật trên AWS Thực hiện triển khai được ứng dụng static web thông qua S3 và cloudfront Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Xem video bài giảng về dịch vụ lưu trữ S3 - Dịch blogs cho tuần 4 29/9/2025 29/9/2025 https://aws.amazon.com/blogs/migration-and-modernization/scaling-clouderas-development-environment-leveraging-amazon-eks-karpenter-bottlerocket-and-cilium-for-hybrid-cloud/ 3 - Thực hành: + lab57: Khởi Đầu Với Amazon S3 + lab13: Triển khai AWS Backup cho hệ thống + lab 14: VM Import/Export 30/9/2025 30/9/2025 https://000057.awsstudygroup.com https://000014.awsstudygroup.com https://000013.awsstudygroup.com/ 4 - Xem video bài giảng về dịch vụ bảo mật trên AWS 1/10/2025 1/10/2025 5 - Thực hành: + lab2: Quản trị quyền truy cập với AWS Identity and Access Management (IAM) + lab44: IAM Role &amp; Condition + lab 48: Cấp quyền cho ứng dụng truy cập dịch vụ AWS với IAM Role 2/10/2025 2/10/2025 https://000048.awsstudygroup.com/vi/ https://000002.awsstudygroup.com/vi/ https://000044.awsstudygroup.com/vi/ 6 - Thực hành: + lab30: Giới hạn quyền truy cập với IAM Permission Boundary 3/10/2025 3/10/2025 https://000030.awsstudygroup.com/vi/ Kết quả đạt được tuần 4: Hiểu được về dịch vụ lưu trữ trên S3</description>
     </item>
     <item>
       <title>Tuần 5</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.5-week5/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.5-week5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.5-week5/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.5-week5/index.html</guid>
       <description>Mục tiêu tuần 5: Nghiên cứu thêm về Dịch vụ bảo mật trên AWS Thực xong các lab còn lại của module 5 Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch blogs cho tuần 5 06/10/2025 06/10/2025 https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/ 3 - Thực hành: + lab33: Mã hóa ở trạng thái lưu trữ với AWS KMS 07/10/2025 07/10/2025 https://000033.awsstudygroup.com/vi/ 4 - Lập trình api cho dự án cuối khóa module project, section 08/10/2025 08/10/2025 5 - Thực hành: + lab12: Sử dụng AWS IAM Identity Center để quản lý định danh mạnh mẽ 09/10/2025 09/10/2025 https://000012.awsstudygroup.com/vi/ 6 - Lập trình api cho dự án cuối khóa module task 10/10/2025 10/10/2025 Kết quả đạt được tuần 5: Thực hành mã hóa ở trạng thái lưu trữ với AWS KMS:</description>
     </item>
     <item>
       <title>Tuần 6</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.6-week6/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.6-week6/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.6-week6/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.6-week6/index.html</guid>
       <description>Mục tiêu tuần 6: Học về dịch vụ cơ sở dữ liệu trên cloud của AWS Thực hành các bài lab liên quan tới việc sử dụng RDS Ôn tập lại nội dung và bài thực hành của module 2 về VPC Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Ôn tập xem lại module 2: Tìm hiểu kiến trúc VPC cơ bản và các thành phần quan trọng có liên quan 12/10/2025 12/10/2025 3 - Học module : Dịch vụ lưu trữ cơ sở dữ liệu trên AWS 13/10/2025 13/10/2025 Chuỗi video về module trên kênh AWS Study Group 4 - Thực hành: lab 05: Amazon Relational Database Service (Amazon RDS) 14/10/2025 14/10/2025 https://000005.awsstudygroup.com/vi/ 5 - Học sử dụng bộ nhớ cache, Redis cho đồ án cuối khóa 15/10/2025 15/10/2025 https://www.youtube.com/watch?v=HSknuSIoK6A 6 - Thực hành: lab 03: Bắt đầu với Amazon Virtual Private Cloud (VPC) và AWS Site-to-Site VPN 16/10/2025 16/10/2025 https://000003.awsstudygroup.com/vi/ Kết quả đạt được tuần 6: Học về các loại dịch vụ cơ sở dữ liệu: RDS, Elastic Cache, Red Shift</description>
     </item>
     <item>
       <title>Tuần 7</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.7-week7/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.7-week7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.7-week7/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.7-week7/index.html</guid>
       <description>Mục tiêu tuần 7: Thực hành các bài lab về việc triển khai ứng dụng lên AWS&#xA;Dịch các bài blogs&#xA;Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Chỉnh sửa API tự động thông báo cho dự án cuối khóa 20/10/2025 20/10/2025 3 - Thực hành: lab15: Triển khai ứng dụng trên Docker với AWS 21/10/2025 21/10/2025 https://000015.awsstudygroup.com/vi/ 4 - Dịch bài blogs: Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên 22/10/2025 22/10/2025 Blog 6 5 - Dịch bài blogs: Ra Mắt Strands Agents 1.0: Đơn Giản Hóa Việc Điều Phối Đa tác tử Đã Sẵn Sàng Triển Khai 23/10/2025 23/10/2025 Blog 7 6 - Thực hành: lab58: Làm việc với Amazon System Manager - Session Manager 24/10/2025 24/10/2025 https://000058.awsstudygroup.com/vi/ Kết quả đạt được tuần 7: Thực hành bài lab tạo image và triển khai ứng dụng với docker</description>
     </item>
     <item>
       <title>Tuần 8</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.8-week8/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.8-week8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.8-week8/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.8-week8/index.html</guid>
       <description>Mục tiêu tuần 8: Dịch bài blogs còn lại&#xA;Thực hành một số bài hỗ trợ cho việc tối ưu hệ thống&#xA;Tìm các tối ưu ứng dụng cho dự án cuối khóa&#xA;Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch bài blogs 8: Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2 27/10/2025 27/10/2025 Blog 8 3 - Chỉnh sửa lại cấu trúc cho các worklogs - Xem lại nội dung lý thuyết của một số dịch vụ trên AWS - Tìm hiểu về Desgin Pattern để ứng dụng cho dự án cuối khóa như: Proxy Pattern, Prototype Pattern, Builder Pattern 28/10/2025 28/10/2025 https://viblo.asia/p/proxy-design-pattern-tro-thu-dac-luc-cua-developers-RQqKLB2bl7z https://viblo.asia/p/prototype-design-pattern-tro-thu-dac-luc-cua-developers-GrLZDBQO5k0 4 - Thực hành: lab 22: Tối ưu chi phí EC2 với Lambda 29/10/2025 29/10/2025 https://000022.awsstudygroup.com/vi/ 5 - Thực hành: lab 29: Bắt đầu với Grafana trên AWS 30/10/2025 30/10/2025 https://000029.awsstudygroup.com/vi/ 6 - Tìm hiểu về WebSocket 31/10/2025 31/10/2025 https://www.geeksforgeeks.org/web-tech/what-is-web-socket-and-how-it-is-different-from-the-http/ Kết quả đạt được tuần 8: Tìm hiểu về 1 số design pattern hữu ích để tích hợp vào đồ án cuối khóa:</description>
     </item>
     <item>
       <title>Tuần 9</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.9-week9/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.9-week9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.9-week9/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.9-week9/index.html</guid>
       <description>Mục tiêu tuần 9: Tích hợp WebSocket vào module Notification&#xA;Thực hành bài lab có liên quan tới Serverless Computing&#xA;Hoàn thành xong giao diện và call api cho phần Task UpComing&#xA;Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Tích hợp WebSocket vào dự án và chạy demo 3/11/2025 3/11/2025 3 - Làm giao diện cho phần Task UpComing bao gồm hiển thị danh sách, lọc theo ngày, tạo task 4/11/2025 4/11/2025 4 - Thực hành: lab 78: Serverless - Tương tác giữa Lambda với S3 và DynamoDB 5/11/2025 5/11/2025 https://000078.awsstudygroup.com/vi/ 5 - Hoàn thành việc tạo, sửa, xóa task trong phần Task UpComing - Thiết kế giao diện cho phần comment của từng task 6/11/2025 6/11/2025 6 - Hoàn việc tích hợp api cho phần Task UpComing 7/11/2025 7/11/2025 Kết quả đạt được tuần 9: Hoàn thành phần Task UpComming:</description>
     </item>
     <item>
       <title>1.10 Week10</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.10-week10/index.html</link>
+      <link>http://localhost:1313/vi/1-worklog/1.10-week10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.10-week10/index.html</guid>
+      <guid>http://localhost:1313/vi/1-worklog/1.10-week10/index.html</guid>
       <description>Mục tiêu tuần 10: Hoàn thành xong phần giao diện cho comment trong các task trong dự án&#xA;Hoàn thành xong giao diện notifications có thể thông báo realtime&#xA;Xây dựng các API cho việc lưu trữ dữ liệu lên S3 của AWS&#xA;Xây dựng API cho chức năng comment attach của phần comment trong task&#xA;Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Cài đặt WebSocket cho frontend và tạo kết nối với phía server - Tạo ModalNotification, ItemNotification cho giao diện hiển thị thông báo 10/11/2025 10/11/2025 3 - Xây dựng giao diện cho chức năng comment trong phần xem chi tiết task - Tích hợp API vào giao diện comment 11/11/2025 11/11/2025 4 - Xây dựng API cho chức năng upload file lên S3 của AWS 12/11/2025 12/11/2025 5 - Xây dựng API cho phép người dùng thực hiện đính kèm các file được lưu trên S3 vào comment 13/11/2025 13/11/2025 6 - Hoàn tất giao diện notification 14/11/2025 14/11/2025 Kết quả đạt được tuần 10: Hoàn thành được giao diện comment trong phần chi tiết task:</description>
     </item>
   </channel>

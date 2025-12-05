@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tuần 5 :: My Hugo Site</title>
-    <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.5-week5/index.html</link>
+    <link>http://localhost:1313/vi/1-worklog/1.5-week5/index.html</link>
     <description>Mục tiêu tuần 5: Nghiên cứu thêm về Dịch vụ bảo mật trên AWS Thực xong các lab còn lại của module 5 Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Dịch blogs cho tuần 5 06/10/2025 06/10/2025 https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/ 3 - Thực hành: + lab33: Mã hóa ở trạng thái lưu trữ với AWS KMS 07/10/2025 07/10/2025 https://000033.awsstudygroup.com/vi/ 4 - Lập trình api cho dự án cuối khóa module project, section 08/10/2025 08/10/2025 5 - Thực hành: + lab12: Sử dụng AWS IAM Identity Center để quản lý định danh mạnh mẽ 09/10/2025 09/10/2025 https://000012.awsstudygroup.com/vi/ 6 - Lập trình api cho dự án cuối khóa module task 10/10/2025 10/10/2025 Kết quả đạt được tuần 5: Thực hành mã hóa ở trạng thái lưu trữ với AWS KMS:</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/fcj-workshopz/vi/1-worklog/1.5-week5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/vi/1-worklog/1.5-week5/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

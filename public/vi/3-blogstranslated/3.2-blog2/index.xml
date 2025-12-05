@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog 2 :: My Hugo Site</title>
-    <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.html</link>
+    <link>http://localhost:1313/vi/3-blogstranslated/3.2-blog2/index.html</link>
     <description>Tiết kiệm nhờ công nghệ: Những cách sáng tạo để cắt giảm chi phí cho doanh nghiệp nhỏ của bạn Henrique Trevisan, Jonathan Woods, and Vince Anderson | 23/4/2024 | in Best Practices, Permalink&#xA;Việc vận hành một doanh nghiệp nhỏ có nghĩa là tận dụng tối đa từng đô la trong khi vẫn duy trì dịch vụ chất lượng cao. Khi doanh nghiệp và nền tảng đám mây của bạn sử dụng mở rộng, bạn phải tìm cách để quản lý nguồn lực công nghệ một cách hiệu quả để bảo vệ lợi nhuận của bạn. Trong môi trường kinh tế thách thức ngày nay, tối ưu chi phí đã trở thành là ưu tiên hàng đầu của chủ doanh nghiệp những người muốn cắt giảm chi phí mà không cần hy sinh hiệu năng, bảo mật và trải nghiệm người dùng.</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.2-blog2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/vi/3-blogstranslated/3.2-blog2/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

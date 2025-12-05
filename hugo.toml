@@ -1,5 +1,5 @@
 # Base URL GitHub Pages
-baseURL = "https://trungkien2543.github.io/fcj-workshopz/"
+baseURL = "https://trungkien2543.github.io/"
 languageCode = "en-us"
 title = "My Hugo Site"
 theme = "hugo-theme-relearn"
