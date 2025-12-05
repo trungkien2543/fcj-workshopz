@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tuần 1 :: My Hugo Site</title>
-    <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/1.1-week1/index.html</link>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.1-week1/index.html</link>
     <description>Mục tiêu tuần 1: Kết nối, làm quen với các thành viên trong First Cloud Journey. Hiểu dịch vụ AWS cơ bản, cách dùng console management. Thảo luận về chủ đề và công nghệ cho project đầu tiên. Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 | - Làm quen với các thành viên FCJ - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập - Xem video bài giảng về module 1 - Tìm hiểu về các thuật ngữ: AWS Regions, AWS Availability Zones, AWS Points of Presence (Edge Locations)| 8/9/2025 | 8/9/2025 | https://policies.fcjuni.com/ 3 | - Thực hành: + lab01: Tạo account đầu tiên, sử dụng IAM, tạo MFA + lab07: Tạo các budget| 9/9/2025 | 9/9/2025 | https://000001.awsstudygroup.com/vi/ https://000007.awsstudygroup.com/vi/ 4 | - Tìm hiểu cách làm workshop cá nhân bằng hugo.io - Dịch bài blogs của AWS | 10/9/2025 | 10/9/2025| https://mcshelby.github.io/hugo-theme-relearn/index.html https://aws.amazon.com/blogs/startups/technology-that-teaches-empathy-how-mpathic-uses-ai-to-help-us-listen-to-each-other/ https://gohugo.io/getting-started/quick-start/ 5 | - Viết worklog và cấu hình cho bài workshop | 11/09/2025 | 11/9/2025 |&#xA;6 | - Xem các video bài giảng và nghiên cứu thêm các thuật ngữ xuất hiện trong module 2 | 12/09/2025 | 12/9/2025 |</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/fcj-workshopz/vi/1-worklog/1.1-week1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.1-week1/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

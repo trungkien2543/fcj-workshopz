@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Báo cáo thực tập :: My Hugo Site</title>
-    <link>http://localhost:1313/fcj-workshopz/vi/index.html</link>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/index.html</link>
     <description>Thông tin sinh viên: Họ và tên: Lê Trung Kiên&#xA;Số điện thoại: 0931261009&#xA;Email: trungkien1862@gmail.com&#xA;Trường: Đại học Sài Gòn&#xA;Ngành: Công nghệ thông tin&#xA;Lớp: DCT1213&#xA;Công ty thực tập: Công ty TNHH Amazon Web Services Vietnam&#xA;Vị trí thực tập: FCJ Cloud Intern&#xA;Thời gian thực tập: Từ ngày 08/09/2025 đến ngày 11/11/2025</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/fcj-workshopz/vi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Worklog</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/1-worklog/index.html</link>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/1-worklog/index.html</guid>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/index.html</guid>
       <description>Nội dung các công việc thực hiện trong các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS&#xA;Tuần 2: Xây dựng VPC và Hyrid DNS với Route53&#xA;Tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS&#xA;Tuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3&#xA;Tuần 5: Tìm hiểu về Dịch vụ bảo mật trên AWS&#xA;Tuần 6: Học về dịch vụ cơ sở dữ liệu trên cloud của AWS</description>
     </item>
     <item>
       <title>Các bài blog đã dịch</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/index.html</link>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/index.html</guid>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.html</guid>
       <description>Blog 1 - Công nghệ dạy về sự đồng cảm? Cách mà mpathic sử dụng AI để giúp chúng ta lắng nghe nhau Điều gì sẽ xảy ra nếu trí tuệ nhân tạo (AI) có thể tăng cường khả năng lắng nghe và kết nối thực sự với người khác của chúng ta? Điều gì sẽ xảy ra nếu công nghệ có thể khai thác những trải nghiệm sống chung của chúng ta và giúp chúng ta trở nên nhân văn hơn với nhau? Đây là những câu hỏi mà Tiến sĩ Grin Lord, nhà tâm lý học lâm sàng và nhà sáng lập công ty phân tích hội thoại mpathic, đã dành 15 năm theo đuổi.</description>
     </item>
     <item>
       <title>Các sự kiện đã tham gia</title>
-      <link>http://localhost:1313/fcj-workshopz/vi/4-eventparticipated/index.html</link>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fcj-workshopz/vi/4-eventparticipated/index.html</guid>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html</guid>
       <description>Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.&#xA;Sự kiện 1 Tên sự kiện: Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders&#xA;Thời gian: 09:00 ngày 18/09/2025&#xA;Địa điểm: Tầng 36, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh</description>
     </item>
   </channel>

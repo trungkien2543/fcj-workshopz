@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/fcj-workshopz/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=fcj-workshopz/livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.150.0">
@@ -12,7 +12,7 @@ Many AWS services have features to help you build and manage a multi-Region arch
     <meta name="twitter:title" content=" Blog 5 :: My Hugo Site">
     <meta name="twitter:description" content="Creating a Multi-Region Application with AWS Services – Part 1, Compute, Networking, and Security Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink
 Many AWS services have features to help you build and manage a multi-Region architecture, but identifying those capabilities across 200&#43; services can be overwhelming.">
-    <meta property="og:url" content="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html">
+    <meta property="og:url" content="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html">
     <meta property="og:site_name" content="My Hugo Site">
     <meta property="og:title" content=" Blog 5 :: My Hugo Site">
     <meta property="og:description" content="Creating a Multi-Region Application with AWS Services – Part 1, Compute, Networking, and Security Joe Chapman và Sebastian Leks | 08/12/2021 | Amazon CloudFront, Amazon EC2, Amazon Elastic Block Store (Amazon EBS), Amazon Route 53, Amazon Simple Storage Service (S3), Amazon VPC, Architecture, AWS CloudTrail, AWS Global Accelerator, AWS Identity and Access Management (IAM), AWS Secrets Manager, AWS Security Hub, AWS Transit Gateway, AWS Well-Architected | Permalink
@@ -24,39 +24,39 @@ Many AWS services have features to help you build and manage a multi-Region arch
 Many AWS services have features to help you build and manage a multi-Region architecture, but identifying those capabilities across 200&#43; services can be overwhelming.">
     <meta itemprop="wordCount" content="2193">
     <title> Blog 5 :: My Hugo Site</title>
-    <link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="x-default">
-    <link href="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="vi">
-    <link href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="en">
-    <link href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.5-blog5/index.xml" rel="alternate" type="application/rss+xml" title=" Blog 5 :: My Hugo Site">
-    <link href="http://localhost:1313/fcj-workshopz/images/logo.png?1764902887" rel="icon" type="image/png">
-    <link href="http://localhost:1313/fcj-workshopz/css/auto-complete/auto-complete.min.css?1764902887" rel="stylesheet">
-    <script src="http://localhost:1313/fcj-workshopz/js/auto-complete/auto-complete.min.js?1764902887" defer></script>
-    <script src="http://localhost:1313/fcj-workshopz/js/search-lunr.js?1764902887" defer></script>
-    <script src="http://localhost:1313/fcj-workshopz/js/search.js?1764902887" defer></script>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="vi">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html" rel="alternate" hreflang="en">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.5-blog5/index.xml" rel="alternate" type="application/rss+xml" title=" Blog 5 :: My Hugo Site">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/images/logo.png?1764903110" rel="icon" type="image/png">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/auto-complete/auto-complete.min.css?1764903110" rel="stylesheet">
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/auto-complete/auto-complete.min.js?1764903110" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search-lunr.min.js?1764903110" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search.min.js?1764903110" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="http://localhost:1313/fcj-workshopz/searchindex.en.js?1764902887";
+      window.relearn.index_js_url="https://trungkien2543.github.io/fcj-workshopz/searchindex.en.js?1764903110";
     </script>
-    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.min.js?1764902887" defer></script>
-    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1764902887" defer></script>
-    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.multi.min.js?1764902887" defer></script>
-    <script src="http://localhost:1313/fcj-workshopz/js/lunr/lunr.en.min.js?1764902887" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.min.js?1764903110" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1764903110" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.multi.min.js?1764903110" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.en.min.js?1764903110" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="http://localhost:1313/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764902887" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="http://localhost:1313/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764902887" rel="stylesheet"></noscript>
-    <link href="http://localhost:1313/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1764902887" rel="stylesheet">
-    <link href="http://localhost:1313/fcj-workshopz/css/theme.css?1764902887" rel="stylesheet">
-    <link href="http://localhost:1313/fcj-workshopz/css/format-html.css?1764902887" rel="stylesheet" id="R-format-style">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764903110" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764903110" rel="stylesheet"></noscript>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1764903110" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/theme.min.css?1764903110" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/format-html.min.css?1764903110" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = ``;
+      window.relearn.min = `.min`;
       window.relearn.path='\/3-blogstranslated\/3.5-blog5\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313\/fcj-workshopz';
+      window.relearn.absBaseUri='https:\/\/trungkien2543.github.io\/fcj-workshopz';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -102,9 +102,9 @@ Many AWS services have features to help you build and manage a multi-Region arch
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="http://localhost:1313/fcj-workshopz/css/custom.css?1764902887" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/custom.css?1764903110" rel="stylesheet">
   </head>
-  <body class="mobile-support html" data-url="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html">
+  <body class="mobile-support html" data-url="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -135,12 +135,12 @@ Many AWS services have features to help you build and manage a multi-Region arch
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/fcj-workshopz/index.html"><span itemprop="name">Intership Report</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/index.html"><span itemprop="name">BlogsTranslated</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Blog 5</span><meta itemprop="position" content="3"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="https://trungkien2543.github.io/fcj-workshopz/index.html"><span itemprop="name">Intership Report</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/index.html"><span itemprop="name">BlogsTranslated</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Blog 5</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.4-blog4/index.html" title="Blog 4 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.4-blog4/index.html" title="Blog 4 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html" title="Blog 6 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html" title="Blog 6 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -190,20 +190,20 @@ Many AWS services have features to help you build and manage a multi-Region arch
 <p>It is a best practice to configure <a href="http://aws.amazon.com/cloudtrail" rel="external" target="_blank">AWS CloudTrail</a> to keep a record of all relevant AWS API activity in your account for auditing purposes. When you utilize multiple Regions or accounts, these CloudTrail logs should be <a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html" rel="external" target="_blank">aggregated</a> into a single Amazon S3 bucket for easier analysis. To prevent misuse, the centralized logs should be treated with higher severity, with only limited access to key systems and personnel.</p>
 <p>To stay on top of <a href="https://aws.amazon.com/security-hub" rel="external" target="_blank">AWS Security Hub</a> findings, you can <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation-enable.html" rel="external" target="_blank">aggregate and link findings from multiple locations to a single Region. </a>This is an easy way to create a centralized view of Security Hub findings across accounts and Regions. Once set up, the findings are continuously synced between Regions to keep you updated on global results in a single dashboard.</p>
 <p>We put these features together in Figure 1. We used IAM to grant fine-grained access to AWS services and resources, Directory Service for Microsoft AD for authentication to Microsoft applications, and Secrets Manager to store sensitive database credentials. Our data, which moves freely between Regions, is encrypted with KMS multi-Region keys, and all AWS API access is logged with CloudTrail and aggregated to a central S3 bucket that only our security team has access to.</p>
-<p><a href="#R-image-56e684fba37513c231d5d73e0c6f25e8" class="lightbox-link"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-56e684fba37513c231d5d73e0c6f25e8"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png"></a></p>
+<p><a href="#R-image-475b8644a5711488760cc6aabc69a629" class="lightbox-link"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-475b8644a5711488760cc6aabc69a629"><img alt="Figure 1. Multi-Region security, identity, and compliance services" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-1.-Multi-Region-security-identity-and-compliance-services-1.png"></a></p>
 <p><em>Figure 1. Multi-Region security, identity, and compliance services</em></p>
 <h2 id="building-a-global-network">Building a global network</h2>
 <p>For resources launched into virtual networks in different Regions, <a href="http://aws.amazon.com/vpc" rel="external" target="_blank">Amazon Virtual Cloud (Amazon VPC)</a> allows <a href="https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html" rel="external" target="_blank">private routing between Regions and accounts with VPC peering</a>. These resources can communicate using private IP addresses and do not require an internet gateway, VPN, or separate network appliances. This feature works well for smaller networks that only require a few peering connections. However, transitive routing is not allowed, and as the number of peered virtual private cloud (VPCs) increases, the mesh of peered connections can become difficult to manage and troubleshoot.</p>
 <p><a href="https://aws.amazon.com/transit-gateway/" rel="external" target="_blank">AWS Transit Gateway</a> reduces these difficulties by creating a network transit hub that connects your VPCs and on-premises networks. A Transit Gateway’s routing capabilities can expand to additional Regions with <a href="https://docs.aws.amazon.com/vpc/latest/tgw/tgw-peering.html" rel="external" target="_blank">Transit Gateway inter-Region peering</a> to create a globally distributed, private network for your resources.</p>
 <p>Building a reliable, cost-effective way to route users to distributed Internet applications requires highly available and scalable Domain Name System (DNS) records. <a href="http://aws.amazon.com/route53" rel="external" target="_blank">Amazon Route 53</a> does exactly that.</p>
-<p>Route 53 includes many <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html" rel="external" target="_blank">routing policies</a>. For example, you can route a request to a record with the lowest network latency, or send users in a specific geolocation to a localized application endpoint. For DR, <a href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html">Route 53 Application Recovery Controller (Route 53 ARC)</a> offers a comprehensive failover solution with minimal dependencies. Route 53 ARC routing policies, safety checks, and readiness checks help you to failover across Regions, AZs, and on-premises reliably.</p>
+<p>Route 53 includes many <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html" rel="external" target="_blank">routing policies</a>. For example, you can route a request to a record with the lowest network latency, or send users in a specific geolocation to a localized application endpoint. For DR, <a href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html">Route 53 Application Recovery Controller (Route 53 ARC)</a> offers a comprehensive failover solution with minimal dependencies. Route 53 ARC routing policies, safety checks, and readiness checks help you to failover across Regions, AZs, and on-premises reliably.</p>
 <p>Route 53 includes many <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html" rel="external" target="_blank">routing policies</a>. For example, you can route a request to a record with the lowest network latency, or send users in a specific geolocation to a localized application endpoint. For DR, <a href="https://aws.amazon.com/route53/application-recovery-controller/" rel="external" target="_blank">Route 53 Application Recovery Controller (Route 53 ARC)</a> offers a comprehensive failover solution with minimal dependencies. Route 53 ARC routing policies, safety checks, and readiness checks help you to failover across Regions, AZs, and on-premises reliably.</p>
 <p>The <a href="http://aws.amazon.com/cloudfront" rel="external" target="_blank">Amazon CloundFront</a> content delivery network is global, built across 300+ points of presence (PoP) spread throughout the world. Applications that have multiple possible origins, such as across Regions, can use <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html" rel="external" target="_blank">CloudFront origin failover</a> to automatically fail over to a recovery origin when the primary is not available. CloudFront’s capabilities expand beyond serving content, with the ability to run compute at the edge. <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html" rel="external" target="_blank">CloudFront Functions</a> make it easy to run lightweight JavaScript code, and <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html" rel="external" target="_blank">AWS Lambda@Edge</a> enables you to run Node.js and Python functions closer to users of your application, which improves performance and reduces latency. By placing compute at the edge, you can take load off of your origin and provide quicker responses for your global end users.</p>
 <p>Built on the AWS global network, <a href="http://aws.amazon.com/global-accelerator" rel="external" target="_blank">AWS Global Accelerator</a> provides two static anycast IPs to give a single-entry point for internet-facing applications. You can seamlessly add or remove origins while continuing to automatically route traffic to the closest healthy Regional endpoint. If a failure is detected, Global Accelerator will <a href="https://docs.aws.amazon.com/global-accelerator/latest/dg/disaster-recovery-resiliency.html" rel="external" target="_blank">automatically redirect traffic to a healthy endpoint</a> within seconds, with no changes to the static IP.</p>
 <p>Figure 2 uses a Route 53 latency-based routing policy to route users to the quickest endpoint, CloudFront is used to serve static content such as videos and images, and Transit Gateway creates a global private network for our devices to talk securely across Regions.</p>
-<p><a href="#R-image-b81324ab62d89aa63679159ef6d5712c" class="lightbox-link"><img alt="figure2" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b81324ab62d89aa63679159ef6d5712c"><img alt="figure2" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png"></a></p>
+<p><a href="#R-image-8d96c856c3f7f62bb5a9d60d9fb3795b" class="lightbox-link"><img alt="figure2" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d96c856c3f7f62bb5a9d60d9fb3795b"><img alt="figure2" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-2.-AWS-VPC-connectivity-and-content-delivery.png"></a></p>
 <p><em>Building and managing the compute layer</em></p>
 <h2 id="xây-dựng-và-quản-lý-lớp-tính-toán-compute-layer">Xây dựng và quản lý lớp tính toán (compute layer)</h2>
 <p>Although <a href="http://aws.amazon.com/ec2" rel="external" target="_blank">Amazon Elastic Compute Cloud (Amazon EC2)</a> instances and their associated <a href="http://aws.amazon.com/ebs" rel="external" target="_blank">Amazon Elastic Block Store (Amazon EBS)</a> volumes reside in a single AZ <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html" rel="external" target="_blank">Amazon Data Lifecycle Manager</a> can automate the process of taking and copying EBS snapshots across Regions. This can enhance DR strategies by providing an easy cold backup-and-restore option for EBS volumes. If you need to back up more than just EBS volumes, <a href="https://aws.amazon.com/backup/" rel="external" target="_blank">AWS Backup</a>  provides a central place to do this across multiple services and is covered in <a href="https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-2-data-and-replication/" rel="external" target="_blank">part 2</a>.</p>
@@ -211,8 +211,8 @@ Many AWS services have features to help you build and manage a multi-Region arch
 <p>Microservice-based applications that use containers benefit from quicker start-up times. <a href="http://aws.amazon.com/ecr/" rel="external" target="_blank">Amazon Elastic Container Registry (Amazon ECR)</a> can help ensure this happens consistently across Regions with <a href="https://aws.amazon.com/blogs/containers/cross-region-replication-in-amazon-ecr-has-landed/" rel="external" target="_blank">private image replication</a> at the registry level. An ECR private registry can be configured for either cross-Region or cross-account replication to ensure your images are ready in secondary Regions when needed.</p>
 <p>As an architecture expands into multiple Regions, it can become difficult to track where resources are provisioned. <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#global-view" rel="external" target="_blank">Amazon EC2 Global View</a> helps alleviate this by providing a centralized dashboard to see Amazon EC2 resources such as instances, VPCs, subnets, security groups, and volumes in all active Regions.</p>
 <p>We bring these compute layer features together in Figure 3 by using EC2 Image Builder to copy our latest golden AMI across Regions for deployment. We also back up each EBS volume for 3 days and replicate it across Regions using Data Lifecycle Manager.</p>
-<p><a href="#R-image-0810b151ee350c6bc898360bce49ab15" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0810b151ee350c6bc898360bce49ab15"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png"></a></p>
+<p><a href="#R-image-a4c3f0369858a6d1b50232e8f088d815" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a4c3f0369858a6d1b50232e8f088d815"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-3.-AMI-and-EBS-snapshot-copy-across-Regions.png"></a></p>
 <p><em>Figure 3. AMI and EBS snapshot copy across Regions</em></p>
 <h2 id="bringing-it-together">Bringing it together</h2>
 <p>At the end of each part of this blog series, we build on a sample application based on the services covered. This shows you how to bring these services together to build a multi-Region application with AWS services. We don’t use every service mentioned, just those that fit the use case.</p>
@@ -243,8 +243,8 @@ Many AWS services have features to help you build and manage a multi-Region arch
 <p>IAM is used to grant access to manage our AWS resources.</p>
 </li>
 </ul>
-<p><a href="#R-image-0a1261476b34b874786b723584326e18" class="lightbox-link"><img alt="Figure 4" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0a1261476b34b874786b723584326e18"><img alt="Figure 4" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png"></a></p>
+<p><a href="#R-image-7b2ae610fba25d936123a3e7fb97b780" class="lightbox-link"><img alt="Figure 4" class="lazy lightbox figure-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b2ae610fba25d936123a3e7fb97b780"><img alt="Figure 4" class="lazy lightbox lightbox-image" loading="lazy" src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2022/03/31/Figure-4.-Building-an-application-with-AWS-multi-Region-services-using-services-covered-in-Part-1.png"></a></p>
 <p><em>Figure 4. Building an application with AWS multi-Region services using services covered in Part 1</em></p>
 <h3 id="summary">Summary</h3>
 <p>It’s important to create a solid foundation when architecting a multi-Region application. These foundations lay the groundwork for you to move fast in a secure, reliable, and elastic way as you build out your application. Many AWS services include native features to help you build a multi-Region architecture. Your architecture will be different depending on the reason for expanding beyond a single Region. In this post, we covered specific features across AWS security, networking, and compute services that have built-in functionality to take away some of the undifferentiated heavy lifting. We’ll cover data, application, and management services in future posts.</p>
@@ -264,11 +264,11 @@ We’ve chosen some <a href="https://aws.amazon.com/solutions/" rel="external" t
       <div id="R-header-topbar" class="default-animation"></div>
       <div id="R-header-wrapper" class="default-animation">
         <div id="R-header" class="default-animation">
-          <a id="R-logo" class="R-default" href="http://localhost:1313/fcj-workshopz/index.html">
+          <a id="R-logo" class="R-default" href="https://trungkien2543.github.io/fcj-workshopz/index.html">
             <div class="logo-title">My Hugo Site</div>
           </a>
         </div>
-        <search><form action="http://localhost:1313/fcj-workshopz/search/index.html" method="get">
+        <search><form action="https://trungkien2543.github.io/fcj-workshopz/search/index.html" method="get">
           <div class="searchbox default-animation">
             <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
             <label class="a11y-only" for="R-search-by">Search</label>
@@ -283,7 +283,7 @@ We’ve chosen some <a href="https://aws.amazon.com/solutions/" rel="external" t
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-homelinks">
           <ul class="space collapsible-menu">
-            <li class="" data-nav-id="/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/index.html">Home</a></li>
+            <li class="" data-nav-id="/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/index.html">Home</a></li>
           </ul>
         </div>
         <div class="R-menu-divider default-animation">
@@ -300,17 +300,17 @@ We’ve chosen some <a href="https://aws.amazon.com/solutions/" rel="external" t
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/1-worklog/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/1-worklog/index.html"> <b> 1. </b> Worklog</a><ul id="R-subsections-16447363d800ec5deaa3b0a76c63c922" class="collapsible-menu"></ul></li>
-            <li class="parent " data-nav-id="/3-blogstranslated/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/index.html"> <b> 3. </b> BlogsTranslated</a><ul id="R-subsections-dff4ca4b61121a10b58696aacb50b106" class="collapsible-menu">
-            <li class="" data-nav-id="/3-blogstranslated/3.1-blog1/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.1-blog1/index.html"> <b> 3.1. </b> Blog 1</a></li>
-            <li class="" data-nav-id="/3-blogstranslated/3.2-blog2/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.2-blog2/index.html"> <b> 3.2. </b> Blog 2</a></li>
-            <li class="" data-nav-id="/3-blogstranslated/3.3-blog3/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.3-blog3/index.html"> <b> 3.3. </b>Blog 3</a></li>
-            <li class="" data-nav-id="/3-blogstranslated/3.4-blog4/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.4-blog4/index.html"><b> 3.4. </b> Blog 4</a></li>
-            <li class="active " data-nav-id="/3-blogstranslated/3.5-blog5/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html"><b> 3.5. </b> Blog 5</a></li>
-            <li class="" data-nav-id="/3-blogstranslated/3.6-blog6/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html"><b> 3.6. </b> Blog 6</a></li>
-            <li class="" data-nav-id="/3-blogstranslated/3.7-blog7/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html"><b> 3.7. </b> Blog 7</a></li>
-            <li class="" data-nav-id="/3-blogstranslated/3.8-blog8/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.8-blog8/index.html"><b> 3.8. </b> Blog 8</a></li></ul></li>
-            <li class="" data-nav-id="/4-eventparticipated/index.html"><a class="padding" href="http://localhost:1313/fcj-workshopz/4-eventparticipated/index.html"> <b> 4. </b> EventParticipated</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/1-worklog/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/1-worklog/index.html"> <b> 1. </b> Worklog</a><ul id="R-subsections-16447363d800ec5deaa3b0a76c63c922" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/3-blogstranslated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/index.html"> <b> 3. </b> BlogsTranslated</a><ul id="R-subsections-dff4ca4b61121a10b58696aacb50b106" class="collapsible-menu">
+            <li class="" data-nav-id="/3-blogstranslated/3.1-blog1/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.1-blog1/index.html"> <b> 3.1. </b> Blog 1</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.2-blog2/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.2-blog2/index.html"> <b> 3.2. </b> Blog 2</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.3-blog3/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.3-blog3/index.html"> <b> 3.3. </b>Blog 3</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.4-blog4/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.4-blog4/index.html"><b> 3.4. </b> Blog 4</a></li>
+            <li class="active " data-nav-id="/3-blogstranslated/3.5-blog5/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html"><b> 3.5. </b> Blog 5</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.6-blog6/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html"><b> 3.6. </b> Blog 6</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.7-blog7/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html"><b> 3.7. </b> Blog 7</a></li>
+            <li class="" data-nav-id="/3-blogstranslated/3.8-blog8/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.8-blog8/index.html"><b> 3.8. </b> Blog 8</a></li></ul></li>
+            <li class="" data-nav-id="/4-eventparticipated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/4-eventparticipated/index.html"> <b> 4. </b> EventParticipated</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -330,8 +330,8 @@ We’ve chosen some <a href="https://aws.amazon.com/solutions/" rel="external" t
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-vi" value="vi" data-url="http://localhost:1313/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html" lang="vi">Tiếng Việt</option>
-                    <option id="R-select-language-en" value="en" data-url="http://localhost:1313/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html" lang="en" selected data-selected>English</option>
+                    <option id="R-select-language-vi" value="vi" data-url="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-en" value="en" data-url="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html" lang="en" selected data-selected>English</option>
                   </select>
                 </div>
                 <div class="clear"></div>
@@ -342,8 +342,8 @@ We’ve chosen some <a href="https://aws.amazon.com/solutions/" rel="external" t
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="http://localhost:1313/fcj-workshopz/js/clipboard/clipboard.min.js?1764902887" defer></script>
-    <script src="http://localhost:1313/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1764902887" defer></script>
-    <script src="http://localhost:1313/fcj-workshopz/js/theme.js?1764902887" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/clipboard/clipboard.min.js?1764903110" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1764903110" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/theme.min.js?1764903110" defer></script>
   </body>
 </html>
