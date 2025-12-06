@@ -9,7 +9,7 @@ type = "home"
 
 &emsp; **Phone Number:** 0931261009
 
-&emsp; **Email:** trungkien1862@gmail.om
+&emsp; **Email:** trungkien1862@gmail.com
 
 &emsp; **University:** Sai Gon University
 
@@ -17,7 +17,7 @@ type = "home"
 
 &emsp; **Class:** DCT1213
 
-&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+&emsp; **Internship Company:**  AMAZON WEB SERVICES VIETNAM COMPANY LIMITED
 
 &emsp; **Internship Position:** FCJ Cloud Intern
 

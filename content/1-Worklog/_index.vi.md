@@ -25,4 +25,10 @@ Nội dung các công việc thực hiện trong các tuần như sau:
 
 **Tuần 9:** [Hoàn thiện phần giao diện và chức năng cho Task UpComing. Thực hành thử với Serverless](1.9-Week9/)
 
-**Tuần 10:** [Xây dựng giao diện comment, notifications và các API liên quan tới quản lý file](1.10-Week10/)
+**Tuần 10:** [Hoàn thành giao diện comment trong task, hiển thị thông báo theo thời gian thực. Xây dựng các API cho phần comment attach](1.10-Week10/)
+
+**Tuần 11:** [Xây dựng UI và tích hợp API cho giao diện comment attach. Sửa lỗi liên quan tới WebSocket](1.11-Week11/)
+
+**Tuần 12:** [Thêm chức năng tùy chỉnh nhận thông báo qua email, phản hồi lời mời vào dự án tại trang thông báo](1.12-Week12/)
+
+**Tuần 13:** [Hoàn tất dự án và chuẩn bị báo cáo dự án](1.13-Week13/)

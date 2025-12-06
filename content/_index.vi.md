@@ -16,7 +16,7 @@ type = "home"
 
 &emsp; **Lớp:** DCT1213
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+&emsp; **Công ty thực tập:**  CÔNG TY TNHH AMAZON WEB SERVICES VIỆT NAM 
 
 &emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
