@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sự kiện 2 :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/4.2-event2/index.html</link>
+    <description>Bài thu hoạch “AWS CLOUD MASTERY SERIES #3 – Security on AWS” Mục Đích Của Sự Kiện Là buổi chia sẻ chuyên sâu giúp nắm vững 5 trụ cột bảo mật theo AWS Well-Architected Security Pillar và cách bảo vệ hệ thống cloud trước các mối đe dọa ngày càng tăng. Chia sẻ về các dịch vụ hỗ trợ bảo mật và rà soát hệ thống giúp bảo vệ tài khoản aws và hệ thống tránh các cuộc tấn công. Cơ hội kết nối với cộng đồng First Cloud Journey Danh sách các diễn giả Le Vu Xuan An: AWS Cloud Club Captian HCMUTE, First Cloud AI Journey Tran Duc Anh: AWS Cloud Club Captian SGU, First Cloud AI Journey, Cloud Security Engineer Trainee Tran Doan Cong Ly: AWS Cloud Club Captian PTIT, First Cloud AI Journey Dang Hoang Hieu Nghi: AWS Cloud Club Captian HUFLIT, First Cloud AI Journey Nguyen Tuan Thinh: First Cloud AI Journey, Cloud Engineer Trainee Huynh Hoang Long: First Cloud AI Journey, Cloud Engineer Trainee Dinh Le Hoang Anh: First Cloud AI Journey, Cloud Engineer Trainee Nguyen Do Thanh Dat: First Cloud AI Journey, Cloud Engineer Trainee Van Hoang Kha: First Cloud AI Journey, Cloud Engineer Trainee Thinh Lam: First Cloud AI Journey Viet Nguyen: First Cloud AI Journey Mendel Grabski (Long): ex Head of Security &amp; DevOps, Cloud Security Solutions Architect Tinh Truong: AWS Community Builder, Platform Engineer at TymeX Nội Dung Nổi Bật Dịch vụ Identity &amp; Access Management Hiểu được dịch vụ IAM được sử dụng để làm gì Các best practice cho việc sử dụng IAM cho hệ thống SCP và permission boundaries cho multi-account MFA, credential rotation, Access Analyzer Detection &amp; Continuous Monitoring -​ CloudTrail (org-level), GuardDuty, Security Hub ​- Logging tại mọi tầng: VPC Flow Logs, ALB/S3 logs ​- Alerting &amp; automation với EventBridge</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/4.2-event2/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -15,6 +15,16 @@
       <description>Nội dung các công việc thực hiện trong các tuần như sau:&#xA;Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS&#xA;Tuần 2: Xây dựng VPC và Hyrid DNS với Route53&#xA;Tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS&#xA;Tuần 4: Tìm hiểu về Dịch vụ lưu trữ Amazon S3&#xA;Tuần 5: Tìm hiểu về Dịch vụ bảo mật trên AWS&#xA;Tuần 6: Học về dịch vụ cơ sở dữ liệu trên cloud của AWS</description>
     </item>
     <item>
+<<<<<<< HEAD
+=======
+      <title>Bản đề xuất</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
+    <item>
+>>>>>>> dev
       <title>Các bài blog đã dịch</title>
       <link>https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28,5 +38,29 @@
       <guid>https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html</guid>
       <description>Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.&#xA;Sự kiện 1 Tên sự kiện: Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders&#xA;Thời gian: 09:00 ngày 18/09/2025&#xA;Địa điểm: Tầng 36, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh</description>
     </item>
+<<<<<<< HEAD
+=======
+    <item>
+      <title>Workshop</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
+    <item>
+      <title>Tự đánh giá</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/6-self-evaluation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/6-self-evaluation/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
+    <item>
+      <title>Chia sẻ, đóng góp ý kiến</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/7-feedback/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/7-feedback/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
+>>>>>>> dev
   </channel>
 </rss>

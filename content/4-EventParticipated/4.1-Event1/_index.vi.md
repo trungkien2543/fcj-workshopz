@@ -65,21 +65,21 @@ pre = " <b> 4.1. </b> "
 - **Lợi ích của hiện đại hóa**: tạo điều kiện cho sự linh hoạt, cung cấp thông tin chuyên sâu và thúc đẩy đổi mới lấy khách hàng làm trung tâm.
 - **Tác động đến doanh nghiệp**: hiệu quả, khả năng mở rộng, khả năng phục hồi, tính canh tranh và bền vững
 
-### Hành trình Hiện đại hóa
+#### Hành trình Hiện đại hóa
 
 - **Đánh giá (Assess)**: Kiểm kê môi trường hiện tại, xác định các điểm yếu.
 - **Khởi động (Mobilize)**: Thiết lập Trung tâm Năng lực Chuyên môn (CCoE), xây dựng các nguyên tắc hướng dẫn và phát triển năng lực sử dụng đám mây.
 - **Di chuyển & Hiện đại hóa (Migrate & Modernize)**: Ưu tiên các công việc có tác động cao để di chuyển và hiện đại hóa.
 - **Tái tạo (Reinvent)**: Ứng dụng trí tuệ nhân tạo (AI), tự động hóa, sản phẩm dữ liệu và các mô hình kinh doanh mới.
 
-### AWS Transform (Dịch vụ AI có khả năng tự động hành động (agentic AI) đầu tiên dành cho việc di chuyển và hiện đại hóa quy mô lớn)
+#### AWS Transform (Dịch vụ AI có khả năng tự động hành động (agentic AI) đầu tiên dành cho việc di chuyển và hiện đại hóa quy mô lớn)
 
 - **Đánh giá (Assessment)**: Xây dựng lập luận kinh doanh (business case) để di chuyển sang AWS.
 - **VMware**: Công cụ hỗ trợ giúp di chuyển từ môi trường VMware sang Amazon EC2.
 - **Mainframe**: Công cụ hỗ trợ (agent) để hiện đại hóa các ứng dụng IBM z/OS (hệ thống máy chủ lớn).
 - **.NET**: Công cụ hỗ trợ (agent) để hiện đại hóa các ứng dụng .NET dựa trên Windows sang nền tảng Linux.
 
-### Các thách thức về bảo mật đám mây
+#### Các thách thức về bảo mật đám mây
 
 - **Rào cản đổi mới (Innovation roadblocks)**: Cách tiếp cận bảo mật truyền thống có thể khiến đội ngũ bảo mật bị coi là rào cản cho sự đổi mới.
 - **Thiếu chuyên môn & nguồn lực (Expertise & resource shortages)**: Các nhóm bảo mật hiện tại đang hoạt động ở mức năng lực tối đa và dành phần lớn thời gian cho các nhiệm vụ lặp lại, giá trị thấp.
@@ -100,15 +100,15 @@ pre = " <b> 4.1. </b> "
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng, công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia workshop **“Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders”** là một trải nghiệm rất bổ ích, giúp em có cái nhìn toàn diện về cách hiện đại hóa ứng dụng, công cụ hiện đại. Một số trải nghiệm nổi bật:
 
 #### Học hỏi từ các diễn giả có chuyên môn cao
 - Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Migration, Modernization** và **Cloud Security** vào các project lớn.
+- Qua các case study thực tế, em hiểu rõ hơn cách áp dụng **Migration, Modernization** và **Cloud Security** vào các project lớn.
 
 #### Kết nối và trao đổi
 - Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+- Qua các ví dụ thực tế, em nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
 
 #### Bài học rút ra
 - Chiến lược hiện đại hóa cần **phased approach** và đo lường, đánh giá chính xác tình trạng hiện tại, không nên vội vàng chuyển đổi toàn bộ hệ thống.

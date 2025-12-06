@@ -15,3 +15,13 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 &emsp;**Địa điểm:** Tầng 36, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
+
+
+### [Sự kiện 2](4.2-Event2/)
+&emsp;**Tên sự kiện:** AWS CLOUD MASTERY SERIES #3 – Security on AWS
+
+&emsp;**Thời gian:** 09:00 ngày 29/11/2025
+
+&emsp;**Địa điểm:** Tầng 36, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự 
