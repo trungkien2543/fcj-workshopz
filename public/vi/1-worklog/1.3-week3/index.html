@@ -9,11 +9,7 @@
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Tuần 3 :: My Hugo Site">
-<<<<<<< HEAD
     <meta name="twitter:description" content="Mục tiêu tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS Thực hiện triển khai được ứng dụng trên EC2, tạo backup và dùng cloudwatch để theo dõi hệ thống Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Xem video bài giảng về dịch vụ Compute VM trên AWS - Dịch blogs cho tuần 3 22/9/2025 22/9/2025 https://aws.amazon.com/vi/blogs/startups/accelerating-the-next-wave-of-generative-ai-startups/ 3 - Thực hành: &#43; lab04: Khởi tạo và tìm hiểu các tính năng cơ bản của Amazon EC2 23/9/2025 23/9/2025 https://000004.awsstudygroup.com/ 4 - Thực hành: &#43; lab04 mục 8: Giới hạn sử dụng tài nguyên bằng dịch vụ IAM &#43; lab02: Quản trị quyền truy cập với AWS Identity and Access Management (IAM) 24/9/2025 24/9/2025 https://000004.awsstudygroup.com/vi/8-costusagegovernance/ https://000002.awsstudygroup.com/vi/ 5 - Thực hành: &#43; lab08: Sử dụng CloudWatch 25/9/2025 25/9/2025 https://000008.awsstudygroup.com/ 6 - Thực hành: &#43; lab06: Triển khai ứng dụng FCJ Management với Auto Scaling Group &#43; lab13: Triển khai aws backup cho hệ thống 26/9/2025 26/9/2025 https://000006.awsstudygroup.com/ https://000013.awsstudygroup.com/ Kết quả đạt được tuần 3: Hiểu được về dịch vụ Compute VM trên AWS">
-=======
-    <meta name="twitter:description" content="Mục tiêu tuần 3: Tìm hiểu về Dịch vụ Compute VM trên AWS Thực hiện triển khai được ứng dụng trên EC2, tạo backup và dùng cloudwatch để theo dõi hệ thống Các công việc cần triển khai trong tuần này: Thứ Công việc Ngày bắt đầu Ngày hoàn thành Nguồn tài liệu 2 - Xem video bài giảng về dịch vụ Compute VM trên AWS - Dịch blogs cho tuần 3 22/9/2025 22/9/2025 link bài viết gốc 3 - Thực hành: &#43; lab04: Khởi tạo và tìm hiểu các tính năng cơ bản của Amazon EC2 23/9/2025 23/9/2025 https://000004.awsstudygroup.com/ 4 - Thực hành: &#43; lab04 mục 8: Giới hạn sử dụng tài nguyên bằng dịch vụ IAM &#43; lab02: Quản trị quyền truy cập với AWS Identity and Access Management (IAM) 24/9/2025 24/9/2025 https://000004.awsstudygroup.com/vi/8-costusagegovernance/ https://000002.awsstudygroup.com/vi/ 5 - Thực hành: &#43; lab08: Sử dụng CloudWatch 25/9/2025 25/9/2025 https://000008.awsstudygroup.com/ 6 - Thực hành: &#43; lab06: Triển khai ứng dụng FCJ Management với Auto Scaling Group &#43; lab13: Triển khai aws backup cho hệ thống 26/9/2025 26/9/2025 https://000006.awsstudygroup.com/ https://000013.awsstudygroup.com/ Kết quả đạt được tuần 3: Hiểu được về dịch vụ Compute VM trên AWS">
->>>>>>> dev
     <meta property="og:url" content="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.3-week3/index.html">
     <meta property="og:site_name" content="My Hugo Site">
     <meta property="og:title" content="Tuần 3 :: My Hugo Site">
@@ -28,50 +24,27 @@
     <link href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.3-week3/index.html" rel="alternate" hreflang="vi">
     <link href="https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.3-week3/index.html" rel="alternate" hreflang="en">
     <link href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.3-week3/index.xml" rel="alternate" type="application/rss+xml" title="Tuần 3 :: My Hugo Site">
-<<<<<<< HEAD
-    <link href="https://trungkien2543.github.io/fcj-workshopz/images/logo.png?1764909878" rel="icon" type="image/png">
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/auto-complete/auto-complete.min.css?1764909878" rel="stylesheet">
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/auto-complete/auto-complete.min.js?1764909878" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search-lunr.min.js?1764909878" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search.min.js?1764909878" defer></script>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/images/logo.png?1764988033" rel="icon" type="image/png">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/auto-complete/auto-complete.min.css?1764988033" rel="stylesheet">
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/auto-complete/auto-complete.min.js?1764988033" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search-lunr.min.js?1764988033" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search.min.js?1764988033" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="https://trungkien2543.github.io/fcj-workshopz/searchindex.vi.js?1764909878";
+      window.relearn.index_js_url="https://trungkien2543.github.io/fcj-workshopz/searchindex.vi.js?1764988033";
     </script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.min.js?1764909878" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1764909878" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.multi.min.js?1764909878" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.vi.min.js?1764909878" defer></script>
-=======
-    <link href="https://trungkien2543.github.io/fcj-workshopz/images/logo.png?1764987859" rel="icon" type="image/png">
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/auto-complete/auto-complete.min.css?1764987859" rel="stylesheet">
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/auto-complete/auto-complete.min.js?1764987859" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search-lunr.min.js?1764987859" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search.min.js?1764987859" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.index_js_url="https://trungkien2543.github.io/fcj-workshopz/searchindex.vi.js?1764987859";
-    </script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.min.js?1764987859" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1764987859" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.multi.min.js?1764987859" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.vi.min.js?1764987859" defer></script>
->>>>>>> dev
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.min.js?1764988033" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1764988033" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.multi.min.js?1764988033" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.vi.min.js?1764988033" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['vi'];
     </script>
-<<<<<<< HEAD
-    <link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764909878" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764909878" rel="stylesheet"></noscript>
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1764909878" rel="stylesheet">
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/theme.min.css?1764909878" rel="stylesheet">
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/format-html.min.css?1764909878" rel="stylesheet" id="R-format-style">
-=======
-    <link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764987859" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764987859" rel="stylesheet"></noscript>
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1764987859" rel="stylesheet">
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/theme.min.css?1764987859" rel="stylesheet">
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/format-html.min.css?1764987859" rel="stylesheet" id="R-format-style">
->>>>>>> dev
+    <link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764988033" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1764988033" rel="stylesheet"></noscript>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1764988033" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/theme.min.css?1764988033" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/format-html.min.css?1764988033" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -125,11 +98,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-<<<<<<< HEAD
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/custom.css?1764909878" rel="stylesheet">
-=======
-    <link href="https://trungkien2543.github.io/fcj-workshopz/css/custom.css?1764987859" rel="stylesheet">
->>>>>>> dev
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/custom.css?1764988033" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.3-week3/index.html">
     <div id="R-body" class="default-animation">
@@ -331,20 +300,9 @@
             <li class="" data-nav-id="/vi/1-worklog/1.9-week9/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.9-week9/index.html"><b> 1.9. </b>Tuần 9</a></li>
             <li class="" data-nav-id="/vi/1-worklog/1.10-week10/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.10-week10/index.html"><b> 1.10. </b>Tuần 10</a></li>
             <li class="" data-nav-id="/vi/1-worklog/1.11-week11/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.11-week11/index.html"><b> 1.11. </b>Tuần 11</a></li>
-<<<<<<< HEAD
             <li class="" data-nav-id="/vi/1-worklog/1.12-week12/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.12-week12/index.html"><b> 1.12. </b>Tuần 12</a></li></ul></li>
             <li class="" data-nav-id="/vi/3-blogstranslated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.html"> <b> 3. </b> Các bài blog đã dịch</a><ul id="R-subsections-dff4ca4b61121a10b58696aacb50b106" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/vi/4-eventparticipated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html"> <b> 4. </b> Các sự kiện đã tham gia</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
-=======
-            <li class="" data-nav-id="/vi/1-worklog/1.12-week12/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.12-week12/index.html"><b> 1.12. </b>Tuần 12</a></li>
-            <li class="" data-nav-id="/vi/1-worklog/1.13-week13/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.13-week13/index.html"><b> 1.13. </b>Tuần 13</a></li></ul></li>
-            <li class="" data-nav-id="/vi/2-proposal/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html"> <b> 2. </b> Bản đề xuất</a></li>
-            <li class="" data-nav-id="/vi/3-blogstranslated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.html"> <b> 3. </b> Các bài blog đã dịch</a><ul id="R-subsections-dff4ca4b61121a10b58696aacb50b106" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/vi/4-eventparticipated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html"> <b> 4. </b> Các sự kiện đã tham gia</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/vi/5-workshop/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html"> <b> 5. </b> Workshop</a></li>
-            <li class="" data-nav-id="/vi/6-self-evaluation/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/6-self-evaluation/index.html"> <b> 6. </b> Tự đánh giá</a></li>
-            <li class="" data-nav-id="/vi/7-feedback/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/7-feedback/index.html"> <b> 7. </b> Chia sẻ, đóng góp ý kiến</a></li>
->>>>>>> dev
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -376,14 +334,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-<<<<<<< HEAD
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/clipboard/clipboard.min.js?1764909878" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1764909878" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/theme.min.js?1764909878" defer></script>
-=======
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/clipboard/clipboard.min.js?1764987859" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1764987859" defer></script>
-    <script src="https://trungkien2543.github.io/fcj-workshopz/js/theme.min.js?1764987859" defer></script>
->>>>>>> dev
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/clipboard/clipboard.min.js?1764988033" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1764988033" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/theme.min.js?1764988033" defer></script>
   </body>
 </html>
