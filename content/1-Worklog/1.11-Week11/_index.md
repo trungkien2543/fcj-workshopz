@@ -16,11 +16,11 @@ pre = "<b> 1.11. </b>"
 
 | Day | Task                                                                                                               | Start Date   | End Date       | Reference Material                                      |
 | --- | ------------------------------------------------------------------------------------------------------------------ | ------------ | -------------- | ------------------------------------------------------ |
-| 2   | - Write internship report in preparation for submission <br> - Revise the content of worklogs, translated blogs, and events | 17/11/2025   | 17/11/2025     |  |  
+| 2   | - Write internship report in preparation for submission <br> - Revise the content of worklogs, translated blogs, and events <br> - Hold weekly team meetings to update work progress. | 17/11/2025   | 17/11/2025     |  |  
 | 3   | - Fix WebSocket logic issue when using pagination in the notifications page                                        | 18/11/2025   | 18/11/2025     |  |
 | 4   | - Develop UI to integrate attached image files for comments                                                       | 19/11/2025   | 19/11/2025     |  |
 | 5   | - Complete comment attach UI and integrate API                                                                    | 20/11/2025   | 21/11/2025     | |
-| 6   | - Implement WebSocket calls via API Gateway instead of direct calls and fix double-header issues                   | 21/11/2025   | 21/11/2025     | |
+| 6   | - Implement WebSocket calls via API Gateway instead of direct calls and fix double-header issues <br> - Update the worklog.                  | 21/11/2025   | 21/11/2025     | |
 
 ### Week 11 Achievements:
 

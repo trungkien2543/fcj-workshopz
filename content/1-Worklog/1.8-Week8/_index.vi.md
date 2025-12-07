@@ -16,11 +16,11 @@ pre = "<b> 1.8. </b>"
 
 | Thứ | Công việc                                                                                                               | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                           |
 | --- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------- |
-| 2   | - Dịch bài blogs 8: Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2                                                                  | 27/10/2025   | 27/10/2025      | [Blog 8](../../3-BlogsTranslated/3.7-Blog7/_index.vi.md) |  
+| 2   | - Dịch bài blogs 8: Kích hoạt phân tích dữ liệu Genomic và Multiomic nhanh chóng với Illumina DRAGEN™ v4.4 trên các instance Amazon EC2 F2 <br> - Họp nhóm cập nhật công việc hàng tuần                                                                 | 27/10/2025   | 27/10/2025      | [link bài viết gốc](https://aws.amazon.com/blogs/hpc/enabling-rapid-genomic-and-multiomic-data-analysis-with-illumina-dragen-v4-4-on-amazon-ec2-f2-instances/) |  
 | 3   | - Chỉnh sửa lại cấu trúc cho các worklogs <br> - Xem lại nội dung lý thuyết của một số dịch vụ trên AWS <br> - Tìm hiểu về Desgin Pattern để ứng dụng cho dự án cuối khóa như: Proxy Pattern, Prototype Pattern, Builder Pattern                                                       | 28/10/2025   | 28/10/2025      | <https://viblo.asia/p/proxy-design-pattern-tro-thu-dac-luc-cua-developers-RQqKLB2bl7z> <https://viblo.asia/p/prototype-design-pattern-tro-thu-dac-luc-cua-developers-GrLZDBQO5k0>                  |
 | 4   | - **Thực hành:** lab 22: Tối ưu chi phí EC2 với Lambda | 29/10/2025   | 29/10/2025      | <https://000022.awsstudygroup.com/vi/> |
 | 5   | - **Thực hành:** lab 29: Bắt đầu với Grafana trên AWS  | 30/10/2025   | 30/10/2025      | <https://000029.awsstudygroup.com/vi/> |
-| 6   | - Tìm hiểu về WebSocket | 31/10/2025   | 31/10/2025      | <https://www.geeksforgeeks.org/web-tech/what-is-web-socket-and-how-it-is-different-from-the-http/> |
+| 6   | - Tìm hiểu về WebSocket <br> - Cập nhật worklog | 31/10/2025   | 31/10/2025      | <https://www.geeksforgeeks.org/web-tech/what-is-web-socket-and-how-it-is-different-from-the-http/> |
 
 ### Kết quả đạt được tuần 8:
 

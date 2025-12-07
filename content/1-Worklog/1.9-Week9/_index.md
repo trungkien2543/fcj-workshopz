@@ -17,11 +17,11 @@ pre = "<b> 1.9. </b>"
 
 | Day |Task| Start Date | Completion Date | Reference Material|
 | --- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------- |
-| 2   | - Integrate WebSocket into the project and run a demo                          | 3/11/2025   | 3/11/2025      |  |  
+| 2   | - Integrate WebSocket into the project and run a demo  <br> - Hold weekly team meetings to update work progress.                        | 3/11/2025   | 3/11/2025      |  |  
 | 3   | - Build the interface for the Task UpComing feature, including displaying the task list, filtering by date, and creating tasks    | 4/11/2025   | 4/11/2025      |  |
 | 4   | - **Practice**: lab 78: Serverless – Interaction between Lambda, S3, and DynamoDB |  5/11/2025   | 5/11/2025      | <https://000078.awsstudygroup.com/vi/> |
 | 5   | - Complete creating, editing, and deleting tasks in the Task UpComing feature <br> - Design the interface for comments of each task  | 6/11/2025   | 6/11/2025      | |
-| 6   | - Complete API integration for the Task UpComing feature | 7/11/2025   | 7/11/2025      |  |
+| 6   | - Complete API integration for the Task UpComing feature <br> - Update the worklog.| 7/11/2025   | 7/11/2025      |  |
 
 
 ### Week 9 Achievements:

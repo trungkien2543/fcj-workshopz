@@ -14,11 +14,11 @@ pre = "<b> 1.13. </b>"
 
 | Day | Task                                                                                                                   | Start Date   | End Date       | Reference Material                                      |
 | --- | ---------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------- |
-| Mon | - Add AI model suggestion button in the add labels interface of task details and integrate API to test the AI model <br> - Replace manual mapper in taskflow service with MapStruct to optimize performance | 01/12/2025   | 01/12/2025      |  |  
-| Tue | - Build API for the completed interface of the system. Allow reviewing activities of project members                  | 02/12/2025   | 02/12/2025      |  |
-| Wed | - Finalize UI edits and call API for the completed interface to review project members' activities                     | 03/12/2025   | 03/12/2025      |  |
-| Thu | - Edit comment interface; fix the issue of taskdetails page not opening <br> - Fix notification service after integrating MapStruct which caused incorrect DTO responses | 04/12/2025   | 04/12/2025      |  |
-| Fri | - Edit and finalize the personal workshop                                                                                 | 05/12/2025   | 05/12/2025      |  |
+| 2 | - Add AI model suggestion button in the add labels interface of task details and integrate API to test the AI model <br> - Replace manual mapper in taskflow service with MapStruct to optimize performance <br> - Hold weekly team meetings to update work progress.| 01/12/2025   | 01/12/2025      |  |  
+| 3 | - Build API for the completed interface of the system. Allow reviewing activities of project members                  | 02/12/2025   | 02/12/2025      |  |
+| 4 | - Finalize UI edits and call API for the completed interface to review project members' activities                     | 03/12/2025   | 03/12/2025      |  |
+| 5 | - Edit comment interface; fix the issue of taskdetails page not opening <br> - Fix notification service after integrating MapStruct which caused incorrect DTO responses | 04/12/2025   | 04/12/2025      |  |
+| 6 | - Edit and finalize the personal workshop  <br> - Update the worklog.                                                                               | 05/12/2025   | 05/12/2025      |  |
 
 ### Week 13 Achievements:
 

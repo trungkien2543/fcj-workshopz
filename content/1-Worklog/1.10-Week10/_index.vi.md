@@ -19,11 +19,11 @@ pre = "<b> 1.10. </b>"
 
 | Thứ | Công việc                                                                                                               | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                           |
 | --- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------- |
-| 2   | - Cài đặt WebSocket cho frontend và tạo kết nối với phía server <br> - Tạo ModalNotification, ItemNotification cho giao diện hiển thị thông báo                                                                  | 10/11/2025   | 10/11/2025      |  |  
+| 2   | - Cài đặt WebSocket cho frontend và tạo kết nối với phía server <br> - Tạo ModalNotification, ItemNotification cho giao diện hiển thị thông báo <br> - Họp nhóm cập nhật công việc hàng tuần                                                                 | 10/11/2025   | 10/11/2025      |  |  
 | 3   | - Xây dựng giao diện cho chức năng comment trong phần xem chi tiết task <br> - Tích hợp API vào giao diện comment                                                        | 11/11/2025   | 11/11/2025      |  |
 | 4   | - Xây dựng API cho chức năng upload file lên S3 của AWS  |  12/11/2025   | 12/11/2025      |  |
 | 5   | - Xây dựng API cho phép người dùng thực hiện đính kèm các file được lưu trên S3 vào comment  | 13/11/2025   | 13/11/2025      | |
-| 6   | - Hoàn tất giao diện notification | 14/11/2025   | 14/11/2025      |  |
+| 6   | - Hoàn tất giao diện notification <br> - Cập nhật worklog | 14/11/2025   | 14/11/2025      |  |
 
 ### Kết quả đạt được tuần 10:
 

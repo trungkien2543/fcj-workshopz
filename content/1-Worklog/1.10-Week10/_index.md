@@ -18,11 +18,11 @@ pre = "<b> 1.10. </b>"
 
 | Day | Task                                                                                                                      | Start Date  | End Date        | Reference Materials                                      |
 | --- | ------------------------------------------------------------------------------------------------------------------------- | ----------- | --------------- | -------------------------------------------------------- |
-| 2 | - Set up WebSocket on the frontend and connect it to the server <br> - Create `ModalNotification` and `ItemNotification` components for displaying notifications | 10/11/2025  | 10/11/2025      |  |  
+| 2 | - Set up WebSocket on the frontend and connect it to the server <br> - Create `ModalNotification` and `ItemNotification` components for displaying notifications <br> - Hold weekly team meetings to update work progress.| 10/11/2025  | 10/11/2025      |  |  
 | 3 | - Build the UI for the comment feature in the task detail view <br> - Integrate API into the comment UI    | 11/11/2025  | 11/11/2025      |  |
 | 4 | - Build API for uploading files to AWS S3                                                                                 | 12/11/2025  | 12/11/2025      |  |
 | 5 | - Build API to allow users to attach files stored on S3 to comments                                                      | 13/11/2025  | 13/11/2025      |  |
-| 6 | - Complete the notifications UI          | 14/11/2025   | 14/11/2025      |  |
+| 6 | - Complete the notifications UI  <br> - Update the worklog.        | 14/11/2025   | 14/11/2025      |  |
 
 
 ### Week 10 Achievements:

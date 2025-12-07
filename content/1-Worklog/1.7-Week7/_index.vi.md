@@ -14,11 +14,11 @@ pre = "<b> 1.7. </b>"
 
 | Thứ | Công việc                                                                                                               | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                           |
 | --- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------- |
-| 2   | - Chỉnh sửa API tự động thông báo cho dự án cuối khóa                                                                   | 20/10/2025   | 20/10/2025      |
+| 2   | - Tích hợp phương thức gửi các message vào các topic thông báo tương ứng trong Taskflow service thông qua Kafka. <br> - Họp nhóm cập nhật công việc hàng tuần                                                                  | 20/10/2025   | 20/10/2025      |
 | 3   | - **Thực hành:** lab15: Triển khai ứng dụng trên Docker với AWS                                                         | 21/10/2025   | 21/10/2025      | <https://000015.awsstudygroup.com/vi/>                   |
-| 4   | - Dịch bài blogs: Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên | 22/10/2025   | 22/10/2025      | [Blog 6](../../3-BlogsTranslated/3.6-Blog6/_index.vi.md) |
-| 5   | - Dịch bài blogs: Ra Mắt Strands Agents 1.0: Đơn Giản Hóa Việc Điều Phối Đa tác tử Đã Sẵn Sàng Triển Khai               | 23/10/2025   | 23/10/2025      | [Blog 7](../../3-BlogsTranslated/3.7-Blog7/_index.vi.md) |
-| 6   | - **Thực hành:** lab58: Làm việc với Amazon System Manager - Session Manager                                            | 24/10/2025   | 24/10/2025      | <https://000058.awsstudygroup.com/vi/>                   |
+| 4   | - Dịch bài blogs: Triển khai liên tục dựa trên phương pháp GitOps với ArgoCD và EKS bằng cách sử dụng ngôn ngữ tự nhiên | 22/10/2025   | 22/10/2025      | [link bài viết gốc](https://aws.amazon.com/blogs/devops/gitops-continuous-delivery-with-argocd-and-eks-using-natural-language/) |
+| 5   | - Dịch bài blogs: Ra Mắt Strands Agents 1.0: Đơn Giản Hóa Việc Điều Phối Đa tác tử Đã Sẵn Sàng Triển Khai               | 23/10/2025   | 23/10/2025      | [link bài viết gốc](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-1-0-production-ready-multi-agent-orchestration-made-simple/) |
+| 6   | - **Thực hành:** lab58: Làm việc với Amazon System Manager - Session Manager  <br> - Cập nhật worklog                                          | 24/10/2025   | 24/10/2025      | <https://000058.awsstudygroup.com/vi/>                   |
 
 ### Kết quả đạt được tuần 7:
 
