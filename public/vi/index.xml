@@ -19,7 +19,7 @@
       <link>https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html</guid>
-      <description>This is a new chapter.</description>
+      <description>Nền tảng Quản lý Tác vụ SaaS Tối Ưu Chi Phí Khả năng Sẵn sàng Cao (HA) Đơn Vùng với ECS Fargate 1. Tóm Tắt Điều Hành (Executive Summary) Nền tảng Quản lý Tác vụ SaaS được thiết kế để mang lại trải nghiệm cộng tác tương tự Todoist với Khả năng Sẵn sàng Cao (HA) và Hiệu Quả Chi Phí, được tối ưu hóa đặc biệt cho các giới hạn của AWS Free Tier.</description>
     </item>
     <item>
       <title>Các bài blog đã dịch</title>
@@ -40,7 +40,7 @@
       <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html</guid>
-      <description>This is a new chapter.</description>
+      <description>Nền tảng SaaS Quản Lý Công Việc Tối Ưu Chi Phí Tổng quan SGU TodoList là một ứng dụng quản lý công việc có tính ổn định cao và khả năng chịu lỗi tốt, được xây dựng theo kiến trúc Microservices nhằm đảm bảo khả năng mở rộng và tách biệt các thành phần.&#xA;Mục tiêu chính của workshop này là hướng dẫn người học triển khai và quản lý một hệ thống ứng dụng phức tạp trên nền tảng AWS Cloud, với trọng tâm vào tối ưu chi phí và vận hành theo mô hình serverless.</description>
     </item>
     <item>
       <title>Tự đánh giá</title>

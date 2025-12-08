@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ClouFront and Failover :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.4-cloufront-and-failover/index.html</link>
+    <description>STAGE 3: CONFIGURATION CLOUDFRONT (CDN &amp; FAILOVER) STEP 3.1: Create Distribution Step 1: Get started Distribution name: sgutodolist-frontend-cloudfront&#xA;Distribution type: Keep Single website or app.&#xA;Domain:&#xA;In the Route 53 managed domain box, enter: sgutodolist.com.&#xA;(If there is an Alternate domain names box, enter www.sgutodolist.com if the interface allows, otherwise we will add it later).&#xA;Click Next.&#xA;Step 2: Specify origin Origin type: Select Amazon S3.&#xA;Origin:&#xA;Click on the search box, select bucket Singapore: sgutodolist-frontend-sg....</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.4-cloufront-and-failover/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S3 Policy :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.5-s3-policy/index.html</link>
+    <description>STAGE 4: S3 PERMITS (POLICY) CloudFront needs a “permission” to pull files from your 2 closed buckets.&#xA;In CloudFront &gt; Origins tab.&#xA;Select Origin Singapore &gt; Edit &gt; Copy policy.&#xA;Open a new tab &gt; S3 Console &gt; Bucket sgutodolist-frontend-sg.&#xA;Permissions tab &gt; Bucket Policy &gt; Edit &gt; Paste &gt; Save.&#xA;Repeat with Bucket Virginia:&#xA;Go back to CloudFront &gt; Select Origin Virginia &gt; Edit &gt; Copy policy.&#xA;Go to S3 sgutodolist-frontend-us &gt; Permissions &gt; Bucket Policy &gt; Paste &gt; Save.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.5-s3-policy/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

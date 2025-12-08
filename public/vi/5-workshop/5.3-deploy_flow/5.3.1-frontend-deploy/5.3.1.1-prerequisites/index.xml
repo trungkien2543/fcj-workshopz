@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Điều kiện tiên quyết :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.1-prerequisites/index.html</link>
+    <description>Cần chuẩn bị: Tên miền đã đăng ký (VD: sgutodolist.com)&#xA;Với tài khoản AWS Free Tier, Route 53 không hỗ trợ đăng ký domain&#xA;→ sử dụng nhà cung cấp bên thứ ba và trỏ DNS về Route 53 Tài khoản AWS&#xA;Dự án ReactJS đã build thành công&#xA;AWS CLI (không bắt buộc, dùng để test)&#xA;Node.js &amp; npm đã được cài đặt&#xA;Kiến thức cần có: Kiến thức cơ bản về Amazon S3, CloudFront, Route 53</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.1-prerequisites/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

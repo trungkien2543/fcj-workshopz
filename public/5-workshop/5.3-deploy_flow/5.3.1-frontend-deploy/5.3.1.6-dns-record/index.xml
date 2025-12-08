@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DNS Record :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.6-dns-record/index.html</link>
+    <description>PHASE 5: POINT OFFICIAL DOMAIN (DNS RECORD) Go to Route 53 &gt; Hosted zones &gt; sgutodolist.com.&#xA;Create Record for Root domain:&#xA;Click Create record.&#xA;Record name: (leave blank).&#xA;Type: A.&#xA;Alias: Yes (Swipe the button to the right).&#xA;Route traffic to: Alias ​​to CloudFront distribution.&#xA;Choose distribution: Select the CloudFront domain (e.g. d123...cloudfront.net).&#xA;Click Create records.&#xA;Create Record for WWW: Do the same, but fill in www for Record name. ⬅ STEP 5: S3 Policy&#xD;STEP 7: Deploy and Test ➡</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.6-dns-record/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

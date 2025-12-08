@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S3 and Replication :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.2-s3-and-replication/index.html</link>
+    <description>PHASE 1: STORAGE PREPARATION (S3 &amp; REPLICATION) This phase focuses on creating a durable storage layer for frontend resources and setting up an automated cross-region synchronization mechanism.&#xA;Step 1.1: Create the Primary Bucket (Singapore) Open the Amazon S3 Console and select the Asia Pacific (Singapore) region.&#xA;Click Create bucket.&#xA;Bucket name: sgutodolist-frontend-sg Object Ownership: ACLs disabled (Recommended) Block Public Access: ✅ Block all public access&#xA;(The bucket must remain private because CloudFront OAC will be used.) Bucket Versioning: ✅ Enable&#xA;(Required for cross-region replication.) Default encryption: Server-side encryption with Amazon S3 managed keys (SSE-S3) Click Create bucket.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.2-s3-and-replication/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

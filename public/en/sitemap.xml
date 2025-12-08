@@ -13,6 +13,24 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/4-eventparticipated/4.1-event1/index.html" />
   </url>
   <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.1-network--security-preparation-vpc-sg/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.1-network--security-preparation-vpc-sg/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.1-network--security-preparation-vpc-sg/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.1-network--security-preparation-vpc-sg/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.1-prerequisites/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.1-prerequisites/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.1-prerequisites/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.1-prerequisites/index.html" />
+  </url>
+  <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.1-week1/index.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.1-week1/index.html" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/1.1-week1/index.html" />
@@ -23,6 +41,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/index.html" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/index.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/1-worklog/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.1-workshop_overview/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.1-workshop_overview/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/index.html" />
   </url>
   <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.2-blog2/index.html</loc>
@@ -37,10 +67,28 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/4-eventparticipated/4.2-event2/index.html" />
   </url>
   <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.2-infrastructure--alb-setup-rds-redis-cloud-map-alb-routing/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.2-infrastructure--alb-setup-rds-redis-cloud-map-alb-routing/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.2-infrastructure--alb-setup-rds-redis-cloud-map-alb-routing/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.2-infrastructure--alb-setup-rds-redis-cloud-map-alb-routing/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.2-prerequisite/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.2-prerequisite/index.html" />
+  </url>
+  <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/2-proposal/index.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/2-proposal/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.2-s3-and-replication/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.2-s3-and-replication/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.2-s3-and-replication/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.2-s3-and-replication/index.html" />
   </url>
   <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.2-week2/index.html</loc>
@@ -67,16 +115,52 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/index.html" />
   </url>
   <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.3-code-update--image-build-create-new-docker-image/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.3-code-update--image-build-create-new-docker-image/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.3-code-update--image-build-create-new-docker-image/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.3-code-update--image-build-create-new-docker-image/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.3-route-53-and-acm/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.3-route-53-and-acm/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.3-route-53-and-acm/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.3-route-53-and-acm/index.html" />
+  </url>
+  <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.4-blog4/index.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.4-blog4/index.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.4-blog4/index.html" />
   </url>
   <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.4-clean_up/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.4-clean_up/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.4-cloufront-and-failover/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.4-cloufront-and-failover/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.4-cloufront-and-failover/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.4-cloufront-and-failover/index.html" />
+  </url>
+  <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/4-eventparticipated/index.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/4-eventparticipated/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.4-task-definitions-creation-configure-settings-fix-environment-variables/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.4-task-definitions-creation-configure-settings-fix-environment-variables/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.4-task-definitions-creation-configure-settings-fix-environment-variables/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.4-task-definitions-creation-configure-settings-fix-environment-variables/index.html" />
   </url>
   <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.4-week4/index.html</loc>
@@ -89,6 +173,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.5-blog5/index.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.5-blog5/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.5-mystic-skills/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.5-mystic-skills/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.5-s3-policy/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.5-s3-policy/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.5-s3-policy/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.5-s3-policy/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.5-services-deployment/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.5-services-deployment/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.5-services-deployment/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.5-services-deployment/index.html" />
   </url>
   <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/1-worklog/1.5-week5/index.html</loc>
@@ -109,6 +211,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.6-blog6/index.html" />
   </url>
   <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.6-completion--verification-route-53-google-console-final-test/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.6-completion--verification-route-53-google-console-final-test/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.6-completion--verification-route-53-google-console-final-test/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.6-completion--verification-route-53-google-console-final-test/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.6-dns-record/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.6-dns-record/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.6-dns-record/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.6-dns-record/index.html" />
+  </url>
+  <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/6-self-evaluation/index.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/6-self-evaluation/index.html" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/6-self-evaluation/index.html" />
@@ -125,6 +239,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html" />
     <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/3.7-blog7/index.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/3-blogstranslated/3.7-blog7/index.html" />
+  </url>
+  <url>
+    <loc>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.7-deploy-and-test/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.7-deploy-and-test/index.html" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.7-deploy-and-test/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.7-deploy-and-test/index.html" />
   </url>
   <url>
     <loc>https://trungkien2543.github.io/fcj-workshopz/7-feedback/index.html</loc>

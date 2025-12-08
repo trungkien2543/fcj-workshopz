@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quy trình triển khai :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/index.html</link>
+    <description>Mục lục Phần này cung cấp hướng dẫn từng bước để triển khai cả Frontend và Backend lên hạ tầng điện toán đám mây.&#xA;Nội dung bao quát toàn bộ quy trình triển khai, từ khâu chuẩn bị build artifacts cho đến khi ứng dụng được phát hành ở môi trường production trên các dịch vụ AWS.&#xA;5.3.1. Triển khai Frontend&#xA;Hướng dẫn build, cấu hình và triển khai frontend lên Amazon S3 + CloudFront, bao gồm cơ chế failover đa vùng (cross-region).</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Triển khai Frontend</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/index.html</guid>
+      <description>Mô hình kiến trúc Domain: Route 53 (DNS) + ACM (SSL Certificate).&#xA;CDN: CloudFront (Global Edge Network).&#xA;Storage (Primary): S3 Singapore (ap-southeast-1).&#xA;Storage (Failover): S3 N. Virginia (us-east-1).&#xA;Replication: Tự động copy code từ Sing -&gt; Virginia.&#xA;Security: OAC (Origin Access Control) - Private Bucket.&#xA;MỤC LỤC Điều kiện tiên quyết&#xA;S3 và Replication&#xA;Route 53 và ACM&#xA;ClouFront và Failover&#xA;S3 Policy&#xA;DNS Record&#xA;Deploy và Test</description>
+    </item>
+    <item>
+      <title>Triển khai Backend</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/index.html</guid>
+      <description>Mô hình kiến trúc Mô hình này minh họa các dịch vụ cốt lõi được sử dụng nhằm đảm bảo tính sẵn sàng cao, độ trễ thấp và bảo mật cho hệ thống:&#xA;Tên miền &amp; SSL: Route 53 (DNS) được dùng để quản lý tên miền, trong khi ACM (SSL Certificate) đảm bảo mã hóa và bảo mật lưu lượng truy cập.&#xA;CDN: CloudFront đóng vai trò là mạng phân phối nội dung toàn cầu (Global Edge Network).</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta name="generator" content="Relearn 8.0.1+b23cf6629eada0c2802f34ae4012e04343497862">
+    <meta name="description" content="Giới thiệu dự án SGU TodoList là một ứng dụng quản lý công việc (Task Management) được xây dựng theo kiến trúc Microservices trên nền tảng AWS Cloud.
+Dự án ban đầu được thiết kế theo mô hình Multi-Region SaaS nhằm đảm bảo High Availability và Disaster Recovery. Tuy nhiên, do hạn chế về ngân sách và giới hạn của AWS Free Tier, nhóm đã tối ưu kiến trúc sang mô hình Single-Region Deployment, kết hợp với cơ chế Cross-Region Failover cho tầng frontend.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tổng quan Workshop :: My Hugo Site">
+    <meta name="twitter:description" content="Giới thiệu dự án SGU TodoList là một ứng dụng quản lý công việc (Task Management) được xây dựng theo kiến trúc Microservices trên nền tảng AWS Cloud.
+Dự án ban đầu được thiết kế theo mô hình Multi-Region SaaS nhằm đảm bảo High Availability và Disaster Recovery. Tuy nhiên, do hạn chế về ngân sách và giới hạn của AWS Free Tier, nhóm đã tối ưu kiến trúc sang mô hình Single-Region Deployment, kết hợp với cơ chế Cross-Region Failover cho tầng frontend.">
+    <meta property="og:url" content="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html">
+    <meta property="og:site_name" content="My Hugo Site">
+    <meta property="og:title" content="Tổng quan Workshop :: My Hugo Site">
+    <meta property="og:description" content="Giới thiệu dự án SGU TodoList là một ứng dụng quản lý công việc (Task Management) được xây dựng theo kiến trúc Microservices trên nền tảng AWS Cloud.
+Dự án ban đầu được thiết kế theo mô hình Multi-Region SaaS nhằm đảm bảo High Availability và Disaster Recovery. Tuy nhiên, do hạn chế về ngân sách và giới hạn của AWS Free Tier, nhóm đã tối ưu kiến trúc sang mô hình Single-Region Deployment, kết hợp với cơ chế Cross-Region Failover cho tầng frontend.">
+    <meta property="og:locale" content="vi">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Tổng quan Workshop :: My Hugo Site">
+    <meta itemprop="description" content="Giới thiệu dự án SGU TodoList là một ứng dụng quản lý công việc (Task Management) được xây dựng theo kiến trúc Microservices trên nền tảng AWS Cloud.
+Dự án ban đầu được thiết kế theo mô hình Multi-Region SaaS nhằm đảm bảo High Availability và Disaster Recovery. Tuy nhiên, do hạn chế về ngân sách và giới hạn của AWS Free Tier, nhóm đã tối ưu kiến trúc sang mô hình Single-Region Deployment, kết hợp với cơ chế Cross-Region Failover cho tầng frontend.">
+    <meta itemprop="wordCount" content="904">
+    <title>Tổng quan Workshop :: My Hugo Site</title>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html" rel="alternate" hreflang="vi">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.1-workshop_overview/index.html" rel="alternate" hreflang="en">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.xml" rel="alternate" type="application/rss+xml" title="Tổng quan Workshop :: My Hugo Site">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/images/logo.png?1765214704" rel="icon" type="image/png">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/auto-complete/auto-complete.min.css?1765214704" rel="stylesheet">
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/auto-complete/auto-complete.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search-lunr.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search.min.js?1765214704" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="https://trungkien2543.github.io/fcj-workshopz/searchindex.vi.js?1765214704";
+    </script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.multi.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.vi.min.js?1765214704" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['vi'];
+    </script>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1765214704" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1765214704" rel="stylesheet"></noscript>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1765214704" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/theme.min.css?1765214704" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/format-html.min.css?1765214704" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/vi\/5-workshop\/5.1-workshop_overview\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/trungkien2543.github.io\/fcj-workshopz';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Sao chép vào bảng tạm`;
+      window.T_Copied_to_clipboard = `Sao chép vào bảng tạm!`;
+      window.T_Copy_link_to_clipboard = `Sao chép nối kết vào bảng tạm`;
+      window.T_Link_copied_to_clipboard = `Liên kết được sao chép vào bảng tạm!`;
+      window.T_Reset_view = `Đặt lại dạng xem`;
+      window.T_View_reset = `Xem đặt lại!`;
+      window.T_No_results_found = `Không tìm thấy kết quả nào cho "{0}"`;
+      window.T_N_results_found = `{1} kết quả được tìm thấy cho "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/custom.css?1765214704" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#giới-thiệu-dự-án">Giới thiệu dự án</a></li>
+    <li><a href="#tổng-quan-kiến-trúc">Tổng quan kiến trúc</a>
+      <ul>
+        <li><a href="#kiến-trúc-backend-single-region-singapore">Kiến trúc Backend (Single-Region: Singapore)</a></li>
+        <li><a href="#kiến-trúc-frontend-multi-region-failover">Kiến trúc Frontend (Multi-Region Failover)</a></li>
+      </ul>
+    </li>
+    <li><a href="#thành-phần-chính">Thành phần chính</a>
+      <ul>
+        <li><a href="#1-backend-services-ecs-fargate"><strong>1. Backend Services (ECS Fargate)</strong></a></li>
+        <li><a href="#2-thành-phần-hạ-tầng"><strong>2. Thành phần hạ tầng</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#chi-phí--tối-ưu">Chi phí &amp; Tối ưu</a>
+      <ul>
+        <li><a href="#các-quyết-định-kiến-trúc-quan-trọng"><strong>Các quyết định kiến trúc quan trọng</strong></a></li>
+        <li><a href="#chiến-lược-public-subnet-cho-ecs"><strong>Chiến lược Public Subnet cho ECS</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#chiến-lược-domain--ssl">Chiến lược Domain &amp; SSL</a>
+      <ul>
+        <li><a href="#domain-production"><strong>Domain Production</strong></a></li>
+        <li><a href="#chứng-chỉ-ssl"><strong>Chứng chỉ SSL</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#kiến-trúc-bảo-mật">Kiến trúc bảo mật</a>
+      <ul>
+        <li><a href="#ma-trận-security-group"><strong>Ma trận Security Group</strong></a></li>
+        <li><a href="#luồng-xác-thực"><strong>Luồng xác thực</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#thông-tin-nhóm">Thông tin nhóm</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="https://trungkien2543.github.io/fcj-workshopz/vi/index.html"><span itemprop="name">Báo cáo thực tập</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html"><span itemprop="name">Workshop</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Tổng quan Workshop</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html" title="Workshop (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.html" title="Điều kiện tiên quyết (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 5-workshop" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="tổng-quan-workshop">Tổng quan Workshop</h1>
+
+<h2 id="giới-thiệu-dự-án">Giới thiệu dự án</h2>
+<p><strong>SGU TodoList</strong> là một ứng dụng quản lý công việc (Task Management) được xây dựng theo kiến trúc <strong>Microservices</strong> trên nền tảng <strong>AWS Cloud</strong>.<br>
+Dự án ban đầu được thiết kế theo mô hình <strong>Multi-Region SaaS</strong> nhằm đảm bảo <strong>High Availability</strong> và <strong>Disaster Recovery</strong>. Tuy nhiên, do hạn chế về ngân sách và giới hạn của <strong>AWS Free Tier</strong>, nhóm đã tối ưu kiến trúc sang mô hình <strong>Single-Region Deployment</strong>, kết hợp với cơ chế <strong>Cross-Region Failover</strong> cho tầng frontend.</p>
+<h2 id="tổng-quan-kiến-trúc">Tổng quan kiến trúc</h2>
+<h3 id="kiến-trúc-backend-single-region-singapore">Kiến trúc Backend (Single-Region: Singapore)</h3>
+<pre><code>    ┌─────────────────────────────────────────────────┐
+    │                 Người dùng Internet             │
+    └───────────────────────┬─────────────────────────┘
+                            │
+                            ▼
+                   ┌────────────────┐
+                   │   Route 53     │ ◄── Quản lý DNS
+                   │ (Global DNS)   │
+                   └────────┬───────┘
+                            │
+                            ▼
+                ┌──────────────────────┐
+                │  Application Load    │
+                │  Balancer (ALB)      │ ◄── Kết thúc SSL/TLS
+                │  + ACM Certificate   │     (sgutodolist.com)
+                └───────────┬──────────┘
+                            │
+            ┌───────────────┼──────────────┐
+            │               │              │
+            ▼               ▼              ▼
+         ┌─────────┐   ┌─────────┐   ┌──────────┐
+         │  Auth   │   │  User   │   │ Taskflow │ ◄── ECS Fargate
+         │ Service │   │ Service │   │ Service  │     Microservices
+         └────┬────┘   └────┬────┘   └────┬─────┘     (Public Subnets)
+              │             │             │
+              └─────────────┼─────────────┘
+                            │
+                 ┌──────────┴──────────┐
+                 │     API Gateway     │ ◄── Điểm truy cập trung tâm
+                 │     (Port 8080)     │     + CORS + Rate Limiting
+                 └──────────┬──────────┘
+                            │
+            ┌───────────────┼──────────────┐
+            │               │              │
+            ▼               ▼              ▼
+        ┌─────────────┐ ┌─────────┐  ┌──────────┐
+        │ Notification│ │  Kafka  │  │ AI Model │
+        │   Service   │ │ Cluster │  │ Service  │
+        └──────┬──────┘ └────┬────┘  └─────┬────┘
+               │             │             │
+               └─────────────┼─────────────┘
+                             │
+                  ┌──────────┴──────────┐
+                  │                     │
+                  ▼                     ▼
+             ┌─────────┐          ┌───────────┐
+             │   RDS   │          │  Redis    │ ◄── Tầng dữ liệu
+             │  MySQL  │          │ElastiCache│     (Private Subnets)
+             └─────────┘          └───────────┘
+</code></pre>
+<h3 id="kiến-trúc-frontend-multi-region-failover">Kiến trúc Frontend (Multi-Region Failover)</h3>
+<pre><code>    ┌─────────────────────────────────────────────────────────┐
+    │                    Người dùng Internet                  │
+    └──────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+                       ┌──────────────┐
+                       │   Route 53   │ ◄── DNS: sgutodolist.com
+                       └────────┬─────┘
+                                │
+                                ▼
+                       ┌────────────────┐
+                       │  CloudFront    │ ◄── CDN toàn cầu
+                       │  Distribution  │     SSL Certificate
+                       └────────┬───────┘     Custom Domain
+                                │
+                  ┌─────────────┴─────────────┐
+                  │     Origin Group (HA)     │
+                  │   ┌─────────────────┐     │
+                  │   │ Primary Origin  │     │
+                  │   │  S3 Singapore   │ ◄───┼── Vùng chính
+                  │   └─────────────────┘     │
+                  │            │              │
+                  │   ┌────────▼──────────┐   │
+                  │   │ Failover Origin   │   │
+                  │   │  S3 N. Virginia   │ ◄─┼── Vùng dự phòng
+                  │   └───────────────────┘   │
+                  └───────────────────────────┘
+                                │
+                    ┌───────────┴───────────┐
+                    │ S3 Cross-Region       │
+                    │ Replication (CRR)     │ ◄── Đồng bộ tự động
+                    └───────────────────────┘
+</code></pre>
+<h2 id="thành-phần-chính">Thành phần chính</h2>
+<h3 id="1-backend-services-ecs-fargate"><strong>1. Backend Services (ECS Fargate)</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Dịch vụ</th>
+          <th>Port</th>
+          <th>Chức năng</th>
+          <th>Phụ thuộc</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>API Gateway</td>
+          <td>8080</td>
+          <td>- Điều phối routing<br>- Xử lý CORS<br>- Giới hạn tần suất (Rate limiting)</td>
+          <td>Redis, Tất cả service</td>
+      </tr>
+      <tr>
+          <td>Auth Service</td>
+          <td>9999</td>
+          <td>- Xác thực JWT<br>- OAuth2 (Google)<br>- Quản lý token</td>
+          <td>RDS, Redis, Kafka</td>
+      </tr>
+      <tr>
+          <td>User Service</td>
+          <td>8081</td>
+          <td>- Quản lý thông tin người dùng<br>- CRUD User</td>
+          <td>RDS, Redis, Kafka</td>
+      </tr>
+      <tr>
+          <td>Taskflow Service</td>
+          <td>8082</td>
+          <td>- Quản lý công việc<br>- Workflow</td>
+          <td>RDS, Redis, Kafka</td>
+      </tr>
+      <tr>
+          <td>Notification Service</td>
+          <td>9998</td>
+          <td>- WebSocket realtime<br>- Push notification</td>
+          <td>RDS, Redis, Kafka</td>
+      </tr>
+      <tr>
+          <td>AI Model Service</td>
+          <td>9997</td>
+          <td>- Ưu tiên task<br>- Gợi ý thông minh</td>
+          <td>Python Flask</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="2-thành-phần-hạ-tầng"><strong>2. Thành phần hạ tầng</strong></h3>
+<h4 id="networking"><strong>Networking</strong></h4>
+<ul>
+<li><strong>VPC</strong>: <code>10.0.0.0/16</code> tại Singapore (<code>ap-southeast-1</code>)</li>
+<li><strong>Public Subnets (2 AZs)</strong>: ECS Tasks, ALB, Bastion</li>
+<li><strong>Private Subnets (2 AZs)</strong>: RDS, Redis (tầng dữ liệu)</li>
+<li><strong>Chiến lược bảo mật</strong>: Loại bỏ NAT Gateway để tiết kiệm chi phí (~30 USD/tháng)</li>
+</ul>
+<h4 id="lưu-trữ-dữ-liệu"><strong>Lưu trữ dữ liệu</strong></h4>
+<ul>
+<li><strong>RDS MySQL</strong>: CSDL chính, Free Tier (<code>db.t3.micro</code>)</li>
+<li><strong>ElastiCache Redis</strong>: Cache + Rate limiting (<code>cache.t3.micro</code>)</li>
+<li><strong>Kafka (ECS)</strong>: Event streaming, Service Discovery (<code>kafka.sgu.local</code>)</li>
+</ul>
+<h4 id="cân-bằng-tải--ssl"><strong>Cân bằng tải &amp; SSL</strong></h4>
+<ul>
+<li><strong>Application Load Balancer</strong>: Kết thúc HTTPS, routing theo path</li>
+<li><strong>ACM Certificate</strong>: <code>sgutodolist.com</code></li>
+<li><strong>Target Groups</strong>: Mỗi service có target group riêng với health check</li>
+</ul>
+<h4 id="service-discovery"><strong>Service Discovery</strong></h4>
+<ul>
+<li><strong>AWS Cloud Map</strong>: Namespace <code>sgu.local</code></li>
+<li><strong>DNS nội bộ</strong>:
+<ul>
+<li><code>auth.sgu.local:9999</code></li>
+<li><code>user.sgu.local:8081</code></li>
+<li><code>taskflow.sgu.local:8082</code></li>
+<li><code>notification.sgu.local:9998</code></li>
+<li><code>ai-model.sgu.local:9997</code></li>
+<li><code>kafka.sgu.local:9092</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="chi-phí--tối-ưu">Chi phí &amp; Tối ưu</h2>
+<h3 id="các-quyết-định-kiến-trúc-quan-trọng"><strong>Các quyết định kiến trúc quan trọng</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Yếu tố</th>
+          <th>Lựa chọn ban đầu</th>
+          <th>Lựa chọn cuối cùng</th>
+          <th>Tiết kiệm</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>NAT Gateway</strong></td>
+          <td>2 NAT (HA)</td>
+          <td>❌ Không dùng</td>
+          <td>~60 USD/tháng</td>
+      </tr>
+      <tr>
+          <td><strong>ECS Compute</strong></td>
+          <td>EC2 Instances</td>
+          <td>✅ Fargate Spot (0.5 vCPU)</td>
+          <td>~40 USD/tháng</td>
+      </tr>
+      <tr>
+          <td><strong>RDS</strong></td>
+          <td>Multi-AZ</td>
+          <td>✅ Single-AZ Free Tier</td>
+          <td>~30 USD/tháng</td>
+      </tr>
+      <tr>
+          <td><strong>Redis</strong></td>
+          <td>Cluster Mode</td>
+          <td>✅ Single Node</td>
+          <td>~20 USD/tháng</td>
+      </tr>
+      <tr>
+          <td><strong>Backend Multi-Region</strong></td>
+          <td>Active-Active</td>
+          <td>✅ Single Region</td>
+          <td>~200 USD/tháng</td>
+      </tr>
+      <tr>
+          <td><strong>Frontend HA</strong></td>
+          <td>Multi-Region Active</td>
+          <td>✅ Failover Only</td>
+          <td>~50 USD/tháng</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="chiến-lược-public-subnet-cho-ecs"><strong>Chiến lược Public Subnet cho ECS</strong></h3>
+<p>Thay vì sử dụng NAT Gateway tốn kém, toàn bộ ECS Tasks được triển khai trên <strong>Public Subnets</strong> với <strong>Public IP</strong> bật sẵn. Điều này cho phép:</p>
+<ul>
+<li>✅ Pull Docker image từ ECR qua Internet</li>
+<li>✅ Kết nối outbound tới các dịch vụ AWS</li>
+<li>✅ Tiết kiệm 100% chi phí NAT Gateway</li>
+<li>⚠️ Đánh đổi: cần cấu hình Security Group chặt chẽ</li>
+</ul>
+<h2 id="chiến-lược-domain--ssl">Chiến lược Domain &amp; SSL</h2>
+<h3 id="domain-production"><strong>Domain Production</strong></h3>
+<ul>
+<li><strong>Frontend</strong>: <code>https://sgutodolist.com</code> (CloudFront + ACM us-east-1)</li>
+<li><strong>Backend API</strong>: <code>https://sgutodolist.com</code> (ALB + ACM ap-southeast-1)</li>
+</ul>
+<h3 id="chứng-chỉ-ssl"><strong>Chứng chỉ SSL</strong></h3>
+<ul>
+<li><strong>Chứng chỉ 1</strong> (us-east-1): Dành cho CloudFront (bắt buộc ở Virginia)
+<ul>
+<li>Domain: <code>sgutodolist.com</code>, <code>*.sgutodolist.com</code></li>
+</ul>
+</li>
+<li><strong>Chứng chỉ 2</strong> (ap-southeast-1): Dành cho ALB Singapore
+<ul>
+<li>Domain: <code>sgutodolist.com</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="kiến-trúc-bảo-mật">Kiến trúc bảo mật</h2>
+<h3 id="ma-trận-security-group"><strong>Ma trận Security Group</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>SG Name</th>
+          <th>Mục đích</th>
+          <th>Inbound Rules</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>public-alb-sg</code></td>
+          <td>ALB public facing</td>
+          <td>0.0.0.0/0:443, 0.0.0.0/0:80</td>
+      </tr>
+      <tr>
+          <td><code>ecs-app-sg</code></td>
+          <td>ECS Tasks</td>
+          <td>ALB:8080-8082, 9998-9999; Self: all ports (inter-service)</td>
+      </tr>
+      <tr>
+          <td><code>private-db-sg</code></td>
+          <td>RDS + Redis + Kafka</td>
+          <td>ecs-app-sg:3306, 6379, 9092</td>
+      </tr>
+      <tr>
+          <td><code>bastion-sg</code></td>
+          <td>Bastion SSH Jump Host</td>
+          <td>My IP:22</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="luồng-xác-thực"><strong>Luồng xác thực</strong></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>User → CloudFront → API Gateway → Auth Service
+                                      ↓
+                              JWT + Redis Session
+                                      ↓
+                              Google OAuth2 (Optional)</code></pre></div>
+<h2 id="thông-tin-nhóm">Thông tin nhóm</h2>
+<ul>
+<li><strong>Dự án</strong>: SGU TodoList – Hệ thống quản lý công việc</li>
+<li><strong>Kiến trúc</strong>: Microservices Single-Region (Tối ưu chi phí)</li>
+<li><strong>Region chính</strong>: Asia Pacific (Singapore) – ap-southeast-1</li>
+<li><strong>Region dự phòng</strong>: US East (N. Virginia) – us-east-1 (chỉ frontend)</li>
+<li><strong>Mô hình triển khai</strong>: Tối ưu AWS Free Tier</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/index.html">
+            <div class="logo-title">My Hugo Site</div>
+          </a>
+        </div>
+        <search><form action="https://trungkien2543.github.io/fcj-workshopz/vi/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Tìm kiếm (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Tìm kiếm</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Tìm kiếm...">
+            <button class="search-clear" type="button" data-search-clear="" title="Xóa tìm kiếm"><i class="fas fa-times" title="Xóa tìm kiếm"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/vi/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/index.html">Trang chủ</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/vi/1-worklog/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/index.html"> <b> 1. </b> Worklog</a><ul id="R-subsections-16447363d800ec5deaa3b0a76c63c922" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/vi/2-proposal/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html"> <b> 2. </b> Bản đề xuất</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.html"> <b> 3. </b> Các bài blog đã dịch</a><ul id="R-subsections-dff4ca4b61121a10b58696aacb50b106" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/vi/4-eventparticipated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html"> <b> 4. </b> Các sự kiện đã tham gia</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/vi/5-workshop/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html"><b>5. </b>Workshop</a><ul id="R-subsections-3232083df9b680629be5cc26bdd904c0" class="collapsible-menu">
+            <li class="active " data-nav-id="/vi/5-workshop/5.1-workshop_overview/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html"> <b> 5.1.  </b> Tổng quan Workshop</a></li>
+            <li class="" data-nav-id="/vi/5-workshop/5.2-prerequisite/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.html"> <b> 5.2.  </b> Điều kiện tiên quyết</a></li>
+            <li class="alwaysopen " data-nav-id="/vi/5-workshop/5.3-deploy_flow/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/index.html"> <b> 5.3.  </b> Quy trình triển khai</a><ul id="R-subsections-bb7fe7553348ca03cc6bc8ebf581479a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/vi/5-workshop/5.4-clean_up/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html"> <b> 5.4.  </b> Clean Up</a></li>
+            <li class="" data-nav-id="/vi/5-workshop/5.5-mystic-skills/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html"><b>5.5. </b>Mystic Skills</a></li></ul></li>
+            <li class="" data-nav-id="/vi/6-self-evaluation/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/6-self-evaluation/index.html"> <b> 6. </b> Tự đánh giá</a></li>
+            <li class="" data-nav-id="/vi/7-feedback/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/7-feedback/index.html"> <b> 7. </b> Chia sẻ, đóng góp ý kiến</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-vi" value="vi" data-url="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html" lang="vi" selected data-selected>Tiếng Việt</option>
+                    <option id="R-select-language-en" value="en" data-url="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.1-workshop_overview/index.html" lang="en">English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/clipboard/clipboard.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/theme.min.js?1765214704" defer></script>
+  </body>
+</html>

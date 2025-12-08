@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mystic Skills :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html</link>
+    <description>1. Lệnh Hugo 1.1&#xA;hugo build&#xD;1.2&#xA;hugo server -D&#xD;2. Lệnh Git 2.1 Kiểm tra trạng thái repository&#xA;git status&#xD;2.2 Liệt kê các nhánh local&#xA;git branch&#xD;2.3 Liệt kê tất cả các nhánh (local + remote)&#xA;git branch -a&#xD;2.4 Chuyển sang nhánh khác&#xA;git checkout &lt;branch-name&gt;&#xD;Example: git checkout developer&#xA;2.5 Tạo và chuyển sang nhánh mới&#xA;git checkout -b &lt;branch-name&gt;&#xD;Example: git checkout -b feature/login</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

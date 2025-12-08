@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DNS Record :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.6-dns-record/index.html</link>
+    <description>GIAI ĐOẠN 5: TRỎ DOMAIN CHÍNH THỨC (DNS RECORD) Vào Route 53 &gt; Hosted zones &gt; sgutodolist.com.&#xA;Tạo Record cho Root domain:&#xA;Click Create record.&#xA;Record name: (để trống).&#xA;Type: A.&#xA;Alias: Yes (Gạt nút sang phải).&#xA;Route traffic to: Alias to CloudFront distribution.&#xA;Choose distribution: Chọn cái CloudFront domain (ví dụ d123...cloudfront.net).&#xA;Click Create records.&#xA;Tạo Record cho WWW:&#xA;Làm tương tự, nhưng Record name điền www. ⬅ BƯỚC 5: S3 Policy&#xD;BƯỚC 7: Deploy &amp; Test ➡</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.6-dns-record/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

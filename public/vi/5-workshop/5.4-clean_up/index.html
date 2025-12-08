@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta name="generator" content="Relearn 8.0.1+b23cf6629eada0c2802f34ae4012e04343497862">
+    <meta name="description" content="Hướng Dẫn Dọn Dẹp Hướng dẫn này cung cấp chỉ dẫn chi tiết để hoàn toàn dọn dẹp tất cả tài nguyên AWS đã triển khai ở hai khu vực ap-southeast-1 (Singapore) và us-east-1 (N. Virginia). Trình tự thực hiện được tối ưu để tránh tài nguyên bị bỏ sót và các chi phí phát sinh không mong muốn.
+I. Tóm Tắt Dịch Vụ AWS Đang Triển Khai Trước khi thực hiện, hãy kiểm tra sự tồn tại của các dịch vụ sau trong tài khoản của bạn:">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Clean Up :: My Hugo Site">
+    <meta name="twitter:description" content="Hướng Dẫn Dọn Dẹp Hướng dẫn này cung cấp chỉ dẫn chi tiết để hoàn toàn dọn dẹp tất cả tài nguyên AWS đã triển khai ở hai khu vực ap-southeast-1 (Singapore) và us-east-1 (N. Virginia). Trình tự thực hiện được tối ưu để tránh tài nguyên bị bỏ sót và các chi phí phát sinh không mong muốn.
+I. Tóm Tắt Dịch Vụ AWS Đang Triển Khai Trước khi thực hiện, hãy kiểm tra sự tồn tại của các dịch vụ sau trong tài khoản của bạn:">
+    <meta property="og:url" content="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html">
+    <meta property="og:site_name" content="My Hugo Site">
+    <meta property="og:title" content="Clean Up :: My Hugo Site">
+    <meta property="og:description" content="Hướng Dẫn Dọn Dẹp Hướng dẫn này cung cấp chỉ dẫn chi tiết để hoàn toàn dọn dẹp tất cả tài nguyên AWS đã triển khai ở hai khu vực ap-southeast-1 (Singapore) và us-east-1 (N. Virginia). Trình tự thực hiện được tối ưu để tránh tài nguyên bị bỏ sót và các chi phí phát sinh không mong muốn.
+I. Tóm Tắt Dịch Vụ AWS Đang Triển Khai Trước khi thực hiện, hãy kiểm tra sự tồn tại của các dịch vụ sau trong tài khoản của bạn:">
+    <meta property="og:locale" content="vi">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Clean Up :: My Hugo Site">
+    <meta itemprop="description" content="Hướng Dẫn Dọn Dẹp Hướng dẫn này cung cấp chỉ dẫn chi tiết để hoàn toàn dọn dẹp tất cả tài nguyên AWS đã triển khai ở hai khu vực ap-southeast-1 (Singapore) và us-east-1 (N. Virginia). Trình tự thực hiện được tối ưu để tránh tài nguyên bị bỏ sót và các chi phí phát sinh không mong muốn.
+I. Tóm Tắt Dịch Vụ AWS Đang Triển Khai Trước khi thực hiện, hãy kiểm tra sự tồn tại của các dịch vụ sau trong tài khoản của bạn:">
+    <meta itemprop="wordCount" content="676">
+    <title>Clean Up :: My Hugo Site</title>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html" rel="alternate" hreflang="vi">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.4-clean_up/index.html" rel="alternate" hreflang="en">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.xml" rel="alternate" type="application/rss+xml" title="Clean Up :: My Hugo Site">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/images/logo.png?1765214704" rel="icon" type="image/png">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/auto-complete/auto-complete.min.css?1765214704" rel="stylesheet">
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/auto-complete/auto-complete.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search-lunr.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search.min.js?1765214704" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="https://trungkien2543.github.io/fcj-workshopz/searchindex.vi.js?1765214704";
+    </script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.multi.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.vi.min.js?1765214704" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['vi'];
+    </script>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1765214704" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1765214704" rel="stylesheet"></noscript>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1765214704" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/theme.min.css?1765214704" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/format-html.min.css?1765214704" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/vi\/5-workshop\/5.4-clean_up\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/trungkien2543.github.io\/fcj-workshopz';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Sao chép vào bảng tạm`;
+      window.T_Copied_to_clipboard = `Sao chép vào bảng tạm!`;
+      window.T_Copy_link_to_clipboard = `Sao chép nối kết vào bảng tạm`;
+      window.T_Link_copied_to_clipboard = `Liên kết được sao chép vào bảng tạm!`;
+      window.T_Reset_view = `Đặt lại dạng xem`;
+      window.T_View_reset = `Xem đặt lại!`;
+      window.T_No_results_found = `Không tìm thấy kết quả nào cho "{0}"`;
+      window.T_N_results_found = `{1} kết quả được tìm thấy cho "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/custom.css?1765214704" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#hướng-dẫn-dọn-dẹp">Hướng Dẫn Dọn Dẹp</a>
+      <ul>
+        <li><a href="#i-tóm-tắt-dịch-vụ-aws-đang-triển-khai"><strong>I. Tóm Tắt Dịch Vụ AWS Đang Triển Khai</strong></a></li>
+        <li><a href="#ii-quy-trình-dọn-dẹp-theo-bước"><strong>II. Quy Trình Dọn Dẹp (Theo Bước)</strong></a></li>
+        <li><a href="#iii-kiểm-tra-cuối-cùng"><strong>III. Kiểm Tra Cuối Cùng</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="https://trungkien2543.github.io/fcj-workshopz/vi/index.html"><span itemprop="name">Báo cáo thực tập</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html"><span itemprop="name">Workshop</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Clean Up</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.6-completion--verification-route-53-google-console-final-test/index.html" title="Completion & Verification (Route 53, Google Console, Final Test) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html" title="Mystic Skills (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 5-workshop" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="clean-up">Clean Up</h1>
+
+<h2 id="hướng-dẫn-dọn-dẹp">Hướng Dẫn Dọn Dẹp</h2>
+<p>Hướng dẫn này cung cấp chỉ dẫn chi tiết để <strong>hoàn toàn dọn dẹp tất cả tài nguyên AWS đã triển khai</strong> ở hai khu vực <strong>ap-southeast-1 (Singapore)</strong> và <strong>us-east-1 (N. Virginia)</strong>. Trình tự thực hiện được tối ưu để tránh tài nguyên bị bỏ sót và các chi phí phát sinh không mong muốn.</p>
+<h3 id="i-tóm-tắt-dịch-vụ-aws-đang-triển-khai"><strong>I. Tóm Tắt Dịch Vụ AWS Đang Triển Khai</strong></h3>
+<p>Trước khi thực hiện, hãy kiểm tra sự tồn tại của các dịch vụ sau trong tài khoản của bạn:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Loại Dịch Vụ</th>
+          <th>Tên Dịch Vụ/Tài Nguyên</th>
+          <th>Khu Vực</th>
+          <th>Mục Đích</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Compute/Scaling</strong></td>
+          <td>ECS Cluster/ASG, EC2 Instances</td>
+          <td>ap-southeast-1</td>
+          <td>Hosting ứng dụng</td>
+      </tr>
+      <tr>
+          <td><strong>Database/Caching</strong></td>
+          <td>RDS DB Instance (Multi-AZ), ElastiCache Redis Cluster</td>
+          <td>ap-southeast-1</td>
+          <td>Lưu trữ dữ liệu &amp; Quản lý session</td>
+      </tr>
+      <tr>
+          <td><strong>Networking</strong></td>
+          <td>Application Load Balancer (ALB), Target Groups, NAT Gateway, VPC</td>
+          <td>ap-southeast-1</td>
+          <td>Phân phối traffic &amp; Truy cập Internet</td>
+      </tr>
+      <tr>
+          <td><strong>Storage/Artifacts</strong></td>
+          <td>S3 Primary Bucket, S3 DR Bucket, ECR Repositories</td>
+          <td>ap-southeast-1, us-east-1</td>
+          <td>Lưu trữ file &amp; Hosting image</td>
+      </tr>
+      <tr>
+          <td><strong>Global/DNS/Security</strong></td>
+          <td>CloudFront Distribution, ACM Certificates, Route 53 Hosted Zone</td>
+          <td>Global (Edge), us-east-1, ap-southeast-1</td>
+          <td>CDN &amp; Bảo mật SSL</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="ii-quy-trình-dọn-dẹp-theo-bước"><strong>II. Quy Trình Dọn Dẹp (Theo Bước)</strong></h3>
+<h4 id="1-dọn-dẹp-lớp-ứng-dụng-ap-southeast-1"><strong>1. Dọn Dẹp Lớp Ứng Dụng (ap-southeast-1)</strong></h4>
+<p>Bắt đầu bằng việc loại bỏ các tài nguyên hosting ứng dụng và kết nối tới database.</p>
+<ol>
+<li>
+<p><strong>Dừng ECS/EC2 Compute:</strong></p>
+<ul>
+<li><strong>Nếu sử dụng ECS:</strong>
+<ul>
+<li>Vào <strong>Amazon ECS</strong> → <strong>Clusters</strong>.</li>
+<li>Chọn Cluster → Tab <strong>Services</strong>.</li>
+<li>Chọn tất cả Services → Click <strong>Update</strong>.</li>
+<li>Đặt <strong>Desired tasks</strong> thành <strong>0</strong> → <strong>Next</strong> → <strong>Update Service</strong>.</li>
+<li>Chờ tasks dừng. Sau đó, chọn Services → <strong>Delete</strong> → Xác nhận bằng <code>delete me</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Xóa Load Balancer (ALB) Components:</strong></p>
+<ul>
+<li>
+<p>Vào <strong>EC2</strong> → <strong>Target Groups</strong>. Chọn Target Groups → Click <strong>Actions</strong> → <strong>Delete</strong>.</p>
+</li>
+<li>
+<p>Vào <strong>EC2</strong> → <strong>Load Balancers</strong>. Chọn ALB → Click <strong>Actions</strong> → <strong>Delete</strong>.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="2-xóa-database-và-dịch-vụ-caching"><strong>2. Xóa Database và Dịch Vụ Caching</strong></h4>
+<ol>
+<li>
+<p><strong>Xóa ElastiCache (Redis):</strong></p>
+<ul>
+<li>Vào <strong>ElastiCache</strong> → <strong>Redis Clusters</strong>. Chọn Cluster → Click <strong>Actions</strong> → <strong>Delete</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Xóa RDS Database (BƯỚC QUAN TRỌNG CHI PHÍ):</strong></p>
+<ul>
+<li>
+<p>Vào <strong>RDS</strong> → <strong>Databases</strong>. Chọn Instance.</p>
+</li>
+<li>
+<p>Nếu <strong>Deletion protection</strong> đang <em>Enabled</em>, click <strong>Modify</strong> → Cuộn xuống <em>Deletion protection</em> → Bỏ chọn → <strong>Continue</strong> → <strong>Apply immediately</strong>.</p>
+</li>
+<li>
+<p>Chọn Instance → Click <strong>Actions</strong> → <strong>Delete</strong>.</p>
+</li>
+<li>
+<p><strong>Bỏ chọn</strong> <strong>Create final snapshot</strong> → Nhập tên DB để xác nhận → Click <strong>Delete</strong>.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="3-dọn-dẹp-dịch-vụ-global-và-chứng-chỉ"><strong>3. Dọn Dẹp Dịch Vụ Global và Chứng Chỉ</strong></h4>
+<p>Các bước này liên quan tới tài nguyên ở nhiều khu vực.</p>
+<ol>
+<li>
+<p><strong>Xóa CloudFront Distribution:</strong></p>
+<ul>
+<li>
+<p>Vào <strong>CloudFront</strong>. Chọn Distribution → Click <strong>Disable</strong>. (Chờ 10-15 phút để trạng thái thay đổi).</p>
+</li>
+<li>
+<p>Khi Disabled, chọn Distribution → Click <strong>Delete</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Xóa ACM Certificates (Thực hiện ở cả hai khu vực):</strong></p>
+<ul>
+<li>
+<p><strong>us-east-1 (N. Virginia):</strong> Chuyển Region → Vào <strong>ACM</strong>. Chọn Certificate → Click <strong>Delete</strong>.</p>
+</li>
+<li>
+<p><strong>ap-southeast-1 (Singapore):</strong> Chuyển Region → Vào <strong>ACM</strong>. Chọn Certificate → Click <strong>Delete</strong>.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="4-dọn-dẹp-storage-và-artifacts"><strong>4. Dọn Dẹp Storage và Artifacts</strong></h4>
+<ol>
+<li>
+<p><strong>Xóa ECR Repositories:</strong></p>
+<ul>
+<li>Vào <strong>Elastic Container Registry (ECR)</strong>. Chọn Repositories → Click <strong>Delete</strong> → Nhập <code>delete</code> để xác nhận.</li>
+</ul>
+</li>
+<li>
+<p><strong>Dọn dẹp và Xóa S3 Buckets:</strong></p>
+<ul>
+<li>
+<p><strong>Gỡ CRR:</strong> Vào <strong>S3</strong> → Chọn Primary Bucket (<code>ap-southeast-1</code>) → Tab <strong>Management</strong> → <strong>Replication Rules</strong> → Xóa rule.</p>
+</li>
+<li>
+<p><strong>Empty Bucket:</strong> Với cả hai S3 Buckets (ap-southeast-1 và us-east-1), vào Tab <strong>Objects</strong> → Chọn tất cả → Click <strong>Delete</strong> → Nhập <code>permanently delete</code> để xác nhận.</p>
+</li>
+<li>
+<p><strong>Xóa Bucket:</strong> Sau khi empty, vào Tab <strong>Properties</strong> → Click <strong>Delete</strong> → Nhập tên Bucket để xác nhận.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="5-xóa-networking-và-dns"><strong>5. Xóa Networking và DNS</strong></h4>
+<ol>
+<li>
+<p><strong>Xóa NAT Gateway (BƯỚC QUAN TRỌNG CHI PHÍ):</strong></p>
+<ul>
+<li>Vào <strong>VPC</strong> → <strong>NAT Gateways</strong>. Chọn Gateway → Click <strong>Actions</strong> → <strong>Delete NAT Gateway</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Xóa Internet Gateway (IGW):</strong></p>
+<ul>
+<li>
+<p>Vào <strong>VPC</strong> → <strong>Internet Gateways</strong>. Chọn IGW → Click <strong>Actions</strong> → <strong>Detach from VPC</strong>.</p>
+</li>
+<li>
+<p>Chọn IGW → Click <strong>Actions</strong> → <strong>Delete Internet Gateway</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Xóa các thành phần VPC:</strong></p>
+<ul>
+<li>Xóa <strong>Security Groups</strong> → Xóa <strong>Subnets</strong> → Xóa <strong>VPC</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Xóa Route 53 Hosted Zone:</strong></p>
+<ul>
+<li>Vào <strong>Route 53</strong> → <strong>Hosted Zones</strong>. Xóa tất cả custom records → Click <strong>Delete Hosted Zone</strong>.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="iii-kiểm-tra-cuối-cùng"><strong>III. Kiểm Tra Cuối Cùng</strong></h3>
+<ul>
+<li>
+<p><strong>AWS Billing/Cost Explorer:</strong> Ngay lập tức kiểm tra để đảm bảo chi phí ước tính hàng giờ giảm xuống <strong>$0.00</strong>.</p>
+</li>
+<li>
+<p><strong>Dashboards:</strong> Kiểm tra bảng điều khiển EC2, ECS, và RDS ở <strong>ap-southeast-1</strong> để đảm bảo không còn tài nguyên đang chạy.</p>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/index.html">
+            <div class="logo-title">My Hugo Site</div>
+          </a>
+        </div>
+        <search><form action="https://trungkien2543.github.io/fcj-workshopz/vi/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Tìm kiếm (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Tìm kiếm</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Tìm kiếm...">
+            <button class="search-clear" type="button" data-search-clear="" title="Xóa tìm kiếm"><i class="fas fa-times" title="Xóa tìm kiếm"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/vi/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/index.html">Trang chủ</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/vi/1-worklog/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/index.html"> <b> 1. </b> Worklog</a><ul id="R-subsections-16447363d800ec5deaa3b0a76c63c922" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/vi/2-proposal/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html"> <b> 2. </b> Bản đề xuất</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.html"> <b> 3. </b> Các bài blog đã dịch</a><ul id="R-subsections-dff4ca4b61121a10b58696aacb50b106" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/vi/4-eventparticipated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html"> <b> 4. </b> Các sự kiện đã tham gia</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/vi/5-workshop/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html"><b>5. </b>Workshop</a><ul id="R-subsections-3232083df9b680629be5cc26bdd904c0" class="collapsible-menu">
+            <li class="" data-nav-id="/vi/5-workshop/5.1-workshop_overview/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html"> <b> 5.1.  </b> Tổng quan Workshop</a></li>
+            <li class="" data-nav-id="/vi/5-workshop/5.2-prerequisite/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.html"> <b> 5.2.  </b> Điều kiện tiên quyết</a></li>
+            <li class="alwaysopen " data-nav-id="/vi/5-workshop/5.3-deploy_flow/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/index.html"> <b> 5.3.  </b> Quy trình triển khai</a><ul id="R-subsections-bb7fe7553348ca03cc6bc8ebf581479a" class="collapsible-menu"></ul></li>
+            <li class="active " data-nav-id="/vi/5-workshop/5.4-clean_up/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html"> <b> 5.4.  </b> Clean Up</a></li>
+            <li class="" data-nav-id="/vi/5-workshop/5.5-mystic-skills/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html"><b>5.5. </b>Mystic Skills</a></li></ul></li>
+            <li class="" data-nav-id="/vi/6-self-evaluation/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/6-self-evaluation/index.html"> <b> 6. </b> Tự đánh giá</a></li>
+            <li class="" data-nav-id="/vi/7-feedback/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/7-feedback/index.html"> <b> 7. </b> Chia sẻ, đóng góp ý kiến</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-vi" value="vi" data-url="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html" lang="vi" selected data-selected>Tiếng Việt</option>
+                    <option id="R-select-language-en" value="en" data-url="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.4-clean_up/index.html" lang="en">English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/clipboard/clipboard.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/theme.min.js?1765214704" defer></script>
+  </body>
+</html>

@@ -115,3 +115,5 @@ Participating in the **“AWS CLOUD MASTERY SERIES #3 – Security on AWS”** w
 
 - When building a system, aside from infrastructure and architecture, it is crucial to focus on security from the smallest steps to prevent external threats and internal vulnerabilities.
 - Tools like Amazon GuardDuty can be applied to optimize workload, reduce manual effort, and increase automation in existing systems.
+
+![image](/images/event2.jpg)

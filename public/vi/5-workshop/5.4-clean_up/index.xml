@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clean Up :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html</link>
+    <description>Hướng Dẫn Dọn Dẹp Hướng dẫn này cung cấp chỉ dẫn chi tiết để hoàn toàn dọn dẹp tất cả tài nguyên AWS đã triển khai ở hai khu vực ap-southeast-1 (Singapore) và us-east-1 (N. Virginia). Trình tự thực hiện được tối ưu để tránh tài nguyên bị bỏ sót và các chi phí phát sinh không mong muốn.&#xA;I. Tóm Tắt Dịch Vụ AWS Đang Triển Khai Trước khi thực hiện, hãy kiểm tra sự tồn tại của các dịch vụ sau trong tài khoản của bạn:</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

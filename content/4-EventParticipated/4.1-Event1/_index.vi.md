@@ -113,3 +113,5 @@ Tham gia workshop **“Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition
 #### Bài học rút ra
 - Chiến lược hiện đại hóa cần **phased approach** và đo lường, đánh giá chính xác tình trạng hiện tại, không nên vội vàng chuyển đổi toàn bộ hệ thống.
 - Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+
+![image](/images/cloud_day.jpg)

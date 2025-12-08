@@ -3,9 +3,44 @@
   <channel>
     <title>Workshop :: My Hugo Site</title>
     <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Nền tảng SaaS Quản Lý Công Việc Tối Ưu Chi Phí Tổng quan SGU TodoList là một ứng dụng quản lý công việc có tính ổn định cao và khả năng chịu lỗi tốt, được xây dựng theo kiến trúc Microservices nhằm đảm bảo khả năng mở rộng và tách biệt các thành phần.&#xA;Mục tiêu chính của workshop này là hướng dẫn người học triển khai và quản lý một hệ thống ứng dụng phức tạp trên nền tảng AWS Cloud, với trọng tâm vào tối ưu chi phí và vận hành theo mô hình serverless.</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tổng quan Workshop</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html</guid>
+      <description>Giới thiệu dự án SGU TodoList là một ứng dụng quản lý công việc (Task Management) được xây dựng theo kiến trúc Microservices trên nền tảng AWS Cloud.&#xA;Dự án ban đầu được thiết kế theo mô hình Multi-Region SaaS nhằm đảm bảo High Availability và Disaster Recovery. Tuy nhiên, do hạn chế về ngân sách và giới hạn của AWS Free Tier, nhóm đã tối ưu kiến trúc sang mô hình Single-Region Deployment, kết hợp với cơ chế Cross-Region Failover cho tầng frontend.</description>
+    </item>
+    <item>
+      <title>Điều kiện tiên quyết</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.html</guid>
+      <description>Các điều kiện tiên quyết cho triển khai Backend Trước khi bắt đầu các bước triển khai được trình bày trong Mục lục, cần hoàn tất các công cụ nền tảng, cấu hình hệ thống và thiết lập dịch vụ AWS dưới đây nhằm đảm bảo quá trình triển khai diễn ra ổn định, an toàn và tối ưu chi phí trong khu vực ap-southeast-1 (Singapore).&#xA;Bước Yêu cầu Mục đích 1 Tài khoản AWS &amp; AWS CLI Truy cập và quản lý hạ tầng thông qua giao diện dòng lệnh 2 Tên miền &amp; SSL Bảo mật lưu lượng truy cập và phân phối nội dung toàn cầu 3 Mã nguồn &amp; Artifacts Xây dựng các image microservice có thể triển khai 4 Nền tảng mạng AWS Thiết lập kiến trúc VPC cô lập, sẵn sàng cho High Availability I. Công cụ &amp; Thông tin xác thực Thiết lập tài khoản AWS:&#xA;Cần có một tài khoản AWS hợp lệ và phải cấu hình AWS Budgets (cảnh báo chi phí) để theo dõi mức sử dụng Free Tier và tránh phát sinh chi phí ngoài ý muốn.</description>
+    </item>
+    <item>
+      <title>Quy trình triển khai</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/index.html</guid>
+      <description>Mục lục Phần này cung cấp hướng dẫn từng bước để triển khai cả Frontend và Backend lên hạ tầng điện toán đám mây.&#xA;Nội dung bao quát toàn bộ quy trình triển khai, từ khâu chuẩn bị build artifacts cho đến khi ứng dụng được phát hành ở môi trường production trên các dịch vụ AWS.&#xA;5.3.1. Triển khai Frontend&#xA;Hướng dẫn build, cấu hình và triển khai frontend lên Amazon S3 + CloudFront, bao gồm cơ chế failover đa vùng (cross-region).</description>
+    </item>
+    <item>
+      <title>Clean Up</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html</guid>
+      <description>Hướng Dẫn Dọn Dẹp Hướng dẫn này cung cấp chỉ dẫn chi tiết để hoàn toàn dọn dẹp tất cả tài nguyên AWS đã triển khai ở hai khu vực ap-southeast-1 (Singapore) và us-east-1 (N. Virginia). Trình tự thực hiện được tối ưu để tránh tài nguyên bị bỏ sót và các chi phí phát sinh không mong muốn.&#xA;I. Tóm Tắt Dịch Vụ AWS Đang Triển Khai Trước khi thực hiện, hãy kiểm tra sự tồn tại của các dịch vụ sau trong tài khoản của bạn:</description>
+    </item>
+    <item>
+      <title>Mystic Skills</title>
+      <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html</guid>
+      <description>1. Lệnh Hugo 1.1&#xA;hugo build&#xD;1.2&#xA;hugo server -D&#xD;2. Lệnh Git 2.1 Kiểm tra trạng thái repository&#xA;git status&#xD;2.2 Liệt kê các nhánh local&#xA;git branch&#xD;2.3 Liệt kê tất cả các nhánh (local + remote)&#xA;git branch -a&#xD;2.4 Chuyển sang nhánh khác&#xA;git checkout &lt;branch-name&gt;&#xD;Example: git checkout developer&#xA;2.5 Tạo và chuyển sang nhánh mới&#xA;git checkout -b &lt;branch-name&gt;&#xD;Example: git checkout -b feature/login</description>
+    </item>
   </channel>
 </rss>

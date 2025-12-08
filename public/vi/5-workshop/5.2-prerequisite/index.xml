@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Điều kiện tiên quyết :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.html</link>
+    <description>Các điều kiện tiên quyết cho triển khai Backend Trước khi bắt đầu các bước triển khai được trình bày trong Mục lục, cần hoàn tất các công cụ nền tảng, cấu hình hệ thống và thiết lập dịch vụ AWS dưới đây nhằm đảm bảo quá trình triển khai diễn ra ổn định, an toàn và tối ưu chi phí trong khu vực ap-southeast-1 (Singapore).&#xA;Bước Yêu cầu Mục đích 1 Tài khoản AWS &amp; AWS CLI Truy cập và quản lý hạ tầng thông qua giao diện dòng lệnh 2 Tên miền &amp; SSL Bảo mật lưu lượng truy cập và phân phối nội dung toàn cầu 3 Mã nguồn &amp; Artifacts Xây dựng các image microservice có thể triển khai 4 Nền tảng mạng AWS Thiết lập kiến trúc VPC cô lập, sẵn sàng cho High Availability I. Công cụ &amp; Thông tin xác thực Thiết lập tài khoản AWS:&#xA;Cần có một tài khoản AWS hợp lệ và phải cấu hình AWS Budgets (cảnh báo chi phí) để theo dõi mức sử dụng Free Tier và tránh phát sinh chi phí ngoài ý muốn.</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

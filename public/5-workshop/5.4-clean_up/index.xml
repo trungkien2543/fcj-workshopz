@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clean Up :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.4-clean_up/index.html</link>
+    <description>Cleanup Guide This guide provides a comprehensive instruction to completely terminate all deployed AWS resources across the ap-southeast-1 (Singapore) and us-east-1 (N. Virginia) regions. The sequence is optimized to avoid orphaned resources and subsequent charges.&#xA;I. Deployed AWS Services Summary Before proceeding, verify the existence of the following active services in your account:&#xA;Service Category Service/Resource Name Region Purpose Compute/Scaling ECS Cluster/ASG, EC2 Instances ap-southeast-1 Application Hosting Database/Caching RDS DB Instance (Multi-AZ), ElastiCache Redis Cluster ap-southeast-1 Data Persistence &amp; Session Management Networking Application Load Balancer (ALB), Target Groups, NAT Gateway, VPC ap-southeast-1 Traffic Distribution &amp; Internet Access Storage/Artifacts S3 Primary Bucket, S3 DR Bucket, ECR Repositories ap-southeast-1, us-east-1 File Storage &amp; Image Hosting Global/DNS/Security CloudFront Distribution, ACM Certificates, Route 53 Hosted Zone Global (Edge), us-east-1, ap-southeast-1 CDN &amp; SSL Security II. Cleanup Procedure (Step-by-Step) 1. Clean Up Application Layer (ap-southeast-1) We start by eliminating resources that host the application and connect to the database.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.4-clean_up/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

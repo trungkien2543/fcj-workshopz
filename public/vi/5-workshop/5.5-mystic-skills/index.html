@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta name="generator" content="Relearn 8.0.1+b23cf6629eada0c2802f34ae4012e04343497862">
+    <meta name="description" content="1. Lệnh Hugo 1.1
+hugo build1.2
+hugo server -D2. Lệnh Git 2.1 Kiểm tra trạng thái repository
+git status2.2 Liệt kê các nhánh local
+git branch2.3 Liệt kê tất cả các nhánh (local &#43; remote)
+git branch -a2.4 Chuyển sang nhánh khác
+git checkout &lt;branch-name&gt;Example: git checkout developer
+2.5 Tạo và chuyển sang nhánh mới
+git checkout -b &lt;branch-name&gt;Example: git checkout -b feature/login">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mystic Skills :: My Hugo Site">
+    <meta name="twitter:description" content="1. Lệnh Hugo 1.1
+hugo build1.2
+hugo server -D2. Lệnh Git 2.1 Kiểm tra trạng thái repository
+git status2.2 Liệt kê các nhánh local
+git branch2.3 Liệt kê tất cả các nhánh (local &#43; remote)
+git branch -a2.4 Chuyển sang nhánh khác
+git checkout &lt;branch-name&gt;Example: git checkout developer
+2.5 Tạo và chuyển sang nhánh mới
+git checkout -b &lt;branch-name&gt;Example: git checkout -b feature/login">
+    <meta property="og:url" content="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html">
+    <meta property="og:site_name" content="My Hugo Site">
+    <meta property="og:title" content="Mystic Skills :: My Hugo Site">
+    <meta property="og:description" content="1. Lệnh Hugo 1.1
+hugo build1.2
+hugo server -D2. Lệnh Git 2.1 Kiểm tra trạng thái repository
+git status2.2 Liệt kê các nhánh local
+git branch2.3 Liệt kê tất cả các nhánh (local &#43; remote)
+git branch -a2.4 Chuyển sang nhánh khác
+git checkout &lt;branch-name&gt;Example: git checkout developer
+2.5 Tạo và chuyển sang nhánh mới
+git checkout -b &lt;branch-name&gt;Example: git checkout -b feature/login">
+    <meta property="og:locale" content="vi">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Mystic Skills :: My Hugo Site">
+    <meta itemprop="description" content="1. Lệnh Hugo 1.1
+hugo build1.2
+hugo server -D2. Lệnh Git 2.1 Kiểm tra trạng thái repository
+git status2.2 Liệt kê các nhánh local
+git branch2.3 Liệt kê tất cả các nhánh (local &#43; remote)
+git branch -a2.4 Chuyển sang nhánh khác
+git checkout &lt;branch-name&gt;Example: git checkout developer
+2.5 Tạo và chuyển sang nhánh mới
+git checkout -b &lt;branch-name&gt;Example: git checkout -b feature/login">
+    <meta itemprop="wordCount" content="1021">
+    <title>Mystic Skills :: My Hugo Site</title>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html" rel="alternate" hreflang="vi">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.5-mystic-skills/index.html" rel="alternate" hreflang="en">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.xml" rel="alternate" type="application/rss+xml" title="Mystic Skills :: My Hugo Site">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/images/logo.png?1765214704" rel="icon" type="image/png">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/auto-complete/auto-complete.min.css?1765214704" rel="stylesheet">
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/auto-complete/auto-complete.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search-lunr.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/search.min.js?1765214704" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="https://trungkien2543.github.io/fcj-workshopz/searchindex.vi.js?1765214704";
+    </script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.stemmer.support.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.multi.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/lunr/lunr.vi.min.js?1765214704" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['vi'];
+    </script>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1765214704" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://trungkien2543.github.io/fcj-workshopz/fonts/fontawesome/css/fontawesome-all.min.css?1765214704" rel="stylesheet"></noscript>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/perfect-scrollbar/perfect-scrollbar.min.css?1765214704" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/theme.min.css?1765214704" rel="stylesheet">
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/format-html.min.css?1765214704" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/vi\/5-workshop\/5.5-mystic-skills\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/trungkien2543.github.io\/fcj-workshopz';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Sao chép vào bảng tạm`;
+      window.T_Copied_to_clipboard = `Sao chép vào bảng tạm!`;
+      window.T_Copy_link_to_clipboard = `Sao chép nối kết vào bảng tạm`;
+      window.T_Link_copied_to_clipboard = `Liên kết được sao chép vào bảng tạm!`;
+      window.T_Reset_view = `Đặt lại dạng xem`;
+      window.T_View_reset = `Xem đặt lại!`;
+      window.T_No_results_found = `Không tìm thấy kết quả nào cho "{0}"`;
+      window.T_N_results_found = `{1} kết quả được tìm thấy cho "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="https://trungkien2543.github.io/fcj-workshopz/css/custom.css?1765214704" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-lệnh-hugo"><strong>1. Lệnh Hugo</strong></a></li>
+        <li><a href="#2-lệnh-git"><strong>2. Lệnh Git</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="https://trungkien2543.github.io/fcj-workshopz/vi/index.html"><span itemprop="name">Báo cáo thực tập</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html"><span itemprop="name">Workshop</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Mystic Skills</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html" title="Clean Up (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://trungkien2543.github.io/fcj-workshopz/vi/6-self-evaluation/index.html" title="Tự đánh giá (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 5-workshop" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="mystic-skills">Mystic Skills</h1>
+
+<h3 id="1-lệnh-hugo"><strong>1. Lệnh Hugo</strong></h3>
+<p>1.1</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo build</span></span></code></pre></div>
+<p>1.2</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -D</span></span></code></pre></div>
+<hr>
+<h3 id="2-lệnh-git"><strong>2. Lệnh Git</strong></h3>
+<p>2.1 Kiểm tra trạng thái repository</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status</span></span></code></pre></div>
+<p>2.2 Liệt kê các nhánh local</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch</span></span></code></pre></div>
+<p>2.3 Liệt kê tất cả các nhánh (local + remote)</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -a</span></span></code></pre></div>
+<p>2.4 Chuyển sang nhánh khác</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout &lt;branch-name&gt;</span></span></code></pre></div>
+<p>Example: git checkout developer</p>
+<p>2.5 Tạo và chuyển sang nhánh mới</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -b &lt;branch-name&gt;</span></span></code></pre></div>
+<p>Example: git checkout -b feature/login</p>
+<p>2.6 Pull các cập nhật mới nhất từ remote</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git pull</span></span></code></pre></div>
+<p>2.7 Fetch các cập nhật mà không merge</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git fetch</span></span></code></pre></div>
+<p>2.8 Thêm file vào staging</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add &lt;file&gt;</span></span></code></pre></div>
+<p>Thêm tất cả thay đổi: git add .</p>
+<p>2.9 Commit thay đổi</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;your message&#34;</span></span></span></code></pre></div>
+<p>2.10 Push thay đổi lên remote</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push</span></span></code></pre></div>
+<p>Push nhánh mới lần đầu:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push -u origin &lt;branch-name&gt;</span></span></code></pre></div>
+<p>2.11 Xem remote repositories</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v</span></span></code></pre></div>
+<p>2.12 Merge một nhánh vào nhánh hiện tại</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git merge &lt;branch-name&gt;</span></span></code></pre></div>
+<p>Example:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout main
+</span></span><span style="display:flex;"><span>git merge developer</span></span></code></pre></div>
+<p>2.13 Xóa nhánh
+Xóa nhánh local:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -d &lt;branch-name&gt;</span></span></code></pre></div>
+<p>Xóa nhánh remote:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push origin --delete &lt;branch-name&gt;</span></span></code></pre></div>
+<p>2.14 Hoàn tác thay đổi
+Bỏ thay đổi trong một file:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -- &lt;file&gt;</span></span></code></pre></div>
+<p>Reset tất cả về commit cuối cùng:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git reset --hard</span></span></code></pre></div>
+<p><strong>3. Lệnh PowerShell</strong>
+3.1 Tự động cập nhật _index.md cho tất cả các tuần trong một thư mục cụ thể</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Đường dẫn tới thư mục của Dương Bình Minh</span>
+</span></span><span style="display:flex;"><span>$targetDir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;content/1-Worklog/1.3-DuongBinhMinh&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Kiểm tra xem thư mục có tồn tại không</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>-not <span style="color:#f92672">(</span>Test-Path $targetDir<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    Write-Host <span style="color:#e6db74">&#34;Lỗi: Không tìm thấy thư mục </span>$targetDir<span style="color:#e6db74">&#34;</span> -ForegroundColor Red
+</span></span><span style="display:flex;"><span>    break
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lấy danh sách các folder con</span>
+</span></span><span style="display:flex;"><span>$folders <span style="color:#f92672">=</span> Get-ChildItem -Path $targetDir -Directory
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>foreach <span style="color:#f92672">(</span>$folder in $folders<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$folder.Name -match <span style="color:#e6db74">&#34;Week_(\d+)&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        $weekNum <span style="color:#f92672">=</span> $matches<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>        $filePath <span style="color:#f92672">=</span> Join-Path $folder.FullName <span style="color:#e6db74">&#34;_index.md&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Test-Path $filePath<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Đọc nội dung file</span>
+</span></span><span style="display:flex;"><span>            $content <span style="color:#f92672">=</span> Get-Content -Path $filePath -Raw -Encoding UTF8
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Tạo nội dung pre mới</span>
+</span></span><span style="display:flex;"><span>            $newPreLine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pre = `&#34;</span> &lt;b&gt; 1.3.$weekNum. &lt;/b&gt; <span style="color:#e6db74">`</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Thay thế dòng pre cũ</span>
+</span></span><span style="display:flex;"><span>            $newContent <span style="color:#f92672">=</span> $content -replace <span style="color:#e6db74">&#39;(?m)^pre\s*=\s*&#34;.*&#34;&#39;</span>, $newPreLine
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Ghi đè lại file</span>
+</span></span><span style="display:flex;"><span>            Set-Content -Path $filePath -Value $newContent -Encoding UTF8
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># ĐÃ SỬA DÒNG NÀY: Dùng $($weekNum) để tránh lỗi cú pháp với dấu hai chấm</span>
+</span></span><span style="display:flex;"><span>            Write-Host <span style="color:#e6db74">&#34;Đã sửa Week </span><span style="color:#66d9ef">$(</span>$weekNum<span style="color:#66d9ef">)</span><span style="color:#e6db74">: </span>$newPreLine<span style="color:#e6db74">&#34;</span> -ForegroundColor Green
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            Write-Host <span style="color:#e6db74">&#34;Bỏ qua </span>$folder<span style="color:#e6db74">.Name (Không tìm thấy _index.md)&#34;</span> -ForegroundColor Yellow
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Write-Host <span style="color:#e6db74">&#34;Hoàn tất cập nhật!&#34;</span> -ForegroundColor Cyan</span></span></code></pre></div>
+<p>3.2 Chuẩn hóa cấu trúc thư mục, chuyển Leaf Bundles → Branch Bundles, sửa frontmatter và link nội bộ</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># --- CONFIGURATION ---</span>
+</span></span><span style="display:flex;"><span>$worklogPath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;content/1-Worklog&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- HELPER FUNCTION: Fix index.md -&gt; _index.md ---</span>
+</span></span><span style="display:flex;"><span>Function Fix-IndexFileName <span style="color:#f92672">(</span>$dirPath<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    $wrongFile <span style="color:#f92672">=</span> Join-Path $dirPath <span style="color:#e6db74">&#34;index.md&#34;</span>
+</span></span><span style="display:flex;"><span>    $correctFile <span style="color:#f92672">=</span> Join-Path $dirPath <span style="color:#e6db74">&#34;_index.md&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Test-Path $wrongFile<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>-not <span style="color:#f92672">(</span>Test-Path $correctFile<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            Rename-Item -Path $wrongFile -NewName <span style="color:#e6db74">&#34;_index.md&#34;</span>
+</span></span><span style="display:flex;"><span>            Write-Host <span style="color:#e6db74">&#34;  [File] Fixed index.md -&gt; _index.md&#34;</span> -ForegroundColor Magenta
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- START PROCESSING ---</span>
+</span></span><span style="display:flex;"><span>Write-Host <span style="color:#e6db74">&#34;=== STARTING HUGO DATA STANDARDIZATION ===&#34;</span> -ForegroundColor Cyan
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. Get all user directories (e.g., 1.1, 1.2, 1.3...)</span>
+</span></span><span style="display:flex;"><span>$userFolders <span style="color:#f92672">=</span> Get-ChildItem -Path $worklogPath -Directory
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>foreach <span style="color:#f92672">(</span>$userFolder in $userFolders<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Check if folder matches pattern &#34;1.x-Name&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$userFolder.Name -match <span style="color:#e6db74">&#34;^(\d+\.\d+)-&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        $userPrefix <span style="color:#f92672">=</span> $matches<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> 
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;`n--- Processing User: </span><span style="color:#66d9ef">$(</span>$userFolder.Name<span style="color:#66d9ef">)</span><span style="color:#e6db74"> (Prefix: </span>$userPrefix<span style="color:#e6db74">) ---&#34;</span> -ForegroundColor Cyan
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># STEP 1: Fix the User&#39;s main _index.md</span>
+</span></span><span style="display:flex;"><span>        Fix-IndexFileName $userFolder.FullName
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        $parentIndexFile <span style="color:#f92672">=</span> Join-Path $userFolder.FullName <span style="color:#e6db74">&#34;_index.md&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Test-Path $parentIndexFile<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            $pContent <span style="color:#f92672">=</span> Get-Content -Path $parentIndexFile -Raw -Encoding UTF8
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Fix Hugo shortcode syntax warning (&lt; &gt; to % %)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Tách chuỗi &#39;{&#39; + &#39;{&#39; để Hugo không hiểu nhầm là shortcode</span>
+</span></span><span style="display:flex;"><span>            $pContent <span style="color:#f92672">=</span> $pContent -replace <span style="color:#e6db74">&#39;\{\{&lt;\s*relref&#39;</span>, <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;{&#39;</span> + <span style="color:#e6db74">&#39;{% relref&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>            $pContent <span style="color:#f92672">=</span> $pContent -replace <span style="color:#e6db74">&#39;&gt;\}\}\)&#39;</span>, <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;%&#39;</span> + <span style="color:#e6db74">&#39;}})&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Repair broken links to match the current User Prefix</span>
+</span></span><span style="display:flex;"><span>            $pContent <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>Regex<span style="color:#f92672">]</span>::Replace<span style="color:#f92672">(</span>$pContent, <span style="color:#e6db74">&#39;relref\s*&#34;[^&#34;]*?Week_(\d+)&#34;&#39;</span>, <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                param<span style="color:#f92672">(</span>$m<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                $w <span style="color:#f92672">=</span> $m.Groups<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>.Value
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;relref &#34;&#39;</span> + <span style="color:#e6db74">&#34;</span>$userPrefix<span style="color:#e6db74">.</span>$w<span style="color:#e6db74">-Week_</span>$w<span style="color:#e6db74">&#34;</span> + <span style="color:#e6db74">&#39;&#34;&#39;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">})</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            Set-Content -Path $parentIndexFile -Value $pContent -Encoding UTF8
+</span></span><span style="display:flex;"><span>            Write-Host <span style="color:#e6db74">&#34;  [Link] Updated links in parent _index.md&#34;</span> -ForegroundColor Green
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># STEP 2: Process Sub-folders (Weeks)</span>
+</span></span><span style="display:flex;"><span>        $weekFolders <span style="color:#f92672">=</span> Get-ChildItem -Path $userFolder.FullName -Directory | Where-Object <span style="color:#f92672">{</span> $_.Name -match <span style="color:#e6db74">&#34;Week_&#34;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        foreach <span style="color:#f92672">(</span>$weekFolder in $weekFolders<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$weekFolder.Name -match <span style="color:#e6db74">&#34;Week_(\d+)&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                $weekNum <span style="color:#f92672">=</span> $matches<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># A. Standardize Folder Name (e.g., 1.3.1-Week_1)</span>
+</span></span><span style="display:flex;"><span>                $correctFolderName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span>$userPrefix<span style="color:#e6db74">.</span>$weekNum<span style="color:#e6db74">-Week_</span>$weekNum<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>                $currentFolderPath <span style="color:#f92672">=</span> $weekFolder.FullName
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$weekFolder.Name -ne $correctFolderName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                    try <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                        Rename-Item -Path $currentFolderPath -NewName $correctFolderName -ErrorAction Stop
+</span></span><span style="display:flex;"><span>                        $currentFolderPath <span style="color:#f92672">=</span> Join-Path $userFolder.FullName $correctFolderName
+</span></span><span style="display:flex;"><span>                        Write-Host <span style="color:#e6db74">&#34;  [Folder] Renamed to: </span>$correctFolderName<span style="color:#e6db74">&#34;</span> -ForegroundColor Yellow
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">}</span> catch <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                        Write-Host <span style="color:#e6db74">&#34;  [Error] Could not rename folder </span><span style="color:#66d9ef">$(</span>$weekFolder.Name<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> -ForegroundColor Red
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># B. Fix Bundle Type inside the Week folder</span>
+</span></span><span style="display:flex;"><span>                Fix-IndexFileName $currentFolderPath
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                $childIndexFile <span style="color:#f92672">=</span> Join-Path $currentFolderPath <span style="color:#e6db74">&#34;_index.md&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Test-Path $childIndexFile<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                    $cContent <span style="color:#f92672">=</span> Get-Content -Path $childIndexFile -Raw -Encoding UTF8
+</span></span><span style="display:flex;"><span>                    
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e"># C. Update &#39;pre&#39; in Frontmatter for Sidebar Navigation</span>
+</span></span><span style="display:flex;"><span>                    $newPre <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pre = `&#34;</span> &lt;b&gt; $userPrefix.$weekNum. &lt;/b&gt; <span style="color:#e6db74">`</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>                    
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$cContent -match <span style="color:#e6db74">&#39;(?m)^pre\s*=&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                        $cContent <span style="color:#f92672">=</span> $cContent -replace <span style="color:#e6db74">&#39;(?m)^pre\s*=\s*&#34;.*&#34;&#39;</span>, $newPre
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                        $cContent <span style="color:#f92672">=</span> $cContent -replace <span style="color:#e6db74">&#39;(?m)^weight\s*=\s*(\d+)&#39;</span>, <span style="color:#e6db74">&#34;weight = `</span>$1<span style="color:#e6db74">`n</span>$newPre<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    Set-Content -Path $childIndexFile -Value $cContent -Encoding UTF8
+</span></span><span style="display:flex;"><span>                    Write-Host <span style="color:#e6db74">&#34;  [Pre] Updated frontmatter pre to: </span>$userPrefix<span style="color:#e6db74">.</span>$weekNum<span style="color:#e6db74">.&#34;</span> -ForegroundColor Gray
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Write-Host <span style="color:#e6db74">&#34;`n=== COMPLETED! PLEASE RUN: hugo server -D ===&#34;</span> -ForegroundColor Green</span></span></code></pre></div>
+<p>3.3 Tạo nhiều thư mục cùng lúc</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$basePath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D:\IT\AWS-FCJ\AWS-Workshop\content\5-Workshop&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$folders <span style="color:#f92672">=</span> @<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;5.1-Workshop_Overview&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;5.2-Prerequisite&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;5.3-Deploy_Flow&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;5.4-Clean_Up&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>foreach <span style="color:#f92672">(</span>$f in $folders<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    $fullPath <span style="color:#f92672">=</span> Join-Path $basePath $f
+</span></span><span style="display:flex;"><span>    New-Item -ItemType Directory -Path $fullPath -Force | Out-Null
+</span></span><span style="display:flex;"><span>    New-Item -ItemType File -Path <span style="color:#f92672">(</span>Join-Path $fullPath <span style="color:#e6db74">&#34;_index.md&#34;</span><span style="color:#f92672">)</span> -Force | Out-Null
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<p>3.4 Tạo một thư mục đơn lẻ</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$basePath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D:\IT\AWS-FCJ\AWS-Workshop\content\5-Workshop&#34;</span>
+</span></span><span style="display:flex;"><span>$folderName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5.1-Workshop_Overview&#34;</span>   <span style="color:#75715e"># &lt;-- Change name here</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$fullPath <span style="color:#f92672">=</span> Join-Path $basePath $folderName
+</span></span><span style="display:flex;"><span>New-Item -ItemType Directory -Path $fullPath -Force | Out-Null
+</span></span><span style="display:flex;"><span>New-Item -ItemType File -Path <span style="color:#f92672">(</span>Join-Path $fullPath <span style="color:#e6db74">&#34;_index.md&#34;</span><span style="color:#f92672">)</span> -Force | Out-Null</span></span></code></pre></div>
+<p>3.5 Hiển thị toàn bộ cấu trúc project</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tree /f /a</span></span></code></pre></div>
+<p>3.6 Hiển thị cấu trúc một thư mục cụ thể</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tree content/1-Worklog/ /F</span></span></code></pre></div>
+<p>3.7 Tái tạo gh-pages worktree một cách an toàn</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 0. Remove current public folder</span>
+</span></span><span style="display:flex;"><span>Remove-Item -Recurse -Force .<span style="color:#ae81ff">\p</span>ublic
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. Remove old gh-pages worktree (even if folder no longer exists)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git worktree remove <span style="color:#e6db74">&#34;D:/IT/AWS-FCJ/AWS-Workshop/public/public&#34;</span> --force
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Clean orphaned worktree metadata</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git worktree prune
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. Verify remaining worktrees</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git worktree list
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. Recreate gh-pages worktree at /public</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git worktree add -B gh-pages public origin/gh-pages
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 5. Verify status</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git status</span></span></code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="https://trungkien2543.github.io/fcj-workshopz/vi/index.html">
+            <div class="logo-title">My Hugo Site</div>
+          </a>
+        </div>
+        <search><form action="https://trungkien2543.github.io/fcj-workshopz/vi/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Tìm kiếm (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Tìm kiếm</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Tìm kiếm...">
+            <button class="search-clear" type="button" data-search-clear="" title="Xóa tìm kiếm"><i class="fas fa-times" title="Xóa tìm kiếm"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/vi/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/index.html">Trang chủ</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/vi/1-worklog/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/1-worklog/index.html"> <b> 1. </b> Worklog</a><ul id="R-subsections-16447363d800ec5deaa3b0a76c63c922" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/vi/2-proposal/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html"> <b> 2. </b> Bản đề xuất</a></li>
+            <li class="" data-nav-id="/vi/3-blogstranslated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/3-blogstranslated/index.html"> <b> 3. </b> Các bài blog đã dịch</a><ul id="R-subsections-dff4ca4b61121a10b58696aacb50b106" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/vi/4-eventparticipated/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/4-eventparticipated/index.html"> <b> 4. </b> Các sự kiện đã tham gia</a><ul id="R-subsections-a3223440c4beb7b035882258d4302894" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/vi/5-workshop/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/index.html"><b>5. </b>Workshop</a><ul id="R-subsections-3232083df9b680629be5cc26bdd904c0" class="collapsible-menu">
+            <li class="" data-nav-id="/vi/5-workshop/5.1-workshop_overview/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.1-workshop_overview/index.html"> <b> 5.1.  </b> Tổng quan Workshop</a></li>
+            <li class="" data-nav-id="/vi/5-workshop/5.2-prerequisite/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.2-prerequisite/index.html"> <b> 5.2.  </b> Điều kiện tiên quyết</a></li>
+            <li class="alwaysopen " data-nav-id="/vi/5-workshop/5.3-deploy_flow/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/index.html"> <b> 5.3.  </b> Quy trình triển khai</a><ul id="R-subsections-bb7fe7553348ca03cc6bc8ebf581479a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/vi/5-workshop/5.4-clean_up/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.4-clean_up/index.html"> <b> 5.4.  </b> Clean Up</a></li>
+            <li class="active " data-nav-id="/vi/5-workshop/5.5-mystic-skills/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html"><b>5.5. </b>Mystic Skills</a></li></ul></li>
+            <li class="" data-nav-id="/vi/6-self-evaluation/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/6-self-evaluation/index.html"> <b> 6. </b> Tự đánh giá</a></li>
+            <li class="" data-nav-id="/vi/7-feedback/index.html"><a class="padding" href="https://trungkien2543.github.io/fcj-workshopz/vi/7-feedback/index.html"> <b> 7. </b> Chia sẻ, đóng góp ý kiến</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-vi" value="vi" data-url="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.5-mystic-skills/index.html" lang="vi" selected data-selected>Tiếng Việt</option>
+                    <option id="R-select-language-en" value="en" data-url="https://trungkien2543.github.io/fcj-workshopz/5-workshop/5.5-mystic-skills/index.html" lang="en">English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/clipboard/clipboard.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/perfect-scrollbar/perfect-scrollbar.min.js?1765214704" defer></script>
+    <script src="https://trungkien2543.github.io/fcj-workshopz/js/theme.min.js?1765214704" defer></script>
+  </body>
+</html>

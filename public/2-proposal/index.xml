@@ -3,7 +3,7 @@
   <channel>
     <title>Proposal :: My Hugo Site</title>
     <link>https://trungkien2543.github.io/fcj-workshopz/2-proposal/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Cost-Optimized SaaS Task Management Platform Single-Region High Availability with ECS Fargate 1. Executive Summary The SaaS Task Management Platform is designed to deliver a Todoist-like collaborative experience with High Availability (HA) and Cost Efficiency, specifically optimized for AWS Free Tier constraints.&#xA;Initially, the project targeted a Multi-Region deployment to achieve the high levels of global performance, disaster recovery (DR), and uptime. However, due to the cost limitations and the constraints of the AWS Free Tier (particularly concerning cross-region data transfer and running multiple primary/replica database instances), the architecture was strategically consolidated into a Single AWS Region (ap-southeast-1 - Singapore).</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://trungkien2543.github.io/fcj-workshopz/2-proposal/index.xml" rel="self" type="application/rss+xml" />

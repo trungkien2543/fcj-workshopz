@@ -3,7 +3,7 @@
   <channel>
     <title>Bản đề xuất :: My Hugo Site</title>
     <link>https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Nền tảng Quản lý Tác vụ SaaS Tối Ưu Chi Phí Khả năng Sẵn sàng Cao (HA) Đơn Vùng với ECS Fargate 1. Tóm Tắt Điều Hành (Executive Summary) Nền tảng Quản lý Tác vụ SaaS được thiết kế để mang lại trải nghiệm cộng tác tương tự Todoist với Khả năng Sẵn sàng Cao (HA) và Hiệu Quả Chi Phí, được tối ưu hóa đặc biệt cho các giới hạn của AWS Free Tier.</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/2-proposal/index.xml" rel="self" type="application/rss+xml" />

@@ -113,3 +113,5 @@ Participating in the workshop **"Vietnam Cloud Day 2025: Ho Chi Minh City Connec
 #### Lessons learned
 - Modernization strategy needs a **phased approach** with measurement and accurate assessment of current state, should not rush to transform the entire system.
 - AI tools like Amazon Q Developer can **boost productivity** if integrated into current development workflows.
+
+![image](/images/cloud_day.jpg)

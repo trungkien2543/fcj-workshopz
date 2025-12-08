@@ -114,3 +114,5 @@ Tham gia workshop **“AWS CLOUD MASTERY SERIES #3 – Security on AWS”** là 
 
 - Khi xây dựng hệ thống ngoài việc xây dựng cấu trúc hệ thống, hạ tầng mà còn cần phải quan tâm tới việc bảo mật từ những bước nhỏ nhất để phòng tránh những mối đe dọa từ bên ngoài và những lỗi bảo mật từ bên trong hệ thống.
 - Các công cụ như Amazon GuardDuty có thể được áp dụng để tối ưu hóa công sức làm việc và tăng tính tự động hóa các hệ thống hiện tại.
+
+![image](/images/event2.jpg)

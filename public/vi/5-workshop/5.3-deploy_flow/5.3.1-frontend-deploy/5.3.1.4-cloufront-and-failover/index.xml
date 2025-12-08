@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ClouFront &amp; Failover :: My Hugo Site</title>
+    <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.4-cloufront-and-failover/index.html</link>
+    <description>GIAI ĐOẠN 3: CẤU HÌNH CLOUDFRONT (CDN &amp; FAILOVER) BƯỚC 3.1: Tạo Distribution Step 1: Get started Distribution name: sgutodolist-frontend-cloudfront&#xA;Distribution type: Giữ nguyên Single website or app.&#xA;Domain:&#xA;Tại ô Route 53 managed domain, nhập: sgutodolist.com.&#xA;(Nếu có ô Alternate domain names, nhập thêm www.sgutodolist.com nếu giao diện cho phép, nếu không ta sẽ thêm sau).&#xA;Bấm Next.&#xA;Step 2: Specify origin Origin type: Chọn Amazon S3.&#xA;Origin:</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.1-frontend-deploy/5.3.1.4-cloufront-and-failover/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
