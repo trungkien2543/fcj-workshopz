@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Completion &amp; Verification (Route 53, Google Console, Final Test) :: My Hugo Site</title>
+    <title>Hoàn thiện &amp; Xác nhận (Route 53, Google Console, Final Test) :: My Hugo Site</title>
     <link>https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.6-completion--verification-route-53-google-console-final-test/index.html</link>
-    <description>This final phase connects the deployed backend to the public domain and verifies end-to-end functionality.&#xA;DNS Configuration Step 1: Create Route 53 A Record&#xA;Navigate to Route 53 → Hosted zones Select sgutodolist.com hosted zone Click Create record Configure record: Record name: api Record type: A Alias: Enable Route traffic to: Alias to Application Load Balancer Region: Asia Pacific (Singapore) Load balancer: Select sgu-alb Click Create records DNS Propagation: Wait 2-5 minutes for DNS changes to propagate.</description>
+    <description>Giai đoạn cuối này kết nối backend đã triển khai với domain public và kiểm tra toàn bộ luồng hoạt động end-to-end.&#xA;DNS Configuration Bước 1: Tạo bản ghi A trong Route 53 Truy cập Route 53 → Hosted zones Chọn hosted zone sgutodolist.com Nhấn Create record Cấu hình bản ghi: Record name: api Record type: A Alias: Enable Route traffic to: Alias to Application Load Balancer Region: Asia Pacific (Singapore) Load balancer: chọn sgu-alb Nhấn Create records DNS Propagation: Chờ 2–5 phút để DNS cập nhật.</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <atom:link href="https://trungkien2543.github.io/fcj-workshopz/vi/5-workshop/5.3-deploy_flow/5.3.2-backend-deploy/5.3.2.6-completion--verification-route-53-google-console-final-test/index.xml" rel="self" type="application/rss+xml" />

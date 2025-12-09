@@ -275,7 +275,7 @@ bash
    aws ecs list-services --cluster [CLUSTER-NAME] --region ap-southeast-1
 ```
 
-1.  **Update service to previous task definition revision**:
+2.  **Update service to previous task definition revision**:
 
 bash
 
@@ -287,7 +287,7 @@ bash
      --region ap-southeast-1
 ```
 
-1.  **Force new deployment**:
+3.  **Force new deployment**:
 
 bash
 

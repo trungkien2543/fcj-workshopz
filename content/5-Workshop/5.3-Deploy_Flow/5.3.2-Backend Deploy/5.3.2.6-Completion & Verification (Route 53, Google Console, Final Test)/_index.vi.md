@@ -1,76 +1,79 @@
 +++
-title = "Completion & Verification (Route 53, Google Console, Final Test)"
+title =  "Hoàn thiện & Xác nhận (Route 53, Google Console, Final Test)"
 weight = 6
 chapter = false
 pre = " <b> 5.3.2.6. </b> "
 alwaysopen = true
 +++
 
-This final phase connects the deployed backend to the public domain and verifies end-to-end functionality.
+Giai đoạn cuối này kết nối backend đã triển khai với domain public và kiểm tra toàn bộ luồng hoạt động end-to-end.
 
 ### DNS Configuration
 
-**Step 1: Create Route 53 A Record**
+### **Bước 1: Tạo bản ghi A trong Route 53**
 
-1.  Navigate to **Route 53** → **Hosted zones**
-2.  Select `sgutodolist.com` hosted zone
-3.  Click **Create record**
-4.  Configure record:
-    -   **Record name**: `api`
-    -   **Record type**: A
-    -   **Alias**: Enable
-    -   **Route traffic to**: Alias to Application Load Balancer
-    -   **Region**: Asia Pacific (Singapore)
-    -   **Load balancer**: Select `sgu-alb`
-5.  Click **Create records**
+1. Truy cập **Route 53** → **Hosted zones**
+2. Chọn hosted zone `sgutodolist.com`
+3. Nhấn **Create record**
+4. Cấu hình bản ghi:
+   - **Record name**: `api`
+   - **Record type**: A
+   - **Alias**: Enable
+   - **Route traffic to**: Alias to Application Load Balancer
+   - **Region**: Asia Pacific (Singapore)
+   - **Load balancer**: chọn `sgu-alb`
+5. Nhấn **Create records**
 
-**DNS Propagation:** Wait 2-5 minutes for DNS changes to propagate.
+**DNS Propagation:** Chờ 2–5 phút để DNS cập nhật.
 
-**Verification:**
+**Kiểm tra:**
 
-bash
-
-```
+```bash
 nslookup sgutodolist.com
-# Should return ALB's IP addresses
+# Kết quả phải trả về IP của ALB
 ```
 
 * * * * *
 
-### Google OAuth Configuration Update
+### Cập nhật cấu hình Google OAuth
 
-**Step 1: Update Authorized Redirect URIs**
+**Bước 1: Cập nhật Authorized Redirect URIs**
 
-1.  Access **Google Cloud Console** (console.cloud.google.com)
-2.  Navigate to **APIs & Services** → **Credentials**
-3.  Select your OAuth 2.0 Client ID
-4.  Under **Authorized redirect URIs**, add:
+1. Truy cập **Google Cloud Console** (console.cloud.google.com)  
+2. Điều hướng đến **APIs & Services** → **Credentials**  
+3. Chọn OAuth 2.0 Client ID của bạn  
+4. Trong mục **Authorized redirect URIs**, thêm vào:
 
 ```
    https://sgutodolist.com/api/auth/login/oauth2/code/google
 ```
 
-1.  Click **Save**
 
-**Note:** Keep existing localhost URIs for local development.
+5. Nhấn **Save** để lưu lại
+
+**Lưu ý:** Giữ nguyên các localhost URIs để phục vụ cho môi trường phát triển local.
+
 
 * * * * *
 
-### System Health Verification
+### Xác minh tình trạng hệ thống
 
-Perform the following tests to verify deployment success:
+Thực hiện các kiểm tra sau để xác nhận triển khai thành công:
 
 #### Test 1: API Gateway Health Check
 
 bash
 
+
 ```
 curl https://sgutodolist.com/actuator/health
 ```
 
-**Expected Response:**
+
+**Kết quả mong đợi:**
 
 json
+
 
 ```
 {
@@ -78,37 +81,40 @@ json
 }
 ```
 
-#### Test 2: Individual Service Health Checks
+#### Test 2: Kiểm tra từng dịch vụ riêng lẻ
 
 bash
 
+
+
 ```
-# Auth Service
+# Dịch vụ Auth
 curl https://sgutodolist.com/api/auth/actuator/health
 
-# User Service
+# Dịch vụ User
 curl https://sgutodolist.com/api/user/actuator/health
 
-# Taskflow Service
+# Dịch vụ Taskflow
 curl https://sgutodolist.com/api/taskflow/actuator/health
 
-# Notification Service
+# Dịch vụ Notification
 curl https://sgutodolist.com/api/notification/actuator/health
 ```
 
-All should return `{"status":"UP"}`.
+Tất cả phải trả về `{"status":"UP"}`.
 
-#### Test 3: Service Discovery Verification
+#### Test 3: Xác minh Service Discovery
 
-From the Bastion Host, verify internal DNS resolution:
+Từ Bastion Host, kiểm tra phân giải DNS nội bộ:
 
 bash
 
+
 ```
-# SSH to Bastion
+# SSH tới Bastion
 ssh -i sgutodolist-key.pem ec2-user@[BASTION-IP]
 
-# Test DNS resolution
+# Kiểm tra phân giải DNS
 nslookup auth.sgu.local
 nslookup user.sgu.local
 nslookup taskflow.sgu.local
@@ -117,167 +123,175 @@ nslookup ai-model.sgu.local
 nslookup kafka.sgu.local
 ```
 
-All should resolve to internal ECS task IP addresses.
 
-#### Test 4: Database Connectivity
+Tất cả phải phân giải ra địa chỉ IP nội bộ của ECS task.
 
-Verify services can connect to RDS:
+#### Test 4: Kết nối Database
 
-1.  Check CloudWatch Logs for any service
-2.  Look for successful database connection messages
-3.  Verify no connection errors in startup logs
+Xác minh các dịch vụ có thể kết nối tới RDS:
 
-#### Test 5: Redis Connectivity
+1. Kiểm tra CloudWatch Logs cho bất kỳ dịch vụ nào
+2. Tìm thông báo kết nối cơ sở dữ liệu thành công
+3. Xác nhận không có lỗi kết nối trong logs khởi động
+
+#### Test 5: Kết nối Redis
 
 bash
 
+
 ```
-# From Bastion Host
+# Từ Bastion Host
 redis-cli -h [REDIS-ENDPOINT] ping
-# Expected response: PONG
+# Kết quả mong đợi: PONG
 ```
 
-#### Test 6: End-to-End Authentication Flow
 
-1.  Access frontend at `https://sgutodolist.com`
-2.  Click "Sign in with Google"
-3.  Complete OAuth flow
-4.  Verify successful login and token issuance
-5.  Verify user profile loads correctly
+#### Test 6: Luồng xác thực end-to-end
+
+1. Truy cập frontend tại `https://sgutodolist.com`
+2. Nhấn "Sign in with Google"
+3. Hoàn thành luồng OAuth
+4. Xác minh đăng nhập thành công và token được cấp
+5. Xác minh thông tin profile người dùng hiển thị đúng
 
 * * * * *
 
-### Performance Baseline
+### Cơ sở đo lường hiệu năng
 
-Record initial performance metrics:
+Ghi nhận các chỉ số hiệu năng ban đầu:
 
-**Response Time Benchmarks:**
+**Benchmark thời gian phản hồi:**
 
 bash
 
 ```
-# API Gateway response time
+# Thời gian phản hồi API Gateway
 time curl -o /dev/null -s https://sgutodolist.com/actuator/health
 
-# Auth service response time
+# Thời gian phản hồi dịch vụ Auth
 time curl -o /dev/null -s https://sgutodolist.com/api/auth/actuator/health
 ```
 
-**CloudWatch Metrics to Monitor:**
 
--   ECS Task CPU Utilization
--   ECS Task Memory Utilization
--   ALB Target Response Time
--   ALB Request Count
--   RDS CPU Utilization
--   Redis CPU Utilization
+**Chỉ số CloudWatch cần theo dõi:**
 
-* * * * *
-
-### Post-Deployment Security Checklist
-
--   [ ]  All sensitive environment variables secured (not in version control)
--   [ ]  Database password meets complexity requirements
--   [ ]  Security groups follow least privilege principle
--   [ ]  SSL/TLS certificates valid and auto-renewal enabled
--   [ ]  Bastion Host accessible only from authorized IPs
--   [ ]  CloudWatch Logs retention configured
--   [ ]  AWS Budget alerts active
+- Sử dụng CPU ECS Task
+- Sử dụng Memory ECS Task
+- Thời gian phản hồi ALB Target
+- Số lượng request ALB
+- Sử dụng CPU RDS
+- Sử dụng CPU Redis
 
 * * * * *
 
-### Final Deployment Checklist
+### Danh sách kiểm tra bảo mật sau triển khai
 
-**Infrastructure:**
-
--   [ ]  VPC and subnets operational
--   [ ]  All 4 security groups correctly configured
--   [ ]  RDS database accessible and initialized
--   [ ]  Redis cache operational
--   [ ]  Kafka service running
--   [ ]  ALB active with healthy targets
-
-**Application:**
-
--   [ ]  All 6 services deployed and running
--   [ ]  Service Discovery functional
--   [ ]  ALB routing rules working correctly
--   [ ]  Health checks passing
--   [ ]  CloudWatch Logs collecting data
-
-**Integration:**
-
--   [ ]  DNS record pointing to ALB
--   [ ]  SSL certificate valid
--   [ ]  Google OAuth configured
--   [ ]  Frontend can communicate with backend
--   [ ]  Authentication flow working
-
-**Monitoring:**
-
--   [ ]  CloudWatch dashboards created
--   [ ]  Budget alerts configured
--   [ ]  Performance baseline recorded
+- [ ] Bảo mật tất cả biến môi trường nhạy cảm (không lưu trong version control)
+- [ ] Mật khẩu database đáp ứng yêu cầu độ phức tạp
+- [ ] Security groups tuân thủ nguyên tắc least privilege
+- [ ] Chứng chỉ SSL/TLS hợp lệ và tự động gia hạn
+- [ ] Bastion Host chỉ truy cập từ IP được phép
+- [ ] Cấu hình lưu giữ logs CloudWatch
+- [ ] Cảnh báo ngân sách AWS được kích hoạt
 
 * * * * *
 
-### Known Limitations and Future Improvements
+### Danh sách kiểm tra triển khai cuối cùng
 
-**Current Architecture Constraints:**
+**Hạ tầng:**
 
-1.  **Single-AZ Database**: RDS is deployed in a single availability zone for cost optimization
-2.  **Single-Node Redis**: No automatic failover for cache layer
-3.  **Single-Node Kafka**: Not production-grade for high-throughput scenarios
-4.  **Public Subnet ECS Tasks**: Security trade-off for cost savings
+- [ ] VPC và subnets hoạt động
+- [ ] 4 security groups được cấu hình đúng
+- [ ] Database RDS truy cập được và đã khởi tạo
+- [ ] Redis cache hoạt động
+- [ ] Dịch vụ Kafka chạy
+- [ ] ALB hoạt động với các target healthy
 
-**Recommended Production Enhancements:**
+**Ứng dụng:**
 
-1.  Enable RDS Multi-AZ deployment
-2.  Implement Redis Cluster Mode with multiple replicas
-3.  Deploy Kafka with multiple brokers across AZs
-4.  Add NAT Gateway and move ECS tasks to private subnets
-5.  Implement AWS WAF on ALB for DDoS protection
-6.  Enable ECS Service Auto Scaling
-7.  Implement CI/CD pipeline for automated deployments
+- [ ] 6 dịch vụ triển khai và chạy
+- [ ] Service Discovery hoạt động
+- [ ] Quy tắc routing ALB hoạt động đúng
+- [ ] Health checks vượt qua
+- [ ] CloudWatch Logs thu thập dữ liệu
+
+**Tích hợp:**
+
+- [ ] Record DNS trỏ tới ALB
+- [ ] Chứng chỉ SSL hợp lệ
+- [ ] Google OAuth cấu hình đúng
+- [ ] Frontend có thể giao tiếp với backend
+- [ ] Luồng xác thực hoạt động
+
+**Giám sát:**
+
+- [ ] Dashboard CloudWatch tạo xong
+- [ ] Cảnh báo ngân sách cấu hình xong
+- [ ] Cơ sở đo lường hiệu năng ghi nhận xong
 
 * * * * *
 
-Troubleshooting Guide
----------------------
+### Hạn chế hiện tại và cải tiến tương lai
 
-### Quick Diagnosis Commands
+**Hạn chế kiến trúc hiện tại:**
+
+1. **Database Single-AZ**: RDS triển khai trong một AZ duy nhất để tối ưu chi phí
+2. **Redis Single-Node**: Không có cơ chế failover tự động
+3. **Kafka Single-Node**: Không đủ chuẩn sản xuất cho throughput cao
+4. **ECS Tasks trên Public Subnet**: Trade-off bảo mật để tiết kiệm chi phí
+
+**Cải tiến khuyến nghị cho môi trường production:**
+
+1. Kích hoạt RDS Multi-AZ
+2. Triển khai Redis Cluster Mode với nhiều replica
+3. Triển khai Kafka với nhiều broker trên các AZ
+4. Thêm NAT Gateway và di chuyển ECS tasks sang private subnet
+5. Triển khai AWS WAF trên ALB để chống DDoS
+6. Kích hoạt ECS Service Auto Scaling
+7. Thiết lập pipeline CI/CD cho triển khai tự động
+
+* * * * *
+
+### Hướng dẫn khắc phục sự cố
+
+#### Lệnh chẩn đoán nhanh
 
 bash
 
+
 ```
-# Check ECS service status
+# Kiểm tra trạng thái ECS service
 aws ecs describe-services --cluster [CLUSTER-NAME] --services [SERVICE-NAME] --region ap-southeast-1
 
-# Check task status
+# Kiểm tra trạng thái task
 aws ecs describe-tasks --cluster [CLUSTER-NAME] --tasks [TASK-ARN] --region ap-southeast-1
 
-# View recent logs
+# Xem logs gần đây
 aws logs tail /ecs/[SERVICE-NAME] --follow --region ap-southeast-1
 
-# Check target health
+# Kiểm tra trạng thái target
 aws elbv2 describe-target-health --target-group-arn [TG-ARN] --region ap-southeast-1
 ```
 
-### Emergency Rollback Procedure
 
-If deployment fails:
+#### Quy trình rollback khẩn cấp
 
-1.  **Identify failing service**:
+Nếu triển khai thất bại:
+
+1. **Xác định dịch vụ gặp lỗi:**
 
 bash
+
 
 ```
    aws ecs list-services --cluster [CLUSTER-NAME] --region ap-southeast-1
 ```
 
-1.  **Update service to previous task definition revision**:
+
+2. **Cập nhật dịch vụ về revision task definition trước đó:**
 
 bash
+
 
 ```
    aws ecs update-service\
@@ -287,9 +301,11 @@ bash
      --region ap-southeast-1
 ```
 
-1.  **Force new deployment**:
+
+3. **Force triển khai mới:**
 
 bash
+
 
 ```
    aws ecs update-service\
@@ -301,17 +317,17 @@ bash
 
 * * * * *
 
-Success Criteria
+### Tiêu chí thành công
 ----------------
 
-Deployment is considered successful when:
+Triển khai được coi là thành công khi:
 
-1.  ✅ All 6 ECS services show status: RUNNING
-2.  ✅ All 5 target groups show: Healthy
-3.  ✅ `https://sgutodolist.com/actuator/health` returns HTTP 200
-4.  ✅ Frontend at `https://sgutodolist.com` can authenticate via Google OAuth
-5.  ✅ CloudWatch Logs show no critical errors
-6.  ✅ All services accessible via internal DNS (*.sgu.local)
+1. ✅ 6 dịch vụ ECS hiển thị trạng thái: RUNNING
+2. ✅ 5 target groups hiển thị: Healthy
+3. ✅ `https://sgutodolist.com/actuator/health` trả HTTP 200
+4. ✅ Frontend tại `https://sgutodolist.com` có thể xác thực Google OAuth
+5. ✅ CloudWatch Logs không có lỗi nghiêm trọng
+6. ✅ Tất cả dịch vụ có thể truy cập qua DNS nội bộ (*.sgu.local)
 
 * * * * *
 
